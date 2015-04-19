@@ -1,7 +1,12 @@
 import {
-  equal
+  ok
 }
 from 'assert';
 import and from '../src/and';
 
-test('#and', () => equal(and(1, 2), 0));
+test('#and', () => {
+  ok(and(true, true));
+  ok(!and(false, true));
+  ok(!and(true, false));
+  ok(!and(false, false));
+});

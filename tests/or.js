@@ -1,7 +1,12 @@
 import {
-  equal
+  ok
 }
 from 'assert';
 import or from '../src/or';
 
-test('#or', () => equal(or(1, 2), 3));
+test('#or', () => {
+  ok(or(true, true));
+  ok(or(false, true));
+  ok(or(true, false));
+  ok(!or(false, false));
+});
