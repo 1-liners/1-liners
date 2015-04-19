@@ -87,6 +87,15 @@ var bitAnd = require('1-liners/bitAnd');
 
 bitAnd(1, 2); // => 0
 bitAnd(2, 2); // => 2
+
+### compose
+
+Compose a new function from two give functions
+
+```js
+var compose = require('1-liners/compose');
+
+compose(f, g)(1, 2) === f(g(1, 2));
 ```
 
 ## License
