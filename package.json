@@ -1,0 +1,29 @@
+{
+  "name": "1-liners",
+  "version": "0.0.1",
+  "description": "Useful oneliners and shorthand functions",
+  "license": "MIT",
+  "repository": "stoeffel/1-liners",
+  "author": {
+    "name": "stoeffel",
+    "email": "schtoeffel@gmail.com",
+    "url": "schtoeffel.ch"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel/register --ui qunit ./tests",
+    "compile": "cd ./src; babel --loose=all ./*.js --out-dir ../",
+    "prepublish": "npm run compile"
+  },
+  "keywords": [
+    "oneliners",
+    "shorthands"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.1.10",
+    "mocha": "^2.2.4"
+  }
+}
