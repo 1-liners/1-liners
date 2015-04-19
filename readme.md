@@ -67,6 +67,16 @@ not(true); // => false
 not(false); // => true
 ```
 
+### compose
+
+Compose a new function from two give functions
+
+```js
+var compose = require('1-liners/compose');
+
+compose(f, g)(1, 2) === f(g(1, 2));
+```
+
 ## License
 
 MIT © [stoeffel](http://schtoeffel.ch)
