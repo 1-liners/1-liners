@@ -69,7 +69,7 @@ not(false); // => true
 
 ### nor
 
-Same as `!(a | b)`.
+Same as `!(a || b)`.
 
 ```js
 var nor = require('1-liners/nor');
@@ -87,6 +87,7 @@ var bitAnd = require('1-liners/bitAnd');
 
 bitAnd(1, 2); // => 0
 bitAnd(2, 2); // => 2
+```
 
 ### compose
 
