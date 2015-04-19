@@ -1,1 +1,1 @@
-export default (a, b) => a && b;
+export default (x, y) => x && y;

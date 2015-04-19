@@ -67,6 +67,27 @@ not(true); // => false
 not(false); // => true
 ```
 
+### nor
+
+Same as `!(a | b)`.
+
+```js
+var nor = require('1-liners/nor');
+
+nor(0, 0); // => true
+nor(1, 0); // => false
+```
+
+### bitAnd
+
+Same as `a & b`.
+
+```js
+var bitAnd = require('1-liners/bitAnd');
+
+bitAnd(1, 2); // => 0
+bitAnd(2, 2); // => 2
+
 ### compose
 
 Compose a new function from two give functions
