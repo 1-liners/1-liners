@@ -2,3 +2,4 @@ node_modules
 *.js
 !src/*.js
 !tests/*.js
+coverage

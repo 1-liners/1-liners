@@ -13,8 +13,13 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel/register --ui qunit ./tests",
+    "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R spec --report lcov --compilers js:babel/register --ui qunit ./tests",
+    "mocha": "mocha --compilers js:babel/register --ui qunit ./tests",
     "compile": "cd ./src; babel --loose=all ./*.js --out-dir ../",
+    "clean": "rm *.js",
+    "coveralls": "npm run compile; npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js; npm run clean",
+    "coverage": "npm run compile; npm run istanbul; npm run clean",
+    "test": "npm run compile; npm run mocha; npm run istanbul; npm run clean",
     "prepublish": "npm run compile"
   },
   "keywords": [
@@ -24,6 +29,9 @@
   "dependencies": {},
   "devDependencies": {
     "babel": "^5.1.10",
-    "mocha": "^2.2.4"
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "mocha-lcov-reporter": "0.0.2"
   }
 }
