@@ -111,6 +111,16 @@ var compose = require('1-liners/compose');
 compose(f, g)(1, 2) === f(g(1, 2));
 ```
 
+### apply
+
+Same as `func(...[a, b /*,..*/])`.
+
+```js
+var apply = require('1-liners/apply');
+
+apply(f, [a, b, c]) === f(a, b, c); // => true
+```
+
 ## License
 
 MIT © [stoeffel](http://schtoeffel.ch)
