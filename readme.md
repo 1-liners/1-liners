@@ -34,6 +34,17 @@ var tail = require('1-liners/tail');
 tail([1, 2, 3]); // => [2, 3]
 ```
 
+### nth
+
+Returns the nth item of an array.
+
+```js
+var nth = require('1-liners/nth');
+
+nth(1, [1, 2, 3]); // => 2
+```
+
+
 ### and
 
 Same as `a && b`.
