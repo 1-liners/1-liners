@@ -154,6 +154,22 @@ var apply = require('1-liners/apply');
 apply(f, [a, b, c]) === f(a, b, c); // => true
 ```
 
+### noop
+
+Same as `function(){}`.
+
+```js
+var noop = require('1-liners/noop');
+
+window.console = {
+    log: noop,
+    error: noop,
+    warn: noop,
+    table: noop
+};
+
+```
+
 ## License
 
 MIT © [stoeffel](http://schtoeffel.ch)
