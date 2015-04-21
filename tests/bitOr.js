@@ -2,7 +2,7 @@ import {
   equal
 }
 from 'assert';
-import bitOr from '../src/bitOr';
+import bitOr from '../bitOr';
 
 test('#bitOr', () => {
   equal(bitOr(1, 0), 1);

@@ -4,6 +4,7 @@ import {
 from 'assert';
 import noop from '../noop';
 
-test('#noop', () =>
-	ok(noop());
-);
+test('#noop', () => {
+	ok(typeof noop === 'function');
+	ok(noop() === undefined);
+});

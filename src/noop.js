@@ -1,1 +1,1 @@
-let noop = () => {};
+export default () => {};
