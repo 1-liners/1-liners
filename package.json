@@ -14,6 +14,7 @@
   },
   "scripts": {
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
+    "toc": "doctoc ./readme.md",
     "mocha": "mocha --compilers js:babel/register --ui qunit ./tests",
     "compile": "cd ./src; babel --loose=all ./*.js --out-dir ../",
     "clean": "rm *.js",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "babel": "^5.1.10",
     "coveralls": "^2.11.2",
+    "doctoc": "^0.12.0",
     "istanbul": "^0.3.13",
     "mocha": "^2.2.4",
     "mocha-lcov-reporter": "0.0.2"

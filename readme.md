@@ -5,6 +5,30 @@
 
 PRs are welcome!
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Install](#install)
+- [API](#api)
+  - [head](#head)
+  - [tail](#tail)
+  - [nth](#nth)
+  - [and](#and)
+  - [or](#or)
+  - [not](#not)
+  - [nor](#nor)
+  - [nand](#nand)
+  - [bitAnd](#bitand)
+  - [bitOr](#bitor)
+  - [xor](#xor)
+  - [compose](#compose)
+  - [apply](#apply)
+  - [noop](#noop)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Install
 
 ```
