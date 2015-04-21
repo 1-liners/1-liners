@@ -160,7 +160,7 @@ xor(1, 1); // => 0
 
 ### compose
 
-Compose a new function from two give functions
+Compose a new function from two given functions.
 
 ```js
 var compose = require('1-liners/compose');
