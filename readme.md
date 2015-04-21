@@ -90,6 +90,17 @@ nor(0, 0); // => true
 nor(1, 0); // => false
 ```
 
+### nand
+
+Same as `!(a && b)`.
+
+```js
+var nand = require('1-liners/nand');
+
+nand(0, 0); // => true
+nand(1, 1); // => false
+```
+
 ### bitAnd
 
 Same as `a & b`.
@@ -110,6 +121,17 @@ var bitOr = require('1-liners/bitOr');
 
 bitOr(0, 1); // => 1
 bitOr(1, 1); // => 1
+```
+
+### xor
+
+Same as `(x && !y) || (!x && y)`
+
+```js
+var xor = require('1-liners/xor');
+
+xor(0, 1); // => 1
+xor(1, 1); // => 0
 ```
 
 ### compose

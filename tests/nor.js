@@ -1,5 +1,5 @@
 import {
-  equal
+	equal
 }
 from 'assert';
 import nor from '../nor';
