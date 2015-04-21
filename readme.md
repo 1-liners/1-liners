@@ -1,4 +1,4 @@
-# 1-liners 
+# 1-liners
 [![Coverage Status](https://coveralls.io/repos/stoeffel/1-liners/badge.svg?branch=master)](https://coveralls.io/r/stoeffel/1-liners?branch=master) [![Build Status](https://travis-ci.org/stoeffel/1-liners.svg?branch=master)](https://travis-ci.org/stoeffel/1-liners)
 
 > Useful oneliners and shorthand functions
@@ -99,6 +99,17 @@ var bitAnd = require('1-liners/bitAnd');
 
 bitAnd(1, 2); // => 0
 bitAnd(2, 2); // => 2
+```
+
+### bitOr
+
+Same as `a | b`.
+
+```js
+var bitOr = require('1-liners/bitOr');
+
+bitOr(0, 1); // => 1
+bitOr(1, 1); // => 1
 ```
 
 ### compose
