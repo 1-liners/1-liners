@@ -212,7 +212,7 @@ let addIfEq = ifElse(eq, add, sub);
 addIfEq(1, 1); // => 2
 addIfEq(2, 1); // => 1
 
-let words = ifElse((str) => typeof str === 'string', str.split(' '));
+let words = ifElse((str) => typeof str === 'string', (str) => str.split(' '));
 
 words('Hello ES2015'); // => ['Hello', 'ES2015']
 ```
