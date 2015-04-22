@@ -26,6 +26,7 @@ PRs are welcome!
   - [apply](#apply)
   - [noop](#noop)
   - [ifElse](#ifelse)
+  - [map](#map)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -215,6 +216,16 @@ addIfEq(2, 1); // => 1
 let words = ifElse((str) => typeof str === 'string', (str) => str.split(' '));
 
 words('Hello ES2015'); // => ['Hello', 'ES2015']
+```
+
+### map
+
+Same as `[1, 2, 3].map(Math.sqrt)`.
+
+```js
+var map = require('1-liners/map');
+
+map(Math.sqrt, [1, 2, 3]);
 ```
 
 ## License
