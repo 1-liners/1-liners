@@ -258,6 +258,16 @@ var reduceRight = require('1-liners/reduceRight');
 reduceRight(sub, [1, 2, 3]); // => -4
 ```
 
+### every
+
+Same as `[1,2,3].every(isGreaterThan)`.
+
+```js
+var every = require('1-liners/every');
+
+every(isGreaterThan, [16,17,18]); // False
+```
+
 ## License
 
 MIT © [stoeffel](http://schtoeffel.ch)
