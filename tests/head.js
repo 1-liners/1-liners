@@ -1,4 +1,4 @@
 import { equal } from 'assert';
-import length from '../length';
+import head from '../head';
 
-test('#length', () => equal(length([0, 1, 2]), 3));
+test('#head', () => equal(head([0, 1, 2]), 0));
