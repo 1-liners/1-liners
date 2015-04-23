@@ -225,7 +225,37 @@ Same as `[1, 2, 3].map(Math.sqrt)`.
 ```js
 var map = require('1-liners/map');
 
-map(Math.sqrt, [1, 2, 3]);
+map(Math.sqrt, [9, 25]); // => [3, 5]
+```
+
+### filter
+
+Same as `[1, 2, 3].filter(isOdd)`.
+
+```js
+var filter = require('1-liners/filter');
+
+filter(isOdd, [1, 2, 3]); // => [1, 3]
+```
+
+### reduce
+
+Same as `[1, 2, 3].reduce(sum)`.
+
+```js
+var reduce = require('1-liners/reduce');
+
+reduce(sum, [1, 2, 3]); // => 6
+```
+
+### reduceRight
+
+Same as `[1, 2, 3].reduceRight(sub)`.
+
+```js
+var reduceRight = require('1-liners/reduceRight');
+
+reduceRight(sub, [1, 2, 3]); // => -4
 ```
 
 ## License
