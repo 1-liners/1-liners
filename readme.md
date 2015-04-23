@@ -260,12 +260,23 @@ reduceRight(sub, [1, 2, 3]); // => -4
 
 ### every
 
-Same as `[1,2,3].every(isGreaterThan)`.
+Same as `[1,2,3].every(GreaterThan16)`.
 
 ```js
 var every = require('1-liners/every');
 
-every(isGreaterThan, [16,17,18]); // False
+every(elem => elem > 16, [16,17,18]); // False
+```
+
+### some
+
+Same as `[1,2,3].some(GreaterThan16)`
+
+```js
+var some = require('1-liners/some');
+
+some(elem => elem > 16, [16,17,18]); // True
+
 ```
 
 ## License
