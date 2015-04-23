@@ -1,5 +1,5 @@
 # 1-liners
-[![Code Climate](https://codeclimate.com/github/stoeffel/1-liners/badges/gpa.svg)](https://codeclimate.com/github/stoeffel/1-liners) [![Coverage Status](https://coveralls.io/repos/stoeffel/1-liners/badge.svg?branch=master)](https://coveralls.io/r/stoeffel/1-liners?branch=master) [![Build Status](https://travis-ci.org/stoeffel/1-liners.svg?branch=master)](https://travis-ci.org/stoeffel/1-liners) [![Dependency Status](https://david-dm.org/stoeffel/1-liners.svg)](https://david-dm.org/stoeffel/1-liners) [![npm version](https://badge.fury.io/js/1-liners.svg)](http://badge.fury.io/js/1-liners)
+[![Coverage Status](https://coveralls.io/repos/stoeffel/1-liners/badge.svg?branch=master)](https://coveralls.io/r/stoeffel/1-liners?branch=master) [![Build Status](https://travis-ci.org/stoeffel/1-liners.svg?branch=master)](https://travis-ci.org/stoeffel/1-liners) [![Dependency Status](https://david-dm.org/stoeffel/1-liners.svg)](https://david-dm.org/stoeffel/1-liners) [![npm version](https://badge.fury.io/js/1-liners.svg)](http://badge.fury.io/js/1-liners)
 
 > Useful oneliners and shorthand functions
 
