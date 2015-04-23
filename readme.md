@@ -7,7 +7,7 @@ PRs are welcome!
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Install](#install)
 - [API](#api)
@@ -23,6 +23,7 @@ PRs are welcome!
   - [bitOr](#bitor)
   - [xor](#xor)
   - [compose](#compose)
+  - [pipe](#pipe)
   - [apply](#apply)
   - [noop](#noop)
   - [ifElse](#ifelse)
@@ -173,6 +174,16 @@ Compose a new function from two given functions.
 var compose = require('1-liners/compose');
 
 compose(f, g)(1, 2) === f(g(1, 2));
+```
+
+### pipe
+
+Pipe arguments through functions.
+
+```js
+var pipe = require('1-liners/pipe');
+
+pipe(f, g)(1, 2) === g(f(1, 2));
 ```
 
 ### apply
