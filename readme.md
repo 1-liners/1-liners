@@ -25,6 +25,7 @@ PRs are welcome!
   - [xor](#xor)
   - [compose](#compose)
   - [pipe](#pipe)
+  - [curry1,2,3,4](#curry1234)
   - [apply](#apply)
   - [noop](#noop)
   - [ifElse](#ifelse)
@@ -195,6 +196,21 @@ Pipe arguments through functions.
 var pipe = require('1-liners/pipe');
 
 pipe(f, g)(1, 2) === g(f(1, 2));
+```
+
+### curry1,2,3,4
+
+Curry a function for 1, 2, 3 or 4 parameters.
+
+```js
+var curry1 = require('1-liners/curry1');
+var curry2 = require('1-liners/curry2');
+var curry3 = require('1-liners/curry3');
+var curry4 = require('1-liners/curry4');
+
+let f = (a, b, c) => a + b + c;
+var fC = curry3(f);
+fC(1)(2)(3); // => 6
 ```
 
 ### apply
