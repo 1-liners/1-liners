@@ -11,6 +11,7 @@ PRs are welcome!
 
 - [Install](#install)
 - [API](#api)
+  - [length](#length)
   - [head](#head)
   - [tail](#tail)
   - [nth](#nth)
@@ -45,6 +46,16 @@ $ npm install --save 1-liners
 
 
 ## API
+
+### length
+
+Returns the length of an array.
+
+```js
+var length = require('1-liners/length');
+
+length([0, 1, 2]); // => 3
+```
 
 ### head
 
