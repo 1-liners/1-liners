@@ -23,6 +23,8 @@ PRs are welcome!
   - [bitAnd](#bitand)
   - [bitOr](#bitor)
   - [xor](#xor)
+  - [inc](#inc)
+  - [dec](#dec)
   - [compose](#compose)
   - [pipe](#pipe)
   - [curry1,2,3,4](#curry1234)
@@ -176,6 +178,28 @@ var xor = require('1-liners/xor');
 
 xor(0, 1); // => 1
 xor(1, 1); // => 0
+```
+
+### inc
+
+Increment a value by one (default) or more.
+
+```js
+var inc = require('1-liners/inc');
+
+inc(1); // => 2
+inc(2, 8); // => 10
+```
+
+### dec
+
+Decrement a value by one (default) or more.
+
+```js
+var dec = require('1-liners/dec');
+
+dec(1); // => 0
+dec(10, 2); // => 8
 ```
 
 ### compose
