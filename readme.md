@@ -7,7 +7,7 @@ PRs are welcome!
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Install](#install)
 - [API](#api)
@@ -37,6 +37,7 @@ PRs are welcome!
   - [reduceRight](#reduceright)
   - [every](#every)
   - [some](#some)
+  - [join](#join)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -332,7 +333,7 @@ Same as `[1,2,3].every(GreaterThan16)`.
 ```js
 var every = require('1-liners/every');
 
-every(elem => elem > 16, [16,17,18]); // False
+every(elem => elem > 16, [16,17,18]); // => false
 ```
 
 ### some
@@ -342,7 +343,18 @@ Same as `[1,2,3].some(GreaterThan16)`
 ```js
 var some = require('1-liners/some');
 
-some(elem => elem > 16, [16,17,18]); // True
+some(elem => elem > 16, [16,17,18]); // => true
+
+```
+
+### join
+
+Same as `[1, 'liners'].join('-')`
+
+```js
+var join = require('1-liners/join');
+
+join('-', [1, 'liners']); // => '1-liners'
 
 ```
 
