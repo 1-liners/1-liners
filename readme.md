@@ -360,24 +360,22 @@ join('-', [1, 'liners']); // => '1-liners'
 ```
 ## Maintainers
 
----- |
-![stoeffel](https://avatars0.githubusercontent.com/u/1217681?v=3&s=50) |
----- |
-[stoeffel](https://github.com/stoeffel)  |
+
+| ![stoeffel](https://avatars0.githubusercontent.com/u/1217681?v=3&s=50) |
+| ---- |
+| [stoeffel](https://github.com/stoeffel)  |
 
 
----- |
-![hemanth](https://avatars0.githubusercontent.com/u/18315?v=3&s=50) |
 
----- |
-[hemanth](http://www.h3manth.com)  |
+| ![hemanth](https://avatars0.githubusercontent.com/u/18315?v=3&s=50) |
+| ---- |
+| [hemanth](http://www.h3manth.com)  |
 
 
----- |
-![tomekwi](https://avatars3.githubusercontent.com/u/4624660?v=3&s=50) |
 
----- |
-[tomekwi](https://github.com/tomekwi)  |
+| ![tomekwi](https://avatars3.githubusercontent.com/u/4624660?v=3&s=50) |
+| ---- |
+| [tomekwi](https://github.com/tomekwi)  |
 
 
 ## License
