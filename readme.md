@@ -38,6 +38,7 @@ PRs are welcome!
   - [every](#every)
   - [some](#some)
   - [join](#join)
+  - [split](#split)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -358,6 +359,19 @@ var join = require('1-liners/join');
 join('-', [1, 'liners']); // => '1-liners'
 
 ```
+
+### split
+
+Same as `'1-liners'.split('-')`
+
+```js
+var split = require('1-liners/split');
+
+split('-', '1-liners'); // => [1, 'liners']
+
+```
+
+
 ## Maintainers
 
 
