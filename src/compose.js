@@ -1,1 +1,1 @@
-export default (f, g) => (...args) => f(g.apply(this, args));
+export default (f, g) => (...args) => f(g(...args));
