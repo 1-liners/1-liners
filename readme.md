@@ -7,7 +7,7 @@ PRs are welcome!
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Install](#install)
 - [API](#api)
@@ -35,6 +35,8 @@ PRs are welcome!
   - [filter](#filter)
   - [reduce](#reduce)
   - [reduceRight](#reduceright)
+  - [reduceFrom](#reducefrom)
+  - [reduceFromRight](#reducefromright)
   - [every](#every)
   - [some](#some)
   - [join](#join)
@@ -326,6 +328,26 @@ Same as `[1, 2, 3].reduceRight(sub)`.
 var reduceRight = require('1-liners/reduceRight');
 
 reduceRight(sub, [1, 2, 3]); // => -4
+```
+
+### reduceFrom
+
+Same as `[1, 2, 3].reduceFrom(sum, 8)`.
+
+```js
+var reduceFrom = require('1-liners/reduceFrom');
+
+reduceFrom(sum, 8, [1, 2, 3]); // => 2
+```
+
+### reduceFromRight
+
+Same as `[1, 2, 3].reduceFromRight(sub, 1)`.
+
+```js
+var reduceFromRight = require('1-liners/reduceFromRight');
+
+reduceFromRight(sub, 1, [1, 2, 3]); // => -5
 ```
 
 ### every
