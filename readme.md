@@ -400,7 +400,7 @@ split('-', '1-liners'); // => [1, 'liners']
 | :--:|:--:|:--: |
 |  [stoeffel](https://github.com/stoeffel) | [hemanth](https://github.com/hemanth) | [tomekwi](https://github.com/tomekwi)  |
 
-*** created with (gh-contributors-table)[https://github.com/stoeffel/gh-contributors-table] ***
+***created with (gh-contributors-table)[https://github.com/stoeffel/gh-contributors-table]***
 
 
 ## License
