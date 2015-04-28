@@ -1,1 +1,1 @@
-export default (f) => (a) => (b) => (c) => f(a, b, c);
+export default (f) => (...a) => (...b) => (...c) => f(...a, ...b, ...c);
