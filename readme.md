@@ -28,6 +28,7 @@ PRs are welcome!
   - [compose](#compose)
   - [pipe](#pipe)
   - [curry1,2,3,4](#curry1234)
+  - [flip](#flip)
   - [apply](#apply)
   - [noop](#noop)
   - [ifElse](#ifelse)
@@ -240,6 +241,19 @@ var curry4 = require('1-liners/curry4');
 let f = (a, b, c) => a + b + c;
 var fC = curry3(f);
 fC(1)(2)(3); // => 6
+```
+
+### flip
+
+Flip a function’s arguments.
+
+```js
+var flip = require('1-liners/flip');
+
+var f = (a, b) => a / b;
+
+flip(f)(2, 6);        // => 3
+flip(flip(f))(6, 2);  // => 3
 ```
 
 ### apply
