@@ -24,6 +24,12 @@
     "test": "npm run coveralls",
     "prepublish": "npm run compile"
   },
+  "files": [
+    "/*.js",
+    "/src/",
+    "/license",
+    "/readme.md"
+  ],
   "keywords": [
     "oneliners",
     "shorthands"
