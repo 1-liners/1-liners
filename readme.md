@@ -234,7 +234,7 @@ Curry a function for 1, 2, 3 or 4 parameters.
 
 ```js
 var curry1 = require('1-liners/curry1');
-var curry2 = require('1-liners/curry2');
+var curry = require('1-liners/curry');
 var curry3 = require('1-liners/curry3');
 var curry4 = require('1-liners/curry4');
 
