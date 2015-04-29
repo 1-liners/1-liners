@@ -7,7 +7,7 @@ PRs are welcome!
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Install](#install)
 - [API](#api)
@@ -27,7 +27,8 @@ PRs are welcome!
   - [dec](#dec)
   - [compose](#compose)
   - [pipe](#pipe)
-  - [curry1,2,3,4](#curry1234)
+  - [shave](#shave)
+  - [curry2,3,4](#curry234)
   - [flip](#flip)
   - [apply](#apply)
   - [noop](#noop)
@@ -228,12 +229,22 @@ var pipe = require('1-liners/pipe');
 pipe(f, g)(1, 2) === g(f(1, 2));
 ```
 
-### curry1,2,3,4
+### shave
 
-Curry a function for 1, 2, 3 or 4 parameters.
+Shave ensures that a function is called with n arguments.
 
 ```js
-var curry1 = require('1-liners/curry1');
+var shave = require('1-liners/shave');
+
+map(parseInt, [0, 1.1, 2.2]); // => [0, NaN, NaN]
+map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
+```
+
+### curry2,3,4
+
+Curry a function for 2, 3 or 4 parameters.
+
+```js
 var curry2 = require('1-liners/curry2');
 var curry3 = require('1-liners/curry3');
 var curry4 = require('1-liners/curry4');
