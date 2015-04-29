@@ -211,22 +211,26 @@ dec(10, 2); // => 8
 
 ### compose
 
-Compose a new function from two given functions.
+Compose a new function from n given functions.
 
 ```js
 var compose = require('1-liners/compose');
 
 compose(f, g)(1, 2) === f(g(1, 2));
+compose(f, g, h)(1, 2) === f(g(h(1, 2)));
+[h, f, g].reduce(shave(2, compose))(1, 2) === h(f(g(1, 2))));
 ```
 
 ### pipe
 
-Pipe arguments through functions.
+Pipe arguments through n functions.
 
 ```js
 var pipe = require('1-liners/pipe');
 
 pipe(f, g)(1, 2) === g(f(1, 2));
+pipe(f, g, h)(1, 2) === h(g(f(1, 2)));
+[g, f, h].reduce(shave(2, pipe))(1, 2) === h(f(g(1, 2))));
 ```
 
 ### shave
