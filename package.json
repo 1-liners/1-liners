@@ -13,11 +13,11 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "develop": "nodangel --watch src --watch tests --exec 'npm test'",
+    "develop": "nodangel --watch module --watch tests --exec 'npm test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
     "toc": "doctoc ./readme.md",
     "mocha": "mocha --compilers js:babel/register --ui qunit ./tests",
-    "compile": "cd ./src; babel --loose=all ./*.js --out-dir ../",
+    "compile": "cd ./module; babel --loose=all ./*.js --out-dir ../",
     "clean": "rm *.js",
     "coverage": "npm run compile; npm run istanbul; npm run clean",
     "coveralls": "npm run compile; npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js; npm run clean",
@@ -26,7 +26,7 @@
   },
   "files": [
     "/*.js",
-    "/src/",
+    "/module/",
     "/license",
     "/readme.md"
   ],
