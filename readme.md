@@ -250,14 +250,14 @@ const curry3 = require('1-liners/curry3');
 const curry4 = require('1-liners/curry4');
 
 const f = (a, b, c) => a + b + c;
-const fC = curry3(f);
-fC(1)(2)(3);  // => 6
+const fβ = curry3(f);
+fβ(1)(2)(3);  // => 6
 
 const g = (a, b, c, d) => a + b * c - d;
-const gC = curry3(g);
-curry3(g)(1)(2)(3, 4);  // => 3
-curry3(g)(1)(2, 3)(4);  // => 3
-curry3(g)(1, 2)(3)(4);  // => 3
+const gβ = curry3(g);
+gβ(1)(2)(3, 4);  // => 3
+gβ(1)(2, 3)(4);  // => 3
+gβ(1, 2)(3)(4);  // => 3
 ```
 
 ### flip
