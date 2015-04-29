@@ -242,16 +242,22 @@ map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 
 ### curry2,3,4
 
-Curry a function for 2, 3 or 4 parameters.
+Curry a function for 2, 3 or 4 groups of parameters.
 
 ```js
-var curry2 = require('1-liners/curry2');
-var curry3 = require('1-liners/curry3');
-var curry4 = require('1-liners/curry4');
+const curry2 = require('1-liners/curry2');
+const curry3 = require('1-liners/curry3');
+const curry4 = require('1-liners/curry4');
 
-let f = (a, b, c) => a + b + c;
-var fC = curry3(f);
-fC(1)(2)(3); // => 6
+const f = (a, b, c) => a + b + c;
+const fC = curry3(f);
+fC(1)(2)(3);  // => 6
+
+const g = (a, b, c, d) => a + b * c - d;
+const gC = curry3(g);
+curry3(g)(1)(2)(3, 4);  // => 3
+curry3(g)(1)(2, 3)(4);  // => 3
+curry3(g)(1, 2)(3)(4);  // => 3
 ```
 
 ### flip
