@@ -28,7 +28,7 @@ PRs are welcome!
   - [compose](#compose)
   - [pipe](#pipe)
   - [shave](#shave)
-  - [curry,2,3,4](#curry234)
+  - [curry2,3,4](#curry234)
   - [flip](#flip)
   - [apply](#apply)
   - [noop](#noop)
@@ -240,9 +240,9 @@ map(parseInt, [0, 1.1, 2.2]); // => [0, NaN, NaN]
 map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 ```
 
-### curry,2,3,4
+### curry2,3,4
 
-Curry a function for 1, 2, 3 or 4 parameters.
+Curry a function for 2, 3 or 4 parameters.
 
 ```js
 var curry2 = require('1-liners/curry2');
