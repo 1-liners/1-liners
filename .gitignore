@@ -1,5 +1,6 @@
 node_modules
+npm-debug.log
 *.js
-!src/*.js
+!module/*.js
 !tests/*.js
 coverage
