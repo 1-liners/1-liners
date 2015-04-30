@@ -302,6 +302,22 @@ var apply = require('1-liners/apply');
 apply(f, [a, b, c]) === f(a, b, c); // => true
 ```
 
+### implode
+
+Collapse a list of arguments into an array of arguments.
+
+```js
+var implode = require('1-liners/implode');
+
+const f = (a, b) => a + b;
+
+[
+	[1, 2],
+	[3, 4],
+	[5, 6],
+].map(implode(f));  // => [3, 7, 11]
+```
+
 ### noop
 
 Same as `function(){}`.
