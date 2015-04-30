@@ -315,7 +315,6 @@ window.console = {
     warn: noop,
     table: noop
 };
-
 ```
 
 ### ifElse
@@ -418,7 +417,6 @@ Same as `[1,2,3].some(GreaterThan16)`
 var some = require('1-liners/some');
 
 some(elem => elem > 16, [16,17,18]); // => true
-
 ```
 
 ### join
@@ -429,7 +427,6 @@ Same as `[1, 'liners'].join('-')`
 var join = require('1-liners/join');
 
 join('-', [1, 'liners']); // => '1-liners'
-
 ```
 
 ### split
@@ -440,7 +437,6 @@ Same as `'1-liners'.split('-')`
 var split = require('1-liners/split');
 
 split('-', '1-liners'); // => [1, 'liners']
-
 ```
 
 
