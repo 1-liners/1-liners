@@ -23,6 +23,8 @@ PRs are welcome!
   - [bitAnd](#bitand)
   - [bitOr](#bitor)
   - [xor](#xor)
+  - [min](#min)
+  - [max](#max)
   - [inc](#inc)
   - [dec](#dec)
   - [compose](#compose)
@@ -186,6 +188,26 @@ var xor = require('1-liners/xor');
 
 xor(0, 1); // => 1
 xor(1, 1); // => 0
+```
+
+### min
+
+Same as `Math.min` – but with a stable number of arguments.
+
+```js
+var min = require('1-liners/min');
+
+min(3, 6);  // => 3
+```
+
+### max
+
+Same as `Math.max` – but with a stable number of arguments.
+
+```js
+var max = require('1-liners/max');
+
+max(3, 6);  // => 6
 ```
 
 ### inc
