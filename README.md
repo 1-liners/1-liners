@@ -318,6 +318,18 @@ const f = (a, b) => a + b;
 ].map(implode(f));  // => [3, 7, 11]
 ```
 
+### explode
+
+The opposite of [implode](#implode).
+
+```js
+var explode = require('1-liners/explode');
+
+const sum = (numbers) => numbers.reduce((a, b) => a + b);
+
+explode(f)(1, 2, 3, 4);  // => 10
+```
+
 ### noop
 
 Same as `function(){}`.
