@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "develop": "nodangel --watch module --watch tests --exec 'npm test'",
+    "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
     "toc": "doctoc ./README.md",
     "mocha": "mocha --compilers js:babel/register --ui qunit ./tests",
