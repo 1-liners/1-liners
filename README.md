@@ -48,6 +48,8 @@ PRs are welcome!
   - [split](#split)
   - [property](#property)
   - [method](#method)
+  - [isTruthy](#istruthy)
+  - [isFalsy](#isfalsy)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -469,6 +471,7 @@ var split = require('1-liners/split');
 split('-', '1-liners'); // => [1, 'liners']
 ```
 
+<<<<<<< HEAD
 ### property
 
 Same as `object.property`
@@ -494,6 +497,38 @@ const object = {
 };
 
 method('add', object)(5);  // => 6
+```
+
+### isTruthy
+
+Same as `!!`.
+
+```js
+var isTruthy = require('1-liners/isTruthy');
+
+isTruthy('yes');  // => true
+isTruthy(true);   // => true
+isTruthy([]);     // => true
+
+isTruthy('');     // => false
+isTruthy(0);      // => false
+isTruthy(false);  // => false
+```
+
+### isFalsy
+
+Same as `!`.
+
+```js
+var isFalsy = require('1-liners/isFalsy');
+
+isFalsy('yes');  // => false
+isFalsy(true);   // => false
+isFalsy([]);     // => false
+
+isFalsy('');     // => true
+isFalsy(0);      // => true
+isFalsy(false);  // => true
 ```
 
 
