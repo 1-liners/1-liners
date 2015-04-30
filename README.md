@@ -198,6 +198,9 @@ Same as `Math.min` – but with a stable number of arguments.
 var min = require('1-liners/min');
 
 min(3, 6);  // => 3
+
+[3, 6, 1].reduce(min);       // => 1
+[3, 6, 1].reduce(Math.min);  // => NaN
 ```
 
 ### max
@@ -208,6 +211,9 @@ Same as `Math.max` – but with a stable number of arguments.
 var max = require('1-liners/max');
 
 max(3, 6);  // => 6
+
+[3, 6, 9].reduce(max);       // => 9
+[3, 6, 9].reduce(Math.max);  // => NaN
 ```
 
 ### inc
