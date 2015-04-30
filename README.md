@@ -44,6 +44,8 @@ PRs are welcome!
   - [some](#some)
   - [join](#join)
   - [split](#split)
+  - [isTruthy](#istruthy)
+  - [isFalsy](#isfalsy)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -437,6 +439,38 @@ Same as `'1-liners'.split('-')`
 var split = require('1-liners/split');
 
 split('-', '1-liners'); // => [1, 'liners']
+```
+
+### isTruthy
+
+Same as `!!`.
+
+```js
+var isTruthy = require('1-liners/isTruthy');
+
+isTruthy('yes');  // => true
+isTruthy(true);   // => true
+isTruthy([]);     // => true
+
+isTruthy('');     // => false
+isTruthy(0);      // => false
+isTruthy(false);  // => false
+```
+
+### isFalsy
+
+Same as `!`.
+
+```js
+var isFalsy = require('1-liners/isFalsy');
+
+isFalsy('yes');  // => false
+isFalsy(true);   // => false
+isFalsy([]);     // => false
+
+isFalsy('');     // => true
+isFalsy(0);      // => true
+isFalsy(false);  // => true
 ```
 
 
