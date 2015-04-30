@@ -1,1 +1,1 @@
-export default (f, g) => (...args) => f(g(...args));
+export default (...funcs) => funcs.reduce((f, g) => (...args) => f(g(...args)));
