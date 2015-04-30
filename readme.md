@@ -29,6 +29,7 @@ PRs are welcome!
   - [pipe](#pipe)
   - [shave](#shave)
   - [curry2,3,4](#curry234)
+  - [uncurry2,3,4](#uncurry234)
   - [flip](#flip)
   - [apply](#apply)
   - [noop](#noop)
@@ -242,22 +243,40 @@ map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 
 ### curry2,3,4
 
-Curry a function for 2, 3 or 4 groups of parameters.
+Curry a function – split its list of parameters into 2, 3 or 4 lists.
 
 ```js
 const curry2 = require('1-liners/curry2');
 const curry3 = require('1-liners/curry3');
 const curry4 = require('1-liners/curry4');
 
-const f = (a, b, c) => a + b + c;
+const f = (a, b, c) => a + b * c;
 const fβ = curry3(f);
-fβ(1)(2)(3);  // => 6
+fβ(1)(2)(3);  // => 7
 
 const g = (a, b, c, d) => a + b * c - d;
 const gβ = curry3(g);
 gβ(1)(2)(3, 4);  // => 3
 gβ(1)(2, 3)(4);  // => 3
 gβ(1, 2)(3)(4);  // => 3
+```
+
+### uncurry2,3,4
+
+Uncurry a function – collapse 2, 3 or 4 lists of parameters into one.
+
+```js
+const uncurry2 = require('1-liners/uncurry2');
+const uncurry3 = require('1-liners/uncurry3');
+const uncurry4 = require('1-liners/uncurry4');
+
+const f = (a) => (b) => (c) => a + b * c;
+const fβ = uncurry3(f);
+fβ(1, 2, 3);  // => 7
+
+const g = (a) => (b) => (c, d) => a + b * c - d;
+const gβ = uncurry3(g);
+gβ(1, 2, 3, 4);  // => 3
 ```
 
 ### flip
