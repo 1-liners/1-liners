@@ -15,7 +15,7 @@
   "scripts": {
     "develop": "nodangel --watch module --watch tests --exec 'npm test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
-    "toc": "doctoc ./readme.md",
+    "toc": "doctoc ./README.md",
     "mocha": "mocha --compilers js:babel/register --ui qunit ./tests",
     "compile": "cd ./module; babel --loose=all ./*.js --out-dir ../",
     "clean": "rm *.js",
