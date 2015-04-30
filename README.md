@@ -32,6 +32,8 @@ PRs are welcome!
   - [uncurry2,3,4](#uncurry234)
   - [flip](#flip)
   - [apply](#apply)
+  - [implode](#implode)
+  - [explode](#explode)
   - [noop](#noop)
   - [ifElse](#ifelse)
   - [map](#map)
