@@ -44,6 +44,8 @@ PRs are welcome!
   - [some](#some)
   - [join](#join)
   - [split](#split)
+  - [property](#property)
+  - [method](#method)
 - [Maintainers](#maintainers)
 - [License](#license)
 
@@ -437,6 +439,33 @@ Same as `'1-liners'.split('-')`
 var split = require('1-liners/split');
 
 split('-', '1-liners'); // => [1, 'liners']
+```
+
+### property
+
+Same as `object.property`
+
+```js
+const property = require('1-liners/property');
+
+const object = {foo: 1};
+
+property('foo', object);  // => 1
+```
+
+### method
+
+Same as `object.method(...args)`
+
+```js
+const method = require('1-liners/method');
+
+const object = {
+	base: 1,
+	add(number) { return this.base + number; },
+};
+
+method('add', object)(5);  // => 6
 ```
 
 
