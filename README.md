@@ -471,7 +471,6 @@ var split = require('1-liners/split');
 split('-', '1-liners'); // => [1, 'liners']
 ```
 
-<<<<<<< HEAD
 ### property
 
 Same as `object.property`
