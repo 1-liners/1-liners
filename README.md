@@ -11,7 +11,10 @@ PRs are welcome!
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Install](#install)
+- [Usage](#usage)
+  - [Install](#install)
+  - [Usage in es5](#usage-in-es5)
+  - [Using in es6](#using-in-es6)
 - [API](#api)
   - [length](#length)
   - [head](#head)
@@ -57,10 +60,27 @@ PRs are welcome!
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Install
+## Usage
+
+### Install
 
 ```
 $ npm install --save 1-liners
+```
+
+### Usage in es5
+
+```js
+var map = require('1-liners').map;
+var map = require('1-liners/map');
+```
+
+### Using in es6
+
+```js
+import map from '1-liners/map';
+import map from '1-liners/module/map'; // uncompiled
+import { map, filter } from '1-liners';
 ```
 
 
