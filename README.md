@@ -31,7 +31,6 @@ PRs are welcome!
   - [curry2,3,4](#curry234)
   - [uncurry2,3,4](#uncurry234)
   - [flip](#flip)
-  - [apply](#apply)
   - [implode](#implode)
   - [explode](#explode)
   - [noop](#noop)
@@ -292,16 +291,6 @@ var f = (a, b) => a / b;
 
 flip(f)(2, 6);        // => 3
 flip(flip(f))(6, 2);  // => 3
-```
-
-### apply
-
-Same as `func(...[a, b /*,..*/])`.
-
-```js
-var apply = require('1-liners/apply');
-
-apply(f, [a, b, c]) === f(a, b, c); // => true
 ```
 
 ### implode
