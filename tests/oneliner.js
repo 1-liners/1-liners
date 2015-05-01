@@ -1,13 +1,16 @@
 import { equal } from 'assert';
 import { join } from 'path';
+import getModules from '../utils/getModules';
 import { readdir, readFile } from 'fs';
 
 test('Should be a oneliner', (done) =>
-	readdir(join(__dirname, '..', 'module'), (err, files) => {
+	getModules((err, modules) => {
 		if (err) throw err;
 		let countTests = 0;
 
-		files.forEach((file) => {
+		modules.forEach((file) => {
+			if (file === 'index.js') { return }
+
 			readFile(join(__dirname, '..', 'module', file), { encoding: 'utf8', flag: 'r' }, (err, data) => {
 				if (err) throw err;
 				let count = 0;
@@ -18,7 +21,7 @@ test('Should be a oneliner', (done) =>
 				equal(count, 1, `${file} should be a oneliner`);
 
 				countTests++;
-				if (countTests >= files.length) done();
+				if (countTests >= modules.length -1 ) done();
 			})
 		});
 	})
