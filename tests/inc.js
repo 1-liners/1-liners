@@ -1,7 +1,4 @@
 import { equal } from 'assert';
 import inc from '../inc';
 
-test('#inc', () => {
-	equal(inc(0), 1);
-	equal(inc(0,5), 5);
-});
+test('#inc', () => equal(inc(0), 1));

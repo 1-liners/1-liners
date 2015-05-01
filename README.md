@@ -31,6 +31,7 @@ PRs are welcome!
   - [min](#min)
   - [max](#max)
   - [inc](#inc)
+  - [sum](#sum)
   - [dec](#dec)
   - [compose](#compose)
   - [pipe](#pipe)
@@ -244,13 +245,22 @@ max(3, 6);  // => 6
 
 ### inc
 
-Increment a value by one (default) or more.
+Increment a value by one.
 
 ```js
 var inc = require('1-liners/inc');
 
 inc(1); // => 2
-inc(2, 8); // => 10
+```
+
+### sum
+
+Same as `a + b`.
+
+```js
+var sum = require('1-liners/sum');
+
+sum(2, 8); // => 10
 ```
 
 ### dec
