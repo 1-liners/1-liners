@@ -19,6 +19,7 @@ PRs are welcome!
   - [length](#length)
   - [head](#head)
   - [tail](#tail)
+  - [take](#take)
   - [nth](#nth)
   - [and](#and)
   - [or](#or)
@@ -114,6 +115,16 @@ Returns the tail of an array
 var tail = require('1-liners/tail');
 
 tail([1, 2, 3]); // => [2, 3]
+```
+
+### take
+
+Take n items of an array. Same as `arr.slice(0, n)`.
+
+```js
+var take = require('1-liners/take');
+
+take(2, [1, 2, 3]); // => [1, 2]
 ```
 
 ### nth
