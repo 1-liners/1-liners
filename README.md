@@ -245,7 +245,7 @@ max(3, 6);  // => 6
 
 ### inc
 
-Increment a value by one.
+Same as `a + 1`
 
 ```js
 var inc = require('1-liners/inc');
@@ -253,25 +253,54 @@ var inc = require('1-liners/inc');
 inc(1); // => 2
 ```
 
-### sum
+### plus
 
 Same as `a + b`.
 
 ```js
-var sum = require('1-liners/sum');
+var plus = require('1-liners/plus');
 
-sum(2, 8); // => 10
+plus(2, 8); // => 10
 ```
 
 ### dec
 
-Decrement a value by one (default) or more.
+Same as `a - 1`
 
 ```js
 var dec = require('1-liners/dec');
 
 dec(1); // => 0
-dec(10, 2); // => 8
+```
+
+### minus
+
+Same as `a - b`
+
+```js
+var minus = require('1-liners/minus');
+
+minus(3, 2); // => 1
+```
+
+### times
+
+Same as `a * b`
+
+```js
+var times = require('1-liners/times');
+
+times(3, 2); // => 6
+```
+
+### by
+
+Same as `a / b`
+
+```js
+var by = require('1-liners/by');
+
+by(6, 2); // => 3
 ```
 
 ### compose

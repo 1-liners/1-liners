@@ -1,1 +1,1 @@
-export default (val, decrement=1) => val - decrement;
+export default (val) => val - 1;
