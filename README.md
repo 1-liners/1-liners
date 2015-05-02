@@ -20,6 +20,7 @@ PRs are welcome!
   - [head](#head)
   - [tail](#tail)
   - [take](#take)
+  - [takeWhile](#takewhile)
   - [nth](#nth)
   - [and](#and)
   - [or](#or)
@@ -125,6 +126,16 @@ Take n items of an array. Same as `arr.slice(0, n)`.
 var take = require('1-liners/take');
 
 take(2, [1, 2, 3]); // => [1, 2]
+```
+
+### takeWhile
+
+Take items of an array while they fulfill a predicate.
+
+```js
+var takeWhile = require('1-liners/takeWhile');
+
+takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
 
 ### nth
