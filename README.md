@@ -22,6 +22,8 @@ PRs are welcome!
   - [take](#take)
   - [takeWhile](#takewhile)
   - [nth](#nth)
+  - [equal](#equal)
+  - [looseEqual](#looseequal)
   - [and](#and)
   - [or](#or)
   - [not](#not)
@@ -149,6 +151,30 @@ var nth = require('1-liners/nth');
 nth(1, [1, 2, 3]); // => 2
 ```
 
+
+### equal
+
+Same as `a === b`.
+
+```js
+var equal = require('1-liners/equal');
+
+equal(true, true); // => true
+equal(false, true); // => false
+equal(1, true); // => false
+```
+
+### looseEqual
+
+Same as `a == b`.
+
+```js
+var looseEqual = require('1-liners/looseEqual');
+
+looseEqual(true, true); // => true
+looseEqual(false, true); // => false
+looseEqual(1, true); // => true
+```
 
 ### and
 
