@@ -40,7 +40,8 @@ PRs are welcome!
   - [curry2,3,4](#curry234)
   - [uncurry2,3,4](#uncurry234)
   - [flip](#flip)
-  - [apply](#apply)
+  - [implode](#implode)
+  - [explode](#explode)
   - [noop](#noop)
   - [ifElse](#ifelse)
   - [map](#map)
@@ -368,14 +369,32 @@ flip(f)(2, 6);        // => 3
 flip(flip(f))(6, 2);  // => 3
 ```
 
-### apply
+### implode
 
-Same as `func(...[a, b /*,..*/])`.
+Collapse a list of arguments into an array of arguments.
 
 ```js
-var apply = require('1-liners/apply');
+var implode = require('1-liners/implode');
 
-apply(f, [a, b, c]) === f(a, b, c); // => true
+const f = (a, b) => a + b;
+
+[
+	[1, 2],
+	[3, 4],
+	[5, 6],
+].map(implode(f));  // => [3, 7, 11]
+```
+
+### explode
+
+The opposite of [implode](#implode).
+
+```js
+var explode = require('1-liners/explode');
+
+const sum = (numbers) => numbers.reduce((a, b) => a + b);
+
+explode(sum)(1, 2, 3, 4);  // => 10
 ```
 
 ### noop
