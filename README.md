@@ -318,7 +318,7 @@ var explode = require('1-liners/explode');
 
 const sum = (numbers) => numbers.reduce((a, b) => a + b);
 
-explode(f)(1, 2, 3, 4);  // => 10
+explode(sum)(1, 2, 3, 4);  // => 10
 ```
 
 ### noop
