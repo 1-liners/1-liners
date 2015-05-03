@@ -1,5 +1,4 @@
 import and from './and';
-import apply from './apply';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import compose from './compose';
@@ -8,16 +7,20 @@ import curry2 from './curry2';
 import curry3 from './curry3';
 import curry4 from './curry4';
 import dec from './dec';
+import equal from './equal';
 import every from './every';
+import explode from './explode';
 import filter from './filter';
 import flip from './flip';
 import head from './head';
 import ifElse from './ifElse';
+import implode from './implode';
 import inc from './inc';
 import isFalsy from './isFalsy';
 import isTruthy from './isTruthy';
 import join from './join';
 import length from './length';
+import looseEqual from './looseEqual';
 import map from './map';
 import max from './max';
 import method from './method';
@@ -38,6 +41,9 @@ import shave from './shave';
 import some from './some';
 import split from './split';
 import tail from './tail';
+import take from './take';
+import takeUntil from './takeUntil';
+import takeWhile from './takeWhile';
 import uncurry2 from './uncurry2';
 import uncurry3 from './uncurry3';
 import uncurry4 from './uncurry4';
@@ -45,7 +51,6 @@ import xor from './xor';
 
 export default {
   and,
-  apply,
   bitAnd,
   bitOr,
   compose,
@@ -54,16 +59,20 @@ export default {
   curry3,
   curry4,
   dec,
+  equal,
   every,
+  explode,
   filter,
   flip,
   head,
   ifElse,
+  implode,
   inc,
   isFalsy,
   isTruthy,
   join,
   length,
+  looseEqual,
   map,
   max,
   method,
@@ -84,6 +93,9 @@ export default {
   some,
   split,
   tail,
+  take,
+  takeUntil,
+  takeWhile,
   uncurry2,
   uncurry3,
   uncurry4,
