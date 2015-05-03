@@ -21,6 +21,7 @@ PRs are welcome!
   - [tail](#tail)
   - [take](#take)
   - [takeWhile](#takewhile)
+  - [takeUntil](#takeuntil)
   - [nth](#nth)
   - [equal](#equal)
   - [looseEqual](#looseequal)
@@ -139,6 +140,16 @@ Take items of an array while they fulfill a predicate.
 var takeWhile = require('1-liners/takeWhile');
 
 takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
+```
+
+### takeUntil
+
+Take items of an array until they fulfill a predicate.
+
+```js
+var takeUntil = require('1-liners/takeUntil');
+
+takeUntil(i => i % 2 === 1, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
 
 ### nth
