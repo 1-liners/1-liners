@@ -1,6 +1,7 @@
 import and from './and';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
+import by from './by';
 import compose from './compose';
 import curry2 from './curry2';
 import curry3 from './curry3';
@@ -25,6 +26,7 @@ import map from './map';
 import max from './max';
 import method from './method';
 import min from './min';
+import minus from './minus';
 import nand from './nand';
 import noop from './noop';
 import nor from './nor';
@@ -32,6 +34,7 @@ import not from './not';
 import nth from './nth';
 import or from './or';
 import pipe from './pipe';
+import plus from './plus';
 import property from './property';
 import reduce from './reduce';
 import reduceFrom from './reduceFrom';
@@ -44,6 +47,7 @@ import tail from './tail';
 import take from './take';
 import takeUntil from './takeUntil';
 import takeWhile from './takeWhile';
+import times from './times';
 import uncurry2 from './uncurry2';
 import uncurry3 from './uncurry3';
 import uncurry4 from './uncurry4';
@@ -53,6 +57,7 @@ export {
   and,
   bitAnd,
   bitOr,
+  by,
   compose,
   curry2,
   curry3,
@@ -77,6 +82,7 @@ export {
   max,
   method,
   min,
+  minus,
   nand,
   noop,
   nor,
@@ -84,6 +90,7 @@ export {
   nth,
   or,
   pipe,
+  plus,
   property,
   reduce,
   reduceFrom,
@@ -96,6 +103,7 @@ export {
   take,
   takeUntil,
   takeWhile,
+  times,
   uncurry2,
   uncurry3,
   uncurry4,
