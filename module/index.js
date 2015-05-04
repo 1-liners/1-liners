@@ -48,7 +48,7 @@ import uncurry3 from './uncurry3';
 import uncurry4 from './uncurry4';
 import xor from './xor';
 
-export default {
+export {
   and,
   bitAnd,
   bitOr,
