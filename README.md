@@ -365,14 +365,14 @@ const curry3 = require('1-liners/curry3');
 const curry4 = require('1-liners/curry4');
 
 const f = (a, b, c) => a + b * c;
-const fβ = curry3(f);
-fβ(1)(2)(3);  // => 7
+const fλ = curry3(f);
+fλ(1)(2)(3);  // => 7
 
 const g = (a, b, c, d) => a + b * c - d;
-const gβ = curry3(g);
-gβ(1)(2)(3, 4);  // => 3
-gβ(1)(2, 3)(4);  // => 3
-gβ(1, 2)(3)(4);  // => 3
+const gλ = curry3(g);
+gλ(1)(2)(3, 4);  // => 3
+gλ(1)(2, 3)(4);  // => 3
+gλ(1, 2)(3)(4);  // => 3
 ```
 
 ### uncurry2,3,4
@@ -385,12 +385,12 @@ const uncurry3 = require('1-liners/uncurry3');
 const uncurry4 = require('1-liners/uncurry4');
 
 const f = (a) => (b) => (c) => a + b * c;
-const fβ = uncurry3(f);
-fβ(1, 2, 3);  // => 7
+const fλ = uncurry3(f);
+fλ(1, 2, 3);  // => 7
 
 const g = (a) => (b) => (c, d) => a + b * c - d;
-const gβ = uncurry3(g);
-gβ(1, 2, 3, 4);  // => 3
+const gλ = uncurry3(g);
+gλ(1, 2, 3, 4);  // => 3
 ```
 
 ### flip
