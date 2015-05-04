@@ -41,6 +41,7 @@ PRs are welcome!
   - [pipe](#pipe)
   - [shave](#shave)
   - [curry2,3,4](#curry234)
+  - [curryRight2](#curryright2)
   - [uncurry2,3,4](#uncurry234)
   - [flip](#flip)
   - [implode](#implode)
@@ -373,6 +374,22 @@ const gβ = curry3(g);
 gβ(1)(2)(3, 4);  // => 3
 gβ(1)(2, 3)(4);  // => 3
 gβ(1, 2)(3)(4);  // => 3
+```
+
+### curryRight2
+
+Curry a function from the right – split its parameters into 2 lists. Apply the second list of parameters first, without changing the order within the lists.
+
+```js
+const curryRight2 = require('1-liners/curryRight2');
+
+const g = (a, b, c, d) => a + b * c - d;
+g(1, 2, 3, 4);  // => 3
+
+const gλ = curryRight2(g);
+gλ(4)(1, 2, 3);  // => 3
+gλ(3, 4)(1, 2);  // => 3
+gλ(2, 3, 4)(1);  // => 3
 ```
 
 ### uncurry2,3,4
