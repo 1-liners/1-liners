@@ -36,7 +36,11 @@ PRs are welcome!
   - [min](#min)
   - [max](#max)
   - [inc](#inc)
+  - [plus](#plus)
   - [dec](#dec)
+  - [minus](#minus)
+  - [times](#times)
+  - [by](#by)
   - [compose](#compose)
   - [pipe](#pipe)
   - [shave](#shave)
@@ -305,24 +309,62 @@ max(3, 6);  // => 6
 
 ### inc
 
-Increment a value by one (default) or more.
+Same as `a + 1`
 
 ```js
 var inc = require('1-liners/inc');
 
 inc(1); // => 2
-inc(2, 8); // => 10
+```
+
+### plus
+
+Same as `a + b`.
+
+```js
+var plus = require('1-liners/plus');
+
+plus(2, 8); // => 10
 ```
 
 ### dec
 
-Decrement a value by one (default) or more.
+Same as `a - 1`
 
 ```js
 var dec = require('1-liners/dec');
 
 dec(1); // => 0
-dec(10, 2); // => 8
+```
+
+### minus
+
+Same as `a - b`
+
+```js
+var minus = require('1-liners/minus');
+
+minus(3, 2); // => 1
+```
+
+### times
+
+Same as `a * b`
+
+```js
+var times = require('1-liners/times');
+
+times(3, 2); // => 6
+```
+
+### by
+
+Same as `a / b`
+
+```js
+var by = require('1-liners/by');
+
+by(6, 2); // => 3
 ```
 
 ### compose
