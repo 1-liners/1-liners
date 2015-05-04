@@ -6,6 +6,7 @@ import curry1 from './curry1';
 import curry2 from './curry2';
 import curry3 from './curry3';
 import curry4 from './curry4';
+import curryRight2 from './curryRight2';
 import dec from './dec';
 import equal from './equal';
 import every from './every';
@@ -58,6 +59,7 @@ export default {
   curry2,
   curry3,
   curry4,
+  curryRight2,
   dec,
   equal,
   every,
