@@ -33,7 +33,7 @@ const createExport = reduce(compose, [
 getModules((err, modules) => {
 	if (err) throw err;
 	let imports = createImports(modules);
-	let exportDefault = `export default {\n  ${createExport(modules)}\n};`;
+	let exportDefault = `export {\n  ${createExport(modules)}\n};`;
 	writeFile('./module/index.js', `${imports}\n\n${exportDefault}`, function(err) {
 		if (err) {
 			console.log(err);
