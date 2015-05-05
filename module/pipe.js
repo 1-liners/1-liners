@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/pipe
  * 
- * @desc Pipe arguments through functions.
+ * @description
+ *
+ * Pipe arguments through functions.
  * 
  * @example
  * 

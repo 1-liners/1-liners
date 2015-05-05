@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/noop
  * 
- * @desc Same as `function(){}`.
+ * @description
+ *
+ * Same as `function(){}`.
  * 
  * @example
  * 

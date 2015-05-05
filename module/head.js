@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/head
  * 
- * @desc Returns the first item of an array.
+ * @description
+ *
+ * Returns the first item of an array.
  * 
  * @example
  *

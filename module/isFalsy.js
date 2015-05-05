@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/isFalsy
  *
- * @desc Same as `!`.
+ * @description
+ *
+ * Same as `!`.
  *
  * @example
  *

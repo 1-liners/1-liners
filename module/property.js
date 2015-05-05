@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/property
  * 
- * @desc Same as `object.property`
+ * @description
+ *
+ * Same as `object.property`
  * 
  * @example
  * 

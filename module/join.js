@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/join
  * 
- * @desc Same as `[1, 'liners'].join('-')`
+ * @description
+ *
+ * Same as `[1, 'liners'].join('-')`
  * 
  * @example
  * 

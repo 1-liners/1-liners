@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/implode
  * 
- * @desc Collapse a list of arguments into an array of arguments.
+ * @description
+ *
+ * Collapse a list of arguments into an array of arguments.
  * 
  * @example
  * 

@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/and
  * 
- * @desc Same as `a && b`.
+ * @description
+ *
+ * Same as `a && b`.
  * 
  * @example
  * 

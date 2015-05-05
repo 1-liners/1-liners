@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/reduceFromRight
  * 
- * @desc Same as `[1, 2, 3].reduceFromRight(sub, 1)`.
+ * @description
+ *
+ * Same as `[1, 2, 3].reduceFromRight(sub, 1)`.
  * 
  * @example
  * 

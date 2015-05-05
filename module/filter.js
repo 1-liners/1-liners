@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/filter
  * 
- * @desc Same as `[1, 2, 3].filter(isOdd)`.
+ * @description
+ *
+ * Same as `[1, 2, 3].filter(isOdd)`.
  * 
  * @example
  * 

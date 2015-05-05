@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/shave
  * 
- * @desc Shave ensures that a function is called with n arguments.
+ * @description
+ *
+ * Shave ensures that a function is called with n arguments.
  * 
  * @example
  * 

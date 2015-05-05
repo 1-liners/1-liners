@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/map
  * 
- * @desc Same as `[1, 2, 3].map(Math.sqrt)`.
+ * @description
+ *
+ * Same as `[1, 2, 3].map(Math.sqrt)`.
  * 
  * @example
  * 

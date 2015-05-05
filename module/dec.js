@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/dec
  * 
- * @desc Same as `a - 1`
+ * @description
+ *
+ * Same as `a - 1`
  * 
  * @example
  * 

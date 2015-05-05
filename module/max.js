@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/max
  * 
- * @desc Same as `Math.max` – but with a stable number of arguments.
+ * @description
+ *
+ * Same as `Math.max` – but with a stable number of arguments.
  * 
  * @example
  * 

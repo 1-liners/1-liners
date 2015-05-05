@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/every
  * 
- * @desc Same as `[1,2,3].every(GreaterThan16)`.
+ * @description
+ *
+ * Same as `[1,2,3].every(GreaterThan16)`.
  * 
  * @example
  * 

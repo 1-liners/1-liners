@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/compose
  * 
- * @desc Compose a new function from two given functions.
+ * @description
+ *
+ * Compose a new function from two given functions.
  * 
  * @example
  * 

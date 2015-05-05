@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/take
  * 
- * @desc Take n items of an array. Same as `arr.slice(0, n)`.
+ * @description
+ *
+ * Take n items of an array. Same as `arr.slice(0, n)`.
  * 
  * @example
  * 

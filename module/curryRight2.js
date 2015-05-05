@@ -1,7 +1,9 @@
 /**
  * @module 1-liners/curryRight2
  * 
- * @desc Curry a function from the right – split its parameters into 2 lists. Apply the second list of parameters first, without changing the order within the lists.
+ * @description
+ *
+ * Curry a function from the right – split its parameters into 2 lists. Apply the second list of parameters first, without changing the order within the lists.
  * 
  * @example
  * 
