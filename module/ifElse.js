@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/ifElse
  * 
- * Creates a function which calls the first function if the predicate is true
+ * @desc Creates a function which calls the first function if the predicate is true
  * and the second function if the predicate is false.
  * 
  * @example

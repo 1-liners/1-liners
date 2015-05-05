@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/reduce
  * 
- * Same as `[1, 2, 3].reduce(sum)`.
+ * @desc Same as `[1, 2, 3].reduce(sum)`.
  * 
  * @example
  * 

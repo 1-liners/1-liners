@@ -1,7 +1,7 @@
 /**
  * @module length
  *
- * Returns the length of an array.
+ * @desc Returns the length of an array.
  *
  * @example
  *

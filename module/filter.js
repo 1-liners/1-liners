@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/filter
  * 
- * Same as `[1, 2, 3].filter(isOdd)`.
+ * @desc Same as `[1, 2, 3].filter(isOdd)`.
  * 
  * @example
  * 

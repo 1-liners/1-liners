@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/split
  * 
- * Same as `'1-liners'.split('-')`
+ * @desc Same as `'1-liners'.split('-')`
  * 
  * @example
  * 

@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/by
  * 
- * Same as `a / b`
+ * @desc Same as `a / b`
  * 
  * @example
  * 

@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/some
  * 
- * Same as `[1,2,3].some(GreaterThan16)`
+ * @desc Same as `[1,2,3].some(GreaterThan16)`
  * 
  * @example
  * 

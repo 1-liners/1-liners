@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/min
  * 
- * Same as `Math.min` – but with a stable number of arguments.
+ * @desc Same as `Math.min` – but with a stable number of arguments.
  * 
  * @example
  * 

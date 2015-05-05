@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/not
  * 
- * Same as `!a`.
+ * @desc Same as `!a`.
  * 
  * @example
  * 

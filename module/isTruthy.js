@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/isTruthy
  * 
- * Same as `!!`.
+ * @desc Same as `!!`.
  * 
  * @example
  * 

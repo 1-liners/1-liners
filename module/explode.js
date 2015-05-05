@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/explode
  * 
- * The opposite of [implode](#implode).
+ * @desc The opposite of [implode](#implode).
  * 
  * @example
  * 

@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/flip
  * 
- * Flip a function’s arguments.
+ * @desc Flip a function’s arguments.
  * 
  * @example
  * 

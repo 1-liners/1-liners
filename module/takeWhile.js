@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/takeWhile
  * 
- * Take items of an array while they fulfill a predicate.
+ * @desc Take items of an array while they fulfill a predicate.
  * 
  * @example
  * 

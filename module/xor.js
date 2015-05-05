@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/xor
  *
- * Same as `(x && !y) || (!x && y)`
+ * @desc Same as `(x && !y) || (!x && y)`
  *
  * @example
  *

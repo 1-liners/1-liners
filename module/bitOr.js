@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/bitOr
  * 
- * Same as `a | b`.
+ * @desc Same as `a | b`.
  * 
  * @example
  * 

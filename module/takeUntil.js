@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/takeUntil
  * 
- * Take items of an array until they fulfill a predicate.
+ * @desc Take items of an array until they fulfill a predicate.
  * 
  * @example
  * 

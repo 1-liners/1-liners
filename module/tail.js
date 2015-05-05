@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/tail
  * 
- * Returns the tail of an array
+ * @desc Returns the tail of an array
  * 
  * @example
  *

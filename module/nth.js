@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/nth
  * 
- * Returns the nth item of an array.
+ * @desc Returns the nth item of an array.
  * 
  * @example
  * 

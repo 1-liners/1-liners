@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/noop
  * 
- * Same as `function(){}`.
+ * @desc Same as `function(){}`.
  * 
  * @example
  * 

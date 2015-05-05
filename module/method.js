@@ -1,7 +1,7 @@
 /**
  * @module 1-liners/method
  * 
- * Same as `object.method(...args)`
+ * @desc Same as `object.method(...args)`
  * 
  * @example
  * 
