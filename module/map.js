@@ -9,5 +9,5 @@
  * 
  * 	map(Math.sqrt, [9, 25]); // => [3, 5]
  * 
- **/
+ */
 export default (map, arr) => arr.map(map);

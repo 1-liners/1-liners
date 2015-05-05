@@ -21,5 +21,5 @@
  * 
  * 	words('Hello ES2015'); // => ['Hello', 'ES2015']
  * 
- **/
+ */
 export default (pred, ifDo, elseDo=()=>{}) => (...args) => pred(...args) ? ifDo(...args) : elseDo(...args);

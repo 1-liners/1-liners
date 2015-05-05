@@ -9,5 +9,5 @@
  * 
  * 	filter(isOdd, [1, 2, 3]); // => [1, 3]
  * 
- **/
+ */
 export default (filter, arr) => arr.filter(filter);

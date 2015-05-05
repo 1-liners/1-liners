@@ -11,5 +11,5 @@
  * 
  * 	explode(sum)(1, 2, 3, 4);  // => 10
  * 
- **/
+ */
 export default (func) => (...args) => func(args);

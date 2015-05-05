@@ -9,5 +9,5 @@
  * 
  * 	dec(1); // => 0
  * 
- **/
+ */
 export default (val) => val - 1;

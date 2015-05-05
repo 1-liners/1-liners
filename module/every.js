@@ -9,5 +9,5 @@
  * 
  * 	every(elem => elem > 16, [16,17,18]); // => false
  * 
- **/
+ */
 export default (every, arr) => arr.every(every);

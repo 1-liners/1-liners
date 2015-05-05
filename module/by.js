@@ -9,5 +9,5 @@
  * 
  * 	by(6, 2); // => 3
  * 
- **/
+ */
 export default (a, b) => a / b;

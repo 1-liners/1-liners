@@ -11,5 +11,5 @@
  * 
  * 	property('foo', object);  // => 1
  * 
- **/
+ */
 export default (property, object) => object[property];

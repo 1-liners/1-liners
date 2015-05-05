@@ -11,5 +11,5 @@
  * 	looseEqual(false, true); // => false
  * 	looseEqual(1, true); // => true
  * 
- **/
+ */
 export default (x, y) => x == y;

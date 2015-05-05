@@ -9,5 +9,5 @@
  * 
  * 	reduce(sum, [1, 2, 3]); // => 6
  * 
- **/
+ */
 export default (reduce, arr) => arr.reduce(reduce);

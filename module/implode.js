@@ -15,5 +15,5 @@
  * 		[5, 6],
  * 	].map(implode(f));  // => [3, 7, 11]
  * 
- **/
+ */
 export default (func) => (args) => func(...args);

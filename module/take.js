@@ -9,5 +9,5 @@
  * 
  * 	take(2, [1, 2, 3]); // => [1, 2]
  * 
- **/
+ */
 export default (take, arr) => arr.slice(0, take);

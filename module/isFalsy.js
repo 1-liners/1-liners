@@ -15,5 +15,5 @@
  *   isFalsy(0);      // => true
  *   isFalsy(false);  // => true
  *
- **/
+ */
 export default (x) => !x;

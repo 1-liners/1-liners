@@ -14,5 +14,5 @@
  * 
  * 	method('add', object)(5);  // => 6
  * 
- **/
+ */
 export default (method, object) => (...args) => object[method](...args);

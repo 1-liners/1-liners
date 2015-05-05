@@ -10,5 +10,5 @@
  * 	nor(0, 0); // => true
  * 	nor(1, 0); // => false
  * 
- **/
+ */
 export default (x, y) => !(x || y);

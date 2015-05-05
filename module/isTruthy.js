@@ -15,5 +15,5 @@
  * 	isTruthy(0);      // => false
  * 	isTruthy(false);  // => false
  * 
- **/
+ */
 export default (x) => !!x;

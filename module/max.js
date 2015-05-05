@@ -12,5 +12,5 @@
  * 	[3, 6, 9].reduce(max);       // => 9
  * 	[3, 6, 9].reduce(Math.max);  // => NaN
  * 
- **/
+ */
 export default (a, b) => ((a > b) ? a : b);

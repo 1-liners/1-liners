@@ -10,5 +10,5 @@
  * 	nand(0, 0); // => true
  * 	nand(1, 1); // => false
  * 
- **/
+ */
 export default (x, y) => !(x && y);

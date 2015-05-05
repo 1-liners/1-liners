@@ -9,5 +9,5 @@
  * 
  * 	join('-', [1, 'liners']); // => '1-liners'
  * 
- **/
+ */
 export default (superglue, arr) => arr.join(superglue);

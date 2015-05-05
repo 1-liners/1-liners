@@ -9,5 +9,5 @@
  * 
  * 	reduceFromRight(sub, 1, [1, 2, 3]); // => -5
  * 
- **/
+ */
 export default (reduce, initial, arr) => arr.reduceRight(reduce, initial);

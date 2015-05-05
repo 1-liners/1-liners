@@ -10,5 +10,5 @@
  * 	not(true); // => false
  * 	not(false); // => true
  * 
- **/
+ */
 export default (a) => !a;

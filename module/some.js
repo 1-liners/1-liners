@@ -9,5 +9,5 @@
  * 
  * 	some(elem => elem > 16, [16,17,18]); // => true
  * 
- **/
+ */
 export default (some, arr) => arr.some(some);

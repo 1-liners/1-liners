@@ -11,5 +11,5 @@
  * 	or(false, true); // => true
  * 	or(false, false); // => false
  * 
- **/
+ */
 export default (a, b) => a || b;

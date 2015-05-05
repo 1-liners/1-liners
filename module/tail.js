@@ -9,5 +9,5 @@
  *   
  *   tail([1, 2, 3]); // => [2, 3]
  * 
- **/
+ */
 export default (arr) => arr.slice(1);

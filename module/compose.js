@@ -9,5 +9,5 @@
  * 
  * 	compose(f, g)(1, 2) === f(g(1, 2));
  * 
- **/
+ */
 export default (f, g) => (...args) => f(g(...args));

@@ -10,5 +10,5 @@
  * 	nth(1, [1, 2, 3]); // => 2
  * 
 
- **/
+ */
 export default (n, arr) => arr[n];

@@ -12,5 +12,5 @@
  * 	[3, 6, 1].reduce(min);       // => 1
  * 	[3, 6, 1].reduce(Math.min);  // => NaN
  * 
- **/
+ */
 export default (a, b) => ((a > b) ? b : a);

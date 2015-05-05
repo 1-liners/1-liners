@@ -9,5 +9,5 @@
  * 
  * 	times(3, 2); // => 6
  * 
- **/
+ */
 export default (a, b) => a * b;

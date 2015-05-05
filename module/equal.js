@@ -11,5 +11,5 @@
  * 	equal(false, true); // => false
  * 	equal(1, true); // => false
  * 
- **/
+ */
 export default (x, y) => x === y;

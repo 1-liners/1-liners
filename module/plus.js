@@ -9,5 +9,5 @@
  * 
  * 	plus(2, 8); // => 10
  * 
- **/
+ */
 export default (a, b) => a + b;

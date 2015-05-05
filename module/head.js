@@ -9,5 +9,5 @@
  * 
  * 	head([1, 2, 3]); // => 1
  * 
- **/
+ */
 export default (arr) => arr[0];

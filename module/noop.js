@@ -14,5 +14,5 @@
  * 			table: noop
  * 	};
  * 
- **/
+ */
 export default () => {};

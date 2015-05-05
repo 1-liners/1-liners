@@ -9,5 +9,5 @@
  * 
  * 	split('-', '1-liners'); // => [1, 'liners']
  * 
- **/
+ */
 export default (split, str) => str.split(split);

@@ -10,5 +10,5 @@
  * 	and(true, true); // => true
  * 	and(false, true); // => false
  * 
- **/
+ */
 export default (x, y) => x && y;
