@@ -1,1 +1,19 @@
+/**
+ * @module 1-liners/isTruthy
+ * 
+ * Same as `!!`.
+ * 
+ * @example
+ * 
+ * 	var isTruthy = require('1-liners/isTruthy');
+ * 
+ * 	isTruthy('yes');  // => true
+ * 	isTruthy(true);   // => true
+ * 	isTruthy([]);     // => true
+ * 
+ * 	isTruthy('');     // => false
+ * 	isTruthy(0);      // => false
+ * 	isTruthy(false);  // => false
+ * 
+ **/
 export default (x) => !!x;
