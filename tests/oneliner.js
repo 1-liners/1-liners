@@ -15,6 +15,7 @@ test('Should be a oneliner', (done) =>
 				if (err) throw err;
 				let count = 0;
 				let lines = data.split(/\n/).forEach((l) => {
+					if (l.startsWith(' *') || l.startsWith('/')) return;
 					if (l.length > 0) count++;
 				});
 
