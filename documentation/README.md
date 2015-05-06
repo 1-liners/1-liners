@@ -1,4 +1,4 @@
-&nbsp;<p align="center"><img src="../logo.png" width="382px" height="125px" /></p>&nbsp;
+&nbsp;<p align="center"><img src="https://cdn.rawgit.com/stoeffel/1-liners/66775c8/logo.png" width="382px" height="125px" /></p>&nbsp;
 # Documentation
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
