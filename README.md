@@ -1,7 +1,7 @@
 
 &nbsp;
 
-<p align="center"><img src="./logo.png" width="382px" height="125px" /></p>
+<p align="center"><img src="https://cdn.rawgit.com/stoeffel/1-liners/66775c8/logo.png" width="382px" height="125px" /></p>
 
 &nbsp;
 
