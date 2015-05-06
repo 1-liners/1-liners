@@ -47,6 +47,7 @@ PRs are welcome!
   - [by](#by)
   - [compose](#compose)
   - [pipe](#pipe)
+  - [converge](#converge)
   - [shave](#shave)
   - [curry2,3,4](#curry234)
   - [curryRight2](#curryright2)
@@ -390,6 +391,17 @@ var pipe = require('1-liners/pipe');
 
 pipe(f, g)(1, 2) === g(f(1, 2));
 ```
+
+### converge
+
+Converge two functions into one.
+
+```js
+var converge = require('1-liners/converge');
+
+converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
+```
+
 
 ### shave
 
