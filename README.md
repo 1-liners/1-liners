@@ -1,4 +1,4 @@
-# 1-liners
+<p align="center"><img src="./logo.png" width="382px" height="125px" /></p>
 
 [![Coverage Status](https://coveralls.io/repos/stoeffel/1-liners/badge.svg?branch=master)](https://coveralls.io/r/stoeffel/1-liners?branch=master)
 [![Build Status](https://travis-ci.org/stoeffel/1-liners.svg?branch=master)](https://travis-ci.org/stoeffel/1-liners)
