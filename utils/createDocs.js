@@ -1,7 +1,7 @@
 import { parseComments } from 'dox';
 import getModules from './getModules';
 import { readFileSync, writeFile } from 'fs';
-import curry2 from '../module/curry2';
+import curry from '../module/curry';
 import map from '../module/map';
 import join from '../module/join';
 import head from '../module/head';
@@ -12,9 +12,9 @@ import reduce from '../module/reduce';
 import filter from '../module/filter';
 
 const composeAll = (...funcs) => reduce(compose, funcs);
-const mapλ = curry2(map);
-const filterλ = curry2(filter);
-const joinλ = curry2(join);
+const mapλ = curry(map);
+const filterλ = curry(filter);
+const joinλ = curry(join);
 
 const filterIndex = filterλ(module => module !== 'index.js');
 
