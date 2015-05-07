@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "precommit": "npm test; npm run docs;",
+    "precommit": "npm test && npm run docs",
 
     "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
