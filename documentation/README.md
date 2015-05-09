@@ -11,7 +11,8 @@
 - [by](#by)
 - [compose](#compose)
 - [converge](#converge)
-- [curryRight2](#curryright2)
+- [curry](#curry)
+- [curryRight](#curryright)
 - [dec](#dec)
 - [equal](#equal)
 - [every](#every)
@@ -53,6 +54,8 @@
 - [takeUntil](#takeuntil)
 - [takeWhile](#takewhile)
 - [times](#times)
+- [uncurry](#uncurry)
+- [uncurry3](#uncurry3)
 - [xor](#xor)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -139,32 +142,50 @@ Converge two functions into one.
 <div align="right"><sup>Source: <code> (f, g, h) => (...args) => f(g(...args), h(...args));</code></sup></div>
 
 
+### curry 
 
-:zap: NO DOCS FOR  (f) => (...a) => (...b) => f(...a, ...b); !!!
+Curry a function – split its list of parameters into 2 lists.
+
+```js
+ import curry from '1-liners/curry';
+ import reduce from '1-liners/reduce';
+ import compose from '1-liners/compose';
+
+ // You can use reduce and compose to create curry3,4 and so on.
+ const curry3 = compose(curry, curry);
+ const curry4 = reduce(compose, [curry, curry, curry]);
+
+ const f = (a, b, c, d) => a * b * c * d;
+ const fβ = curry(f);  // ~= curry2
+ const fγ = curry3(f); // ~= curry3
+ const fδ = curry4(f); // ~= curry4
+
+ f(1, 2, 3, 4)  === 24
+
+ fβ(1)(2, 3, 4) === 24
+ fβ(1, 2)(3, 4) === 24
+ fβ(1, 2, 3)(4) === 24
+
+ fγ(1)(2)(3, 4) === 24
+ fγ(1)(2, 3)(4) === 24
+
+ fδ(1)(2)(3)(4) === 24
+```
+
+<div align="right"><sup>Source: <code> (f) => (...a) => (...b) => f(...a, ...b);</code></sup></div>
 
 
-
-
-:zap: NO DOCS FOR  (f) => (...a) => (...b) => (...c) => f(...a, ...b, ...c); !!!
-
-
-
-
-:zap: NO DOCS FOR  (f) => (...a) => (...b) => (...c) => (...d) => f(...a, ...b, ...c, ...d); !!!
-
-
-
-### curryRight2 
+### curryRight 
 
 Curry a function from the right – split its parameters into 2 lists. Apply the second list of parameters first, without changing the order within the lists.
 
 ```js
-const curryRight2 = require('1-liners/curryRight2');
+import curryRight from '1-liners/curryRight';
 
 const g = (a, b, c, d) => a + b * c - d;
 g(1, 2, 3, 4);  // => 3
 
-const gλ = curryRight2(g);
+const gλ = curryRight(g);
 gλ(4)(1, 2, 3);  // => 3
 gλ(3, 4)(1, 2);  // => 3
 gλ(2, 3, 4)(1);  // => 3
@@ -769,19 +790,42 @@ times(3, 2); // => 6
 <div align="right"><sup>Source: <code> (a, b) => a * b;</code></sup></div>
 
 
+### uncurry 
 
-:zap: NO DOCS FOR  (f) => (a, ...rest) => f(a)(...rest); !!!
+Uncurry a function – collapse 2 lists of parameters into one.
+
+```js
+ import uncurry from '1-liners/uncurry';
+
+ const f = (a) => (b) => a + b;
+ const fβ = uncurry(f);
+ fβ(1, 2);  // => 3
+
+ const g = (a) => (b, c) => a + b + c
+ const gβ = uncurry(g);
+ gβ(1, 2, 3);  // => 6
+```
+
+<div align="right"><sup>Source: <code> (f) => (a, ...rest) => f(a)(...rest);</code></sup></div>
 
 
+### uncurry3 
 
+Uncurry a function – collapse 3 lists of parameters into one.
 
-:zap: NO DOCS FOR  (f) => (a, b, ...rest) => f(a)(b)(...rest); !!!
+```js
+ import uncurry3 from '1-liners/uncurry3';
 
+ const f = (a) => (b) => (c) => a + b + c;
+ const fβ = uncurry3(f);
+ fβ(1, 2, 3);  // => 6
 
+ const g = (a) => (b) => (c, d) => a + b + c + d;
+ const gβ = uncurry3(g);
+ gβ(1, 2, 3, 4);  // => 10
+```
 
-
-:zap: NO DOCS FOR  (f) => (a, b, c, ...rest) => f(a)(b)(c)(...rest); !!!
-
+<div align="right"><sup>Source: <code> (f) => (a, ...rest) => f(a)(...rest);</code></sup></div>
 
 
 ### xor 

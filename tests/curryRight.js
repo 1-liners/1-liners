@@ -1,9 +1,9 @@
 import {equal} from 'assert';
-import curryRight2 from '../curryRight2';
+import curryRight from '../curryRight';
 
-test('#curryRight2', () => {
+test('#curryRight', () => {
 	const g = (a, b, c, d) => a + b * c - d;
-	const gλ = curryRight2(g);
+	const gλ = curryRight(g);
 
 	equal(
 		gλ(4)(1, 2, 3),

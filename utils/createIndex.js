@@ -3,16 +3,16 @@ import {
 	writeFile
 }
 from 'fs';
-import curry2 from '../module/curry2';
+import curry from '../module/curry';
 import map from '../module/map';
 import join from '../module/join';
 import compose from '../module/compose';
 import reduce from '../module/reduce';
 import filter from '../module/filter';
 
-const mapλ = curry2(map);
-const joinλ = curry2(join);
-const filterλ = curry2(filter);
+const mapλ = curry(map);
+const joinλ = curry(join);
+const filterλ = curry(filter);
 
 const removeExt = mapλ(module => module.replace('.js', ''));
 const filterIndex = filterλ(module => module !== 'index.js');
