@@ -19,6 +19,7 @@
 - [explode](#explode)
 - [filter](#filter)
 - [flip](#flip)
+- [forEach](#foreach)
 - [head](#head)
 - [ifElse](#ifelse)
 - [implode](#implode)
@@ -277,6 +278,19 @@ flip(flip(f))(6, 2);  // => 3
 ```
 
 <div align="right"><sup>Source: <code> (f) => (...args) => f(...args.reverse());</code></sup></div>
+
+
+### forEach 
+
+Same as `[1, 2, 3].forEach(Math.sqrt)`.
+
+```js
+var forEach = require('1-liners/forEach');
+
+forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item: 25"
+```
+
+<div align="right"><sup>Source: <code> (forEach, arr) => arr.forEach(forEach);</code></sup></div>
 
 
 ### head 
@@ -825,7 +839,7 @@ Uncurry a function – collapse 3 lists of parameters into one.
  gβ(1, 2, 3, 4);  // => 10
 ```
 
-<div align="right"><sup>Source: <code> (f) => (a, ...rest) => f(a)(...rest);</code></sup></div>
+<div align="right"><sup>Source: <code> (f) => (a, b, ...rest) => f(a)(b)(...rest);</code></sup></div>
 
 
 ### xor 
