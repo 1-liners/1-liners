@@ -18,4 +18,4 @@
  *  gβ(1, 2, 3, 4);  // => 10
  *
  */
-export default (f) => (a, ...rest) => f(a)(...rest);
+export default (f) => (a, b, ...rest) => f(a)(b)(...rest);
