@@ -9,6 +9,7 @@
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
 - [by](#by)
+- [combine](#combine)
 - [compose](#compose)
 - [converge](#converge)
 - [curry](#curry)
@@ -115,6 +116,30 @@ by(6, 2); // => 3
 ```
 
 <div align="right"><sup>Source: <code> (a, b) => a / b;</code></sup></div>
+
+
+### combine 
+
+Splits a string (Splitchars: _, -, \s, ., or camelcase) and combines it using a combound function.
+This is usefull to create functions like `camelize`, `dasherize`...
+
+```js
+var combine = require('1-liners/combine');
+var curry = require('1-liners/curry');
+
+ const camelize = curry(combine)((a, b) => a + b.toUpperCase());
+ const dasherize = curry(combine)((a, b) => `${a}-${b}`);
+
+ camelize('hello-world');   // => "helloWorld"
+ camelize('hello_world');   // => "helloWorld"
+ camelize('hello.world');   // => "helloWorld"
+ camelize('hello - world'); // => "helloWorld"
+ camelize('hello + world'); // => "hello + world"
+ dasherize('hello world'); // => "hello-world"
+ dasherize('helloWorld'); // => "hello-world"
+```
+
+<div align="right"><sup>Source: <code> (combine, str) => str.replace(/(\w[_-\s\.]+\w|[a-z][A-Z])/g, sub => combine(sub.slice(0,1), sub.slice(-1)));</code></sup></div>
 
 
 ### compose 
