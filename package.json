@@ -1,6 +1,6 @@
 {
   "name": "1-liners",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Useful oneliners and shorthand functions",
   "license": "MIT",
   "repository": "stoeffel/1-liners",
@@ -14,7 +14,6 @@
   },
   "scripts": {
     "precommit": "npm test && npm run docs",
-
     "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
     "docs": "babel-node ./utils/createDocs.js; npm run toc;",
