@@ -23,6 +23,7 @@ import join from './join';
 import length from './length';
 import looseEqual from './looseEqual';
 import map from './map';
+import match from './match';
 import max from './max';
 import method from './method';
 import min from './min';
@@ -40,6 +41,7 @@ import reduce from './reduce';
 import reduceFrom from './reduceFrom';
 import reduceFromRight from './reduceFromRight';
 import reduceRight from './reduceRight';
+import replace from './replace';
 import shave from './shave';
 import some from './some';
 import split from './split';
@@ -78,6 +80,7 @@ export {
   length,
   looseEqual,
   map,
+  match,
   max,
   method,
   min,
@@ -95,6 +98,7 @@ export {
   reduceFrom,
   reduceFromRight,
   reduceRight,
+  replace,
   shave,
   some,
   split,
