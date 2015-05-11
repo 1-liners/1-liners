@@ -30,6 +30,7 @@
 - [length](#length)
 - [looseEqual](#looseequal)
 - [map](#map)
+- [match](#match)
 - [max](#max)
 - [method](#method)
 - [min](#min)
@@ -47,6 +48,7 @@
 - [reduceFrom](#reducefrom)
 - [reduceFromRight](#reducefromright)
 - [reduceRight](#reduceright)
+- [replace](#replace)
 - [shave](#shave)
 - [some](#some)
 - [split](#split)
@@ -455,6 +457,19 @@ map(Math.sqrt, [9, 25]); // => [3, 5]
 <div align="right"><sup>Source: <code> (map, arr) => arr.map(map);</code></sup></div>
 
 
+### match 
+
+Same as `haystack.match(needle)`.
+
+```js
+var match = require('1-liners/match');
+
+match(/\d+/g, 'Items: 3,2'); // => ["3", "2"]
+```
+
+<div align="right"><sup>Source: <code> (needle, haystack) => haystack.match(needle);</code></sup></div>
+
+
 ### max 
 
 Same as `Math.max` – but with a stable number of arguments.
@@ -697,6 +712,20 @@ reduceRight(sub, [1, 2, 3]); // => -4
 ```
 
 <div align="right"><sup>Source: <code> (reduce, arr) => arr.reduceRight(reduce);</code></sup></div>
+
+
+### replace 
+
+Same as `haystack.replace(needle, replace)`.
+
+```js
+var replace = require('1-liners/replace');
+
+replace(/\d+/g, sub => `"${sub}"`, 'Items: 3,2'); // => Items: "3","2"
+replace(':', '=', 'Items: 3,2'); // => Items= 3,2
+```
+
+<div align="right"><sup>Source: <code> (needle, replace, haystack) => haystack.replace(needle, replace);</code></sup></div>
 
 
 ### shave 
