@@ -488,7 +488,7 @@ max(3, 6);  // => 6
 
 ### method 
 
-Same as `object.method(...args)`
+Same as `object[method](...args)`
 
 ```js
 const method = require('1-liners/method');
@@ -649,7 +649,7 @@ plus(2, 8); // => 10
 
 ### property 
 
-Same as `object.property`
+Same as `object[property]`
 
 ```js
 const property = require('1-liners/property');
