@@ -306,7 +306,7 @@ var head = require('1-liners/head');
 head([1, 2, 3]); // => 1
 ```
 
-<div align="right"><sup>Source: <code> (arr) => arr[0];</code></sup></div>
+<div align="right"><sup>Source: <code> ([head,]) => head;</code></sup></div>
 
 
 ### ifElse 
@@ -794,7 +794,7 @@ Returns the tail of an array
  tail([1, 2, 3]); // => [2, 3]
 ```
 
-<div align="right"><sup>Source: <code> (arr) => arr.slice(1);</code></sup></div>
+<div align="right"><sup>Source: <code> ([,...tail]) => tail;</code></sup></div>
 
 
 ### take 
