@@ -3,16 +3,16 @@ import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import by from './by';
 import compose from './compose';
-import curry2 from './curry2';
-import curry3 from './curry3';
-import curry4 from './curry4';
-import curryRight2 from './curryRight2';
+import converge from './converge';
+import curry from './curry';
+import curryRight from './curryRight';
 import dec from './dec';
 import equal from './equal';
 import every from './every';
 import explode from './explode';
 import filter from './filter';
 import flip from './flip';
+import forEach from './forEach';
 import head from './head';
 import ifElse from './ifElse';
 import implode from './implode';
@@ -48,9 +48,8 @@ import take from './take';
 import takeUntil from './takeUntil';
 import takeWhile from './takeWhile';
 import times from './times';
-import uncurry2 from './uncurry2';
+import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
-import uncurry4 from './uncurry4';
 import xor from './xor';
 
 export {
@@ -59,16 +58,16 @@ export {
   bitOr,
   by,
   compose,
-  curry2,
-  curry3,
-  curry4,
-  curryRight2,
+  converge,
+  curry,
+  curryRight,
   dec,
   equal,
   every,
   explode,
   filter,
   flip,
+  forEach,
   head,
   ifElse,
   implode,
@@ -104,8 +103,7 @@ export {
   takeUntil,
   takeWhile,
   times,
-  uncurry2,
+  uncurry,
   uncurry3,
-  uncurry4,
   xor
 };
