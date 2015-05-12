@@ -34,6 +34,7 @@ import nor from './nor';
 import not from './not';
 import nth from './nth';
 import or from './or';
+import pick from './pick';
 import pipe from './pipe';
 import plus from './plus';
 import property from './property';
@@ -91,6 +92,7 @@ export {
   not,
   nth,
   or,
+  pick,
   pipe,
   plus,
   property,
