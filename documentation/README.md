@@ -657,7 +657,8 @@ Same as `a + b`.
 ```js
 var plus = require('1-liners/plus');
 
-plus(2, 8); // => 10
+plus(2, 8);      // => 10
+plus('a', 'b');  // => 'ab'
 ```
 
 <div align="right"><sup>Source: <code> (a, b) => a + b;</code></sup></div>
