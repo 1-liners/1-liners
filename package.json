@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "precommit": "npm test && npm run docs",
+    "precommit": "npm run docs && git add documentation && npm run create-index && git add module/index.js",
     "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
     "docs": "babel-node ./utils/createDocs.js; npm run toc;",
