@@ -50,6 +50,7 @@
 - [reduceFromRight](#reducefromright)
 - [reduceRight](#reduceright)
 - [replace](#replace)
+- [shallowClone](#shallowclone)
 - [shave](#shave)
 - [some](#some)
 - [split](#split)
@@ -743,6 +744,27 @@ replace(':', '=', 'Items: 3,2'); // => Items= 3,2
 ```
 
 <div align="right"><sup>Source: <code> (needle, replace, haystack) => haystack.replace(needle, replace);</code></sup></div>
+
+
+### shallowClone 
+
+Copy all properties of an object into a new plain object.
+
+```js
+import shallowClone from '1-liners/shallowClone';
+
+const source = {
+	value: 'value',
+	reference: /reference/,
+};
+const target = shallowClone(source);
+
+target === source                      // => false
+target.value === source.value          // => true
+target.reference === source.reference  // => true
+```
+
+<div align="right"><sup>Source: <code> (object) => Object.assign({}, object);</code></sup></div>
 
 
 ### shave 

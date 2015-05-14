@@ -43,6 +43,7 @@ import reduceFrom from './reduceFrom';
 import reduceFromRight from './reduceFromRight';
 import reduceRight from './reduceRight';
 import replace from './replace';
+import shallowClone from './shallowClone';
 import shave from './shave';
 import some from './some';
 import split from './split';
@@ -101,6 +102,7 @@ export {
   reduceFromRight,
   reduceRight,
   replace,
+  shallowClone,
   shave,
   some,
   split,
