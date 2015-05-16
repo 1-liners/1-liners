@@ -20,6 +20,7 @@ import inc from './inc';
 import isFalsy from './isFalsy';
 import isNull from './isNull';
 import isTruthy from './isTruthy';
+import isUnknown from './isUnknown';
 import join from './join';
 import length from './length';
 import looseEqual from './looseEqual';
@@ -80,6 +81,7 @@ export {
   isFalsy,
   isNull,
   isTruthy,
+  isUnknown,
   join,
   length,
   looseEqual,

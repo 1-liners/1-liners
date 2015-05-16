@@ -27,6 +27,7 @@
 - [isFalsy](#isfalsy)
 - [isNull](#isnull)
 - [isTruthy](#istruthy)
+- [isUnknown](#isunknown)
 - [join](#join)
 - [length](#length)
 - [looseEqual](#looseequal)
@@ -421,6 +422,25 @@ isTruthy(false);  // => false
 ```
 
 <div align="right"><sup>Source: <code> (x) => !!x;</code></sup></div>
+
+
+### isUnknown 
+
+Same as `== null`.
+
+```js
+var isUnknown = require('1-liners/isUnknown');
+
+isUnknown(null);             // => true
+isUnknown(undefined);        // => true
+
+isUnknown(false);            // => false
+isUnknown('');               // => false
+isUnknown(NaN);              // => false
+isUnknown(/anything else/);  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => (value == null);</code></sup></div>
 
 
 ### join 
