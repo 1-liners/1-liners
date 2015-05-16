@@ -20,6 +20,7 @@ import inc from './inc';
 import isFalsy from './isFalsy';
 import isNull from './isNull';
 import isTruthy from './isTruthy';
+import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
 import length from './length';
@@ -81,6 +82,7 @@ export {
   isFalsy,
   isNull,
   isTruthy,
+  isUndefined,
   isUnknown,
   join,
   length,
