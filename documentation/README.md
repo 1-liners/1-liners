@@ -25,7 +25,10 @@
 - [implode](#implode)
 - [inc](#inc)
 - [isFalsy](#isfalsy)
+- [isNull](#isnull)
 - [isTruthy](#istruthy)
+- [isUndefined](#isundefined)
+- [isUnknown](#isunknown)
 - [join](#join)
 - [length](#length)
 - [looseEqual](#looseequal)
@@ -386,6 +389,23 @@ Same as `!`.
 <div align="right"><sup>Source: <code> (x) => !x;</code></sup></div>
 
 
+### isNull 
+
+Same as `=== null`.
+
+```js
+var isNull = require('1-liners/isNull');
+
+isNull(null);             // => true
+
+isNull(undefined);        // => false
+isNull(NaN);              // => false
+isNull('anything else');  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => (value === null);</code></sup></div>
+
+
 ### isTruthy 
 
 Same as `!!`.
@@ -403,6 +423,43 @@ isTruthy(false);  // => false
 ```
 
 <div align="right"><sup>Source: <code> (x) => !!x;</code></sup></div>
+
+
+### isUndefined 
+
+Returns `true` if a value or reference is `undefined`.
+
+```js
+var isUndefined = require('1-liners/isUndefined');
+
+isUndefined(undefined);        // => true
+
+isUndefined(null);             // => false
+isUndefined(false);            // => false
+isUndefined(NaN);              // => false
+isUndefined('anything else');  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => (value === void 0);</code></sup></div>
+
+
+### isUnknown 
+
+Same as `== null`.
+
+```js
+var isUnknown = require('1-liners/isUnknown');
+
+isUnknown(null);             // => true
+isUnknown(undefined);        // => true
+
+isUnknown(false);            // => false
+isUnknown('');               // => false
+isUnknown(NaN);              // => false
+isUnknown(/anything else/);  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => (value == null);</code></sup></div>
 
 
 ### join 
