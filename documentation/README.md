@@ -25,6 +25,7 @@
 - [implode](#implode)
 - [inc](#inc)
 - [isFalsy](#isfalsy)
+- [isNull](#isnull)
 - [isTruthy](#istruthy)
 - [join](#join)
 - [length](#length)
@@ -384,6 +385,23 @@ Same as `!`.
 ```
 
 <div align="right"><sup>Source: <code> (x) => !x;</code></sup></div>
+
+
+### isNull 
+
+Same as `=== null`.
+
+```js
+var isNull = require('1-liners/isNull');
+
+isNull(null);             // => true
+
+isNull(undefined);        // => false
+isNull(NaN);              // => false
+isNull('anything else');  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => (value === null);</code></sup></div>
 
 
 ### isTruthy 

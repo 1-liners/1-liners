@@ -18,6 +18,7 @@ import ifElse from './ifElse';
 import implode from './implode';
 import inc from './inc';
 import isFalsy from './isFalsy';
+import isNull from './isNull';
 import isTruthy from './isTruthy';
 import join from './join';
 import length from './length';
@@ -77,6 +78,7 @@ export {
   implode,
   inc,
   isFalsy,
+  isNull,
   isTruthy,
   join,
   length,
