@@ -427,7 +427,7 @@ isTruthy(false);  // => false
 
 ### isUndefined 
 
-Same as `=== null`.
+Returns `true` if a value or reference is `undefined`.
 
 ```js
 var isUndefined = require('1-liners/isUndefined');

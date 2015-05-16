@@ -3,7 +3,7 @@
  *
  * @description
  *
- * Same as `=== null`.
+ * Returns `true` if a value or reference is `undefined`.
  *
  * @example
  *
