@@ -80,7 +80,7 @@ and(true, true); // => true
 and(false, true); // => false
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => x && y;</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; x &amp;&amp; y;</code></sup></div>
 
 
 ### bitAnd 
@@ -94,7 +94,7 @@ bitAnd(1, 2); // => 0
 bitAnd(2, 2); // => 2
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => x & y;</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; x &amp; y;</code></sup></div>
 
 
 ### bitOr 
@@ -108,7 +108,7 @@ bitOr(0, 1); // => 1
 bitOr(1, 1); // => 1
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => x | y;</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; x | y;</code></sup></div>
 
 
 ### by 
@@ -121,7 +121,7 @@ var by = require('1-liners/by');
 by(6, 2); // => 3
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => a / b;</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; a / b;</code></sup></div>
 
 
 ### compose 
@@ -134,7 +134,7 @@ var compose = require('1-liners/compose');
 compose(f, g)(1, 2) === f(g(1, 2));
 ```
 
-<div align="right"><sup>Source: <code> (f, g) => (...args) => f(g(...args));</code></sup></div>
+<div align="right"><sup>Source: <code> (f, g) =&gt; (...args) =&gt; f(g(...args));</code></sup></div>
 
 
 ### converge 
@@ -147,7 +147,7 @@ Converge two functions into one.
  converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
 ```
 
-<div align="right"><sup>Source: <code> (f, g, h) => (...args) => f(g(...args), h(...args));</code></sup></div>
+<div align="right"><sup>Source: <code> (f, g, h) =&gt; (...args) =&gt; f(g(...args), h(...args));</code></sup></div>
 
 
 ### curry 
@@ -180,7 +180,7 @@ Curry a function – split its list of parameters into 2 lists.
  fδ(1)(2)(3)(4) === 24
 ```
 
-<div align="right"><sup>Source: <code> (f) => (...a) => (...b) => f(...a, ...b);</code></sup></div>
+<div align="right"><sup>Source: <code> (f) =&gt; (...a) =&gt; (...b) =&gt; f(...a, ...b);</code></sup></div>
 
 
 ### curryRight 
@@ -199,7 +199,7 @@ gλ(3, 4)(1, 2);  // => 3
 gλ(2, 3, 4)(1);  // => 3
 ```
 
-<div align="right"><sup>Source: <code> (f) => (...a) => (...b) => f(...b, ...a);</code></sup></div>
+<div align="right"><sup>Source: <code> (f) =&gt; (...a) =&gt; (...b) =&gt; f(...b, ...a);</code></sup></div>
 
 
 ### dec 
@@ -212,7 +212,7 @@ var dec = require('1-liners/dec');
 dec(1); // => 0
 ```
 
-<div align="right"><sup>Source: <code> (val) => val - 1;</code></sup></div>
+<div align="right"><sup>Source: <code> (val) =&gt; val - 1;</code></sup></div>
 
 
 ### equal 
@@ -227,7 +227,7 @@ equal(false, true); // => false
 equal(1, true); // => false
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => x === y;</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; x === y;</code></sup></div>
 
 
 ### every 
@@ -240,7 +240,7 @@ var every = require('1-liners/every');
 every(elem => elem > 16, [16,17,18]); // => false
 ```
 
-<div align="right"><sup>Source: <code> (every, arr) => arr.every(every);</code></sup></div>
+<div align="right"><sup>Source: <code> (every, arr) =&gt; arr.every(every);</code></sup></div>
 
 
 ### explode 
@@ -255,7 +255,7 @@ const sum = (numbers) => numbers.reduce((a, b) => a + b);
 explode(sum)(1, 2, 3, 4);  // => 10
 ```
 
-<div align="right"><sup>Source: <code> (func) => (...args) => func(args);</code></sup></div>
+<div align="right"><sup>Source: <code> (func) =&gt; (...args) =&gt; func(args);</code></sup></div>
 
 
 ### filter 
@@ -268,7 +268,7 @@ var filter = require('1-liners/filter');
 filter(isOdd, [1, 2, 3]); // => [1, 3]
 ```
 
-<div align="right"><sup>Source: <code> (filter, arr) => arr.filter(filter);</code></sup></div>
+<div align="right"><sup>Source: <code> (filter, arr) =&gt; arr.filter(filter);</code></sup></div>
 
 
 ### flip 
@@ -284,7 +284,7 @@ flip(f)(2, 6);        // => 3
 flip(flip(f))(6, 2);  // => 3
 ```
 
-<div align="right"><sup>Source: <code> (f) => (...args) => f(...args.reverse());</code></sup></div>
+<div align="right"><sup>Source: <code> (f) =&gt; (...args) =&gt; f(...args.reverse());</code></sup></div>
 
 
 ### forEach 
@@ -297,7 +297,7 @@ var forEach = require('1-liners/forEach');
 forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item: 25"
 ```
 
-<div align="right"><sup>Source: <code> (forEach, arr) => arr.forEach(forEach);</code></sup></div>
+<div align="right"><sup>Source: <code> (forEach, arr) =&gt; arr.forEach(forEach);</code></sup></div>
 
 
 ### head 
@@ -310,7 +310,7 @@ var head = require('1-liners/head');
 head([1, 2, 3]); // => 1
 ```
 
-<div align="right"><sup>Source: <code> ([head,]) => head;</code></sup></div>
+<div align="right"><sup>Source: <code> ([head,]) =&gt; head;</code></sup></div>
 
 
 ### ifElse 
@@ -335,7 +335,7 @@ let words = ifElse((str) => typeof str === 'string', (str) => str.split(' '));
 words('Hello ES2015'); // => ['Hello', 'ES2015']
 ```
 
-<div align="right"><sup>Source: <code> (pred, ifDo, elseDo=()=>{}) => (...args) => pred(...args) ? ifDo(...args) : elseDo(...args);</code></sup></div>
+<div align="right"><sup>Source: <code> (pred, ifDo, elseDo=()=&gt;{}) =&gt; (...args) =&gt; pred(...args) ? ifDo(...args) : elseDo(...args);</code></sup></div>
 
 
 ### implode 
@@ -354,7 +354,7 @@ const f = (a, b) => a + b;
 ].map(implode(f));  // => [3, 7, 11]
 ```
 
-<div align="right"><sup>Source: <code> (func) => (args) => func(...args);</code></sup></div>
+<div align="right"><sup>Source: <code> (func) =&gt; (args) =&gt; func(...args);</code></sup></div>
 
 
 ### inc 
@@ -367,7 +367,7 @@ var inc = require('1-liners/inc');
 inc(1); // => 2
 ```
 
-<div align="right"><sup>Source: <code> (val) => val + 1;</code></sup></div>
+<div align="right"><sup>Source: <code> (val) =&gt; val + 1;</code></sup></div>
 
 
 ### isFalsy 
@@ -386,7 +386,7 @@ Same as `!`.
  isFalsy(false);  // => true
 ```
 
-<div align="right"><sup>Source: <code> (x) => !x;</code></sup></div>
+<div align="right"><sup>Source: <code> (x) =&gt; !x;</code></sup></div>
 
 
 ### isNull 
@@ -403,7 +403,7 @@ isNull(NaN);              // => false
 isNull('anything else');  // => false
 ```
 
-<div align="right"><sup>Source: <code> (value) => (value === null);</code></sup></div>
+<div align="right"><sup>Source: <code> (value) =&gt; (value === null);</code></sup></div>
 
 
 ### isTruthy 
@@ -422,7 +422,7 @@ isTruthy(0);      // => false
 isTruthy(false);  // => false
 ```
 
-<div align="right"><sup>Source: <code> (x) => !!x;</code></sup></div>
+<div align="right"><sup>Source: <code> (x) =&gt; !!x;</code></sup></div>
 
 
 ### isUndefined 
@@ -440,7 +440,7 @@ isUndefined(NaN);              // => false
 isUndefined('anything else');  // => false
 ```
 
-<div align="right"><sup>Source: <code> (value) => (value === void 0);</code></sup></div>
+<div align="right"><sup>Source: <code> (value) =&gt; (value === void 0);</code></sup></div>
 
 
 ### isUnknown 
@@ -459,7 +459,7 @@ isUnknown(NaN);              // => false
 isUnknown(/anything else/);  // => false
 ```
 
-<div align="right"><sup>Source: <code> (value) => (value == null);</code></sup></div>
+<div align="right"><sup>Source: <code> (value) =&gt; (value == null);</code></sup></div>
 
 
 ### join 
@@ -472,7 +472,7 @@ var join = require('1-liners/join');
 join('-', [1, 'liners']); // => '1-liners'
 ```
 
-<div align="right"><sup>Source: <code> (superglue, arr) => arr.join(superglue);</code></sup></div>
+<div align="right"><sup>Source: <code> (superglue, arr) =&gt; arr.join(superglue);</code></sup></div>
 
 
 ### length 
@@ -485,7 +485,7 @@ Returns the length of an array.
  length([0, 1, 2]); // => 3
 ```
 
-<div align="right"><sup>Source: <code> (arr) => arr.length;</code></sup></div>
+<div align="right"><sup>Source: <code> (arr) =&gt; arr.length;</code></sup></div>
 
 
 ### looseEqual 
@@ -500,7 +500,7 @@ looseEqual(false, true); // => false
 looseEqual(1, true); // => true
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => x == y;</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; x == y;</code></sup></div>
 
 
 ### map 
@@ -513,7 +513,7 @@ var map = require('1-liners/map');
 map(Math.sqrt, [9, 25]); // => [3, 5]
 ```
 
-<div align="right"><sup>Source: <code> (map, arr) => arr.map(map);</code></sup></div>
+<div align="right"><sup>Source: <code> (map, arr) =&gt; arr.map(map);</code></sup></div>
 
 
 ### match 
@@ -526,7 +526,7 @@ var match = require('1-liners/match');
 match(/\d+/g, 'Items: 3,2'); // => ["3", "2"]
 ```
 
-<div align="right"><sup>Source: <code> (needle, haystack) => haystack.match(needle);</code></sup></div>
+<div align="right"><sup>Source: <code> (needle, haystack) =&gt; haystack.match(needle);</code></sup></div>
 
 
 ### max 
@@ -542,7 +542,7 @@ max(3, 6);  // => 6
 [3, 6, 9].reduce(Math.max);  // => NaN
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => ((a > b) ? a : b);</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; ((a &gt; b) ? a : b);</code></sup></div>
 
 
 ### method 
@@ -560,7 +560,7 @@ const object = {
 method('add', object)(5);  // => 6
 ```
 
-<div align="right"><sup>Source: <code> (method, object) => (...args) => object[method](...args);</code></sup></div>
+<div align="right"><sup>Source: <code> (method, object) =&gt; (...args) =&gt; object[method](...args);</code></sup></div>
 
 
 ### min 
@@ -576,7 +576,7 @@ min(3, 6);  // => 3
 [3, 6, 1].reduce(Math.min);  // => NaN
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => ((a > b) ? b : a);</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; ((a &gt; b) ? b : a);</code></sup></div>
 
 
 ### minus 
@@ -589,7 +589,7 @@ var minus = require('1-liners/minus');
 minus(3, 2); // => 1
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => a - b;</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; a - b;</code></sup></div>
 
 
 ### nand 
@@ -603,7 +603,7 @@ nand(0, 0); // => true
 nand(1, 1); // => false
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => !(x && y);</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; !(x &amp;&amp; y);</code></sup></div>
 
 
 ### noop 
@@ -621,7 +621,7 @@ window.console = {
 };
 ```
 
-<div align="right"><sup>Source: <code> () => {};</code></sup></div>
+<div align="right"><sup>Source: <code> () =&gt; {};</code></sup></div>
 
 
 ### nor 
@@ -635,7 +635,7 @@ nor(0, 0); // => true
 nor(1, 0); // => false
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => !(x || y);</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; !(x || y);</code></sup></div>
 
 
 ### not 
@@ -649,7 +649,7 @@ not(true); // => false
 not(false); // => true
 ```
 
-<div align="right"><sup>Source: <code> (a) => !a;</code></sup></div>
+<div align="right"><sup>Source: <code> (a) =&gt; !a;</code></sup></div>
 
 
 ### nth 
@@ -662,7 +662,7 @@ var nth = require('1-liners/nth');
 nth(1, [1, 2, 3]); // => 2
 ```
 
-<div align="right"><sup>Source: <code> (n, arr) => arr[n];</code></sup></div>
+<div align="right"><sup>Source: <code> (n, arr) =&gt; arr[n];</code></sup></div>
 
 
 ### or 
@@ -677,7 +677,7 @@ or(false, true); // => true
 or(false, false); // => false
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => a || b;</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; a || b;</code></sup></div>
 
 
 ### pick 
@@ -692,7 +692,7 @@ const object = {foo: 1, bar: 2, baz: 3};
 pick(['foo', 'baz'], object);  // => {foo: 1, baz: 3}
 ```
 
-<div align="right"><sup>Source: <code> (properties, object) => Object.assign({}, ...properties.map(key => ({[key]: object[key]})));</code></sup></div>
+<div align="right"><sup>Source: <code> (properties, object) =&gt; Object.assign({}, ...properties.map(key =&gt; ({[key]: object[key]})));</code></sup></div>
 
 
 ### pipe 
@@ -705,7 +705,7 @@ var pipe = require('1-liners/pipe');
 pipe(f, g)(1, 2) === g(f(1, 2));
 ```
 
-<div align="right"><sup>Source: <code> (f, g) => (...args) => g(f(...args));</code></sup></div>
+<div align="right"><sup>Source: <code> (f, g) =&gt; (...args) =&gt; g(f(...args));</code></sup></div>
 
 
 ### plus 
@@ -719,7 +719,7 @@ plus(2, 8);      // => 10
 plus('a', 'b');  // => 'ab'
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => a + b;</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; a + b;</code></sup></div>
 
 
 ### property 
@@ -734,7 +734,7 @@ const object = {foo: 1};
 property('foo', object);  // => 1
 ```
 
-<div align="right"><sup>Source: <code> (property, object) => object[property];</code></sup></div>
+<div align="right"><sup>Source: <code> (property, object) =&gt; object[property];</code></sup></div>
 
 
 ### reduce 
@@ -747,7 +747,7 @@ var reduce = require('1-liners/reduce');
 reduce(sum, [1, 2, 3]); // => 6
 ```
 
-<div align="right"><sup>Source: <code> (reduce, arr) => arr.reduce(reduce);</code></sup></div>
+<div align="right"><sup>Source: <code> (reduce, arr) =&gt; arr.reduce(reduce);</code></sup></div>
 
 
 ### reduceFrom 
@@ -760,7 +760,7 @@ var reduceFrom = require('1-liners/reduceFrom');
 reduceFrom(sum, 8, [1, 2, 3]); // => 2
 ```
 
-<div align="right"><sup>Source: <code> (reduce, initial, arr) => arr.reduce(reduce, initial);</code></sup></div>
+<div align="right"><sup>Source: <code> (reduce, initial, arr) =&gt; arr.reduce(reduce, initial);</code></sup></div>
 
 
 ### reduceFromRight 
@@ -773,7 +773,7 @@ var reduceFromRight = require('1-liners/reduceFromRight');
 reduceFromRight(sub, 1, [1, 2, 3]); // => -5
 ```
 
-<div align="right"><sup>Source: <code> (reduce, initial, arr) => arr.reduceRight(reduce, initial);</code></sup></div>
+<div align="right"><sup>Source: <code> (reduce, initial, arr) =&gt; arr.reduceRight(reduce, initial);</code></sup></div>
 
 
 ### reduceRight 
@@ -786,7 +786,7 @@ var reduceRight = require('1-liners/reduceRight');
 reduceRight(sub, [1, 2, 3]); // => -4
 ```
 
-<div align="right"><sup>Source: <code> (reduce, arr) => arr.reduceRight(reduce);</code></sup></div>
+<div align="right"><sup>Source: <code> (reduce, arr) =&gt; arr.reduceRight(reduce);</code></sup></div>
 
 
 ### replace 
@@ -800,7 +800,7 @@ replace(/\d+/g, sub => `"${sub}"`, 'Items: 3,2'); // => Items: "3","2"
 replace(':', '=', 'Items: 3,2'); // => Items= 3,2
 ```
 
-<div align="right"><sup>Source: <code> (needle, replace, haystack) => haystack.replace(needle, replace);</code></sup></div>
+<div align="right"><sup>Source: <code> (needle, replace, haystack) =&gt; haystack.replace(needle, replace);</code></sup></div>
 
 
 ### shallowClone 
@@ -821,7 +821,7 @@ target.value === source.value          // => true
 target.reference === source.reference  // => true
 ```
 
-<div align="right"><sup>Source: <code> (object) => Object.assign({}, object);</code></sup></div>
+<div align="right"><sup>Source: <code> (object) =&gt; Object.assign({}, object);</code></sup></div>
 
 
 ### shave 
@@ -835,7 +835,7 @@ map(parseInt, [0, 1.1, 2.2]); // => [0, NaN, NaN]
 map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 ```
 
-<div align="right"><sup>Source: <code> (shave, f) => (...args) => f(...(args.slice(0, shave)));</code></sup></div>
+<div align="right"><sup>Source: <code> (shave, f) =&gt; (...args) =&gt; f(...(args.slice(0, shave)));</code></sup></div>
 
 
 ### some 
@@ -848,7 +848,7 @@ var some = require('1-liners/some');
 some(elem => elem > 16, [16,17,18]); // => true
 ```
 
-<div align="right"><sup>Source: <code> (some, arr) => arr.some(some);</code></sup></div>
+<div align="right"><sup>Source: <code> (some, arr) =&gt; arr.some(some);</code></sup></div>
 
 
 ### split 
@@ -861,7 +861,7 @@ var split = require('1-liners/split');
 split('-', '1-liners'); // => [1, 'liners']
 ```
 
-<div align="right"><sup>Source: <code> (split, str) => str.split(split);</code></sup></div>
+<div align="right"><sup>Source: <code> (split, str) =&gt; str.split(split);</code></sup></div>
 
 
 ### tail 
@@ -874,7 +874,7 @@ Returns the tail of an array
  tail([1, 2, 3]); // => [2, 3]
 ```
 
-<div align="right"><sup>Source: <code> ([,...tail]) => tail;</code></sup></div>
+<div align="right"><sup>Source: <code> ([,...tail]) =&gt; tail;</code></sup></div>
 
 
 ### take 
@@ -887,7 +887,7 @@ var take = require('1-liners/take');
 take(2, [1, 2, 3]); // => [1, 2]
 ```
 
-<div align="right"><sup>Source: <code> (take, arr) => arr.slice(0, take);</code></sup></div>
+<div align="right"><sup>Source: <code> (take, arr) =&gt; arr.slice(0, take);</code></sup></div>
 
 
 ### takeUntil 
@@ -900,7 +900,7 @@ var takeUntil = require('1-liners/takeUntil');
 takeUntil(i => i % 2 === 1, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
 
-<div align="right"><sup>Source: <code> (pred, arr) => arr.reduce((newArr, i) => { if (pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code></sup></div>
+<div align="right"><sup>Source: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code></sup></div>
 
 
 ### takeWhile 
@@ -913,7 +913,7 @@ var takeWhile = require('1-liners/takeWhile');
 takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
 
-<div align="right"><sup>Source: <code> (pred, arr) => arr.reduce((newArr, i) => { if (!pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code></sup></div>
+<div align="right"><sup>Source: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (!pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code></sup></div>
 
 
 ### times 
@@ -926,7 +926,7 @@ var times = require('1-liners/times');
 times(3, 2); // => 6
 ```
 
-<div align="right"><sup>Source: <code> (a, b) => a * b;</code></sup></div>
+<div align="right"><sup>Source: <code> (a, b) =&gt; a * b;</code></sup></div>
 
 
 ### uncurry 
@@ -945,7 +945,7 @@ Uncurry a function – collapse 2 lists of parameters into one.
  gβ(1, 2, 3);  // => 6
 ```
 
-<div align="right"><sup>Source: <code> (f) => (a, ...rest) => f(a)(...rest);</code></sup></div>
+<div align="right"><sup>Source: <code> (f) =&gt; (a, ...rest) =&gt; f(a)(...rest);</code></sup></div>
 
 
 ### uncurry3 
@@ -964,7 +964,7 @@ Uncurry a function – collapse 3 lists of parameters into one.
  gβ(1, 2, 3, 4);  // => 10
 ```
 
-<div align="right"><sup>Source: <code> (f) => (a, b, ...rest) => f(a)(b)(...rest);</code></sup></div>
+<div align="right"><sup>Source: <code> (f) =&gt; (a, b, ...rest) =&gt; f(a)(b)(...rest);</code></sup></div>
 
 
 ### xor 
@@ -978,6 +978,6 @@ xor(0, 1); // => 1
 xor(1, 1); // => 0
 ```
 
-<div align="right"><sup>Source: <code> (x, y) => (x && !y) || (!x && y)</code></sup></div>
+<div align="right"><sup>Source: <code> (x, y) =&gt; (x &amp;&amp; !y) || (!x &amp;&amp; y)</code></sup></div>
 
 	

@@ -55,7 +55,12 @@ function onFileWritten(err) {
 function renderTpl(comments) {
 	const comment = head(comments);
 	const tags = property('tags', comment);
-	const code = property('code', comment).replace('export default', '');
+	const code = property('code', comment)
+		.replace(/export default/g, '')
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+	;
 	if (tags.length <= 0) {
 		console.warn(`NO DOCS FOR ${code} !!!`);
 		return `\n\n:zap: NO DOCS FOR ${code} !!!\n\n`;
