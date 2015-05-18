@@ -65,7 +65,7 @@ function renderTpl(comments) {
 		console.warn(`NO DOCS FOR ${code} !!!`);
 		return `\n\n:zap: NO DOCS FOR ${code} !!!\n\n`;
 	}
-	const name = property('string', head(tags)).replace('1-liners/', '');
+	const name = property('string', head(tags)).replace('1-liners/', '').trim();
 	const desc = property('full', nth(1, tags));
 	const example = property('string', nth(2, tags)).replace(/\n\t/g, '\n');
 

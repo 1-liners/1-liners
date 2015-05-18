@@ -69,7 +69,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-### and 
+### and
 
 Same as `a && b`.
 
@@ -81,13 +81,13 @@ and(false, true); // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/and .js">Spec</a>
+	<a href="../tests/and.js">Spec</a>
 	•
-	<a href="../module/and .js">Source</a>: <code> (x, y) =&gt; x &amp;&amp; y;</code>
+	<a href="../module/and.js">Source</a>: <code> (x, y) =&gt; x &amp;&amp; y;</code>
 </sup></div>
 
 
-### bitAnd 
+### bitAnd
 
 Same as `a & b`.
 
@@ -99,13 +99,13 @@ bitAnd(2, 2); // => 2
 ```
 
 <div align="right"><sup>
-	<a href="../tests/bitAnd .js">Spec</a>
+	<a href="../tests/bitAnd.js">Spec</a>
 	•
-	<a href="../module/bitAnd .js">Source</a>: <code> (x, y) =&gt; x &amp; y;</code>
+	<a href="../module/bitAnd.js">Source</a>: <code> (x, y) =&gt; x &amp; y;</code>
 </sup></div>
 
 
-### bitOr 
+### bitOr
 
 Same as `a | b`.
 
@@ -117,13 +117,13 @@ bitOr(1, 1); // => 1
 ```
 
 <div align="right"><sup>
-	<a href="../tests/bitOr .js">Spec</a>
+	<a href="../tests/bitOr.js">Spec</a>
 	•
-	<a href="../module/bitOr .js">Source</a>: <code> (x, y) =&gt; x | y;</code>
+	<a href="../module/bitOr.js">Source</a>: <code> (x, y) =&gt; x | y;</code>
 </sup></div>
 
 
-### by 
+### by
 
 Same as `a / b`
 
@@ -134,13 +134,13 @@ by(6, 2); // => 3
 ```
 
 <div align="right"><sup>
-	<a href="../tests/by .js">Spec</a>
+	<a href="../tests/by.js">Spec</a>
 	•
-	<a href="../module/by .js">Source</a>: <code> (a, b) =&gt; a / b;</code>
+	<a href="../module/by.js">Source</a>: <code> (a, b) =&gt; a / b;</code>
 </sup></div>
 
 
-### compose 
+### compose
 
 Compose a new function from two given functions.
 
@@ -151,13 +151,13 @@ compose(f, g)(1, 2) === f(g(1, 2));
 ```
 
 <div align="right"><sup>
-	<a href="../tests/compose .js">Spec</a>
+	<a href="../tests/compose.js">Spec</a>
 	•
-	<a href="../module/compose .js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; f(g(...args));</code>
+	<a href="../module/compose.js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; f(g(...args));</code>
 </sup></div>
 
 
-### converge 
+### converge
 
 Converge two functions into one.
 
@@ -168,13 +168,13 @@ Converge two functions into one.
 ```
 
 <div align="right"><sup>
-	<a href="../tests/converge .js">Spec</a>
+	<a href="../tests/converge.js">Spec</a>
 	•
-	<a href="../module/converge .js">Source</a>: <code> (f, g, h) =&gt; (...args) =&gt; f(g(...args), h(...args));</code>
+	<a href="../module/converge.js">Source</a>: <code> (f, g, h) =&gt; (...args) =&gt; f(g(...args), h(...args));</code>
 </sup></div>
 
 
-### curry 
+### curry
 
 Curry a function – split its list of parameters into 2 lists.
 
@@ -205,13 +205,13 @@ Curry a function – split its list of parameters into 2 lists.
 ```
 
 <div align="right"><sup>
-	<a href="../tests/curry .js">Spec</a>
+	<a href="../tests/curry.js">Spec</a>
 	•
-	<a href="../module/curry .js">Source</a>: <code> (f) =&gt; (...a) =&gt; (...b) =&gt; f(...a, ...b);</code>
+	<a href="../module/curry.js">Source</a>: <code> (f) =&gt; (...a) =&gt; (...b) =&gt; f(...a, ...b);</code>
 </sup></div>
 
 
-### curryRight 
+### curryRight
 
 Curry a function from the right – split its parameters into 2 lists. Apply the second list of parameters first, without changing the order within the lists.
 
@@ -228,13 +228,13 @@ gλ(2, 3, 4)(1);  // => 3
 ```
 
 <div align="right"><sup>
-	<a href="../tests/curryRight .js">Spec</a>
+	<a href="../tests/curryRight.js">Spec</a>
 	•
-	<a href="../module/curryRight .js">Source</a>: <code> (f) =&gt; (...a) =&gt; (...b) =&gt; f(...b, ...a);</code>
+	<a href="../module/curryRight.js">Source</a>: <code> (f) =&gt; (...a) =&gt; (...b) =&gt; f(...b, ...a);</code>
 </sup></div>
 
 
-### dec 
+### dec
 
 Same as `a - 1`
 
@@ -245,13 +245,13 @@ dec(1); // => 0
 ```
 
 <div align="right"><sup>
-	<a href="../tests/dec .js">Spec</a>
+	<a href="../tests/dec.js">Spec</a>
 	•
-	<a href="../module/dec .js">Source</a>: <code> (val) =&gt; val - 1;</code>
+	<a href="../module/dec.js">Source</a>: <code> (val) =&gt; val - 1;</code>
 </sup></div>
 
 
-### equal 
+### equal
 
 Same as `a === b`.
 
@@ -264,13 +264,13 @@ equal(1, true); // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/equal .js">Spec</a>
+	<a href="../tests/equal.js">Spec</a>
 	•
-	<a href="../module/equal .js">Source</a>: <code> (x, y) =&gt; x === y;</code>
+	<a href="../module/equal.js">Source</a>: <code> (x, y) =&gt; x === y;</code>
 </sup></div>
 
 
-### every 
+### every
 
 Same as `[1,2,3].every(GreaterThan16)`.
 
@@ -281,13 +281,13 @@ every(elem => elem > 16, [16,17,18]); // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/every .js">Spec</a>
+	<a href="../tests/every.js">Spec</a>
 	•
-	<a href="../module/every .js">Source</a>: <code> (every, arr) =&gt; arr.every(every);</code>
+	<a href="../module/every.js">Source</a>: <code> (every, arr) =&gt; arr.every(every);</code>
 </sup></div>
 
 
-### explode 
+### explode
 
 The opposite of [implode](#implode).
 
@@ -300,13 +300,13 @@ explode(sum)(1, 2, 3, 4);  // => 10
 ```
 
 <div align="right"><sup>
-	<a href="../tests/explode .js">Spec</a>
+	<a href="../tests/explode.js">Spec</a>
 	•
-	<a href="../module/explode .js">Source</a>: <code> (func) =&gt; (...args) =&gt; func(args);</code>
+	<a href="../module/explode.js">Source</a>: <code> (func) =&gt; (...args) =&gt; func(args);</code>
 </sup></div>
 
 
-### filter 
+### filter
 
 Same as `[1, 2, 3].filter(isOdd)`.
 
@@ -317,13 +317,13 @@ filter(isOdd, [1, 2, 3]); // => [1, 3]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/filter .js">Spec</a>
+	<a href="../tests/filter.js">Spec</a>
 	•
-	<a href="../module/filter .js">Source</a>: <code> (filter, arr) =&gt; arr.filter(filter);</code>
+	<a href="../module/filter.js">Source</a>: <code> (filter, arr) =&gt; arr.filter(filter);</code>
 </sup></div>
 
 
-### flip 
+### flip
 
 Flip a function’s arguments.
 
@@ -337,13 +337,13 @@ flip(flip(f))(6, 2);  // => 3
 ```
 
 <div align="right"><sup>
-	<a href="../tests/flip .js">Spec</a>
+	<a href="../tests/flip.js">Spec</a>
 	•
-	<a href="../module/flip .js">Source</a>: <code> (f) =&gt; (...args) =&gt; f(...args.reverse());</code>
+	<a href="../module/flip.js">Source</a>: <code> (f) =&gt; (...args) =&gt; f(...args.reverse());</code>
 </sup></div>
 
 
-### forEach 
+### forEach
 
 Same as `[1, 2, 3].forEach(Math.sqrt)`.
 
@@ -354,13 +354,13 @@ forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item
 ```
 
 <div align="right"><sup>
-	<a href="../tests/forEach .js">Spec</a>
+	<a href="../tests/forEach.js">Spec</a>
 	•
-	<a href="../module/forEach .js">Source</a>: <code> (forEach, arr) =&gt; arr.forEach(forEach);</code>
+	<a href="../module/forEach.js">Source</a>: <code> (forEach, arr) =&gt; arr.forEach(forEach);</code>
 </sup></div>
 
 
-### head 
+### head
 
 Returns the first item of an array.
 
@@ -371,13 +371,13 @@ head([1, 2, 3]); // => 1
 ```
 
 <div align="right"><sup>
-	<a href="../tests/head .js">Spec</a>
+	<a href="../tests/head.js">Spec</a>
 	•
-	<a href="../module/head .js">Source</a>: <code> ([head,]) =&gt; head;</code>
+	<a href="../module/head.js">Source</a>: <code> ([head,]) =&gt; head;</code>
 </sup></div>
 
 
-### ifElse 
+### ifElse
 
 Creates a function which calls the first function if the predicate is true
 and the second function if the predicate is false.
@@ -400,13 +400,13 @@ words('Hello ES2015'); // => ['Hello', 'ES2015']
 ```
 
 <div align="right"><sup>
-	<a href="../tests/ifElse .js">Spec</a>
+	<a href="../tests/ifElse.js">Spec</a>
 	•
-	<a href="../module/ifElse .js">Source</a>: <code> (pred, ifDo, elseDo=()=&gt;{}) =&gt; (...args) =&gt; pred(...args) ? ifDo(...args) : elseDo(...args);</code>
+	<a href="../module/ifElse.js">Source</a>: <code> (pred, ifDo, elseDo=()=&gt;{}) =&gt; (...args) =&gt; pred(...args) ? ifDo(...args) : elseDo(...args);</code>
 </sup></div>
 
 
-### implode 
+### implode
 
 Collapse a list of arguments into an array of arguments.
 
@@ -423,13 +423,13 @@ const f = (a, b) => a + b;
 ```
 
 <div align="right"><sup>
-	<a href="../tests/implode .js">Spec</a>
+	<a href="../tests/implode.js">Spec</a>
 	•
-	<a href="../module/implode .js">Source</a>: <code> (func) =&gt; (args) =&gt; func(...args);</code>
+	<a href="../module/implode.js">Source</a>: <code> (func) =&gt; (args) =&gt; func(...args);</code>
 </sup></div>
 
 
-### inc 
+### inc
 
 Same as `a + 1`
 
@@ -440,13 +440,13 @@ inc(1); // => 2
 ```
 
 <div align="right"><sup>
-	<a href="../tests/inc .js">Spec</a>
+	<a href="../tests/inc.js">Spec</a>
 	•
-	<a href="../module/inc .js">Source</a>: <code> (val) =&gt; val + 1;</code>
+	<a href="../module/inc.js">Source</a>: <code> (val) =&gt; val + 1;</code>
 </sup></div>
 
 
-### isFalsy 
+### isFalsy
 
 Same as `!`.
 
@@ -463,13 +463,13 @@ Same as `!`.
 ```
 
 <div align="right"><sup>
-	<a href="../tests/isFalsy .js">Spec</a>
+	<a href="../tests/isFalsy.js">Spec</a>
 	•
-	<a href="../module/isFalsy .js">Source</a>: <code> (x) =&gt; !x;</code>
+	<a href="../module/isFalsy.js">Source</a>: <code> (x) =&gt; !x;</code>
 </sup></div>
 
 
-### isNull 
+### isNull
 
 Same as `=== null`.
 
@@ -484,13 +484,13 @@ isNull('anything else');  // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/isNull .js">Spec</a>
+	<a href="../tests/isNull.js">Spec</a>
 	•
-	<a href="../module/isNull .js">Source</a>: <code> (value) =&gt; (value === null);</code>
+	<a href="../module/isNull.js">Source</a>: <code> (value) =&gt; (value === null);</code>
 </sup></div>
 
 
-### isTruthy 
+### isTruthy
 
 Same as `!!`.
 
@@ -507,13 +507,13 @@ isTruthy(false);  // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/isTruthy .js">Spec</a>
+	<a href="../tests/isTruthy.js">Spec</a>
 	•
-	<a href="../module/isTruthy .js">Source</a>: <code> (x) =&gt; !!x;</code>
+	<a href="../module/isTruthy.js">Source</a>: <code> (x) =&gt; !!x;</code>
 </sup></div>
 
 
-### isUndefined 
+### isUndefined
 
 Returns `true` if a value or reference is `undefined`.
 
@@ -529,13 +529,13 @@ isUndefined('anything else');  // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/isUndefined .js">Spec</a>
+	<a href="../tests/isUndefined.js">Spec</a>
 	•
-	<a href="../module/isUndefined .js">Source</a>: <code> (value) =&gt; (value === void 0);</code>
+	<a href="../module/isUndefined.js">Source</a>: <code> (value) =&gt; (value === void 0);</code>
 </sup></div>
 
 
-### isUnknown 
+### isUnknown
 
 Same as `== null`.
 
@@ -552,13 +552,13 @@ isUnknown(/anything else/);  // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/isUnknown .js">Spec</a>
+	<a href="../tests/isUnknown.js">Spec</a>
 	•
-	<a href="../module/isUnknown .js">Source</a>: <code> (value) =&gt; (value == null);</code>
+	<a href="../module/isUnknown.js">Source</a>: <code> (value) =&gt; (value == null);</code>
 </sup></div>
 
 
-### join 
+### join
 
 Same as `[1, 'liners'].join('-')`
 
@@ -569,13 +569,13 @@ join('-', [1, 'liners']); // => '1-liners'
 ```
 
 <div align="right"><sup>
-	<a href="../tests/join .js">Spec</a>
+	<a href="../tests/join.js">Spec</a>
 	•
-	<a href="../module/join .js">Source</a>: <code> (superglue, arr) =&gt; arr.join(superglue);</code>
+	<a href="../module/join.js">Source</a>: <code> (superglue, arr) =&gt; arr.join(superglue);</code>
 </sup></div>
 
 
-### length 
+### length
 
 Returns the length of an array.
 
@@ -586,13 +586,13 @@ Returns the length of an array.
 ```
 
 <div align="right"><sup>
-	<a href="../tests/length .js">Spec</a>
+	<a href="../tests/length.js">Spec</a>
 	•
-	<a href="../module/length .js">Source</a>: <code> (arr) =&gt; arr.length;</code>
+	<a href="../module/length.js">Source</a>: <code> (arr) =&gt; arr.length;</code>
 </sup></div>
 
 
-### looseEqual 
+### looseEqual
 
 Same as `a == b`.
 
@@ -605,13 +605,13 @@ looseEqual(1, true); // => true
 ```
 
 <div align="right"><sup>
-	<a href="../tests/looseEqual .js">Spec</a>
+	<a href="../tests/looseEqual.js">Spec</a>
 	•
-	<a href="../module/looseEqual .js">Source</a>: <code> (x, y) =&gt; x == y;</code>
+	<a href="../module/looseEqual.js">Source</a>: <code> (x, y) =&gt; x == y;</code>
 </sup></div>
 
 
-### map 
+### map
 
 Same as `[1, 2, 3].map(Math.sqrt)`.
 
@@ -622,13 +622,13 @@ map(Math.sqrt, [9, 25]); // => [3, 5]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/map .js">Spec</a>
+	<a href="../tests/map.js">Spec</a>
 	•
-	<a href="../module/map .js">Source</a>: <code> (map, arr) =&gt; arr.map(map);</code>
+	<a href="../module/map.js">Source</a>: <code> (map, arr) =&gt; arr.map(map);</code>
 </sup></div>
 
 
-### match 
+### match
 
 Same as `haystack.match(needle)`.
 
@@ -639,13 +639,13 @@ match(/\d+/g, 'Items: 3,2'); // => ["3", "2"]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/match .js">Spec</a>
+	<a href="../tests/match.js">Spec</a>
 	•
-	<a href="../module/match .js">Source</a>: <code> (needle, haystack) =&gt; haystack.match(needle);</code>
+	<a href="../module/match.js">Source</a>: <code> (needle, haystack) =&gt; haystack.match(needle);</code>
 </sup></div>
 
 
-### max 
+### max
 
 Same as `Math.max` – but with a stable number of arguments.
 
@@ -659,13 +659,13 @@ max(3, 6);  // => 6
 ```
 
 <div align="right"><sup>
-	<a href="../tests/max .js">Spec</a>
+	<a href="../tests/max.js">Spec</a>
 	•
-	<a href="../module/max .js">Source</a>: <code> (a, b) =&gt; ((a &gt; b) ? a : b);</code>
+	<a href="../module/max.js">Source</a>: <code> (a, b) =&gt; ((a &gt; b) ? a : b);</code>
 </sup></div>
 
 
-### method 
+### method
 
 Same as `object[method](...args)`
 
@@ -681,13 +681,13 @@ method('add', object)(5);  // => 6
 ```
 
 <div align="right"><sup>
-	<a href="../tests/method .js">Spec</a>
+	<a href="../tests/method.js">Spec</a>
 	•
-	<a href="../module/method .js">Source</a>: <code> (method, object) =&gt; (...args) =&gt; object[method](...args);</code>
+	<a href="../module/method.js">Source</a>: <code> (method, object) =&gt; (...args) =&gt; object[method](...args);</code>
 </sup></div>
 
 
-### min 
+### min
 
 Same as `Math.min` – but with a stable number of arguments.
 
@@ -701,13 +701,13 @@ min(3, 6);  // => 3
 ```
 
 <div align="right"><sup>
-	<a href="../tests/min .js">Spec</a>
+	<a href="../tests/min.js">Spec</a>
 	•
-	<a href="../module/min .js">Source</a>: <code> (a, b) =&gt; ((a &gt; b) ? b : a);</code>
+	<a href="../module/min.js">Source</a>: <code> (a, b) =&gt; ((a &gt; b) ? b : a);</code>
 </sup></div>
 
 
-### minus 
+### minus
 
 Same as `a - b`
 
@@ -718,13 +718,13 @@ minus(3, 2); // => 1
 ```
 
 <div align="right"><sup>
-	<a href="../tests/minus .js">Spec</a>
+	<a href="../tests/minus.js">Spec</a>
 	•
-	<a href="../module/minus .js">Source</a>: <code> (a, b) =&gt; a - b;</code>
+	<a href="../module/minus.js">Source</a>: <code> (a, b) =&gt; a - b;</code>
 </sup></div>
 
 
-### nand 
+### nand
 
 Same as `!(a && b)`.
 
@@ -736,13 +736,13 @@ nand(1, 1); // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/nand .js">Spec</a>
+	<a href="../tests/nand.js">Spec</a>
 	•
-	<a href="../module/nand .js">Source</a>: <code> (x, y) =&gt; !(x &amp;&amp; y);</code>
+	<a href="../module/nand.js">Source</a>: <code> (x, y) =&gt; !(x &amp;&amp; y);</code>
 </sup></div>
 
 
-### noop 
+### noop
 
 Same as `function(){}`.
 
@@ -758,13 +758,13 @@ window.console = {
 ```
 
 <div align="right"><sup>
-	<a href="../tests/noop .js">Spec</a>
+	<a href="../tests/noop.js">Spec</a>
 	•
-	<a href="../module/noop .js">Source</a>: <code> () =&gt; {};</code>
+	<a href="../module/noop.js">Source</a>: <code> () =&gt; {};</code>
 </sup></div>
 
 
-### nor 
+### nor
 
 Same as `!(a || b)`.
 
@@ -776,13 +776,13 @@ nor(1, 0); // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/nor .js">Spec</a>
+	<a href="../tests/nor.js">Spec</a>
 	•
-	<a href="../module/nor .js">Source</a>: <code> (x, y) =&gt; !(x || y);</code>
+	<a href="../module/nor.js">Source</a>: <code> (x, y) =&gt; !(x || y);</code>
 </sup></div>
 
 
-### not 
+### not
 
 Same as `!a`.
 
@@ -794,13 +794,13 @@ not(false); // => true
 ```
 
 <div align="right"><sup>
-	<a href="../tests/not .js">Spec</a>
+	<a href="../tests/not.js">Spec</a>
 	•
-	<a href="../module/not .js">Source</a>: <code> (a) =&gt; !a;</code>
+	<a href="../module/not.js">Source</a>: <code> (a) =&gt; !a;</code>
 </sup></div>
 
 
-### nth 
+### nth
 
 Returns the nth item of an array.
 
@@ -811,13 +811,13 @@ nth(1, [1, 2, 3]); // => 2
 ```
 
 <div align="right"><sup>
-	<a href="../tests/nth .js">Spec</a>
+	<a href="../tests/nth.js">Spec</a>
 	•
-	<a href="../module/nth .js">Source</a>: <code> (n, arr) =&gt; arr[n];</code>
+	<a href="../module/nth.js">Source</a>: <code> (n, arr) =&gt; arr[n];</code>
 </sup></div>
 
 
-### or 
+### or
 
 Same as `a || b`.
 
@@ -830,13 +830,13 @@ or(false, false); // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/or .js">Spec</a>
+	<a href="../tests/or.js">Spec</a>
 	•
-	<a href="../module/or .js">Source</a>: <code> (a, b) =&gt; a || b;</code>
+	<a href="../module/or.js">Source</a>: <code> (a, b) =&gt; a || b;</code>
 </sup></div>
 
 
-### pick 
+### pick
 
 Copies only specified `properties` from an `object` into a new object.
 
@@ -849,13 +849,13 @@ pick(['foo', 'baz'], object);  // => {foo: 1, baz: 3}
 ```
 
 <div align="right"><sup>
-	<a href="../tests/pick .js">Spec</a>
+	<a href="../tests/pick.js">Spec</a>
 	•
-	<a href="../module/pick .js">Source</a>: <code> (properties, object) =&gt; Object.assign({}, ...properties.map(key =&gt; ({[key]: object[key]})));</code>
+	<a href="../module/pick.js">Source</a>: <code> (properties, object) =&gt; Object.assign({}, ...properties.map(key =&gt; ({[key]: object[key]})));</code>
 </sup></div>
 
 
-### pipe 
+### pipe
 
 Pipe arguments through functions.
 
@@ -866,13 +866,13 @@ pipe(f, g)(1, 2) === g(f(1, 2));
 ```
 
 <div align="right"><sup>
-	<a href="../tests/pipe .js">Spec</a>
+	<a href="../tests/pipe.js">Spec</a>
 	•
-	<a href="../module/pipe .js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; g(f(...args));</code>
+	<a href="../module/pipe.js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; g(f(...args));</code>
 </sup></div>
 
 
-### plus 
+### plus
 
 Same as `a + b`.
 
@@ -884,13 +884,13 @@ plus('a', 'b');  // => 'ab'
 ```
 
 <div align="right"><sup>
-	<a href="../tests/plus .js">Spec</a>
+	<a href="../tests/plus.js">Spec</a>
 	•
-	<a href="../module/plus .js">Source</a>: <code> (a, b) =&gt; a + b;</code>
+	<a href="../module/plus.js">Source</a>: <code> (a, b) =&gt; a + b;</code>
 </sup></div>
 
 
-### property 
+### property
 
 Same as `object[property]`
 
@@ -903,13 +903,13 @@ property('foo', object);  // => 1
 ```
 
 <div align="right"><sup>
-	<a href="../tests/property .js">Spec</a>
+	<a href="../tests/property.js">Spec</a>
 	•
-	<a href="../module/property .js">Source</a>: <code> (property, object) =&gt; object[property];</code>
+	<a href="../module/property.js">Source</a>: <code> (property, object) =&gt; object[property];</code>
 </sup></div>
 
 
-### reduce 
+### reduce
 
 Same as `[1, 2, 3].reduce(sum)`.
 
@@ -920,13 +920,13 @@ reduce(sum, [1, 2, 3]); // => 6
 ```
 
 <div align="right"><sup>
-	<a href="../tests/reduce .js">Spec</a>
+	<a href="../tests/reduce.js">Spec</a>
 	•
-	<a href="../module/reduce .js">Source</a>: <code> (reduce, arr) =&gt; arr.reduce(reduce);</code>
+	<a href="../module/reduce.js">Source</a>: <code> (reduce, arr) =&gt; arr.reduce(reduce);</code>
 </sup></div>
 
 
-### reduceFrom 
+### reduceFrom
 
 Same as `[1, 2, 3].reduceFrom(sum, 8)`.
 
@@ -937,13 +937,13 @@ reduceFrom(sum, 8, [1, 2, 3]); // => 2
 ```
 
 <div align="right"><sup>
-	<a href="../tests/reduceFrom .js">Spec</a>
+	<a href="../tests/reduceFrom.js">Spec</a>
 	•
-	<a href="../module/reduceFrom .js">Source</a>: <code> (reduce, initial, arr) =&gt; arr.reduce(reduce, initial);</code>
+	<a href="../module/reduceFrom.js">Source</a>: <code> (reduce, initial, arr) =&gt; arr.reduce(reduce, initial);</code>
 </sup></div>
 
 
-### reduceFromRight 
+### reduceFromRight
 
 Same as `[1, 2, 3].reduceFromRight(sub, 1)`.
 
@@ -954,13 +954,13 @@ reduceFromRight(sub, 1, [1, 2, 3]); // => -5
 ```
 
 <div align="right"><sup>
-	<a href="../tests/reduceFromRight .js">Spec</a>
+	<a href="../tests/reduceFromRight.js">Spec</a>
 	•
-	<a href="../module/reduceFromRight .js">Source</a>: <code> (reduce, initial, arr) =&gt; arr.reduceRight(reduce, initial);</code>
+	<a href="../module/reduceFromRight.js">Source</a>: <code> (reduce, initial, arr) =&gt; arr.reduceRight(reduce, initial);</code>
 </sup></div>
 
 
-### reduceRight 
+### reduceRight
 
 Same as `[1, 2, 3].reduceRight(sub)`.
 
@@ -971,13 +971,13 @@ reduceRight(sub, [1, 2, 3]); // => -4
 ```
 
 <div align="right"><sup>
-	<a href="../tests/reduceRight .js">Spec</a>
+	<a href="../tests/reduceRight.js">Spec</a>
 	•
-	<a href="../module/reduceRight .js">Source</a>: <code> (reduce, arr) =&gt; arr.reduceRight(reduce);</code>
+	<a href="../module/reduceRight.js">Source</a>: <code> (reduce, arr) =&gt; arr.reduceRight(reduce);</code>
 </sup></div>
 
 
-### replace 
+### replace
 
 Same as `haystack.replace(needle, replace)`.
 
@@ -989,13 +989,13 @@ replace(':', '=', 'Items: 3,2'); // => Items= 3,2
 ```
 
 <div align="right"><sup>
-	<a href="../tests/replace .js">Spec</a>
+	<a href="../tests/replace.js">Spec</a>
 	•
-	<a href="../module/replace .js">Source</a>: <code> (needle, replace, haystack) =&gt; haystack.replace(needle, replace);</code>
+	<a href="../module/replace.js">Source</a>: <code> (needle, replace, haystack) =&gt; haystack.replace(needle, replace);</code>
 </sup></div>
 
 
-### shallowClone 
+### shallowClone
 
 Copy all properties of an object into a new plain object.
 
@@ -1014,13 +1014,13 @@ target.reference === source.reference  // => true
 ```
 
 <div align="right"><sup>
-	<a href="../tests/shallowClone .js">Spec</a>
+	<a href="../tests/shallowClone.js">Spec</a>
 	•
-	<a href="../module/shallowClone .js">Source</a>: <code> (object) =&gt; Object.assign({}, object);</code>
+	<a href="../module/shallowClone.js">Source</a>: <code> (object) =&gt; Object.assign({}, object);</code>
 </sup></div>
 
 
-### shave 
+### shave
 
 Shave ensures that a function is called with n arguments.
 
@@ -1032,13 +1032,13 @@ map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/shave .js">Spec</a>
+	<a href="../tests/shave.js">Spec</a>
 	•
-	<a href="../module/shave .js">Source</a>: <code> (shave, f) =&gt; (...args) =&gt; f(...(args.slice(0, shave)));</code>
+	<a href="../module/shave.js">Source</a>: <code> (shave, f) =&gt; (...args) =&gt; f(...(args.slice(0, shave)));</code>
 </sup></div>
 
 
-### some 
+### some
 
 Same as `[1,2,3].some(GreaterThan16)`
 
@@ -1049,13 +1049,13 @@ some(elem => elem > 16, [16,17,18]); // => true
 ```
 
 <div align="right"><sup>
-	<a href="../tests/some .js">Spec</a>
+	<a href="../tests/some.js">Spec</a>
 	•
-	<a href="../module/some .js">Source</a>: <code> (some, arr) =&gt; arr.some(some);</code>
+	<a href="../module/some.js">Source</a>: <code> (some, arr) =&gt; arr.some(some);</code>
 </sup></div>
 
 
-### split 
+### split
 
 Same as `'1-liners'.split('-')`
 
@@ -1066,13 +1066,13 @@ split('-', '1-liners'); // => [1, 'liners']
 ```
 
 <div align="right"><sup>
-	<a href="../tests/split .js">Spec</a>
+	<a href="../tests/split.js">Spec</a>
 	•
-	<a href="../module/split .js">Source</a>: <code> (split, str) =&gt; str.split(split);</code>
+	<a href="../module/split.js">Source</a>: <code> (split, str) =&gt; str.split(split);</code>
 </sup></div>
 
 
-### tail 
+### tail
 
 Returns the tail of an array
 
@@ -1083,13 +1083,13 @@ Returns the tail of an array
 ```
 
 <div align="right"><sup>
-	<a href="../tests/tail .js">Spec</a>
+	<a href="../tests/tail.js">Spec</a>
 	•
-	<a href="../module/tail .js">Source</a>: <code> ([,...tail]) =&gt; tail;</code>
+	<a href="../module/tail.js">Source</a>: <code> ([,...tail]) =&gt; tail;</code>
 </sup></div>
 
 
-### take 
+### take
 
 Take n items of an array. Same as `arr.slice(0, n)`.
 
@@ -1100,13 +1100,13 @@ take(2, [1, 2, 3]); // => [1, 2]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/take .js">Spec</a>
+	<a href="../tests/take.js">Spec</a>
 	•
-	<a href="../module/take .js">Source</a>: <code> (take, arr) =&gt; arr.slice(0, take);</code>
+	<a href="../module/take.js">Source</a>: <code> (take, arr) =&gt; arr.slice(0, take);</code>
 </sup></div>
 
 
-### takeUntil 
+### takeUntil
 
 Take items of an array until they fulfill a predicate.
 
@@ -1117,13 +1117,13 @@ takeUntil(i => i % 2 === 1, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/takeUntil .js">Spec</a>
+	<a href="../tests/takeUntil.js">Spec</a>
 	•
-	<a href="../module/takeUntil .js">Source</a>: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code>
+	<a href="../module/takeUntil.js">Source</a>: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code>
 </sup></div>
 
 
-### takeWhile 
+### takeWhile
 
 Take items of an array while they fulfill a predicate.
 
@@ -1134,13 +1134,13 @@ takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
 
 <div align="right"><sup>
-	<a href="../tests/takeWhile .js">Spec</a>
+	<a href="../tests/takeWhile.js">Spec</a>
 	•
-	<a href="../module/takeWhile .js">Source</a>: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (!pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code>
+	<a href="../module/takeWhile.js">Source</a>: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (!pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code>
 </sup></div>
 
 
-### times 
+### times
 
 Same as `a * b`
 
@@ -1151,13 +1151,13 @@ times(3, 2); // => 6
 ```
 
 <div align="right"><sup>
-	<a href="../tests/times .js">Spec</a>
+	<a href="../tests/times.js">Spec</a>
 	•
-	<a href="../module/times .js">Source</a>: <code> (a, b) =&gt; a * b;</code>
+	<a href="../module/times.js">Source</a>: <code> (a, b) =&gt; a * b;</code>
 </sup></div>
 
 
-### uncurry 
+### uncurry
 
 Uncurry a function – collapse 2 lists of parameters into one.
 
@@ -1174,13 +1174,13 @@ Uncurry a function – collapse 2 lists of parameters into one.
 ```
 
 <div align="right"><sup>
-	<a href="../tests/uncurry .js">Spec</a>
+	<a href="../tests/uncurry.js">Spec</a>
 	•
-	<a href="../module/uncurry .js">Source</a>: <code> (f) =&gt; (a, ...rest) =&gt; f(a)(...rest);</code>
+	<a href="../module/uncurry.js">Source</a>: <code> (f) =&gt; (a, ...rest) =&gt; f(a)(...rest);</code>
 </sup></div>
 
 
-### uncurry3 
+### uncurry3
 
 Uncurry a function – collapse 3 lists of parameters into one.
 
@@ -1197,13 +1197,13 @@ Uncurry a function – collapse 3 lists of parameters into one.
 ```
 
 <div align="right"><sup>
-	<a href="../tests/uncurry3 .js">Spec</a>
+	<a href="../tests/uncurry3.js">Spec</a>
 	•
-	<a href="../module/uncurry3 .js">Source</a>: <code> (f) =&gt; (a, b, ...rest) =&gt; f(a)(b)(...rest);</code>
+	<a href="../module/uncurry3.js">Source</a>: <code> (f) =&gt; (a, b, ...rest) =&gt; f(a)(b)(...rest);</code>
 </sup></div>
 
 
-### xor 
+### xor
 
 Same as `(x && !y) || (!x && y)`
 
@@ -1215,9 +1215,9 @@ xor(1, 1); // => 0
 ```
 
 <div align="right"><sup>
-	<a href="../tests/xor .js">Spec</a>
+	<a href="../tests/xor.js">Spec</a>
 	•
-	<a href="../module/xor .js">Source</a>: <code> (x, y) =&gt; (x &amp;&amp; !y) || (!x &amp;&amp; y)</code>
+	<a href="../module/xor.js">Source</a>: <code> (x, y) =&gt; (x &amp;&amp; !y) || (!x &amp;&amp; y)</code>
 </sup></div>
 
 	
