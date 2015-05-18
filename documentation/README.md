@@ -24,6 +24,7 @@
 - [ifElse](#ifelse)
 - [implode](#implode)
 - [inc](#inc)
+- [isBoolean](#isboolean)
 - [isFalsy](#isfalsy)
 - [isFunction](#isfunction)
 - [isNull](#isnull)
@@ -371,6 +372,23 @@ inc(1); // => 2
 ```
 
 <div align="right"><sup>Source: <code> (val) => val + 1;</code></sup></div>
+
+
+### isBoolean 
+
+Same as `typeof value === 'boolean'`.
+
+```js
+var isBoolean = require('1-liners/isBoolean');
+
+isBoolean(false);            // => true
+isBoolean(true);             // => true
+
+isBoolean(null);             // => false
+isBoolean(/anything else/);  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => typeof value === 'boolean';</code></sup></div>
 
 
 ### isFalsy 

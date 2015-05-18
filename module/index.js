@@ -17,6 +17,7 @@ import head from './head';
 import ifElse from './ifElse';
 import implode from './implode';
 import inc from './inc';
+import isBoolean from './isBoolean';
 import isFalsy from './isFalsy';
 import isFunction from './isFunction';
 import isNull from './isNull';
@@ -82,6 +83,7 @@ export {
   ifElse,
   implode,
   inc,
+  isBoolean,
   isFalsy,
   isFunction,
   isNull,
