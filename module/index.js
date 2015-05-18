@@ -22,6 +22,7 @@ import isFalsy from './isFalsy';
 import isFunction from './isFunction';
 import isNull from './isNull';
 import isNumber from './isNumber';
+import isObject from './isObject';
 import isString from './isString';
 import isTruthy from './isTruthy';
 import isUndefined from './isUndefined';
@@ -88,6 +89,7 @@ export {
   isFunction,
   isNull,
   isNumber,
+  isObject,
   isString,
   isTruthy,
   isUndefined,

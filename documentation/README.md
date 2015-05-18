@@ -29,6 +29,7 @@
 - [isFunction](#isfunction)
 - [isNull](#isnull)
 - [isNumber](#isnumber)
+- [isObject](#isobject)
 - [isString](#isstring)
 - [isTruthy](#istruthy)
 - [isUndefined](#isundefined)
@@ -460,6 +461,24 @@ isNumber(/anything else/);  // => false
 ```
 
 <div align="right"><sup>Source: <code> (value) => typeof value === 'number';</code></sup></div>
+
+
+### isObject 
+
+Same as `value !== null && typeof value === 'object'`.
+
+```js
+var isObject = require('1-liners/isObject');
+
+isObject({});               // => true
+isObject([]);               // => true
+isObject(/anything/);       // => true
+
+isObject(null);             // => false
+isObject('anything else');  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => (value !== null && typeof value === 'object');</code></sup></div>
 
 
 ### isString 
