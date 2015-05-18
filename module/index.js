@@ -18,6 +18,7 @@ import ifElse from './ifElse';
 import implode from './implode';
 import inc from './inc';
 import isFalsy from './isFalsy';
+import isFunction from './isFunction';
 import isNull from './isNull';
 import isTruthy from './isTruthy';
 import isUndefined from './isUndefined';
@@ -80,6 +81,7 @@ export {
   implode,
   inc,
   isFalsy,
+  isFunction,
   isNull,
   isTruthy,
   isUndefined,

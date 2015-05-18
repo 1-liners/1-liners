@@ -25,6 +25,7 @@
 - [implode](#implode)
 - [inc](#inc)
 - [isFalsy](#isfalsy)
+- [isFunction](#isfunction)
 - [isNull](#isnull)
 - [isTruthy](#istruthy)
 - [isUndefined](#isundefined)
@@ -387,6 +388,22 @@ Same as `!`.
 ```
 
 <div align="right"><sup>Source: <code> (x) => !x;</code></sup></div>
+
+
+### isFunction 
+
+Same as `typeof value === 'function'`.
+
+```js
+var isFunction = require('1-liners/isFunction');
+
+isFunction(function() {});        // => true
+isFunction(function named() {});  // => true
+
+isFunction('any other value');    // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => typeof value === 'function';</code></sup></div>
 
 
 ### isNull 
