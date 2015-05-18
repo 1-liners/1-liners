@@ -27,6 +27,7 @@
 - [isFalsy](#isfalsy)
 - [isFunction](#isfunction)
 - [isNull](#isnull)
+- [isString](#isstring)
 - [isTruthy](#istruthy)
 - [isUndefined](#isundefined)
 - [isUnknown](#isunknown)
@@ -421,6 +422,22 @@ isNull('anything else');  // => false
 ```
 
 <div align="right"><sup>Source: <code> (value) => (value === null);</code></sup></div>
+
+
+### isString 
+
+Same as `typeof value === 'string'`.
+
+```js
+var isString = require('1-liners/isString');
+
+isString('');               // => true
+isString('anything');       // => true
+
+isString(/anything else/);  // => false
+```
+
+<div align="right"><sup>Source: <code> (value) => typeof value === 'string';</code></sup></div>
 
 
 ### isTruthy 
