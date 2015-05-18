@@ -20,6 +20,7 @@ import inc from './inc';
 import isFalsy from './isFalsy';
 import isFunction from './isFunction';
 import isNull from './isNull';
+import isNumber from './isNumber';
 import isString from './isString';
 import isTruthy from './isTruthy';
 import isUndefined from './isUndefined';
@@ -84,6 +85,7 @@ export {
   isFalsy,
   isFunction,
   isNull,
+  isNumber,
   isString,
   isTruthy,
   isUndefined,
