@@ -24,8 +24,13 @@
 - [ifElse](#ifelse)
 - [implode](#implode)
 - [inc](#inc)
+- [isBoolean](#isboolean)
 - [isFalsy](#isfalsy)
+- [isFunction](#isfunction)
 - [isNull](#isnull)
+- [isNumber](#isnumber)
+- [isObject](#isobject)
+- [isString](#isstring)
 - [isTruthy](#istruthy)
 - [isUndefined](#isundefined)
 - [isUnknown](#isunknown)
@@ -446,6 +451,27 @@ inc(1); // => 2
 </sup></div>
 
 
+### isBoolean
+
+Same as `typeof value === 'boolean'`.
+
+```js
+var isBoolean = require('1-liners/isBoolean');
+
+isBoolean(false);            // => true
+isBoolean(true);             // => true
+
+isBoolean(null);             // => false
+isBoolean(/anything else/);  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isBoolean.js">Spec</a>
+	•
+	<a href="../module/isBoolean.js">Source</a>: <code> (value) =&gt; typeof value === 'boolean';</code>
+</sup></div>
+
+
 ### isFalsy
 
 Same as `!`.
@@ -469,6 +495,26 @@ Same as `!`.
 </sup></div>
 
 
+### isFunction
+
+Same as `typeof value === 'function'`.
+
+```js
+var isFunction = require('1-liners/isFunction');
+
+isFunction(function() {});        // => true
+isFunction(function named() {});  // => true
+
+isFunction('any other value');    // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isFunction.js">Spec</a>
+	•
+	<a href="../module/isFunction.js">Source</a>: <code> (value) =&gt; typeof value === 'function';</code>
+</sup></div>
+
+
 ### isNull
 
 Same as `=== null`.
@@ -487,6 +533,71 @@ isNull('anything else');  // => false
 	<a href="../tests/isNull.js">Spec</a>
 	•
 	<a href="../module/isNull.js">Source</a>: <code> (value) =&gt; (value === null);</code>
+</sup></div>
+
+
+### isNumber
+
+Same as `typeof value === 'number'`. Use [`Number.isFinite`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite) instead if you want to filter out `NaN` and `Infinity`.
+
+```js
+var isNumber = require('1-liners/isNumber');
+
+isNumber(1);                // => true
+isNumber(3.14);             // => true
+isNumber(NaN);              // => true
+isNumber(Infinity);         // => true
+
+isNumber('3.14');           // => false
+isNumber(/anything else/);  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isNumber.js">Spec</a>
+	•
+	<a href="../module/isNumber.js">Source</a>: <code> (value) =&gt; typeof value === 'number';</code>
+</sup></div>
+
+
+### isObject
+
+Same as `value !== null && typeof value === 'object'`.
+
+```js
+var isObject = require('1-liners/isObject');
+
+isObject({});               // => true
+isObject([]);               // => true
+isObject(/anything/);       // => true
+
+isObject(null);             // => false
+isObject('anything else');  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isObject.js">Spec</a>
+	•
+	<a href="../module/isObject.js">Source</a>: <code> (value) =&gt; (value !== null &amp;&amp; typeof value === 'object');</code>
+</sup></div>
+
+
+### isString
+
+Same as `typeof value === 'string'`.
+
+```js
+var isString = require('1-liners/isString');
+
+isString('');               // => true
+isString('anything');       // => true
+
+isString(/anything else/);  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isString.js">Spec</a>
+	•
+	<a href="../module/isString.js">Source</a>: <code> (value) =&gt; typeof value === 'string';</code>
 </sup></div>
 
 
