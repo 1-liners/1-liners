@@ -77,8 +77,12 @@ ${desc}
 \`\`\`js${example}
 \`\`\`
 
-<div align="right"><sup>Source: <code>${code}</code></sup></div>
-`
+<div align="right"><sup>
+	<a href="../tests/${name}.js">Spec</a>
+	•
+	<a href="../module/${name}.js">Source</a>: <code>${code}</code>
+</sup></div>
+`;
 
 	return block;
 }
