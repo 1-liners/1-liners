@@ -3,7 +3,7 @@
   "version": "0.2.4",
   "description": "Useful oneliners and shorthand functions",
   "license": "MIT",
-  "repository": "stoeffel/1-liners",
+  "repository": "1-liners/1-liners",
   "author": {
     "name": "stoeffel",
     "email": "schtoeffel@gmail.com",

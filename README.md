@@ -1,16 +1,16 @@
 
 &nbsp;
 
-<p align="center"><img src="https://cdn.rawgit.com/stoeffel/1-liners/66775c8/logo.png" width="382px" height="125px" /></p>
+<p align="center"><img src="https://cdn.rawgit.com/1-liners/1-liners/66775c8/logo.png" width="382px" height="125px" /></p>
 
 &nbsp;
 
-[![Coverage Status](https://coveralls.io/repos/stoeffel/1-liners/badge.svg?branch=master)](https://coveralls.io/r/stoeffel/1-liners?branch=master)
-[![Build Status](https://travis-ci.org/stoeffel/1-liners.svg?branch=master)](https://travis-ci.org/stoeffel/1-liners)
-[![Dependency Status](https://david-dm.org/stoeffel/1-liners.svg)](https://david-dm.org/stoeffel/1-liners)
+[![Coverage Status](https://coveralls.io/repos/1-liners/1-liners/badge.svg?branch=master)](https://coveralls.io/r/1-liners/1-liners?branch=master)
+[![Build Status](https://travis-ci.org/1-liners/1-liners.svg?branch=master)](https://travis-ci.org/1-liners/1-liners)
+[![Dependency Status](https://david-dm.org/1-liners/1-liners.svg)](https://david-dm.org/1-liners/1-liners)
 [![npm version](https://badge.fury.io/js/1-liners.svg)](http://badge.fury.io/js/1-liners)
 [![Stability: unstable](https://img.shields.io/badge/stability-unstable-yellowgreen.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
-[![Join the chat at https://gitter.im/stoeffel/1-liners](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/stoeffel/1-liners)
+[![Join the chat at https://gitter.im/1-liners/1-liners](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/1-liners/1-liners)
 
 > Useful oneliners and shorthand functions
 
@@ -54,4 +54,4 @@ created with [gh-contributors-table](https://github.com/stoeffel/gh-contributors
 
 ## License
 
-MIT © [stoeffel](http://schtoeffel.ch)
+MIT © [stoeffel](http://schtoeffel.ch) [tomekwi](http://github.com/tomekwi) [hemanth](http://www.h3manth.com/)
