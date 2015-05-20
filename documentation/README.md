@@ -69,6 +69,7 @@
 - [replace](#replace)
 - [shallowClone](#shallowclone)
 - [shave](#shave)
+- [shift](#shift)
 - [some](#some)
 - [split](#split)
 - [tail](#tail)
@@ -1332,6 +1333,26 @@ map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 	<a href="../tests/shave.js">Spec</a>
 	•
 	<a href="../module/shave.js">Source</a>: <code> (shave, f) =&gt; (...args) =&gt; f(...(args.slice(0, shave)));</code>
+</sup></div>
+
+
+### shift
+
+Similar to `array.shift()`, but immutable.
+
+```js
+import shift from '1-liners/shift';
+
+const array = [1, 2, 3];
+
+shift(array);  // => [2, 3]
+array;         // => [1, 2, 3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/shift.js">Spec</a>
+	•
+	<a href="../module/shift.js">Source</a>: <code> (array) =&gt; array.slice(1);</code>
 </sup></div>
 
 
