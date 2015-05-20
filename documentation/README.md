@@ -20,6 +20,8 @@
 - [filter](#filter)
 - [flip](#flip)
 - [forEach](#foreach)
+- [greaterOrEqual](#greaterorequal)
+- [greaterThan](#greaterthan)
 - [head](#head)
 - [ifElse](#ifelse)
 - [implode](#implode)
@@ -36,6 +38,8 @@
 - [isUnknown](#isunknown)
 - [join](#join)
 - [length](#length)
+- [lessOrEqual](#lessorequal)
+- [lessThan](#lessthan)
 - [looseEqual](#looseequal)
 - [map](#map)
 - [match](#match)
@@ -362,6 +366,44 @@ forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item
 	<a href="../tests/forEach.js">Spec</a>
 	•
 	<a href="../module/forEach.js">Source</a>: <code> (forEach, arr) =&gt; arr.forEach(forEach);</code>
+</sup></div>
+
+
+### greaterOrEqual
+
+Same as `a >= b`.
+
+```js
+var greaterOrEqual = require('1-liners/greaterOrEqual');
+
+greaterOrEqual(2, 1); // => true
+greaterOrEqual(2, 2); // => true
+greaterOrEqual(1, 2); // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/greaterOrEqual.js">Spec</a>
+	•
+	<a href="../module/greaterOrEqual.js">Source</a>: <code> (x, y) =&gt; x &gt;= y;</code>
+</sup></div>
+
+
+### greaterThan
+
+Same as `a > b`.
+
+```js
+var greaterThan = require('1-liners/greaterThan');
+
+greaterThan(2, 1); // => true
+greaterThan(2, 2); // => false
+greaterThan(1, 2); // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/greaterThan.js">Spec</a>
+	•
+	<a href="../module/greaterThan.js">Source</a>: <code> (x, y) =&gt; x &gt; y;</code>
 </sup></div>
 
 
@@ -700,6 +742,44 @@ Returns the length of an array.
 	<a href="../tests/length.js">Spec</a>
 	•
 	<a href="../module/length.js">Source</a>: <code> (arr) =&gt; arr.length;</code>
+</sup></div>
+
+
+### lessOrEqual
+
+Same as `a <= b`.
+
+```js
+var lessOrEqual = require('1-liners/lessOrEqual');
+
+lessOrEqual(1, 2); // => true
+lessOrEqual(1, 1); // => true
+lessOrEqual(2, 1); // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/lessOrEqual.js">Spec</a>
+	•
+	<a href="../module/lessOrEqual.js">Source</a>: <code> (x, y) =&gt; x &lt;= y;</code>
+</sup></div>
+
+
+### lessThan
+
+Same as `a < b`.
+
+```js
+var lessThan = require('1-liners/lessThan');
+
+lessThan(1, 2); // => true
+lessThan(1, 1); // => false
+lessThan(2, 1); // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/lessThan.js">Spec</a>
+	•
+	<a href="../module/lessThan.js">Source</a>: <code> (x, y) =&gt; x &lt; y;</code>
 </sup></div>
 
 

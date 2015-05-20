@@ -13,6 +13,8 @@ import explode from './explode';
 import filter from './filter';
 import flip from './flip';
 import forEach from './forEach';
+import greaterOrEqual from './greaterOrEqual';
+import greaterThan from './greaterThan';
 import head from './head';
 import ifElse from './ifElse';
 import implode from './implode';
@@ -29,6 +31,8 @@ import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
 import length from './length';
+import lessOrEqual from './lessOrEqual';
+import lessThan from './lessThan';
 import looseEqual from './looseEqual';
 import map from './map';
 import match from './match';
@@ -80,6 +84,8 @@ export {
   filter,
   flip,
   forEach,
+  greaterOrEqual,
+  greaterThan,
   head,
   ifElse,
   implode,
@@ -96,6 +102,8 @@ export {
   isUnknown,
   join,
   length,
+  lessOrEqual,
+  lessThan,
   looseEqual,
   map,
   match,
