@@ -60,6 +60,7 @@
 - [pick](#pick)
 - [pipe](#pipe)
 - [plus](#plus)
+- [pop](#pop)
 - [property](#property)
 - [reduce](#reduce)
 - [reduceFrom](#reducefrom)
@@ -1163,6 +1164,26 @@ plus('a', 'b');  // => 'ab'
 	<a href="../tests/plus.js">Spec</a>
 	•
 	<a href="../module/plus.js">Source</a>: <code> (a, b) =&gt; a + b;</code>
+</sup></div>
+
+
+### pop
+
+Similar to `array.pop()`, but immutable.
+
+```js
+import pop from '1-liners/pop';
+
+const array = [1, 2, 3];
+
+pop(array);  // => [1, 2]
+array;       // => [1, 2, 3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/pop.js">Spec</a>
+	•
+	<a href="../module/pop.js">Source</a>: <code> (array) =&gt; array.slice(0, -1);</code>
 </sup></div>
 
 
