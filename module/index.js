@@ -45,6 +45,7 @@ import or from './or';
 import pick from './pick';
 import pipe from './pipe';
 import plus from './plus';
+import pop from './pop';
 import property from './property';
 import reduce from './reduce';
 import reduceFrom from './reduceFrom';
@@ -112,6 +113,7 @@ export {
   pick,
   pipe,
   plus,
+  pop,
   property,
   reduce,
   reduceFrom,
