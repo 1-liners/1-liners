@@ -24,18 +24,26 @@
 $ npm install --save 1-liners
 ```
 
-### Usage in es5
+### Usage in ES5
 
 ```js
-var map = require('1-liners').map;
+// The lightweight, recommended way:
 var map = require('1-liners/map');
+
+// Sometimes practical:
+var map = require('1-liners').map;
 ```
 
-### Using in es6
+### Usage in ES 2015 (formerly ES6)
 
 ```js
+// The lightweight, recommended way:
+import map from '1-liners/module/map';
+
+// You can also grab the code transpiled to ES5:
 import map from '1-liners/map';
-import map from '1-liners/module/map'; // uncompiled
+
+// Sometimes practical:
 import { map, filter } from '1-liners';
 ```
 
