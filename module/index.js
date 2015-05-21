@@ -32,7 +32,6 @@ import isTruthy from './isTruthy';
 import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
-import last from './last';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
 import lessThan from './lessThan';
@@ -106,7 +105,6 @@ export {
   isUndefined,
   isUnknown,
   join,
-  last,
   length,
   lessOrEqual,
   lessThan,
