@@ -24,6 +24,7 @@
 - [greaterOrEqual](#greaterorequal)
 - [greaterThan](#greaterthan)
 - [head](#head)
+- [identity](#identity)
 - [ifElse](#ifelse)
 - [implode](#implode)
 - [inc](#inc)
@@ -442,6 +443,26 @@ head([1, 2, 3]); // => 1
 	<a href="../tests/head.js">Spec</a>
 	•
 	<a href="../module/head.js">Source</a>: <code> ([head,]) =&gt; head;</code>
+</sup></div>
+
+
+### identity
+
+Returns the value you pass to the function
+
+```js
+var identity = require('1-liners/identity');
+
+identity(true); // => true
+identity(1); // => 1
+identity({ foo: 1 }); // => { foo: 1 }
+identity("1-liners"); // => "1-liners"
+```
+
+<div align="right"><sup>
+	<a href="../tests/identity.js">Spec</a>
+	•
+	<a href="../module/identity.js">Source</a>: <code> I =&gt; I;</code>
 </sup></div>
 
 

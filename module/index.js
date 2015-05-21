@@ -17,6 +17,7 @@ import forEach from './forEach';
 import greaterOrEqual from './greaterOrEqual';
 import greaterThan from './greaterThan';
 import head from './head';
+import identity from './identity';
 import ifElse from './ifElse';
 import implode from './implode';
 import inc from './inc';
@@ -90,6 +91,7 @@ export {
   greaterOrEqual,
   greaterThan,
   head,
+  identity,
   ifElse,
   implode,
   inc,
