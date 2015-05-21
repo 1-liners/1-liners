@@ -16,7 +16,7 @@
     "precommit": "npm run docs && git add documentation && npm run create-index && git add module/index.js",
     "prepush": "npm test",
     "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
-    "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- -R nyan --report lcov --compilers js:babel/register --ui qunit ./tests",
+    "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- --report lcov --compilers js:babel/register --ui qunit ./tests",
     "docs": "babel-node ./utils/createDocs.js; npm run toc; npm run updateCount",
     "updateCount": "babel-node ./utils/updateFuncCount.js;",
     "toc": "doctoc ./documentation/README.md",
