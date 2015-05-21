@@ -23,7 +23,7 @@
     "compile": "cd ./module; babel --loose=all ./*.js --out-dir ../",
     "clean": "rm *.js",
     "coverage": "npm run compile; npm run istanbul; npm run clean",
-    "coveralls": "npm run compile && npm run istanbul  && (cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js || true) && npm run clean",
+    "coveralls": "npm run compile && npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && npm run clean",
     "test": "npm run coverage",
     "create-index": "babel-node ./utils/createIndex.js",
     "prepublish": "npm run create-index; npm run compile"
