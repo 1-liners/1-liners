@@ -16,4 +16,8 @@ test('#pick', () => {
 		pick(['oof'], object),
 		{oof: undefined}
 	);
+	deepEqual(
+		object,
+		{foo: 1, bar: 2, baz: 3}
+	);
 });

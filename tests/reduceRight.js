@@ -1,5 +1,9 @@
-import { equal } from 'assert';
+import { equal, deepEqual } from 'assert';
 import reduceRight from '../reduceRight';
 
 let sub = (x, y) => x - y;
-test('#reduceRight', () => equal(reduceRight(sub, [1, 2, 3, 4]), -2));
+test('#reduceRight', () => {
+	let arr = [1, 2, 3, 4];
+	equal(reduceRight(sub, arr), -2);
+	deepEqual(arr, [1, 2, 3, 4]);
+});
