@@ -27,6 +27,7 @@
 - [ifElse](#ifelse)
 - [implode](#implode)
 - [inc](#inc)
+- [isBetween](#isbetween)
 - [isBoolean](#isboolean)
 - [isFalsy](#isfalsy)
 - [isFunction](#isfunction)
@@ -511,6 +512,25 @@ inc(1); // => 2
 	<a href="../tests/inc.js">Spec</a>
 	•
 	<a href="../module/inc.js">Source</a>: <code> (val) =&gt; val + 1;</code>
+</sup></div>
+
+
+### isBetween
+
+Return `number` if it’s greater than `min` and lower than `max`. Else return `min` or `max` respectively.
+
+```js
+var isBetween = require('1-liners/isBetween');
+
+isBetween(1, 10, 2.5);  // => true
+isBetween(1, 10, -5);   // => false
+isBetween(1, 10, 25);   // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isBetween.js">Spec</a>
+	•
+	<a href="../module/isBetween.js">Source</a>: <code> (min, max, number) =&gt; (min &lt;= number &amp;&amp; number &lt;= max);</code>
 </sup></div>
 
 

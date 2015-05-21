@@ -20,6 +20,7 @@ import head from './head';
 import ifElse from './ifElse';
 import implode from './implode';
 import inc from './inc';
+import isBetween from './isBetween';
 import isBoolean from './isBoolean';
 import isFalsy from './isFalsy';
 import isFunction from './isFunction';
@@ -93,6 +94,7 @@ export {
   ifElse,
   implode,
   inc,
+  isBetween,
   isBoolean,
   isFalsy,
   isFunction,
