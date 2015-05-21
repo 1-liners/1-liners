@@ -1,4 +1,5 @@
 import and from './and';
+import between from './between';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import by from './by';
@@ -71,6 +72,7 @@ import xor from './xor';
 
 export {
   and,
+  between,
   bitAnd,
   bitOr,
   by,

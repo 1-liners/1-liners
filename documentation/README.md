@@ -6,6 +6,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [and](#and)
+- [between](#between)
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
 - [by](#by)
@@ -94,6 +95,25 @@ and(false, true); // => false
 	<a href="../tests/and.js">Spec</a>
 	•
 	<a href="../module/and.js">Source</a>: <code> (x, y) =&gt; x &amp;&amp; y;</code>
+</sup></div>
+
+
+### between
+
+Return `number` if it’s greater than `min` and lower than `max`. Else return `min` or `max` respectively.
+
+```js
+var between = require('1-liners/between');
+
+between(1, 10, 2.5);  // => 2.5
+between(1, 10, -5);   // => 1
+between(1, 10, 25);   // => 10
+```
+
+<div align="right"><sup>
+	<a href="../tests/between.js">Spec</a>
+	•
+	<a href="../module/between.js">Source</a>: <code> (min, max, number) =&gt; (number &lt; min ? min : (number &gt; max ? max : number));</code>
 </sup></div>
 
 
