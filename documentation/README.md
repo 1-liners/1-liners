@@ -29,13 +29,16 @@
 - [inc](#inc)
 - [isBetween](#isbetween)
 - [isBoolean](#isboolean)
+- [isFalse](#isfalse)
 - [isFalsy](#isfalsy)
 - [isFunction](#isfunction)
 - [isNull](#isnull)
 - [isNumber](#isnumber)
 - [isObject](#isobject)
 - [isString](#isstring)
+- [isTrue](#istrue)
 - [isTruthy](#istruthy)
+- [isTypeOf](#istypeof)
 - [isUndefined](#isundefined)
 - [isUnknown](#isunknown)
 - [join](#join)
@@ -554,6 +557,29 @@ isBoolean(/anything else/);  // => false
 </sup></div>
 
 
+### isFalse
+
+Same as `x === false`.
+
+```js
+ var isFalse = require('1-liners/isFalse');
+
+ isFalse(false);  // => true
+
+ isFalse('yes');  // => false
+ isFalse(true);   // => false
+ isFalse([]);     // => false
+ isFalse('');     // => false
+ isFalse(0);      // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isFalse.js">Spec</a>
+	•
+	<a href="../module/isFalse.js">Source</a>: <code> (x) =&gt; x === false;</code>
+</sup></div>
+
+
 ### isFalsy
 
 Same as `!`.
@@ -683,6 +709,29 @@ isString(/anything else/);  // => false
 </sup></div>
 
 
+### isTrue
+
+Same as `x === true`.
+
+```js
+var isTrue = require('1-liners/isTrue');
+
+isTrue(true);   // => true
+
+isTrue('yes');  // => false
+isTrue([]);     // => false
+isTrue('');     // => false
+isTrue(0);      // => false
+isTrue(false);  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isTrue.js">Spec</a>
+	•
+	<a href="../module/isTrue.js">Source</a>: <code> (x) =&gt; x === true;</code>
+</sup></div>
+
+
 ### isTruthy
 
 Same as `!!`.
@@ -703,6 +752,27 @@ isTruthy(false);  // => false
 	<a href="../tests/isTruthy.js">Spec</a>
 	•
 	<a href="../module/isTruthy.js">Source</a>: <code> (x) =&gt; !!x;</code>
+</sup></div>
+
+
+### isTypeOf
+
+Same as `typeof value === TYPE`.
+
+```js
+var isTypeOf = require('1-liners/isTypeOf');
+
+isTypeOf('boolean', false);            // => true
+isTypeOf('boolean', true);             // => true
+
+isTypeOf('boolean', null);             // => false
+isTypeOf('boolean', /anything else/);  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isTypeOf.js">Spec</a>
+	•
+	<a href="../module/isTypeOf.js">Source</a>: <code> (type, value) =&gt; typeof value === type;</code>
 </sup></div>
 
 

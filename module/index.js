@@ -22,13 +22,16 @@ import implode from './implode';
 import inc from './inc';
 import isBetween from './isBetween';
 import isBoolean from './isBoolean';
+import isFalse from './isFalse';
 import isFalsy from './isFalsy';
 import isFunction from './isFunction';
 import isNull from './isNull';
 import isNumber from './isNumber';
 import isObject from './isObject';
 import isString from './isString';
+import isTrue from './isTrue';
 import isTruthy from './isTruthy';
+import isTypeOf from './isTypeOf';
 import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
@@ -95,13 +98,16 @@ export {
   inc,
   isBetween,
   isBoolean,
+  isFalse,
   isFalsy,
   isFunction,
   isNull,
   isNumber,
   isObject,
   isString,
+  isTrue,
   isTruthy,
+  isTypeOf,
   isUndefined,
   isUnknown,
   join,
