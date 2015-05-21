@@ -517,7 +517,7 @@ inc(1); // => 2
 
 ### isBetween
 
-Return `number` if it’s greater than `min` and lower than `max`. Else return `min` or `max` respectively.
+Check if the `number` lies between `min` and `max`, inclusive.
 
 ```js
 var isBetween = require('1-liners/isBetween');

@@ -3,7 +3,7 @@
  *
  * @description
  *
- * Return `number` if it’s greater than `min` and lower than `max`. Else return `min` or `max` respectively.
+ * Check if the `number` lies between `min` and `max`, inclusive.
  *
  * @example
  *
