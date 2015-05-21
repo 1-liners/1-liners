@@ -40,7 +40,7 @@ var map = require('1-liners').map;
 // The lightweight, recommended way:
 import map from '1-liners/module/map';
 
-// You can also grab the code transpiled to ES5:
+// You can also grab the ES5 version:
 import map from '1-liners/map';
 
 // Sometimes practical:
