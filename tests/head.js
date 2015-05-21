@@ -1,4 +1,8 @@
-import { equal } from 'assert';
+import { equal, deepEqual } from 'assert';
 import head from '../head';
 
-test('#head', () => equal(head([0, 1, 2]), 0));
+test('#head', () => {
+	let arr = [0, 1, 2];
+	equal(head(arr), 0);
+	deepEqual(arr, [0, 1, 2]);
+});
