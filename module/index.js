@@ -1,3 +1,4 @@
+import always from './always';
 import and from './and';
 import between from './between';
 import bitAnd from './bitAnd';
@@ -71,6 +72,7 @@ import uncurry3 from './uncurry3';
 import xor from './xor';
 
 export {
+  always,
   and,
   between,
   bitAnd,

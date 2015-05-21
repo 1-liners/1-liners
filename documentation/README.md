@@ -5,6 +5,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [always](#always)
 - [and](#and)
 - [between](#between)
 - [bitAnd](#bitand)
@@ -78,6 +79,29 @@
 - [xor](#xor)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+### always
+
+Creates a function that always returns a given value
+
+```js
+var always = require('1-liners/always');
+
+var T = always(true);
+T(); // => true
+T(); // => true
+
+var fortyTwo = always(42);
+fortyTwo(); // => 42
+fortyTwo(); // => 42
+```
+
+<div align="right"><sup>
+	<a href="../tests/always.js">Spec</a>
+	•
+	<a href="../module/always.js">Source</a>: <code> val =&gt; () =&gt; val;</code>
+</sup></div>
 
 
 ### and
