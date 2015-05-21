@@ -1,4 +1,5 @@
 import and from './and';
+import between from './between';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import by from './by';
@@ -19,6 +20,7 @@ import head from './head';
 import ifElse from './ifElse';
 import implode from './implode';
 import inc from './inc';
+import isBetween from './isBetween';
 import isBoolean from './isBoolean';
 import isFalsy from './isFalsy';
 import isFunction from './isFunction';
@@ -71,6 +73,7 @@ import xor from './xor';
 
 export {
   and,
+  between,
   bitAnd,
   bitOr,
   by,
@@ -91,6 +94,7 @@ export {
   ifElse,
   implode,
   inc,
+  isBetween,
   isBoolean,
   isFalsy,
   isFunction,
