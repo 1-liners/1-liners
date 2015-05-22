@@ -12,8 +12,46 @@
 [![Stability: unstable](https://img.shields.io/badge/stability-unstable-yellowgreen.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 [![Join the chat at https://gitter.im/1-liners/1-liners](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/1-liners/1-liners)
 
-> Useful oneliners and shorthand functions
+<sup>MADE IN SWITZERLAND</sup>
 
+1-liners
+====
+
+**Functional tools that couldn’t be simpler.**
+
+We’re proud to present *1-liners* – a stupid-simple functional utility belt. 62 *[@stoeffel this can update automatically]* one-liner functions, hand-crafted with love and attention.
+
+You get a product of top-quality functional programming craftmanship. Each function follows the *KISS* principle, which we’ve broken down into ten concrete rules:
+
+> 1. Each function shall **fit in one readable line of code**.
+> – you can grasp it by just glimpsing at the source code. [i.e flip.js](https://github.com/1-liners/1-liners/blob/master/module/flip.js#L18)
+> 
+> 2. Each function shall **have no side-effects**.
+> – you can use it with confidence.
+> 
+> 3. Each function shall **have a stable number of arguments**.
+> – it’s dead easy to bind, curry and uncurry.
+> 
+> 4. Each function shall **deal with data in an immutable way**.
+> – this helps you avoid debugging nightmares.
+> 
+> 5. Each function shall **take data as the last argument**.
+> – this makes composing new functions a breeze.
+> 
+> 6. Each function shall **be in a separate micro-module**.
+> – you download or load only what you need.
+> 
+> 7. Each function shall **be thoroughly tested**.
+> – 100% code coverage guaranteed. We even test if every function fits in one line. [coverage](https://coveralls.io/r/1-liners/1-liners)
+> 
+> 8. Each function shall **have great documentation**.
+> – the docs show usage and the source, and link to the specification. [documentation](https://github.com/1-liners/1-liners/tree/master/documentation)
+> 
+> 9. We shall provide functional versions of **native object methods**.
+> – like `array.reduce`.
+> 
+> 10. We shall provide functional versions of **language constructs**.
+> – like `+` or `&&`.
 
 
 ## Usage
