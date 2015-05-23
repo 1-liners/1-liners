@@ -55,7 +55,6 @@ import reduceRight from './reduceRight';
 import replace from './replace';
 import shallowClone from './shallowClone';
 import shave from './shave';
-import shift from './shift';
 import some from './some';
 import split from './split';
 import tail from './tail';
@@ -125,7 +124,6 @@ export {
   replace,
   shallowClone,
   shave,
-  shift,
   some,
   split,
   tail,
