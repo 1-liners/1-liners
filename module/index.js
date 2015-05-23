@@ -1,6 +1,7 @@
 import and from './and';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
+import butLast from './butLast';
 import by from './by';
 import compose from './compose';
 import converge from './converge';
@@ -46,7 +47,6 @@ import or from './or';
 import pick from './pick';
 import pipe from './pipe';
 import plus from './plus';
-import pop from './pop';
 import property from './property';
 import reduce from './reduce';
 import reduceFrom from './reduceFrom';
@@ -70,6 +70,7 @@ export {
   and,
   bitAnd,
   bitOr,
+  butLast,
   by,
   compose,
   converge,
@@ -115,7 +116,6 @@ export {
   pick,
   pipe,
   plus,
-  pop,
   property,
   reduce,
   reduceFrom,
