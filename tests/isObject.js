@@ -5,6 +5,7 @@ test('#isObject', () => {
 	ok(isObject({}));
 	ok(isObject([]));
 	ok(isObject(/anything else/));
+	ok(isObject(Object.create(null)));
 
 	ok(!isObject(undefined));
 	ok(!isObject(null));
