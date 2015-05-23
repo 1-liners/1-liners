@@ -3,6 +3,7 @@ import and from './and';
 import between from './between';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
+import butLast from './butLast';
 import by from './by';
 import compose from './compose';
 import converge from './converge';
@@ -37,6 +38,7 @@ import isTypeOf from './isTypeOf';
 import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
+import last from './last';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
 import lessThan from './lessThan';
@@ -81,6 +83,7 @@ export {
   between,
   bitAnd,
   bitOr,
+  butLast,
   by,
   compose,
   converge,
@@ -115,6 +118,7 @@ export {
   isUndefined,
   isUnknown,
   join,
+  last,
   length,
   lessOrEqual,
   lessThan,

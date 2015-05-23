@@ -10,6 +10,7 @@
 - [between](#between)
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
+- [butLast](#butlast)
 - [by](#by)
 - [compose](#compose)
 - [converge](#converge)
@@ -44,6 +45,7 @@
 - [isUndefined](#isundefined)
 - [isUnknown](#isunknown)
 - [join](#join)
+- [last](#last)
 - [length](#length)
 - [lessOrEqual](#lessorequal)
 - [lessThan](#lessthan)
@@ -178,6 +180,26 @@ bitOr(1, 1); // => 1
 	<a href="../tests/bitOr.js">Spec</a>
 	•
 	<a href="../module/bitOr.js">Source</a>: <code> (x, y) =&gt; x | y;</code>
+</sup></div>
+
+
+### butLast
+
+Return a copy of `array`, without the last item.
+
+```js
+import butLast from '1-liners/butLast';
+
+const array = [1, 2, 3];
+
+butLast(array);  // => [1, 2]
+array;           // => [1, 2, 3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/butLast.js">Spec</a>
+	•
+	<a href="../module/butLast.js">Source</a>: <code> (array) =&gt; array.slice(0, -1);</code>
 </sup></div>
 
 
@@ -880,6 +902,23 @@ join('-', [1, 'liners']); // => '1-liners'
 	<a href="../tests/join.js">Spec</a>
 	•
 	<a href="../module/join.js">Source</a>: <code> (superglue, arr) =&gt; arr.join(superglue);</code>
+</sup></div>
+
+
+### last
+
+Returns the last item of `array`.
+
+```js
+var last = require('1-liners/last');
+
+last([1, 2, 3]);  // => 3
+```
+
+<div align="right"><sup>
+	<a href="../tests/last.js">Spec</a>
+	•
+	<a href="../module/last.js">Source</a>: <code> (array) =&gt; array[array.length - 1];</code>
 </sup></div>
 
 
