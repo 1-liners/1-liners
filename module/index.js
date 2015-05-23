@@ -31,6 +31,7 @@ import isFunction from './isFunction';
 import isNull from './isNull';
 import isNumber from './isNumber';
 import isObject from './isObject';
+import isPlainObject from './isPlainObject';
 import isString from './isString';
 import isTrue from './isTrue';
 import isTruthy from './isTruthy';
@@ -111,6 +112,7 @@ export {
   isNull,
   isNumber,
   isObject,
+  isPlainObject,
   isString,
   isTrue,
   isTruthy,
