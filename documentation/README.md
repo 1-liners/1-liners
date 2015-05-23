@@ -39,6 +39,7 @@
 - [isNull](#isnull)
 - [isNumber](#isnumber)
 - [isObject](#isobject)
+- [isPlainObject](#isplainobject)
 - [isString](#isstring)
 - [isTrue](#istrue)
 - [isTruthy](#istruthy)
@@ -774,6 +775,30 @@ isObject('anything else');  // => false
 	<a href="../tests/isObject.js">Spec</a>
 	•
 	<a href="../module/isObject.js">Source</a>: <code> (value) =&gt; (value !== null &amp;&amp; typeof value === 'object');</code>
+</sup></div>
+
+
+### isPlainObject
+
+Checks if an object inherits directly from `null` or `Object.prototype` – like an object literal (`{...}`) does.
+
+Heads up! This function is [not supported on IE 10 and below](https://babeljs.io/docs/usage/caveats/).
+
+```js
+var isPlainObject = require('1-liners/isPlainObject');
+
+isPlainObject({});                   // => true
+isPlainObject(Object.create(null));  // => true
+
+isPlainObject(null);                 // => false
+isPlainObject([]);                   // => false
+isPlainObject(/anything else/);      // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isPlainObject.js">Spec</a>
+	•
+	<a href="../module/isPlainObject.js">Source</a>: <code> (value) =&gt; (value &amp;&amp; typeof value === 'object' &amp;&amp; (value.__proto__ == null || value.__proto__ === Object.prototype));</code>
 </sup></div>
 
 
