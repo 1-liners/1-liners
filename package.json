@@ -26,7 +26,7 @@
     "coveralls": "npm run compile && npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && npm run clean",
     "test": "npm run coverage",
     "create-index": "babel-node ./utils/createIndex.js",
-    "prepublish": "npm run create-index; npm run compile"
+    "prepublish": "npm test; npm run create-index; npm run compile"
   },
   "files": [
     "/*.js",
