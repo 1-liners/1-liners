@@ -10,6 +10,7 @@ import converge from './converge';
 import curry from './curry';
 import curryRight from './curryRight';
 import dec from './dec';
+import drop from './drop';
 import equal from './equal';
 import every from './every';
 import explode from './explode';
@@ -90,6 +91,7 @@ export {
   curry,
   curryRight,
   dec,
+  drop,
   equal,
   every,
   explode,
