@@ -1,7 +1,7 @@
 
 &nbsp;
 
-<p align="center"><img src="https://cdn.rawgit.com/1-liners/1-liners/66775c8/logo.png" width="382px" height="125px" /></p>
+<p align="center"><img src="https://cdn.rawgit.com/1-liners/Logos/master/logo.png" width="382px" height="125px" /></p>
 
 &nbsp;
 
@@ -53,6 +53,7 @@ You get a product of top-quality functional programming craftmanship. Each funct
 > 10. We shall provide functional versions of **language constructs**.
 > – like `+` or `&&`.
 
+<p align="center"><img src="https://cdn.rawgit.com/1-liners/Logos/master/swissknife.gif" width="400px" height="150px" /></p>
 
 ## Usage
 
