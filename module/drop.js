@@ -15,4 +15,4 @@
  * 	object;                        // => {foo: 1, bar: 2, baz: 3}
  *
  */
-export default (props, object) => Object.keys(object).reduce((result, key) => Object.assign(result, props.includes(key) ? null : {[key]: object[key]}), {});
+export default (props, object) => Object.keys(object).reduce((res, k) => Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});
