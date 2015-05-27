@@ -68,6 +68,7 @@
 - [pipe](#pipe)
 - [plus](#plus)
 - [property](#property)
+- [put](#put)
 - [reduce](#reduce)
 - [reduceFrom](#reducefrom)
 - [reduceFromRight](#reducefromright)
@@ -1337,6 +1338,25 @@ property('foo', object);  // => 1
 	<a href="../tests/property.js">Spec</a>
 	•
 	<a href="../module/property.js">Source</a>: <code> (property, object) =&gt; object[property];</code>
+</sup></div>
+
+
+### put
+
+Same as `Object.assign({}, obj, {[key]: val})`
+
+```js
+const put = require('1-liners/put');
+
+const object = {id: 1};
+
+put('name', 'stoeffel', object);  // => { id: 1, name: 'stoeffel' }
+```
+
+<div align="right"><sup>
+	<a href="../tests/put.js">Spec</a>
+	•
+	<a href="../module/put.js">Source</a>: <code> (key, val, obj) =&gt; Object.assign({}, obj, {[key]: val});</code>
 </sup></div>
 
 
