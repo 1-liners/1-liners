@@ -1,8 +1,6 @@
-import getModules from './getModules';
-import {
-	writeFile
-}
-from 'fs';
+import getModules from 'get-modules';
+import { writeFile } from 'fs';
+import path from 'path';
 import curry from '../module/curry';
 import map from '../module/map';
 import join from '../module/join';
@@ -30,7 +28,7 @@ const createExport = reduce(compose, [
 	filterIndex
 ]);
 
-getModules((err, modules) => {
+getModules(path.join(__dirname, '..'), (err, modules) => {
 	if (err) throw err;
 	let imports = createImports(modules);
 	let exportDefault = `export {\n  ${createExport(modules)}\n};`;

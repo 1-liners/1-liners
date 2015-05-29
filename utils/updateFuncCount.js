@@ -1,4 +1,4 @@
-import getModules from './getModules';
+import getModules from 'get-modules';
 import { readFile, writeFile } from 'fs';
 import { join } from 'path';
 import curry from '../module/curry';
@@ -6,9 +6,9 @@ import replace from '../module/replace';
 
 const replaceCount = curry(replace)(/\d+ one-liner functions/);
 
-getModules((err, modules) => {
+getModules(join(__dirname, '..'), (err, modules) => {
 	if (err) throw err;
-	readFile(join(__dirname, '..', 'README.md'), { encoding: 'utf8' }, (err, data) => 
+	readFile(join(__dirname, '..', 'README.md'), { encoding: 'utf8' }, (err, data) =>
 			err? onError(err):
 			writeFile('./README.md', replaceCount(modules.length + ' one-liner functions', data), onFileWritten));
 })
