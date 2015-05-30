@@ -12,7 +12,7 @@ Make sure to...
 
 ## Getting started
 
-1. `git clone https://github.com/stoeffel/1-liners`
+1. `git clone https://github.com/1-liners/1-liners`
 2. `npm install`
 3. add your new awesome feature
 4. `npm test`
