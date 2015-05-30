@@ -1,6 +1,7 @@
 import { parseComments } from 'dox';
-import getModules from './getModules';
+import getModules from 'get-modules';
 import { readFileSync, writeFile } from 'fs';
+import path from 'path';
 import curry from '../module/curry';
 import map from '../module/map';
 import join from '../module/join';
@@ -18,7 +19,7 @@ const joinλ = curry(join);
 
 const filterIndex = filterλ(module => module !== 'index.js');
 
-getModules((err, modules) => {
+getModules(path.join(__dirname, '..'), (err, modules) => {
 	if (err) throw err;
 
 	const docs = composeAll(

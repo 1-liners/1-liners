@@ -1,10 +1,10 @@
 import { equal } from 'assert';
 import { join } from 'path';
-import getModules from '../utils/getModules';
+import getModules from 'get-modules';
 import { readdir, readFile } from 'fs';
 
 test('Should be a oneliner', (done) =>
-	getModules((err, modules) => {
+	getModules(join(__dirname, '..'), (err, modules) => {
 		if (err) throw err;
 		let countTests = 0;
 
