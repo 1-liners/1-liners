@@ -25,7 +25,7 @@
     "clean": "rm *.js",
     "coverage": "npm run compile; npm run istanbul; npm run clean",
     "coveralls": "npm run compile && npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && npm run clean",
-    "test": "npm run coverage",
+    "test": "npm run compile; mocha --compilers js:babel/register --ui qunit ./tests; npm run clean",
     "create-index": "module-indexer .",
     "prepublish": "npm test; npm run create-index; npm run compile"
   },
