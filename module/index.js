@@ -14,6 +14,7 @@ import drop from './drop';
 import equal from './equal';
 import every from './every';
 import explode from './explode';
+import extend from './extend';
 import filter from './filter';
 import flip from './flip';
 import forEach from './forEach';
@@ -97,6 +98,7 @@ export {
   equal,
   every,
   explode,
+  extend,
   filter,
   flip,
   forEach,

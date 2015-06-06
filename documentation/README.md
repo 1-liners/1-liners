@@ -21,6 +21,7 @@
 - [equal](#equal)
 - [every](#every)
 - [explode](#explode)
+- [extend](#extend)
 - [filter](#filter)
 - [flip](#flip)
 - [forEach](#foreach)
@@ -406,6 +407,25 @@ explode(sum)(1, 2, 3, 4);  // => 10
 	<a href="../tests/explode.js">Spec</a>
 	•
 	<a href="../module/explode.js">Source</a>: <code> (func) =&gt; (...args) =&gt; func(args);</code>
+</sup></div>
+
+
+### extend
+
+Returns a copy of `object`, extended by `extension`.
+
+```js
+const extend = require('1-liners/extend');
+
+const object = {id: 1};
+
+extend({ name: 'stoeffel' } object);  // => { id: 1, name: 'stoeffel' }
+```
+
+<div align="right"><sup>
+	<a href="../tests/extend.js">Spec</a>
+	•
+	<a href="../module/extend.js">Source</a>: <code> (extension, object) =&gt; Object.assign({}, object, extension);</code>
 </sup></div>
 
 
