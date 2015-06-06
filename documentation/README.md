@@ -419,7 +419,7 @@ const extend = require('1-liners/extend');
 
 const object = {id: 1};
 
-extend({ name: 'stoeffel' } object);  // => { id: 1, name: 'stoeffel' }
+extend({ name: 'stoeffel' }, object);  // => { id: 1, name: 'stoeffel' }
 ```
 
 <div align="right"><sup>

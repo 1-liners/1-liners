@@ -19,7 +19,7 @@
 
 **Functional tools that couldn’t be simpler.**
 
-We’re proud to present *1-liners* – a stupid-simple functional utility belt. 82 one-liner functions, hand-crafted with love and attention.
+We’re proud to present *1-liners* – a stupid-simple functional utility belt. 83 one-liner functions, hand-crafted with love and attention.
 
 You get a product of top-quality functional programming craftmanship. Each function follows the *KISS* principle, which we’ve broken down into ten concrete rules:
 
