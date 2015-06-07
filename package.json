@@ -25,7 +25,7 @@
     "clean": "rm *.js",
     "coverage": "npm run compile; npm run istanbul; npm run clean",
     "coveralls": "npm run compile && npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && npm run clean",
-    "test": "npm run compile; mocha --compilers js:babel/register --ui qunit ./tests; npm run clean",
+    "test": "npm run coverage",
     "create-index": "module-indexer .",
     "prepublish": "npm test; npm run create-index; npm run compile"
   },
@@ -41,16 +41,16 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel": "^5.1.10",
+    "babel": "^5.5.4",
     "coveralls": "^2.11.2",
-    "doctoc": "^0.12.0",
-    "dox": "^0.7.1",
+    "doctoc": "^0.13.0",
+    "dox": "^0.8.0",
     "get-modules": "^1.0.2",
-    "husky": "^0.7.0",
-    "istanbul": "^0.3.13",
-    "mocha": "^2.2.4",
+    "husky": "^0.8.1",
+    "istanbul": "^0.3.14",
+    "mocha": "^2.2.5",
     "mocha-lcov-reporter": "0.0.2",
     "module-indexer": "^1.0.0",
-    "nodangel": "1.3.8"
+    "nodangel": "^1.3.8"
   }
 }
