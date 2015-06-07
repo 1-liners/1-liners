@@ -1,9 +1,9 @@
 import { equal, deepEqual } from 'assert';
-import reduceFromRight from '../reduceFromRight';
+import fold from '../fold';
 
 let sub = (x, y) => x - y;
-test('#reduceFromRight', () => {
+test('#fold', () => {
 	let arr = [1, 2, 3, 4];
-	equal(reduceFromRight(sub, 10, arr), 0);
+	equal(fold(sub, 8, arr), -2);
 	deepEqual(arr, [1, 2, 3, 4]);
 });
