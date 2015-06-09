@@ -28,7 +28,7 @@
 
 **Functional tools that couldn’t be simpler.**
 
-We’re proud to present *1-liners* – a stupid-simple functional utility belt. 83 one-liner functions, hand-crafted with love and attention.
+We’re proud to present *1-liners* – a dead simple functional utility belt. 83 one-liner functions, hand-crafted with love and attention.
 
 <p align="center">
 	<br/>
@@ -50,31 +50,33 @@ We’re proud to present *1-liners* – a stupid-simple functional utility belt.
 
 ## Our decalogue
 
-You get a product of top-quality functional programming craftmanship. Each function follows the *KISS* principle, which we’ve broken down into ten concrete rules:
+You get a product of top-quality functional programming craftmanship. Each function follows the *KISS* principle, which we’ve broken down into ten strict rules.
+
+We always follow these. You have our word.
 
 1.  Each function shall **[fit in one readable line of code][]**  
-  – you can grasp it by just glimpsing at the source code.
+  – take a glimpse at the source and you know exactly what’s going on.
 
 2.  Each function shall **[have no side-effects][]**  
   – you can use it with confidence.
 
 3.  Each function shall **[have a stable number of arguments][]**  
-  – it’s dead easy to bind, curry and uncurry.
+  – it’s dead easy to bind, curry and uncurry, implode and explode.
 
 4.  Each function shall **[deal with data in an immutable way][]**  
-  – this helps you avoid debugging nightmares.
+  – no more debugging nightmares.
 
 5.  Each function shall **[take data as the last argument][]**  
-  – this makes composing new functions a breeze.
+  – this makes currying and composing new functions a breeze.
 
 6.  Each function shall **[be in a separate micro-module][]**  
-  – you download or load only what you need.
+  – you only load/bundle the single 1-liner you need.
 
 7.  Each function shall **[be thoroughly tested][]**  
-  – 100% code coverage guaranteed.  We even test if every function fits in one line!
+  – 100% code coverage guaranteed. We even test if every function fits in one line!
 
 8.  Each function shall **[have great documentation][]**  
-  – the docs show usage and the source, and link to the specification. [cumentation](https://github.com/1-liners/1-liners/tree/master/documentation)
+  – the docs explain usage, present the source, and link to the specs.
 
 9.  We shall provide functional versions of **[native object methods][]**  
   – like `reduce(callback, array)` for `array.reduce(callback)`.
