@@ -52,37 +52,63 @@ We’re proud to present *1-liners* – a dead simple functional utility belt. 8
 
 You get a product of top-quality functional programming craftmanship. Each function follows the *KISS* principle, which we’ve broken down into ten strict rules.
 
-We always follow these. You have our word.
+We always follow them. You have our word.
+
+
+<p align="center"><a
+	title="from Beautiful Flat Icons by Nick Roach"
+	href="https://www.elegantthemes.com/blog/freebie-of-the-week/beautiful-flat-icons-for-free"
+	>
+	<br/>
+	<img
+		alt="1-liners"
+		src="https://cdn.rawgit.com/1-liners/Logos/04c6949/megaphone.svg"
+		width="80px"
+		height="80px"
+	/>
+	<br/>
+</a></p>
+
 
 1.  Each function shall **[fit in one readable line of code][]**  
-  – take a glimpse at the source and you know exactly what’s going on.
+  – take a glimpse at the source and you know exactly what’s going on.  
+  &nbsp;
 
 2.  Each function shall **[have no side-effects][]**  
-  – you can use it with confidence.
+  – you can use it with confidence.  
+  &nbsp;
 
 3.  Each function shall **[have a stable number of arguments][]**  
-  – it’s dead easy to bind, curry and uncurry, implode and explode.
+  – it’s dead easy to bind, curry and uncurry, implode and explode.  
+  &nbsp;
 
 4.  Each function shall **[deal with data in an immutable way][]**  
-  – no more debugging nightmares.
+  – no more debugging nightmares.  
+  &nbsp;
 
 5.  Each function shall **[take data as the last argument][]**  
-  – this makes currying and composing new functions a breeze.
+  – this makes currying and composing new functions a breeze.  
+  &nbsp;
 
 6.  Each function shall **[be in a separate micro-module][]**  
-  – you only load/bundle the single 1-liner you need.
+  – you only load/bundle the single 1-liner you need.  
+  &nbsp;
 
 7.  Each function shall **[be thoroughly tested][]**  
-  – 100% code coverage guaranteed. We even test if every function fits in one line!
+  – 100% code coverage guaranteed. We even test if every function fits in one line!  
+  &nbsp;
 
 8.  Each function shall **[have great documentation][]**  
-  – the docs explain usage, present the source, and link to the specs.
+  – the docs explain usage, present the source, and link to the specs.  
+  &nbsp;
 
 9.  We shall provide functional versions of **[native object methods][]**  
-  – like `reduce(callback, array)` for `array.reduce(callback)`.
+  – like `reduce(callback, array)` for `array.reduce(callback)`.  
+  &nbsp;
 
 10. We shall provide functional versions of **[language constructs][]**  
-  – like `plus(a, b)` for `a + b`.
+  – like `plus(a, b)` for `a + b`.  
+  &nbsp;
 
 [fit in one readable line of code]:    https://github.com/1-liners/1-liners/blob/28b02d0939d6bb4034693e48440f450141453ae9/module/flip.js#L18
 [have no side-effects]:                ./documentation#extend
