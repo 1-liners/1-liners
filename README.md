@@ -1,10 +1,3 @@
-
-&nbsp;
-
-<p align="center"><img src="https://cdn.rawgit.com/1-liners/Logos/master/logo.png" width="382px" height="125px" /></p>
-
-&nbsp;
-
 [![Coverage Status](https://coveralls.io/repos/1-liners/1-liners/badge.svg?branch=master)](https://coveralls.io/r/1-liners/1-liners?branch=master)
 [![Build Status](https://travis-ci.org/1-liners/1-liners.svg?branch=master)](https://travis-ci.org/1-liners/1-liners)
 [![Dependency Status](https://david-dm.org/1-liners/1-liners.svg)](https://david-dm.org/1-liners/1-liners)
@@ -14,8 +7,21 @@
 
 <sup>MADE IN SWITZERLAND</sup>
 
-1-liners
-====
+&nbsp;
+
+<h1 align="center"><a
+	title="Functional tools that couldn’t be simpler"
+	href="./documentation/README.md"
+	>
+	<img
+		alt="1-liners"
+		src="https://cdn.rawgit.com/1-liners/Logos/master/logo.png"
+		width="382px"
+		height="125px"
+	/>
+</a></h1>
+
+&nbsp;
 
 **Functional tools that couldn’t be simpler.**
 
