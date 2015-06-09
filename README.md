@@ -1,11 +1,11 @@
+<sup>MADE IN SWITZERLAND</sup>
+
 [![Coverage Status](https://coveralls.io/repos/1-liners/1-liners/badge.svg?branch=master)](https://coveralls.io/r/1-liners/1-liners?branch=master)
 [![Build Status](https://travis-ci.org/1-liners/1-liners.svg?branch=master)](https://travis-ci.org/1-liners/1-liners)
 [![Dependency Status](https://david-dm.org/1-liners/1-liners.svg)](https://david-dm.org/1-liners/1-liners)
 [![npm version](https://badge.fury.io/js/1-liners.svg)](http://badge.fury.io/js/1-liners)
 [![Stability: unstable](https://img.shields.io/badge/stability-unstable-yellowgreen.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 [![Join the chat at https://gitter.im/1-liners/1-liners](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/1-liners/1-liners)
-
-<sup>MADE IN SWITZERLAND</sup>
 
 <h1 align="center"><a
 	title="Functional tools that couldn’t be simpler"
