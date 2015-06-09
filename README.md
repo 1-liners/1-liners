@@ -28,39 +28,58 @@
 
 We’re proud to present *1-liners* – a stupid-simple functional utility belt. 83 one-liner functions, hand-crafted with love and attention.
 
+<p align="center"><img
+	src="https://cdn.rawgit.com/1-liners/Logos/master/swissknife.gif"
+	width="400px"
+	height="300px"
+/></p>
+
+
+## Our decalogue
+
 You get a product of top-quality functional programming craftmanship. Each function follows the *KISS* principle, which we’ve broken down into ten concrete rules:
 
-> 1. Each function shall **fit in one readable line of code**.
-> – you can grasp it by just glimpsing at the source code. [i.e flip.js](https://github.com/1-liners/1-liners/blob/master/module/flip.js#L18)
-> 
-> 2. Each function shall **have no side-effects**.
-> – you can use it with confidence.
-> 
-> 3. Each function shall **have a stable number of arguments**.
-> – it’s dead easy to bind, curry and uncurry.
-> 
-> 4. Each function shall **deal with data in an immutable way**.
-> – this helps you avoid debugging nightmares.
-> 
-> 5. Each function shall **take data as the last argument**.
-> – this makes composing new functions a breeze.
-> 
-> 6. Each function shall **be in a separate micro-module**.
-> – you download or load only what you need.
-> 
-> 7. Each function shall **be thoroughly tested**.
-> – 100% code coverage guaranteed. We even test if every function fits in one line. [coverage](https://coveralls.io/r/1-liners/1-liners)
-> 
-> 8. Each function shall **have great documentation**.
-> – the docs show usage and the source, and link to the specification. [documentation](https://github.com/1-liners/1-liners/tree/master/documentation)
-> 
-> 9. We shall provide functional versions of **native object methods**.
-> – like `array.reduce`.
-> 
-> 10. We shall provide functional versions of **language constructs**.
-> – like `+` or `&&`.
+1.  Each function shall **[fit in one readable line of code][]**  
+  – you can grasp it by just glimpsing at the source code.
 
-<p align="center"><img src="https://cdn.rawgit.com/1-liners/Logos/master/swissknife.gif" width="200px" height="150px" /></p>
+2.  Each function shall **[have no side-effects][]**  
+  – you can use it with confidence.
+
+3.  Each function shall **[have a stable number of arguments][]**  
+  – it’s dead easy to bind, curry and uncurry.
+
+4.  Each function shall **[deal with data in an immutable way][]**  
+  – this helps you avoid debugging nightmares.
+
+5.  Each function shall **[take data as the last argument][]**  
+  – this makes composing new functions a breeze.
+
+6.  Each function shall **[be in a separate micro-module][]**  
+  – you download or load only what you need.
+
+7.  Each function shall **[be thoroughly tested][]**  
+  – 100% code coverage guaranteed.  We even test if every function fits in one line!
+
+8.  Each function shall **[have great documentation][]**  
+  – the docs show usage and the source, and link to the specification. [cumentation](https://github.com/1-liners/1-liners/tree/master/documentation)
+
+9.  We shall provide functional versions of **[native object methods][]**  
+  – like `reduce(callback, array)` for `array.reduce(callback)`.
+
+10. We shall provide functional versions of **[language constructs][]**  
+  – like `plus(a, b)` for `a + b`.
+
+[fit in one readable line of code]:    https://github.com/1-liners/1-liners/blob/28b02d0939d6bb4034693e48440f450141453ae9/module/flip.js#L18
+[have no side-effects]:                ./documentation#extend
+[have a stable number of arguments]:   ./documentation#shave
+[deal with data in an immutable way]:  ./documentation#put
+[take data as the last argument]:      ./documentation#split
+[be in a separate micro-module]:       https://github.com/1-liners/1-liners/blob/28b02d0939d6bb4034693e48440f450141453ae9/module/compose.js
+[be thoroughly tested]:                https://coveralls.io/r/1-liners/1-liners?branch=master
+[have great documentation]:            ./documentation
+[native object methods]:               ./documentation/reduce
+[language constructs]:                 ./documentation/plus
+
 
 ## Usage
 
