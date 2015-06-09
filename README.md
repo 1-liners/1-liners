@@ -13,6 +13,7 @@
 	>
 	<br/>
 	<br/>
+	<br/>
 	<img
 		alt="1-liners"
 		src="https://cdn.rawgit.com/1-liners/Logos/master/logo.png"
@@ -22,17 +23,29 @@
 	<br/>
 	<br/>
 	<br/>
+	<br/>
 </a></h1>
 
 **Functional tools that couldn’t be simpler.**
 
 We’re proud to present *1-liners* – a stupid-simple functional utility belt. 83 one-liner functions, hand-crafted with love and attention.
 
-<p align="center"><img
-	src="https://cdn.rawgit.com/1-liners/Logos/master/swissknife.gif"
-	width="400px"
-	height="300px"
-/></p>
+<p align="center">
+	<br/>
+	<br/>
+	<br/>
+	<img
+		src="https://cdn.rawgit.com/1-liners/Logos/master/swissknife.gif"
+		width="400px"
+		height="300px"
+	/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</p>
 
 
 ## Our decalogue
