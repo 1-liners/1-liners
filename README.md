@@ -60,12 +60,15 @@ We always follow them. You have our word.
 	href="https://www.elegantthemes.com/blog/freebie-of-the-week/beautiful-flat-icons-for-free"
 	>
 	<br/>
+	<br/>
 	<img
 		alt="1-liners"
 		src="https://cdn.rawgit.com/1-liners/Logos/04c6949/megaphone.svg"
-		width="80px"
-		height="80px"
+		width="120px"
+		height="120px"
 	/>
+	<br/>
+	<br/>
 	<br/>
 </a></p>
 
