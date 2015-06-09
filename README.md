@@ -7,21 +7,22 @@
 
 <sup>MADE IN SWITZERLAND</sup>
 
-&nbsp;
-
 <h1 align="center"><a
 	title="Functional tools that couldn’t be simpler"
 	href="./documentation/README.md"
 	>
+	<br/>
+	<br/>
 	<img
 		alt="1-liners"
 		src="https://cdn.rawgit.com/1-liners/Logos/master/logo.png"
 		width="382px"
 		height="125px"
 	/>
+	<br/>
+	<br/>
+	<br/>
 </a></h1>
-
-&nbsp;
 
 **Functional tools that couldn’t be simpler.**
 
