@@ -24,6 +24,8 @@
 - [extend](#extend)
 - [filter](#filter)
 - [flip](#flip)
+- [fold](#fold)
+- [foldRight](#foldright)
 - [forEach](#foreach)
 - [greaterOrEqual](#greaterorequal)
 - [greaterThan](#greaterthan)
@@ -71,8 +73,6 @@
 - [property](#property)
 - [put](#put)
 - [reduce](#reduce)
-- [reduceFrom](#reducefrom)
-- [reduceFromRight](#reducefromright)
 - [reduceRight](#reduceright)
 - [replace](#replace)
 - [shallowClone](#shallowclone)
@@ -463,6 +463,40 @@ flip(flip(f))(6, 2);  // => 3
 	<a href="../tests/flip.js">Spec</a>
 	•
 	<a href="../module/flip.js">Source</a>: <code> (f) =&gt; (...args) =&gt; f(...args.reverse());</code>
+</sup></div>
+
+
+### fold
+
+Same as [`array.reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/reduce).
+
+```js
+var fold = require('1-liners/fold');
+
+fold(sum, 8, [1, 2, 3]); // => 2
+```
+
+<div align="right"><sup>
+	<a href="../tests/fold.js">Spec</a>
+	•
+	<a href="../module/fold.js">Source</a>: <code> (fold, initial, arr) =&gt; arr.reduce(fold, initial);</code>
+</sup></div>
+
+
+### foldRight
+
+Same as [`array.reduceRight`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/reduceRight).
+
+```js
+var foldRight = require('1-liners/foldRight');
+
+foldRight(sub, 1, [1, 2, 3]); // => -5
+```
+
+<div align="right"><sup>
+	<a href="../tests/foldRight.js">Spec</a>
+	•
+	<a href="../module/foldRight.js">Source</a>: <code> (fold, initial, arr) =&gt; arr.reduceRight(fold, initial);</code>
 </sup></div>
 
 
@@ -1394,40 +1428,6 @@ reduce(sum, [1, 2, 3]); // => 6
 	<a href="../tests/reduce.js">Spec</a>
 	•
 	<a href="../module/reduce.js">Source</a>: <code> (reduce, arr) =&gt; arr.reduce(reduce);</code>
-</sup></div>
-
-
-### reduceFrom
-
-Same as `[1, 2, 3].reduceFrom(sum, 8)`.
-
-```js
-var reduceFrom = require('1-liners/reduceFrom');
-
-reduceFrom(sum, 8, [1, 2, 3]); // => 2
-```
-
-<div align="right"><sup>
-	<a href="../tests/reduceFrom.js">Spec</a>
-	•
-	<a href="../module/reduceFrom.js">Source</a>: <code> (reduce, initial, arr) =&gt; arr.reduce(reduce, initial);</code>
-</sup></div>
-
-
-### reduceFromRight
-
-Same as `[1, 2, 3].reduceFromRight(sub, 1)`.
-
-```js
-var reduceFromRight = require('1-liners/reduceFromRight');
-
-reduceFromRight(sub, 1, [1, 2, 3]); // => -5
-```
-
-<div align="right"><sup>
-	<a href="../tests/reduceFromRight.js">Spec</a>
-	•
-	<a href="../module/reduceFromRight.js">Source</a>: <code> (reduce, initial, arr) =&gt; arr.reduceRight(reduce, initial);</code>
 </sup></div>
 
 

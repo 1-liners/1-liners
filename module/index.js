@@ -17,6 +17,8 @@ import explode from './explode';
 import extend from './extend';
 import filter from './filter';
 import flip from './flip';
+import fold from './fold';
+import foldRight from './foldRight';
 import forEach from './forEach';
 import greaterOrEqual from './greaterOrEqual';
 import greaterThan from './greaterThan';
@@ -64,8 +66,6 @@ import plus from './plus';
 import property from './property';
 import put from './put';
 import reduce from './reduce';
-import reduceFrom from './reduceFrom';
-import reduceFromRight from './reduceFromRight';
 import reduceRight from './reduceRight';
 import replace from './replace';
 import shallowClone from './shallowClone';
@@ -101,6 +101,8 @@ export {
   extend,
   filter,
   flip,
+  fold,
+  foldRight,
   forEach,
   greaterOrEqual,
   greaterThan,
@@ -148,8 +150,6 @@ export {
   property,
   put,
   reduce,
-  reduceFrom,
-  reduceFromRight,
   reduceRight,
   replace,
   shallowClone,
