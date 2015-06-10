@@ -39,11 +39,12 @@
     "oneliners",
     "shorthands"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "babel-runtime": "^5.5.6"
+  },
   "devDependencies": {
     "babel": "^5.5.6",
     "babel-core": "^5.5.6",
-    "babel-plugin-object-assign": "^1.1.0",
     "coveralls": "^2.11.2",
     "doctoc": "^0.13.0",
     "dox": "^0.8.0",
