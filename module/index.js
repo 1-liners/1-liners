@@ -24,7 +24,8 @@ import greaterOrEqual from './greaterOrEqual';
 import greaterThan from './greaterThan';
 import head from './head';
 import identity from './identity';
-import ifElse from './ifElse';
+import ifThen from './ifThen';
+import ifThenElse from './ifThenElse';
 import implode from './implode';
 import inc from './inc';
 import isBetween from './isBetween';
@@ -108,7 +109,8 @@ export {
   greaterThan,
   head,
   identity,
-  ifElse,
+  ifThen,
+  ifThenElse,
   implode,
   inc,
   isBetween,
