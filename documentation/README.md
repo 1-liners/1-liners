@@ -31,7 +31,8 @@
 - [greaterThan](#greaterthan)
 - [head](#head)
 - [identity](#identity)
-- [ifElse](#ifelse)
+- [ifThen](#ifthen)
+- [ifThenElse](#ifthenelse)
 - [implode](#implode)
 - [inc](#inc)
 - [isBetween](#isbetween)
@@ -592,32 +593,52 @@ identity("1-liners"); // => "1-liners"
 </sup></div>
 
 
-### ifElse
+### ifThen
 
-Creates a function which calls the first function if the predicate is true
-and the second function if the predicate is false.
+Creates a function which calls `then` if the `predicate` is true
+and returns `undefined` if the `predicate` is false.
 
 ```js
-let ifElse = require('1-liners/ifElse');
+let ifThen = require('1-liners/ifThen');
 
 let eq = (a, b) => a === b;
 let add = (a, b) => a + b;
 let sub = (a, b) => a - b;
 
-let addIfEq = ifElse(eq, add, sub);
-
-addIfEq(1, 1); // => 2
-addIfEq(2, 1); // => 1
-
-let words = ifElse((str) => typeof str === 'string', (str) => str.split(' '));
+let words = ifThen((str) => typeof str === 'string', (str) => str.split(' '));
 
 words('Hello ES2015'); // => ['Hello', 'ES2015']
 ```
 
 <div align="right"><sup>
-	<a href="../tests/ifElse.js">Spec</a>
+	<a href="../tests/ifThen.js">Spec</a>
 	•
-	<a href="../module/ifElse.js">Source</a>: <code> (pred, ifDo, elseDo=()=&gt;{}) =&gt; (...args) =&gt; pred(...args) ? ifDo(...args) : elseDo(...args);</code>
+	<a href="../module/ifThen.js">Source</a>: <code> (perdicate, then) =&gt; (...args) =&gt; perdicate(...args) ? then(...args) : undefined;</code>
+</sup></div>
+
+
+### ifThenElse
+
+Creates a function which calls `then` if the `predicate` is true
+and `otherwise` if the `predicate` is false.
+
+```js
+let ifThenElse = require('1-liners/ifThenElse');
+
+let eq = (a, b) => a === b;
+let add = (a, b) => a + b;
+let sub = (a, b) => a - b;
+
+let addIfEq = ifThenElse(eq, add, sub);
+
+addIfEq(1, 1); // => 2
+addIfEq(2, 1); // => 1
+```
+
+<div align="right"><sup>
+	<a href="../tests/ifThenElse.js">Spec</a>
+	•
+	<a href="../module/ifThenElse.js">Source</a>: <code> (predicate, then, otherwise) =&gt; (...args) =&gt; predicate(...args) ? then(...args) : otherwise(...args);</code>
 </sup></div>
 
 

@@ -28,7 +28,7 @@
 
 **Functional tools that couldn’t be simpler.**
 
-We’re proud to present *1-liners* – a dead simple functional utility belt. 83 one-liner functions, hand-crafted with love and attention.
+We’re proud to present *1-liners* – a dead simple functional utility belt. 84 one-liner functions, hand-crafted with love and attention.
 
 <p align="center">
 	<br/>
