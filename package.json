@@ -43,7 +43,7 @@
   "devDependencies": {
     "babel": "^5.5.4",
     "coveralls": "^2.11.2",
-    "doctoc": "^0.13.0",
+    "doctoc": "tomekwi/doctoc#07d46c7",
     "dox": "^0.8.0",
     "get-modules": "^1.0.2",
     "husky": "^0.8.1",

@@ -3,7 +3,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 - [always](#always)
 - [and](#and)
@@ -29,6 +29,7 @@
 - [forEach](#foreach)
 - [greaterOrEqual](#greaterorequal)
 - [greaterThan](#greaterthan)
+- [hasOwnProperty](#hasownproperty)
 - [head](#head)
 - [identity](#identity)
 - [ifThen](#ifthen)
@@ -553,6 +554,24 @@ greaterThan(1, 2); // => false
 	<a href="../tests/greaterThan.js">Spec</a>
 	•
 	<a href="../module/greaterThan.js">Source</a>: <code> (x, y) =&gt; x &gt; y;</code>
+</sup></div>
+
+
+### hasOwnProperty
+
+Same as [`obj.hasOwnProperty(prop)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty).
+
+```js
+const hasOwnProperty = require('1-liners/hasOwnProperty');
+
+hasOwnProperty('a', {a: 1, b: 2});  // => true
+hasOwnProperty('c', {a: 1, b: 2});  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/hasOwnProperty.js">Spec</a>
+	•
+	<a href="../module/hasOwnProperty.js">Source</a>: <code> (prop, obj) =&gt; obj.hasOwnProperty(prop);</code>
 </sup></div>
 
 
