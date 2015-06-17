@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/1-liners/1-liners.svg?branch=master)](https://travis-ci.org/1-liners/1-liners)
 [![Dependency Status](https://david-dm.org/1-liners/1-liners.svg)](https://david-dm.org/1-liners/1-liners)
 [![npm version](https://badge.fury.io/js/1-liners.svg)](http://badge.fury.io/js/1-liners)
-[![Stability: unstable](https://img.shields.io/badge/stability-unstable-yellowgreen.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
+[![Stability: unstable](https://img.shields.io/badge/stability-unstable-yellowgreen.svg)](https://github.com/1-liners/1-liners/milestones/1.0)
 [![Join the chat at https://gitter.im/1-liners/1-liners](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/1-liners/1-liners)
 
 <h1 align="center"><a
