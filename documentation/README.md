@@ -29,6 +29,7 @@
 - [forEach](#foreach)
 - [greaterOrEqual](#greaterorequal)
 - [greaterThan](#greaterthan)
+- [map](#map)
 - [head](#head)
 - [identity](#identity)
 - [ifThen](#ifthen)
@@ -56,7 +57,7 @@
 - [lessOrEqual](#lessorequal)
 - [lessThan](#lessthan)
 - [looseEqual](#looseequal)
-- [map](#map)
+- [map](#map-1)
 - [match](#match)
 - [max](#max)
 - [method](#method)
@@ -553,6 +554,23 @@ greaterThan(1, 2); // => false
 	<a href="../tests/greaterThan.js">Spec</a>
 	•
 	<a href="../module/greaterThan.js">Source</a>: <code> (x, y) =&gt; x &gt; y;</code>
+</sup></div>
+
+
+### map
+
+Same as `[1, 2, 3].map(Math.sqrt)`.
+
+```js
+var map = require('1-liners/map');
+
+map(Math.sqrt, [9, 25]); // => [3, 5]
+```
+
+<div align="right"><sup>
+	<a href="../tests/map.js">Spec</a>
+	•
+	<a href="../module/map.js">Source</a>: <code> (map, arr) =&gt; arr.map(map);</code>
 </sup></div>
 
 
