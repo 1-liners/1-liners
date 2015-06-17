@@ -3,93 +3,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [always](#always)
-- [and](#and)
-- [between](#between)
-- [bitAnd](#bitand)
-- [bitOr](#bitor)
-- [butLast](#butlast)
-- [by](#by)
-- [compose](#compose)
-- [converge](#converge)
-- [curry](#curry)
-- [curryRight](#curryright)
-- [dec](#dec)
-- [drop](#drop)
-- [equal](#equal)
-- [every](#every)
-- [explode](#explode)
-- [extend](#extend)
-- [filter](#filter)
-- [flip](#flip)
-- [fold](#fold)
-- [foldRight](#foldright)
-- [forEach](#foreach)
-- [greaterOrEqual](#greaterorequal)
-- [greaterThan](#greaterthan)
-- [map](#map)
-- [head](#head)
-- [identity](#identity)
-- [ifThen](#ifthen)
-- [ifThenElse](#ifthenelse)
-- [implode](#implode)
-- [inc](#inc)
-- [isBetween](#isbetween)
-- [isBoolean](#isboolean)
-- [isFalse](#isfalse)
-- [isFalsy](#isfalsy)
-- [isFunction](#isfunction)
-- [isNull](#isnull)
-- [isNumber](#isnumber)
-- [isObject](#isobject)
-- [isPlainObject](#isplainobject)
-- [isString](#isstring)
-- [isTrue](#istrue)
-- [isTruthy](#istruthy)
-- [isTypeOf](#istypeof)
-- [isUndefined](#isundefined)
-- [isUnknown](#isunknown)
-- [join](#join)
-- [last](#last)
-- [length](#length)
-- [lessOrEqual](#lessorequal)
-- [lessThan](#lessthan)
-- [looseEqual](#looseequal)
-- [map](#map-1)
-- [match](#match)
-- [max](#max)
-- [method](#method)
-- [min](#min)
-- [minus](#minus)
-- [nand](#nand)
-- [noop](#noop)
-- [nor](#nor)
-- [not](#not)
-- [nth](#nth)
-- [or](#or)
-- [pick](#pick)
-- [pipe](#pipe)
-- [plus](#plus)
-- [property](#property)
-- [put](#put)
-- [reduce](#reduce)
-- [reduceRight](#reduceright)
-- [replace](#replace)
-- [shallowClone](#shallowclone)
-- [shave](#shave)
-- [some](#some)
-- [split](#split)
-- [tail](#tail)
-- [take](#take)
-- [takeUntil](#takeuntil)
-- [takeWhile](#takewhile)
-- [times](#times)
-- [uncurry](#uncurry)
-- [uncurry3](#uncurry3)
-- [xor](#xor)
-
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
@@ -557,20 +470,21 @@ greaterThan(1, 2); // => false
 </sup></div>
 
 
-### map
+### hasOwnProperty
 
-Same as `[1, 2, 3].map(Math.sqrt)`.
+Same as [`obj.hasOwnProperty(prop)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty).
 
 ```js
-var map = require('1-liners/map');
+const hasOwnProperty = require('1-liners/hasOwnProperty');
 
-map(Math.sqrt, [9, 25]); // => [3, 5]
+hasOwnProperty('a', {a: 1, b: 2});  // => true
+hasOwnProperty('c', {a: 1, b: 2});  // => false
 ```
 
 <div align="right"><sup>
-	<a href="../tests/map.js">Spec</a>
+	<a href="../tests/hasOwnProperty.js">Spec</a>
 	•
-	<a href="../module/map.js">Source</a>: <code> (map, arr) =&gt; arr.map(map);</code>
+	<a href="../module/hasOwnProperty.js">Source</a>: <code> (prop, obj) =&gt; obj.hasOwnProperty(prop);</code>
 </sup></div>
 
 
