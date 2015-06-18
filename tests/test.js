@@ -1,9 +1,9 @@
 import { ok, notOk } from 'assert';
-import test from '../test';
+import ourTest from '../test';
 
 test('#test', () => {
-  ok(test('hayhayhayneedlehayhay', /needle/));
-  ok(test('hAyHAYhayneEdLEHayHAy', /needle/i));
+  ok(ourTest('hayhayhayneedlehayhay', /needle/));
+  ok(ourTest('hAyHAYhayneEdLEHayHAy', /needle/i));
 
-  notOk(test('hayhayhayneedlehayhay', /not there/));
+  notOk(ourTest('hayhayhayneedlehayhay', /not there/));
 });
