@@ -85,6 +85,7 @@
 - [take](#take)
 - [takeUntil](#takeuntil)
 - [takeWhile](#takewhile)
+- [test](#test)
 - [times](#times)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
@@ -1648,6 +1649,25 @@ takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 	<a href="../tests/takeWhile.js">Spec</a>
 	•
 	<a href="../module/takeWhile.js">Source</a>: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (!pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code>
+</sup></div>
+
+
+### test
+
+Same as [`regexObj.test(str)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test).
+
+```js
+const test = require('1-liners/test');
+const haystack = 'hAyHAYhayneEdLEHayHAy';
+
+test(haystack, /needle/);   // => false
+test(haystack, /needle/i);  // => true
+```
+
+<div align="right"><sup>
+	<a href="../tests/test.js">Spec</a>
+	•
+	<a href="../module/test.js">Source</a>: <code> (str, regexObj) =&gt; regexObj.test(str);</code>
 </sup></div>
 
 

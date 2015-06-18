@@ -78,6 +78,7 @@ import tail from './tail';
 import take from './take';
 import takeUntil from './takeUntil';
 import takeWhile from './takeWhile';
+import test from './test';
 import times from './times';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
@@ -164,6 +165,7 @@ export {
   take,
   takeUntil,
   takeWhile,
+  test,
   times,
   uncurry,
   uncurry3,
