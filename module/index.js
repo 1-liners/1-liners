@@ -13,6 +13,7 @@ import dec from './dec';
 import drop from './drop';
 import equal from './equal';
 import every from './every';
+import exec from './exec';
 import explode from './explode';
 import extend from './extend';
 import filter from './filter';
@@ -100,6 +101,7 @@ export {
   drop,
   equal,
   every,
+  exec,
   explode,
   extend,
   filter,

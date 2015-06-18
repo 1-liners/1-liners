@@ -20,6 +20,7 @@
 - [drop](#drop)
 - [equal](#equal)
 - [every](#every)
+- [exec](#exec)
 - [explode](#explode)
 - [extend](#extend)
 - [filter](#filter)
@@ -391,6 +392,26 @@ every(elem => elem > 16, [16,17,18]); // => false
 	<a href="../tests/every.js">Spec</a>
 	•
 	<a href="../module/every.js">Source</a>: <code> (every, arr) =&gt; arr.every(every);</code>
+</sup></div>
+
+
+### exec
+
+Same as [`regexObj.exec(str)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
+
+```js
+const exec = require('1-liners/exec');
+const haystack = 'hAyHAYhayneEdLEHayHAy';
+
+exec(haystack, /needle/i);  // => ['neEdLE']
+exec(haystack, /n(.+)e/i);  // => ['neEdLE', 'eEdL']
+exec(haystack, /needle/);   // => null
+```
+
+<div align="right"><sup>
+	<a href="../tests/exec.js">Spec</a>
+	•
+	<a href="../module/exec.js">Source</a>: <code> (str, regexObj) =&gt; regexObj.exec(str);</code>
 </sup></div>
 
 
