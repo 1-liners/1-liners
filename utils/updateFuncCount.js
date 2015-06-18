@@ -22,6 +22,6 @@ function onError(err) {
 
 function onFileWritten(err) {
 	if (err) onError(err);
-	console.log('updted func count');
+	console.log('updated function count');
 	process.exit(0);
 }
