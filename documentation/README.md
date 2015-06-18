@@ -20,6 +20,7 @@
 - [drop](#drop)
 - [equal](#equal)
 - [every](#every)
+- [exec](#exec)
 - [explode](#explode)
 - [extend](#extend)
 - [filter](#filter)
@@ -85,6 +86,7 @@
 - [take](#take)
 - [takeUntil](#takeuntil)
 - [takeWhile](#takewhile)
+- [test](#test)
 - [times](#times)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
@@ -390,6 +392,26 @@ every(elem => elem > 16, [16,17,18]); // => false
 	<a href="../tests/every.js">Spec</a>
 	•
 	<a href="../module/every.js">Source</a>: <code> (every, arr) =&gt; arr.every(every);</code>
+</sup></div>
+
+
+### exec
+
+Same as [`regexObj.exec(str)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
+
+```js
+const exec = require('1-liners/exec');
+const haystack = 'hAyHAYhayneEdLEHayHAy';
+
+exec(haystack, /needle/i);  // => ['neEdLE']
+exec(haystack, /n(.+)e/i);  // => ['neEdLE', 'eEdL']
+exec(haystack, /needle/);   // => null
+```
+
+<div align="right"><sup>
+	<a href="../tests/exec.js">Spec</a>
+	•
+	<a href="../module/exec.js">Source</a>: <code> (str, regexObj) =&gt; regexObj.exec(str);</code>
 </sup></div>
 
 
@@ -1648,6 +1670,25 @@ takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 	<a href="../tests/takeWhile.js">Spec</a>
 	•
 	<a href="../module/takeWhile.js">Source</a>: <code> (pred, arr) =&gt; arr.reduce((newArr, i) =&gt; { if (!pred(i)) arr.length = 0; else newArr.push(i); return newArr; }, []);</code>
+</sup></div>
+
+
+### test
+
+Same as [`regexObj.test(str)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test).
+
+```js
+const test = require('1-liners/test');
+const haystack = 'hAyHAYhayneEdLEHayHAy';
+
+test(haystack, /needle/);   // => false
+test(haystack, /needle/i);  // => true
+```
+
+<div align="right"><sup>
+	<a href="../tests/test.js">Spec</a>
+	•
+	<a href="../module/test.js">Source</a>: <code> (str, regexObj) =&gt; regexObj.test(str);</code>
 </sup></div>
 
 

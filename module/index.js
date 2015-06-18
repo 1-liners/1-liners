@@ -13,6 +13,7 @@ import dec from './dec';
 import drop from './drop';
 import equal from './equal';
 import every from './every';
+import exec from './exec';
 import explode from './explode';
 import extend from './extend';
 import filter from './filter';
@@ -78,6 +79,7 @@ import tail from './tail';
 import take from './take';
 import takeUntil from './takeUntil';
 import takeWhile from './takeWhile';
+import test from './test';
 import times from './times';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
@@ -99,6 +101,7 @@ export {
   drop,
   equal,
   every,
+  exec,
   explode,
   extend,
   filter,
@@ -164,6 +167,7 @@ export {
   take,
   takeUntil,
   takeWhile,
+  test,
   times,
   uncurry,
   uncurry3,
