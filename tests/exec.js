@@ -1,21 +1,23 @@
-import { deepEqual } from 'assert';
+import { equal } from 'assert';
 import exec from '../exec';
+
+const stringify = require('../curry')(require('../join'))('\0');
 
 test('#test', () => {
 	const haystack = 'hAyHAYhayneEdLEHayHAy';
 
-  deepEqual(
-  	exec(haystack, /needle/i),
-  	['neEdLE']
-  );
+	equal(
+		stringify(exec(haystack, /needle/i)),
+		stringify(['neEdLE'])
+	);
 
-  deepEqual(
-  	exec(haystack, /n(.+)e/i),
-  	['neEdLE', 'eEdL']
-  );
+	equal(
+		stringify(exec(haystack, /n(.+)e/i)),
+		stringify(['neEdLE', 'eEdL'])
+	);
 
-  deepEqual(
-  	exec(haystack, /needle/),
-  	null
-  );
+	equal(
+		exec(haystack, /needle/),
+		null
+	);
 });
