@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "precommit": "npm run docs && git add documentation && npm run create-index && git add module/index.js",
+    "precommit": "npm run docs; npm run create-index; npm run updateCount; git add documentation module/index.js README.md",
     "prepush": "npm test",
     "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- --report lcov --compilers js:babel/register --ui qunit ./tests",
