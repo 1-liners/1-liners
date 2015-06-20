@@ -18,6 +18,8 @@
 - [curryRight](#curryright)
 - [dec](#dec)
 - [drop](#drop)
+- [endsWith](#endswith)
+- [endsWithAt](#endswithat)
 - [equal](#equal)
 - [every](#every)
 - [exec](#exec)
@@ -82,6 +84,8 @@
 - [shave](#shave)
 - [some](#some)
 - [split](#split)
+- [startsWith](#startswith)
+- [startsWithAt](#startswithat)
 - [tail](#tail)
 - [take](#take)
 - [takeUntil](#takeuntil)
@@ -356,6 +360,42 @@ object;                        // => {foo: 1, bar: 2, baz: 3}
 	<a href="../tests/drop.js">Spec</a>
 	•
 	<a href="../module/drop.js">Source</a>: <code> (props, object) =&gt; Object.keys(object).reduce((res, k) =&gt; Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});</code>
+</sup></div>
+
+
+### endsWith
+
+Same as [`str.endsWith(searchString)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith).
+
+```js
+const endsWith = require('1-liners/endsWith');
+
+endsWith('liners', '1-liners');  // => true
+endsWith('stoeffel', 'nope');  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/endsWith.js">Spec</a>
+	•
+	<a href="../module/endsWith.js">Source</a>: <code> (searchString, str) =&gt; str.endsWith(searchString);</code>
+</sup></div>
+
+
+### endsWithAt
+
+Same as [`str.endsWith(searchString, position)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith).
+
+```js
+const endsWithAt = require('1-liners/endsWithAt');
+
+endsWithAt(8, 'liners', '1-liners/endsWithAt');  // => true
+endsWithAt(2, 'stoeffel', 'nope');  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/endsWithAt.js">Spec</a>
+	•
+	<a href="../module/endsWithAt.js">Source</a>: <code> (position, searchString, str) =&gt; str.endsWith(searchString, position);</code>
 </sup></div>
 
 
@@ -1602,6 +1642,42 @@ split('-', '1-liners'); // => [1, 'liners']
 	<a href="../tests/split.js">Spec</a>
 	•
 	<a href="../module/split.js">Source</a>: <code> (split, str) =&gt; str.split(split);</code>
+</sup></div>
+
+
+### startsWith
+
+Same as [`str.startsWith(searchString)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith).
+
+```js
+const startsWith = require('1-liners/startsWith');
+
+startsWith('1', '1-liners');  // => true
+startsWith('stoeffel', 'nope');  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/startsWith.js">Spec</a>
+	•
+	<a href="../module/startsWith.js">Source</a>: <code> (searchString, str) =&gt; str.startsWith(searchString);</code>
+</sup></div>
+
+
+### startsWithAt
+
+Same as [`str.startsWith(searchString, position)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith).
+
+```js
+const startsWithAt = require('1-liners/startsWithAt');
+
+startsWithAt(2, 'liners', '1-liners/startsWithAt');  // => true
+startsWithAt(2, 'stoeffel', 'nope');  // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/startsWithAt.js">Spec</a>
+	•
+	<a href="../module/startsWithAt.js">Source</a>: <code> (position, searchString, str) =&gt; str.startsWith(searchString, position);</code>
 </sup></div>
 
 
