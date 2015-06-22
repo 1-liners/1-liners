@@ -11,6 +11,8 @@ import curry from './curry';
 import curryRight from './curryRight';
 import dec from './dec';
 import drop from './drop';
+import endsWith from './endsWith';
+import endsWithAt from './endsWithAt';
 import equal from './equal';
 import every from './every';
 import exec from './exec';
@@ -75,6 +77,8 @@ import shallowClone from './shallowClone';
 import shave from './shave';
 import some from './some';
 import split from './split';
+import startsWith from './startsWith';
+import startsWithAt from './startsWithAt';
 import tail from './tail';
 import take from './take';
 import takeUntil from './takeUntil';
@@ -99,6 +103,8 @@ export {
   curryRight,
   dec,
   drop,
+  endsWith,
+  endsWithAt,
   equal,
   every,
   exec,
@@ -163,6 +169,8 @@ export {
   shave,
   some,
   split,
+  startsWith,
+  startsWithAt,
   tail,
   take,
   takeUntil,
