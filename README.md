@@ -28,7 +28,9 @@
 
 **Functional tools that couldn’t be simpler.**
 
-We’re proud to present *1-liners* – a dead simple functional utility belt. [91 one-liner functions (and counting)](). Each hand-crafted with love and attention.
+We’re proud to present *1-liners* – a dead simple functional utility belt. **[91 one-liner functions][docs]** (and counting). Each hand-crafted with love and attention.
+
+[docs]:  ./documentation
 
 <p align="center">
 	<br/>
@@ -121,8 +123,8 @@ We always follow them. You have our word.
 [be in a separate micro-module]:       https://github.com/1-liners/1-liners/blob/28b02d0939d6bb4034693e48440f450141453ae9/module/compose.js
 [be thoroughly tested]:                https://coveralls.io/r/1-liners/1-liners?branch=master
 [have great documentation]:            ./documentation
-[native object methods]:               ./documentation/reduce
-[language constructs]:                 ./documentation/plus
+[native object methods]:               ./documentation#reduce
+[language constructs]:                 ./documentation#plus
 
 
 ## Usage
