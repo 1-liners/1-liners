@@ -1,4 +1,4 @@
 {
-  "optional": ["runtime"],
-	"auxiliaryComment": "istanbul ignore next"
+  "plugins": ["object-assign"],
+	"auxiliaryCommentBefore": "istanbul ignore next"
 }
