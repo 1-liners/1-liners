@@ -1,0 +1,4 @@
+{
+  "plugins": ["object-assign"],
+	"auxiliaryCommentBefore": "istanbul ignore next"
+}
