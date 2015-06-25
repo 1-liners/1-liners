@@ -13,6 +13,7 @@
 - [butLast](#butlast)
 - [by](#by)
 - [compose](#compose)
+- [concat](#concat)
 - [converge](#converge)
 - [curry](#curry)
 - [curryRight](#curryright)
@@ -246,6 +247,25 @@ compose(f, g)(1, 2) === f(g(1, 2));
 	<a href="../tests/compose.js">Spec</a>
 	•
 	<a href="../module/compose.js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; f(g(...args));</code>
+</sup></div>
+
+
+### concat
+
+Returns a copy of `array` with `values` or `value` appended at the end. Same as [`array.concat(values)` or `array.concat(value)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat).
+
+```js
+const concat = require('1-liners/concat');
+
+concat(['c', 'd'], ['a', 'b']);  // => ['a', 'b', 'c', 'd']
+concat(['c'], ['a', 'b']);       // => ['a', 'b', 'c']
+concat('c', ['a', 'b']);         // => ['a', 'b', 'c']
+```
+
+<div align="right"><sup>
+	<a href="../tests/concat.js">Spec</a>
+	•
+	<a href="../module/concat.js">Source</a>: <code> (values, array) =&gt; array.concat(values);</code>
 </sup></div>
 
 
