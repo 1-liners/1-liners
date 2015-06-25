@@ -14,7 +14,6 @@
   },
   "scripts": {
     "precommit": "npm run docs; npm run create-index; npm run updateCount; git add documentation module/index.js README.md",
-    "prepush": "npm test",
     "develop": "nodangel --watch module --watch tests --exec 'npm --silent test'",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha  -- --report lcov --compilers js:babel/register --ui qunit ./tests",
     "docs": "babel-node ./utils/createDocs.js; npm run toc; npm run updateCount",
