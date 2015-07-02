@@ -83,6 +83,7 @@
 - [replace](#replace)
 - [shallowClone](#shallowclone)
 - [shave](#shave)
+- [signum](#signum)
 - [some](#some)
 - [split](#split)
 - [startsWith](#startswith)
@@ -1628,6 +1629,30 @@ map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 	<a href="../tests/shave.js">Spec</a>
 	•
 	<a href="../module/shave.js">Source</a>: <code> (shave, f) =&gt; (...args) =&gt; f(...(args.slice(0, shave)));</code>
+</sup></div>
+
+
+### signum
+
+Returns the [sign of a number](https://en.wikipedia.org/wiki/Signum_function). `1` if `n` is positive, `-1` if `n` is negative and `0` if `n` is `0`. Otherwise returns `NaN`.
+
+```js
+const signum = require('1-liners/signum');
+
+signum(-5);         // => -1
+signum(-Infinity);  // => -1
+
+signum(10);         // => 1
+signum(Infinity);   // => 1
+
+signum(0);          // => 0
+signum(-0);         // => 0
+```
+
+<div align="right"><sup>
+	<a href="../tests/signum.js">Spec</a>
+	•
+	<a href="../module/signum.js">Source</a>: <code> (n) =&gt; (n === 0 ? 0 : (n &gt; 0 ? 1 : (n &lt; 0 ? -1 : NaN)));</code>
 </sup></div>
 
 
