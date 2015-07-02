@@ -1,6 +1,5 @@
 node_modules
 npm-debug.log
-*.js
 !module/*.js
 !tests/*.js
 !utils/*.js
