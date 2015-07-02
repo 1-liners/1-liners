@@ -380,7 +380,7 @@ object;                        // => {foo: 1, bar: 2, baz: 3}
 <div align="right"><sup>
 	<a href="../tests/drop.js">Spec</a>
 	•
-	<a href="../module/drop.js">Source</a>: <code> (props, object) =&gt; Object.keys(object).reduce((res, k) =&gt; Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});</code>
+	<a href="../module/drop.js">Source</a>: <code> (props:Array, object) =&gt; Object.keys(object).reduce((res, k) =&gt; Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});</code>
 </sup></div>
 
 
