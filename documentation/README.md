@@ -1634,7 +1634,7 @@ map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
 
 ### signum
 
-Returns [`1` if `n` is positive, `-1` if `n` is negative and `0` if `n` is `0`]. Otherwise returns `NaN`.
+Returns [`1` if `n` is positive, `-1` if `n` is negative and `0` if `n` is `0`](https://en.wikipedia.org/wiki/Signum_function). Otherwise returns `NaN`.
 
 ```js
 const signum = require('1-liners/signum');

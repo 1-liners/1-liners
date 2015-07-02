@@ -3,7 +3,7 @@
  *
  * @description
  *
- * Returns [`1` if `n` is positive, `-1` if `n` is negative and `0` if `n` is `0`]. Otherwise returns `NaN`.
+ * Returns [`1` if `n` is positive, `-1` if `n` is negative and `0` if `n` is `0`](https://en.wikipedia.org/wiki/Signum_function). Otherwise returns `NaN`.
  *
  * @example
  *
