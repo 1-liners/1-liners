@@ -76,6 +76,7 @@ import reduceRight from './reduceRight';
 import replace from './replace';
 import shallowClone from './shallowClone';
 import shave from './shave';
+import signum from './signum';
 import some from './some';
 import split from './split';
 import startsWith from './startsWith';
@@ -169,6 +170,7 @@ export {
   replace,
   shallowClone,
   shave,
+  signum,
   some,
   split,
   startsWith,
