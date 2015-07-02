@@ -21,7 +21,7 @@
     "toc": "doctoc ./documentation/README.md",
     "mocha": "mocha --compilers js:babel/register --ui qunit ./tests",
     "compile": "cd ./module; babel --loose=all --plugins object-assign --auxiliary-comment-before 'istanbul ignore next' ./*.js --out-dir ../",
-    "clean": "rm *.js",
+    "clean": "rm -f *.js",
     "coverage": "npm run compile; npm run istanbul; npm run clean",
     "coveralls": "npm run compile && npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && npm run clean",
     "test": "npm run coverage",
