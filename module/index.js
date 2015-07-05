@@ -70,6 +70,7 @@ import pick from './pick';
 import pipe from './pipe';
 import plus from './plus';
 import property from './property';
+import push from './push';
 import put from './put';
 import reduce from './reduce';
 import reduceRight from './reduceRight';
@@ -164,6 +165,7 @@ export {
   pipe,
   plus,
   property,
+  push,
   put,
   reduce,
   reduceRight,
