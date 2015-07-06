@@ -77,6 +77,7 @@
 - [pipe](#pipe)
 - [plus](#plus)
 - [property](#property)
+- [push](#push)
 - [put](#put)
 - [reduce](#reduce)
 - [reduceRight](#reduceright)
@@ -1515,6 +1516,23 @@ property('foo', object);  // => 1
 	<a href="../tests/property.js">Spec</a>
 	•
 	<a href="../module/property.js">Source</a>: <code> (property, object) =&gt; object[property];</code>
+</sup></div>
+
+
+### push
+
+Same as [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) but immutable.
+
+```js
+ var push = require('1-liners/push');
+
+ push(4, [1, 2, 3]); // => [1, 2, 3, 4]
+```
+
+<div align="right"><sup>
+	<a href="../tests/push.js">Spec</a>
+	•
+	<a href="../module/push.js">Source</a>: <code> (element, arr) =&gt; [...arr, element];</code>
 </sup></div>
 
 
