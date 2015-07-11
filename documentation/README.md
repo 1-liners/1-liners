@@ -76,6 +76,7 @@
 - [pick](#pick)
 - [pipe](#pipe)
 - [plus](#plus)
+- [product](#product)
 - [property](#property)
 - [push](#push)
 - [put](#put)
@@ -1498,6 +1499,24 @@ plus('a', 'b');  // => 'ab'
 	<a href="../tests/plus.js">Spec</a>
 	•
 	<a href="../module/plus.js">Source</a>: <code> (a, b) =&gt; a + b;</code>
+</sup></div>
+
+
+### product
+
+Returns the product of all items of an `array`.
+
+```js
+const product = require('1-liners/product');
+
+product([2, 3, 4]);        // => 24
+product([]);               // => 1
+```
+
+<div align="right"><sup>
+	<a href="../tests/product.js">Spec</a>
+	•
+	<a href="../module/product.js">Source</a>: <code> (array) =&gt; array.reduce((a, b) =&gt; (a * b), 1);</code>
 </sup></div>
 
 

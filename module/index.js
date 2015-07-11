@@ -69,6 +69,7 @@ import or from './or';
 import pick from './pick';
 import pipe from './pipe';
 import plus from './plus';
+import product from './product';
 import property from './property';
 import push from './push';
 import put from './put';
@@ -165,6 +166,7 @@ export {
   pick,
   pipe,
   plus,
+  product,
   property,
   push,
   put,
