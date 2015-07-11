@@ -7,6 +7,7 @@
 
 - [always](#always)
 - [and](#and)
+- [average](#average)
 - [between](#between)
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
@@ -142,6 +143,24 @@ and(false, true); // => false
 	<a href="../tests/and.js">Spec</a>
 	•
 	<a href="../module/and.js">Source</a>: <code> (x, y) =&gt; x &amp;&amp; y;</code>
+</sup></div>
+
+
+### average
+
+Returns the average of all items of an `array`.
+
+```js
+const average = require('1-liners/average');
+
+average([2, 3, 4]);        // => 3
+average([]);               // => NaN
+```
+
+<div align="right"><sup>
+	<a href="../tests/average.js">Spec</a>
+	•
+	<a href="../module/average.js">Source</a>: <code> (array) =&gt; array.reduce((a, b) =&gt; (a + b), 0) / array.length;</code>
 </sup></div>
 
 
