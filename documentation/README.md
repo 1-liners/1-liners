@@ -89,6 +89,7 @@
 - [split](#split)
 - [startsWith](#startswith)
 - [startsWithAt](#startswithat)
+- [sum](#sum)
 - [tail](#tail)
 - [take](#take)
 - [takeUntil](#takeuntil)
@@ -1741,6 +1742,24 @@ startsWithAt(2, 'stoeffel', 'nope');  // => false
 	<a href="../tests/startsWithAt.js">Spec</a>
 	•
 	<a href="../module/startsWithAt.js">Source</a>: <code> (position, searchString, str) =&gt; str.startsWith(searchString, position);</code>
+</sup></div>
+
+
+### sum
+
+Sums all items of an `array`.
+
+```js
+const sum = require('1-liners/sum');
+
+sum([1, 2, 3]);        // => 6
+sum([]);               // => 0
+```
+
+<div align="right"><sup>
+	<a href="../tests/sum.js">Spec</a>
+	•
+	<a href="../module/sum.js">Source</a>: <code> (array) =&gt; array.reduce((a, b) =&gt; (a + b), 0);</code>
 </sup></div>
 
 

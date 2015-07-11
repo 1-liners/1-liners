@@ -82,6 +82,7 @@ import some from './some';
 import split from './split';
 import startsWith from './startsWith';
 import startsWithAt from './startsWithAt';
+import sum from './sum';
 import tail from './tail';
 import take from './take';
 import takeUntil from './takeUntil';
@@ -177,6 +178,7 @@ export {
   split,
   startsWith,
   startsWithAt,
+  sum,
   tail,
   take,
   takeUntil,
