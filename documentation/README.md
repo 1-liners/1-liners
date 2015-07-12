@@ -7,6 +7,7 @@
 
 - [always](#always)
 - [and](#and)
+- [average](#average)
 - [between](#between)
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
@@ -76,6 +77,7 @@
 - [pick](#pick)
 - [pipe](#pipe)
 - [plus](#plus)
+- [product](#product)
 - [property](#property)
 - [push](#push)
 - [put](#put)
@@ -89,6 +91,7 @@
 - [split](#split)
 - [startsWith](#startswith)
 - [startsWithAt](#startswithat)
+- [sum](#sum)
 - [tail](#tail)
 - [take](#take)
 - [takeUntil](#takeuntil)
@@ -140,6 +143,24 @@ and(false, true); // => false
 	<a href="../tests/and.js">Spec</a>
 	•
 	<a href="../module/and.js">Source</a>: <code> (x, y) =&gt; x &amp;&amp; y;</code>
+</sup></div>
+
+
+### average
+
+Returns the average of all items of an `array`.
+
+```js
+const average = require('1-liners/average');
+
+average([2, 3, 4]);        // => 3
+average([]);               // => NaN
+```
+
+<div align="right"><sup>
+	<a href="../tests/average.js">Spec</a>
+	•
+	<a href="../module/average.js">Source</a>: <code> (array) =&gt; array.reduce((a, b) =&gt; (a + b), 0) / array.length;</code>
 </sup></div>
 
 
@@ -1500,6 +1521,24 @@ plus('a', 'b');  // => 'ab'
 </sup></div>
 
 
+### product
+
+Returns the product of all items of an `array`.
+
+```js
+const product = require('1-liners/product');
+
+product([2, 3, 4]);        // => 24
+product([]);               // => 1
+```
+
+<div align="right"><sup>
+	<a href="../tests/product.js">Spec</a>
+	•
+	<a href="../module/product.js">Source</a>: <code> (array) =&gt; array.reduce((a, b) =&gt; (a * b), 1);</code>
+</sup></div>
+
+
 ### property
 
 Same as `object[property]`
@@ -1741,6 +1780,24 @@ startsWithAt(2, 'stoeffel', 'nope');  // => false
 	<a href="../tests/startsWithAt.js">Spec</a>
 	•
 	<a href="../module/startsWithAt.js">Source</a>: <code> (position, searchString, str) =&gt; str.startsWith(searchString, position);</code>
+</sup></div>
+
+
+### sum
+
+Sums all items of an `array`.
+
+```js
+const sum = require('1-liners/sum');
+
+sum([1, 2, 3]);        // => 6
+sum([]);               // => 0
+```
+
+<div align="right"><sup>
+	<a href="../tests/sum.js">Spec</a>
+	•
+	<a href="../module/sum.js">Source</a>: <code> (array) =&gt; array.reduce((a, b) =&gt; (a + b), 0);</code>
 </sup></div>
 
 

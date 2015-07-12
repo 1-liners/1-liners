@@ -1,5 +1,6 @@
 import always from './always';
 import and from './and';
+import average from './average';
 import between from './between';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
@@ -69,6 +70,7 @@ import or from './or';
 import pick from './pick';
 import pipe from './pipe';
 import plus from './plus';
+import product from './product';
 import property from './property';
 import push from './push';
 import put from './put';
@@ -82,6 +84,7 @@ import some from './some';
 import split from './split';
 import startsWith from './startsWith';
 import startsWithAt from './startsWithAt';
+import sum from './sum';
 import tail from './tail';
 import take from './take';
 import takeUntil from './takeUntil';
@@ -95,6 +98,7 @@ import xor from './xor';
 export {
   always,
   and,
+  average,
   between,
   bitAnd,
   bitOr,
@@ -164,6 +168,7 @@ export {
   pick,
   pipe,
   plus,
+  product,
   property,
   push,
   put,
@@ -177,6 +182,7 @@ export {
   split,
   startsWith,
   startsWithAt,
+  sum,
   tail,
   take,
   takeUntil,
