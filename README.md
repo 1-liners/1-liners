@@ -151,11 +151,8 @@ var map = require('1-liners').map;
 // The lightweight, recommended way:
 import map from '1-liners/module/map';
 
-// You can also grab the ES5 version:
-import map from '1-liners/map';
-
 // Sometimes practical:
-import { map, filter } from '1-liners';
+import { map, filter } from '1-liners/module/index';
 ```
 
 ## API
