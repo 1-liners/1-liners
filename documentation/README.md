@@ -9,6 +9,7 @@
 - [and](#and)
 - [average](#average)
 - [between](#between)
+- [bind](#bind)
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
 - [butLast](#butlast)
@@ -184,6 +185,23 @@ between(1, 10, 25);   // => 10
 	<a href="../tests/between.js">Spec</a>
 	•
 	<a href="../module/between.js">Source</a>: <code> (min, max, number) =&gt; (number &lt; min ? min : (number &gt; max ? max : number));</code>
+</sup></div>
+
+
+### bind
+
+Binds a context to a function. Same as [`fun.bind(thisArg[, arg1[, arg2[, ...]]])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+
+```js
+var bind = require('1-liners/bind');
+
+setTimeout(bind(console, ['Hello'], console.log), 2000); // => 'Hello' (after 2s)
+```
+
+<div align="right"><sup>
+	<a href="../tests/bind.js">Spec</a>
+	•
+	<a href="../module/bind.js">Source</a>: <code> (thisArg, args, fun) =&gt; fun.bind(thisArg, ...args);</code>
 </sup></div>
 
 
