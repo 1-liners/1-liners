@@ -57,6 +57,7 @@
 - [isUndefined](#isundefined)
 - [isUnknown](#isunknown)
 - [join](#join)
+- [keys](#keys)
 - [last](#last)
 - [length](#length)
 - [lessOrEqual](#lessorequal)
@@ -100,6 +101,7 @@
 - [times](#times)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
+- [values](#values)
 - [xor](#xor)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -1151,6 +1153,24 @@ join('-', [1, 'liners']); // => '1-liners'
 </sup></div>
 
 
+### keys
+
+Same as [`Object.keys(obj)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
+
+```js
+const keys = require('1-liners/keys');
+
+ keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
+ keys([1, 2, 3]); // => [0, 1, 2]
+```
+
+<div align="right"><sup>
+	<a href="../tests/keys.js">Spec</a>
+	•
+	<a href="../module/keys.js">Source</a>: <code> (obj) =&gt; Object.keys(obj);</code>
+</sup></div>
+
+
 ### last
 
 Returns the last item of `array`.
@@ -1948,6 +1968,25 @@ Uncurry a function – collapse 3 lists of parameters into one.
 	<a href="../tests/uncurry3.js">Spec</a>
 	•
 	<a href="../module/uncurry3.js">Source</a>: <code> (f) =&gt; (a, b, ...rest) =&gt; f(a)(b)(...rest);</code>
+</sup></div>
+
+
+### values
+
+Get all values of an object
+Same as `Object.keys(obj).map(i => obj[i])`.
+
+```js
+const values = require('1-liners/values');
+
+ values({ 100: 'a', 2: 'b', 7: 'c' }); // => ['a', 'b', 'c']
+ values(['a', 'b', 'c']); // => ['a', 'b', 'c']
+```
+
+<div align="right"><sup>
+	<a href="../tests/values.js">Spec</a>
+	•
+	<a href="../module/values.js">Source</a>: <code> (obj) =&gt; Object.keys(obj).map(i =&gt; obj[i]);</code>
 </sup></div>
 
 
