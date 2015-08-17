@@ -7,6 +7,7 @@ import bitOr from './bitOr';
 import butLast from './butLast';
 import by from './by';
 import compose from './compose';
+import composeAll from './composeAll';
 import concat from './concat';
 import converge from './converge';
 import curry from './curry';
@@ -50,6 +51,7 @@ import isTypeOf from './isTypeOf';
 import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
+import keys from './keys';
 import last from './last';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
@@ -93,6 +95,7 @@ import test from './test';
 import times from './times';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
+import values from './values';
 import xor from './xor';
 
 export {
@@ -105,6 +108,7 @@ export {
   butLast,
   by,
   compose,
+  composeAll,
   concat,
   converge,
   curry,
@@ -148,6 +152,7 @@ export {
   isUndefined,
   isUnknown,
   join,
+  keys,
   last,
   length,
   lessOrEqual,
@@ -191,5 +196,6 @@ export {
   times,
   uncurry,
   uncurry3,
+  values,
   xor
 };
