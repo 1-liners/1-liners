@@ -77,6 +77,7 @@
 - [or](#or)
 - [pick](#pick)
 - [pipe](#pipe)
+- [pipeAll](#pipeall)
 - [plus](#plus)
 - [product](#product)
 - [property](#property)
@@ -1520,6 +1521,23 @@ pipe(f, g)(1, 2) === g(f(1, 2));
 	<a href="../tests/pipe.js">Spec</a>
 	•
 	<a href="../module/pipe.js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; g(f(...args));</code>
+</sup></div>
+
+
+### pipeAll
+
+Pipe arguments through an array of functions.
+
+```js
+var pipeAll = require('1-liners/pipeAll');
+
+pipeAll([f, g, h])(1, 2) === h(g(f(1, 2)));
+```
+
+<div align="right"><sup>
+	<a href="../tests/pipeAll.js">Spec</a>
+	•
+	<a href="../module/pipeAll.js">Source</a>: <code> (fns) =&gt; fns.reverse().reduce( (f, g) =&gt; (...args) =&gt; f(g(...args)) );</code>
 </sup></div>
 
 
