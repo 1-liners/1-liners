@@ -70,6 +70,7 @@ import nth from './nth';
 import or from './or';
 import pick from './pick';
 import pipe from './pipe';
+import pipeAll from './pipeAll';
 import plus from './plus';
 import product from './product';
 import property from './property';
@@ -170,6 +171,7 @@ export {
   or,
   pick,
   pipe,
+  pipeAll,
   plus,
   product,
   property,
