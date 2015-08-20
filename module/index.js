@@ -7,6 +7,7 @@ import bitOr from './bitOr';
 import butLast from './butLast';
 import by from './by';
 import compose from './compose';
+import composeAll from './composeAll';
 import concat from './concat';
 import converge from './converge';
 import curry from './curry';
@@ -108,6 +109,7 @@ export {
   butLast,
   by,
   compose,
+  composeAll,
   concat,
   converge,
   curry,

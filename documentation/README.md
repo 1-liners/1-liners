@@ -14,6 +14,7 @@
 - [butLast](#butlast)
 - [by](#by)
 - [compose](#compose)
+- [composeAll](#composeall)
 - [concat](#concat)
 - [converge](#converge)
 - [curry](#curry)
@@ -273,6 +274,23 @@ compose(f, g)(1, 2) === f(g(1, 2));
 	<a href="../tests/compose.js">Spec</a>
 	•
 	<a href="../module/compose.js">Source</a>: <code> (f, g) =&gt; (...args) =&gt; f(g(...args));</code>
+</sup></div>
+
+
+### composeAll
+
+Compose a new function with a given array of functions.
+
+```js
+var composeAll = require('1-liners/composeAll');
+
+composeAll([f, g, h])(1, 2) === f(g(h(1, 2)));
+```
+
+<div align="right"><sup>
+	<a href="../tests/composeAll.js">Spec</a>
+	•
+	<a href="../module/composeAll.js">Source</a>: <code> (fns) =&gt; fns.reduce( (f, g) =&gt; (...args) =&gt; f(g(...args)) );</code>
 </sup></div>
 
 
