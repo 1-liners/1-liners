@@ -2,6 +2,7 @@ import always from './always';
 import and from './and';
 import average from './average';
 import between from './between';
+import bind from './bind';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import butLast from './butLast';
@@ -104,6 +105,7 @@ export {
   and,
   average,
   between,
+  bind,
   bitAnd,
   bitOr,
   butLast,
