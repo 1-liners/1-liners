@@ -26,7 +26,10 @@
     "coveralls": "npm run compile && npm run istanbul  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && npm run clean",
     "test": "npm run coverage",
     "create-index": "module-indexer .",
-    "prepublish": "npm test; npm run create-index; npm run compile"
+    "prepublish": "npm test; npm run create-index; npm run compile",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish && git push --follow-tags",
+    "major-release": "npm version major && npm publish && git push --follow-tags"
   },
   "files": [
     "/*.js",
