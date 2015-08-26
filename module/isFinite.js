@@ -4,7 +4,7 @@
  * @description
  *
  * Check if the number is finite
- * 
+ * Same as https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite
  * @example
  * 
  * 	var isFinite = require('1-liners/isFinite');
