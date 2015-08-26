@@ -47,7 +47,9 @@
 - [isBoolean](#isboolean)
 - [isFalse](#isfalse)
 - [isFalsy](#isfalsy)
+- [isFinite](#isfinite)
 - [isFunction](#isfunction)
+- [isNaN](#isnan)
 - [isNull](#isnull)
 - [isNumber](#isnumber)
 - [isObject](#isobject)
@@ -931,6 +933,26 @@ Same as `!`.
 </sup></div>
 
 
+### isFinite
+
+Check if the number is finite
+
+```js
+var isFinite = require('1-liners/isFinite');
+
+ isFinite(23);  // => true
+ isFinite(Infinity);  // => false
+ isFinite(NaN);  // => true
+ isFinite(-44);  // => true
+```
+
+<div align="right"><sup>
+	<a href="../tests/isFinite.js">Spec</a>
+	•
+	<a href="../module/isFinite.js">Source</a>: <code> (value) =&gt; value.toString() !== 'Infinity';</code>
+</sup></div>
+
+
 ### isFunction
 
 Same as `typeof value === 'function'`.
@@ -948,6 +970,25 @@ isFunction('any other value');    // => false
 	<a href="../tests/isFunction.js">Spec</a>
 	•
 	<a href="../module/isFunction.js">Source</a>: <code> (value) =&gt; typeof value === 'function';</code>
+</sup></div>
+
+
+### isNaN
+
+Check if the number is NaN
+
+```js
+var isNaN = require('1-liners/isNaN');
+
+ isNaN(23);  // => false
+ isNaN(Infinity);  // => false
+ isNaN(NaN);  // => true
+```
+
+<div align="right"><sup>
+	<a href="../tests/isNaN.js">Spec</a>
+	•
+	<a href="../module/isNaN.js">Source</a>: <code> (value) =&gt; value !== value;</code>
 </sup></div>
 
 
