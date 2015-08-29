@@ -1585,13 +1585,14 @@ Same as `a + b`.
 var plus = require('1-liners/plus');
 
 plus(2, 8);      // => 10
+plus(1, 2, 3);   // => 6
 plus('a', 'b');  // => 'ab'
 ```
 
 <div align="right"><sup>
 	<a href="../tests/plus.js">Spec</a>
 	•
-	<a href="../module/plus.js">Source</a>: <code> (a, b) =&gt; a + b;</code>
+	<a href="../module/plus.js">Source</a>: <code> (a, b, ...c) =&gt; [b, ...c].reduce((x, y) =&gt; (x + y), a);</code>
 </sup></div>
 
 
