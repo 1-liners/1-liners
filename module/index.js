@@ -5,6 +5,7 @@ import between from './between';
 import bind from './bind';
 import bitAnd from './bitAnd';
 import bitOr from './bitOr';
+import bitXor from './bitXor';
 import butLast from './butLast';
 import by from './by';
 import compose from './compose';
@@ -108,6 +109,7 @@ export {
   bind,
   bitAnd,
   bitOr,
+  bitXor,
   butLast,
   by,
   compose,
