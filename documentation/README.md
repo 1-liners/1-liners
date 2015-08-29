@@ -12,6 +12,7 @@
 - [bind](#bind)
 - [bitAnd](#bitand)
 - [bitOr](#bitor)
+- [bitXor](#bitxor)
 - [butLast](#butlast)
 - [by](#by)
 - [compose](#compose)
@@ -238,6 +239,24 @@ bitOr(1, 1); // => 1
 	<a href="../tests/bitOr.js">Spec</a>
 	•
 	<a href="../module/bitOr.js">Source</a>: <code> (x, y) =&gt; x | y;</code>
+</sup></div>
+
+
+### bitXor
+
+Same as `a ^ b`.
+
+```js
+var bitXor = require('1-liners/bitXor');
+
+bitXor(0, 1); // => 1
+bitXor(1, 1); // => 0
+```
+
+<div align="right"><sup>
+	<a href="../tests/bitXor.js">Spec</a>
+	•
+	<a href="../module/bitXor.js">Source</a>: <code> (a, b, ...c) =&gt; [b, ...c].reduce((x, y) =&gt; (x ^ y), a);</code>
 </sup></div>
 
 
