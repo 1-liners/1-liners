@@ -83,8 +83,8 @@ We always follow them. You have our word.
   – you can use it with confidence.  
   &nbsp;
 
-3.  Each function shall **[have a stable number of arguments][]**  
-  – it’s dead easy to bind, curry and uncurry, implode and explode.  
+3.  Each function shall **[have a fixed number of arguments][]**  
+  – it’s dead easy to bind, curry and uncurry, apply partially, implode and explode.  
   &nbsp;
 
 4.  Each function shall **[deal with data in an immutable way][]**  
