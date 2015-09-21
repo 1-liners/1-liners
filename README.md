@@ -117,7 +117,7 @@ We always follow them. You have our word.
 
 [fit in one readable line of code]:    https://github.com/1-liners/1-liners/blob/28b02d0939d6bb4034693e48440f450141453ae9/module/flip.js#L18
 [have no side-effects]:                ./documentation#extend
-[have a stable number of arguments]:   ./documentation#shave
+[have a fixed number of arguments]:   ./documentation#shave
 [deal with data in an immutable way]:  ./documentation#put
 [take data as the last argument]:      ./documentation#split
 [be in a separate micro-module]:       https://github.com/1-liners/1-liners/blob/28b02d0939d6bb4034693e48440f450141453ae9/module/compose.js
