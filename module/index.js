@@ -40,7 +40,9 @@ import isBetween from './isBetween';
 import isBoolean from './isBoolean';
 import isFalse from './isFalse';
 import isFalsy from './isFalsy';
+import isFinite from './isFinite';
 import isFunction from './isFunction';
+import isNaN from './isNaN';
 import isNull from './isNull';
 import isNumber from './isNumber';
 import isObject from './isObject';
@@ -143,7 +145,9 @@ export {
   isBoolean,
   isFalse,
   isFalsy,
+  isFinite,
   isFunction,
+  isNaN,
   isNull,
   isNumber,
   isObject,
