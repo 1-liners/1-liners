@@ -30,6 +30,7 @@
 - [explode](#explode)
 - [extend](#extend)
 - [filter](#filter)
+- [flatMap](#flatmap)
 - [flip](#flip)
 - [fold](#fold)
 - [foldRight](#foldright)
@@ -589,6 +590,23 @@ filter(isOdd, [1, 2, 3]); // => [1, 3]
 	<a href="../tests/filter.js">Spec</a>
 	•
 	<a href="../module/filter.js">Source</a>: <code> (filter, arr) =&gt; arr.filter(filter);</code>
+</sup></div>
+
+
+### flatMap
+
+Map a function over a collection and flatten the result by one-level.
+
+```js
+var flatMap = require('1-liners/flatMap');
+
+flatMap((x) => [x, x], [1, 2, 3]); // => [1, 1, 2, 2, 3, 3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/flatMap.js">Spec</a>
+	•
+	<a href="../module/flatMap.js">Source</a>: <code> (fn, array) =&gt; [].concat.apply([], array.map(fn));</code>
 </sup></div>
 
 

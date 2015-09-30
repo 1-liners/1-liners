@@ -23,6 +23,7 @@ import exec from './exec';
 import explode from './explode';
 import extend from './extend';
 import filter from './filter';
+import flatMap from './flatMap';
 import flip from './flip';
 import fold from './fold';
 import foldRight from './foldRight';
@@ -126,6 +127,7 @@ export {
   explode,
   extend,
   filter,
+  flatMap,
   flip,
   fold,
   foldRight,
