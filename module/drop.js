@@ -3,7 +3,7 @@
  *
  * @description
  *
- * Returns the suffix of `array` after dropping the first `n` elements
+ * Returns the tail of `array` after dropping the first `n` elements
  *
  * @example
  *
@@ -11,7 +11,7 @@
  *
  * 	const array = [1, 2, 3, 4, 5];
  *  const string = 'Hello World';
- * 
+ *
  * 	drop(2, array);  // => [3, 4, 5]
  * 	drop(6, string); // => 'World'
  *

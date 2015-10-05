@@ -429,7 +429,7 @@ dec(1); // => 0
 
 ### drop
 
-Returns the suffix of `array` after dropping the first `n` elements
+Returns the tail of `array` after dropping the first `n` elements
 
 ```js
 const drop = require('1-liners/drop');
