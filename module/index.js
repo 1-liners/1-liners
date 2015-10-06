@@ -7,6 +7,8 @@ import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import butLast from './butLast';
 import by from './by';
+import charCodeAt from './charCodeAt';
+import codePointAt from './codePointAt';
 import compose from './compose';
 import composeAll from './composeAll';
 import concat from './concat';
@@ -114,6 +116,8 @@ export {
   bitOr,
   butLast,
   by,
+  charCodeAt,
+  codePointAt,
   compose,
   composeAll,
   concat,

@@ -14,6 +14,8 @@
 - [bitOr](#bitor)
 - [butLast](#butlast)
 - [by](#by)
+- [charCodeAt](#charcodeat)
+- [codePointAt](#codepointat)
 - [compose](#compose)
 - [composeAll](#composeall)
 - [concat](#concat)
@@ -279,6 +281,40 @@ by(6, 2); // => 3
 	<a href="../tests/by.js">Spec</a>
 	•
 	<a href="../module/by.js">Source</a>: <code> (a, b) =&gt; a / b;</code>
+</sup></div>
+
+
+### charCodeAt
+
+Same as `'STR'.charCodeAt(0)`.
+
+```js
+var charCodeAt = require('1-liners/charCodeAt');
+
+charCodeAt(0, 'super') // => 115
+```
+
+<div align="right"><sup>
+	<a href="../tests/charCodeAt.js">Spec</a>
+	•
+	<a href="../module/charCodeAt.js">Source</a>: <code> (index, str) =&gt; str.charCodeAt(index);</code>
+</sup></div>
+
+
+### codePointAt
+
+Same as `'STR'.codePointAt(0)`.
+
+```js
+var codePointAt = require('1-liners/codePointAt');
+
+codePointAt(0, 'super') // => 115
+```
+
+<div align="right"><sup>
+	<a href="../tests/codePointAt.js">Spec</a>
+	•
+	<a href="../module/codePointAt.js">Source</a>: <code> (index, str) =&gt; str.codePointAt(index);</code>
 </sup></div>
 
 

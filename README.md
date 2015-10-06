@@ -28,11 +28,7 @@
 
 **Functional tools that couldn’t be simpler.**
 
-<<<<<<< HEAD
-We’re proud to present *1-liners* – a dead simple functional utility belt. **[106 one-liner functions][docs]** (and counting). Each hand-crafted with love and attention.
-=======
-We’re proud to present *1-liners* – a dead simple functional utility belt. **[105 one-liner functions][docs]** (and counting). Each hand-crafted with love and attention.
->>>>>>> added toLowerCase() and toUpperCase()
+We’re proud to present *1-liners* – a dead simple functional utility belt. **[108 one-liner functions][docs]** (and counting). Each hand-crafted with love and attention.
 
 [docs]:  ./documentation
 
