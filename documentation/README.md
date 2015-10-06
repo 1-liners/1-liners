@@ -104,6 +104,8 @@
 - [takeWhile](#takewhile)
 - [test](#test)
 - [times](#times)
+- [toLowerCase](#tolowercase)
+- [toUpperCase](#touppercase)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
 - [values](#values)
@@ -2015,6 +2017,40 @@ times(3, 2); // => 6
 	<a href="../tests/times.js">Spec</a>
 	•
 	<a href="../module/times.js">Source</a>: <code> (a, b) =&gt; a * b;</code>
+</sup></div>
+
+
+### toLowerCase
+
+Same as `'STR'.toLowerCase()`.
+
+```js
+var toLowerCase = require('1-liners/toLowerCase');
+
+toLowerCase('HALLO') // => 'hallo'
+```
+
+<div align="right"><sup>
+	<a href="../tests/toLowerCase.js">Spec</a>
+	•
+	<a href="../module/toLowerCase.js">Source</a>: <code> (str) =&gt; str.toLowerCase();</code>
+</sup></div>
+
+
+### toUpperCase
+
+Same as `'str'.toUpperCase()`.
+
+```js
+var toUpperCase = require('1-liners/toUpperCase');
+
+toUpperCase('hallo') // => 'HALLO'
+```
+
+<div align="right"><sup>
+	<a href="../tests/toUpperCase.js">Spec</a>
+	•
+	<a href="../module/toUpperCase.js">Source</a>: <code> (str) =&gt; str.toUpperCase();</code>
 </sup></div>
 
 

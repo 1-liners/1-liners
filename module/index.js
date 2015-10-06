@@ -97,6 +97,8 @@ import takeUntil from './takeUntil';
 import takeWhile from './takeWhile';
 import test from './test';
 import times from './times';
+import toLowerCase from './toLowerCase';
+import toUpperCase from './toUpperCase';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
 import values from './values';
@@ -202,6 +204,8 @@ export {
   takeWhile,
   test,
   times,
+  toLowerCase,
+  toUpperCase,
   uncurry,
   uncurry3,
   values,
