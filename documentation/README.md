@@ -101,6 +101,8 @@
 - [split](#split)
 - [startsWith](#startswith)
 - [startsWithAt](#startswithat)
+- [substr](#substr)
+- [substrTo](#substrto)
 - [sum](#sum)
 - [tail](#tail)
 - [take](#take)
@@ -1967,6 +1969,40 @@ startsWithAt(2, 'stoeffel', 'nope');  // => false
 	<a href="../tests/startsWithAt.js">Spec</a>
 	•
 	<a href="../module/startsWithAt.js">Source</a>: <code> (position, searchString, str) =&gt; str.startsWith(searchString, position);</code>
+</sup></div>
+
+
+### substr
+
+Same as `'string'.substr(2)`.
+
+```js
+var substr = require('1-liners/substr');
+
+substr(3, 'one fish') // => 'fish'
+```
+
+<div align="right"><sup>
+	<a href="../tests/substr.js">Spec</a>
+	•
+	<a href="../module/substr.js">Source</a>: <code> (startIndex, str) =&gt; str.substr(startIndex);</code>
+</sup></div>
+
+
+### substrTo
+
+Same as `'string'.substrTo(2,1)`.
+
+```js
+var substrTo = require('1-liners/substrTo');
+
+substrTo(0, 3, 'two fish') // => 'two'
+```
+
+<div align="right"><sup>
+	<a href="../tests/substrTo.js">Spec</a>
+	•
+	<a href="../module/substrTo.js">Source</a>: <code> (startIndex, len, str) =&gt; str.substr(startIndex, len);</code>
 </sup></div>
 
 
