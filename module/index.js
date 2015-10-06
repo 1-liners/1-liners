@@ -39,6 +39,7 @@ import ifThen from './ifThen';
 import ifThenElse from './ifThenElse';
 import implode from './implode';
 import inc from './inc';
+import indexOf from './indexOf';
 import isBetween from './isBetween';
 import isBoolean from './isBoolean';
 import isFalse from './isFalse';
@@ -57,6 +58,7 @@ import isUnknown from './isUnknown';
 import join from './join';
 import keys from './keys';
 import last from './last';
+import lastIndexOf from './lastIndexOf';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
 import lessThan from './lessThan';
@@ -148,6 +150,7 @@ export {
   ifThenElse,
   implode,
   inc,
+  indexOf,
   isBetween,
   isBoolean,
   isFalse,
@@ -166,6 +169,7 @@ export {
   join,
   keys,
   last,
+  lastIndexOf,
   length,
   lessOrEqual,
   lessThan,

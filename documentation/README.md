@@ -46,6 +46,7 @@
 - [ifThenElse](#ifthenelse)
 - [implode](#implode)
 - [inc](#inc)
+- [indexOf](#indexof)
 - [isBetween](#isbetween)
 - [isBoolean](#isboolean)
 - [isFalse](#isfalse)
@@ -64,6 +65,7 @@
 - [join](#join)
 - [keys](#keys)
 - [last](#last)
+- [lastIndexOf](#lastindexof)
 - [length](#length)
 - [lessOrEqual](#lessorequal)
 - [lessThan](#lessthan)
@@ -903,6 +905,23 @@ inc(1); // => 2
 </sup></div>
 
 
+### indexOf
+
+Same as `'str'.indexOf('t')`.
+
+```js
+var indexOf = require('1-liners/indexOf');
+
+indexOf('a', 'hallo') // => 1
+```
+
+<div align="right"><sup>
+	<a href="../tests/indexOf.js">Spec</a>
+	•
+	<a href="../module/indexOf.js">Source</a>: <code> (searchValue, str) =&gt; str.indexOf(searchValue);</code>
+</sup></div>
+
+
 ### isBetween
 
 Check if the `number` lies between `min` and `max`, inclusive.
@@ -1280,6 +1299,23 @@ last([1, 2, 3]);  // => 3
 	<a href="../tests/last.js">Spec</a>
 	•
 	<a href="../module/last.js">Source</a>: <code> (array) =&gt; array[array.length - 1];</code>
+</sup></div>
+
+
+### lastIndexOf
+
+Same as `'wow'.lastIndexOf('w')`.
+
+```js
+var lastIndexOf = require('1-liners/lastIndexOf');
+
+lastIndexOf('f', 'waffle') // => 3
+```
+
+<div align="right"><sup>
+	<a href="../tests/lastIndexOf.js">Spec</a>
+	•
+	<a href="../module/lastIndexOf.js">Source</a>: <code> (searchValue, str) =&gt; str.lastIndexOf(searchValue);</code>
 </sup></div>
 
 
