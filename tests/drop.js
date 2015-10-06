@@ -2,22 +2,10 @@ import { deepEqual } from 'assert';
 import drop from '../drop';
 
 test('#drop', () => {
-	const object = {foo: 1, bar: 2, baz: 3};
+	const array = [1, 2, 3, 4, 5];
+	const string = 'Hello World';
 
-	deepEqual(
-		drop(['foo', 'baz'], object),
-		{bar: 2}
-	);
-	deepEqual(
-		drop([], object),
-		object
-	);
-	deepEqual(
-		drop(['oof'], object),
-		object
-	);
-	deepEqual(
-		object,
-		{foo: 1, bar: 2, baz: 3}
-	);
+	deepEqual(drop(2, array), [3, 4, 5]);
+	deepEqual(drop(array.length + 1, array), []);
+    deepEqual(drop(6, string), 'World');
 });

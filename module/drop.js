@@ -3,16 +3,17 @@
  *
  * @description
  *
- * Creates a copy of the `object` without the given `props`.
+ * Returns the tail of `array` after dropping the first `n` elements
  *
  * @example
  *
  * 	const drop = require('1-liners/drop');
  *
- * 	const object = {foo: 1, bar: 2, baz: 3};
+ * 	const array = [1, 2, 3, 4, 5];
+ *  const string = 'Hello World';
  *
- * 	drop(['foo', 'baz'], object);  // => {bar: 2}
- * 	object;                        // => {foo: 1, bar: 2, baz: 3}
+ * 	drop(2, array);  // => [3, 4, 5]
+ * 	drop(6, string); // => 'World'
  *
  */
-export default (props:Array, object) => Object.keys(object).reduce((res, k) => Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});
+export default (n, array) => array.slice(Math.max(n, 0), Infinity);

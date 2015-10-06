@@ -77,6 +77,7 @@
 - [nor](#nor)
 - [not](#not)
 - [nth](#nth)
+- [omit](#omit)
 - [or](#or)
 - [pick](#pick)
 - [pipe](#pipe)
@@ -428,21 +429,22 @@ dec(1); // => 0
 
 ### drop
 
-Creates a copy of the `object` without the given `props`.
+Returns the tail of `array` after dropping the first `n` elements
 
 ```js
 const drop = require('1-liners/drop');
 
-const object = {foo: 1, bar: 2, baz: 3};
+const array = [1, 2, 3, 4, 5];
+ const string = 'Hello World';
 
-drop(['foo', 'baz'], object);  // => {bar: 2}
-object;                        // => {foo: 1, bar: 2, baz: 3}
+drop(2, array);  // => [3, 4, 5]
+drop(6, string); // => 'World'
 ```
 
 <div align="right"><sup>
 	<a href="../tests/drop.js">Spec</a>
 	•
-	<a href="../module/drop.js">Source</a>: <code> (props:Array, object) =&gt; Object.keys(object).reduce((res, k) =&gt; Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});</code>
+	<a href="../module/drop.js">Source</a>: <code> (n, array) =&gt; array.slice(Math.max(n, 0), Infinity);</code>
 </sup></div>
 
 
@@ -1520,6 +1522,25 @@ nth(1, [1, 2, 3]); // => 2
 	<a href="../tests/nth.js">Spec</a>
 	•
 	<a href="../module/nth.js">Source</a>: <code> (n, arr) =&gt; arr[n];</code>
+</sup></div>
+
+
+### omit
+
+Creates a copy of the `object` without the given `props`.
+
+```js
+const omit = require('1-liners/omit');
+
+const object = {foo: 1, bar: 2, baz: 3};
+
+omit(['foo', 'baz'], object);  // => {bar: 2}
+```
+
+<div align="right"><sup>
+	<a href="../tests/omit.js">Spec</a>
+	•
+	<a href="../module/omit.js">Source</a>: <code> (props:Array, object) =&gt; Object.keys(object).reduce((res, k) =&gt; Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});</code>
 </sup></div>
 
 

@@ -70,6 +70,7 @@ import noop from './noop';
 import nor from './nor';
 import not from './not';
 import nth from './nth';
+import omit from './omit';
 import or from './or';
 import pick from './pick';
 import pipe from './pipe';
@@ -174,6 +175,7 @@ export {
   nor,
   not,
   nth,
+  omit,
   or,
   pick,
   pipe,
