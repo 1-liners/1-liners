@@ -96,6 +96,8 @@ import startsWith from './startsWith';
 import startsWithAt from './startsWithAt';
 import substr from './substr';
 import substrTo from './substrTo';
+import substring from './substring';
+import substringTo from './substringTo';
 import sum from './sum';
 import tail from './tail';
 import take from './take';
@@ -209,6 +211,8 @@ export {
   startsWithAt,
   substr,
   substrTo,
+  substring,
+  substringTo,
   sum,
   tail,
   take,

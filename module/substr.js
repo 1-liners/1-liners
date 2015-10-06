@@ -9,7 +9,7 @@
  * 
  * 	var substr = require('1-liners/substr');
  * 
- * 	substr(3, 'one fish') // => 'fish'
+ * 	substr(4, 'one fish') // => 'fish'
  * 
  */
 export default (startIndex, str) => str.substr(startIndex);

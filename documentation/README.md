@@ -103,6 +103,8 @@
 - [startsWithAt](#startswithat)
 - [substr](#substr)
 - [substrTo](#substrto)
+- [substring](#substring)
+- [substringTo](#substringto)
 - [sum](#sum)
 - [tail](#tail)
 - [take](#take)
@@ -1979,7 +1981,7 @@ Same as `'string'.substr(2)`.
 ```js
 var substr = require('1-liners/substr');
 
-substr(3, 'one fish') // => 'fish'
+substr(4, 'one fish') // => 'fish'
 ```
 
 <div align="right"><sup>
@@ -2003,6 +2005,40 @@ substrTo(0, 3, 'two fish') // => 'two'
 	<a href="../tests/substrTo.js">Spec</a>
 	•
 	<a href="../module/substrTo.js">Source</a>: <code> (startIndex, len, str) =&gt; str.substr(startIndex, len);</code>
+</sup></div>
+
+
+### substring
+
+Same as `'string'.substring(2)`.
+
+```js
+var substring = require('1-liners/substring');
+
+substring(4, 'red fish') // => 'fish'
+```
+
+<div align="right"><sup>
+	<a href="../tests/substring.js">Spec</a>
+	•
+	<a href="../module/substring.js">Source</a>: <code> (startIndex, str) =&gt; str.substring(startIndex);</code>
+</sup></div>
+
+
+### substringTo
+
+Same as `'string'.substringTo(2,1)`.
+
+```js
+var substringTo = require('1-liners/substringTo');
+
+substringTo(0, 4, 'blue fish') // => 'blue'
+```
+
+<div align="right"><sup>
+	<a href="../tests/substringTo.js">Spec</a>
+	•
+	<a href="../module/substringTo.js">Source</a>: <code> (startIndex, endIndex, str) =&gt; str.substring(startIndex, endIndex);</code>
 </sup></div>
 
 
