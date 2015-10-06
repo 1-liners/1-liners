@@ -1535,7 +1535,6 @@ const omit = require('1-liners/omit');
 const object = {foo: 1, bar: 2, baz: 3};
 
 omit(['foo', 'baz'], object);  // => {bar: 2}
-object;                        // => {foo: 1, bar: 2, baz: 3}
 ```
 
 <div align="right"><sup>
