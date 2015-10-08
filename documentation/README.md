@@ -14,6 +14,8 @@
 - [bitOr](#bitor)
 - [butLast](#butlast)
 - [by](#by)
+- [charCodeAt](#charcodeat)
+- [codePointAt](#codepointat)
 - [compose](#compose)
 - [composeAll](#composeall)
 - [concat](#concat)
@@ -44,6 +46,7 @@
 - [ifThenElse](#ifthenelse)
 - [implode](#implode)
 - [inc](#inc)
+- [indexOf](#indexof)
 - [isBetween](#isbetween)
 - [isBoolean](#isboolean)
 - [isFalse](#isfalse)
@@ -62,6 +65,7 @@
 - [join](#join)
 - [keys](#keys)
 - [last](#last)
+- [lastIndexOf](#lastindexof)
 - [length](#length)
 - [lessOrEqual](#lessorequal)
 - [lessThan](#lessthan)
@@ -93,6 +97,7 @@
 - [shallowClone](#shallowclone)
 - [shave](#shave)
 - [signum](#signum)
+- [slice](#slice)
 - [some](#some)
 - [split](#split)
 - [startsWith](#startswith)
@@ -104,6 +109,8 @@
 - [takeWhile](#takewhile)
 - [test](#test)
 - [times](#times)
+- [toLowerCase](#tolowercase)
+- [toUpperCase](#touppercase)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
 - [values](#values)
@@ -280,6 +287,40 @@ by(6, 2); // => 3
 </sup></div>
 
 
+### charCodeAt
+
+Same as `'STR'.charCodeAt(0)`.
+
+```js
+var charCodeAt = require('1-liners/charCodeAt');
+
+charCodeAt(0, 'super') // => 115
+```
+
+<div align="right"><sup>
+	<a href="../tests/charCodeAt.js">Spec</a>
+	•
+	<a href="../module/charCodeAt.js">Source</a>: <code> (index, str) =&gt; str.charCodeAt(index);</code>
+</sup></div>
+
+
+### codePointAt
+
+Same as `'STR'.codePointAt(0)`.
+
+```js
+var codePointAt = require('1-liners/codePointAt');
+
+codePointAt(0, 'super') // => 115
+```
+
+<div align="right"><sup>
+	<a href="../tests/codePointAt.js">Spec</a>
+	•
+	<a href="../module/codePointAt.js">Source</a>: <code> (index, str) =&gt; str.codePointAt(index);</code>
+</sup></div>
+
+
 ### compose
 
 Compose a new function from two given functions.
@@ -429,7 +470,8 @@ dec(1); // => 0
 
 ### drop
 
-Returns the tail of `array` after dropping the first `n` elements
+Returns the tail of `array` after dropping the first `n` elements.
+Use this in place of String's `.substr(startIndex)` and `.substring(startIndex)`
 
 ```js
 const drop = require('1-liners/drop');
@@ -865,6 +907,23 @@ inc(1); // => 2
 </sup></div>
 
 
+### indexOf
+
+Same as `'str'.indexOf('t')`.
+
+```js
+var indexOf = require('1-liners/indexOf');
+
+indexOf('a', 'hallo') // => 1
+```
+
+<div align="right"><sup>
+	<a href="../tests/indexOf.js">Spec</a>
+	•
+	<a href="../module/indexOf.js">Source</a>: <code> (searchValue, str) =&gt; str.indexOf(searchValue);</code>
+</sup></div>
+
+
 ### isBetween
 
 Check if the `number` lies between `min` and `max`, inclusive.
@@ -1242,6 +1301,23 @@ last([1, 2, 3]);  // => 3
 	<a href="../tests/last.js">Spec</a>
 	•
 	<a href="../module/last.js">Source</a>: <code> (array) =&gt; array[array.length - 1];</code>
+</sup></div>
+
+
+### lastIndexOf
+
+Same as `'wow'.lastIndexOf('w')`.
+
+```js
+var lastIndexOf = require('1-liners/lastIndexOf');
+
+lastIndexOf('f', 'waffle') // => 3
+```
+
+<div align="right"><sup>
+	<a href="../tests/lastIndexOf.js">Spec</a>
+	•
+	<a href="../module/lastIndexOf.js">Source</a>: <code> (searchValue, str) =&gt; str.lastIndexOf(searchValue);</code>
 </sup></div>
 
 
@@ -1826,6 +1902,25 @@ signum(-0);         // => 0
 </sup></div>
 
 
+### slice
+
+Same as `'1-liners'.slice(2,4)` or `[1,2,3,4].slice(1,3)` 
+Use in place of `'1-liners'.substring(2,6)`
+
+```js
+var slice = require('1-liners/slice');
+
+slice(2, 6, '1-liners'); // => 'line'
+slice(1, 3, [1,2,3,4]); // => [2,3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/slice.js">Spec</a>
+	•
+	<a href="../module/slice.js">Source</a>: <code> (startIndex, endIndex, arg) =&gt; arg.slice(Math.max(startIndex, 0), endIndex);</code>
+</sup></div>
+
+
 ### some
 
 Same as `[1,2,3].some(GreaterThan16)`
@@ -2015,6 +2110,40 @@ times(3, 2); // => 6
 	<a href="../tests/times.js">Spec</a>
 	•
 	<a href="../module/times.js">Source</a>: <code> (a, b) =&gt; a * b;</code>
+</sup></div>
+
+
+### toLowerCase
+
+Same as `'STR'.toLowerCase()`.
+
+```js
+var toLowerCase = require('1-liners/toLowerCase');
+
+toLowerCase('HALLO') // => 'hallo'
+```
+
+<div align="right"><sup>
+	<a href="../tests/toLowerCase.js">Spec</a>
+	•
+	<a href="../module/toLowerCase.js">Source</a>: <code> (str) =&gt; str.toLowerCase();</code>
+</sup></div>
+
+
+### toUpperCase
+
+Same as `'str'.toUpperCase()`.
+
+```js
+var toUpperCase = require('1-liners/toUpperCase');
+
+toUpperCase('hallo') // => 'HALLO'
+```
+
+<div align="right"><sup>
+	<a href="../tests/toUpperCase.js">Spec</a>
+	•
+	<a href="../module/toUpperCase.js">Source</a>: <code> (str) =&gt; str.toUpperCase();</code>
 </sup></div>
 
 

@@ -3,7 +3,8 @@
  *
  * @description
  *
- * Returns the tail of `array` after dropping the first `n` elements
+ * Returns the tail of `array` after dropping the first `n` elements.
+ * Use this in place of String's `.substr(startIndex)` and `.substring(startIndex)`
  *
  * @example
  *

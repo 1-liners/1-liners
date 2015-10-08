@@ -7,6 +7,8 @@ import bitAnd from './bitAnd';
 import bitOr from './bitOr';
 import butLast from './butLast';
 import by from './by';
+import charCodeAt from './charCodeAt';
+import codePointAt from './codePointAt';
 import compose from './compose';
 import composeAll from './composeAll';
 import concat from './concat';
@@ -37,6 +39,7 @@ import ifThen from './ifThen';
 import ifThenElse from './ifThenElse';
 import implode from './implode';
 import inc from './inc';
+import indexOf from './indexOf';
 import isBetween from './isBetween';
 import isBoolean from './isBoolean';
 import isFalse from './isFalse';
@@ -55,6 +58,7 @@ import isUnknown from './isUnknown';
 import join from './join';
 import keys from './keys';
 import last from './last';
+import lastIndexOf from './lastIndexOf';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
 import lessThan from './lessThan';
@@ -86,6 +90,7 @@ import replace from './replace';
 import shallowClone from './shallowClone';
 import shave from './shave';
 import signum from './signum';
+import slice from './slice';
 import some from './some';
 import split from './split';
 import startsWith from './startsWith';
@@ -97,6 +102,8 @@ import takeUntil from './takeUntil';
 import takeWhile from './takeWhile';
 import test from './test';
 import times from './times';
+import toLowerCase from './toLowerCase';
+import toUpperCase from './toUpperCase';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
 import values from './values';
@@ -112,6 +119,8 @@ export {
   bitOr,
   butLast,
   by,
+  charCodeAt,
+  codePointAt,
   compose,
   composeAll,
   concat,
@@ -142,6 +151,7 @@ export {
   ifThenElse,
   implode,
   inc,
+  indexOf,
   isBetween,
   isBoolean,
   isFalse,
@@ -160,6 +170,7 @@ export {
   join,
   keys,
   last,
+  lastIndexOf,
   length,
   lessOrEqual,
   lessThan,
@@ -191,6 +202,7 @@ export {
   shallowClone,
   shave,
   signum,
+  slice,
   some,
   split,
   startsWith,
@@ -202,6 +214,8 @@ export {
   takeWhile,
   test,
   times,
+  toLowerCase,
+  toUpperCase,
   uncurry,
   uncurry3,
   values,
