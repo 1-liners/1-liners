@@ -97,6 +97,7 @@
 - [shallowClone](#shallowclone)
 - [shave](#shave)
 - [signum](#signum)
+- [slice](#slice)
 - [some](#some)
 - [split](#split)
 - [startsWith](#startswith)
@@ -469,7 +470,8 @@ dec(1); // => 0
 
 ### drop
 
-Returns the tail of `array` after dropping the first `n` elements
+Returns the tail of `array` after dropping the first `n` elements.
+Use this in place of String's `.substr(startIndex)` and `.substring(startIndex)`
 
 ```js
 const drop = require('1-liners/drop');
@@ -1897,6 +1899,25 @@ signum(-0);         // => 0
 	<a href="../tests/signum.js">Spec</a>
 	•
 	<a href="../module/signum.js">Source</a>: <code> (n) =&gt; (n === 0 ? 0 : (n &gt; 0 ? 1 : (n &lt; 0 ? -1 : NaN)));</code>
+</sup></div>
+
+
+### slice
+
+Same as `'1-liners'.slice(2,4)` or `[1,2,3,4].slice(1,3)` 
+Use in place of `'1-liners'.substring(2,6)`
+
+```js
+var slice = require('1-liners/slice');
+
+slice(2, 6, '1-liners'); // => 'line'
+slice(1, 3, [1,2,3,4]); // => [2,3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/slice.js">Spec</a>
+	•
+	<a href="../module/slice.js">Source</a>: <code> (startIndex, endIndex, arg) =&gt; arg.slice(Math.max(startIndex, 0), endIndex);</code>
 </sup></div>
 
 

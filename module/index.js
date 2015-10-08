@@ -90,6 +90,7 @@ import replace from './replace';
 import shallowClone from './shallowClone';
 import shave from './shave';
 import signum from './signum';
+import slice from './slice';
 import some from './some';
 import split from './split';
 import startsWith from './startsWith';
@@ -201,6 +202,7 @@ export {
   shallowClone,
   shave,
   signum,
+  slice,
   some,
   split,
   startsWith,
