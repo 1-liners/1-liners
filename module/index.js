@@ -94,8 +94,6 @@ import some from './some';
 import split from './split';
 import startsWith from './startsWith';
 import startsWithAt from './startsWithAt';
-import substr from './substr';
-import substrTo from './substrTo';
 import sum from './sum';
 import tail from './tail';
 import take from './take';
@@ -207,8 +205,6 @@ export {
   split,
   startsWith,
   startsWithAt,
-  substr,
-  substrTo,
   sum,
   tail,
   take,
