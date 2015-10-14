@@ -8,13 +8,13 @@
  *
  * @example
  *
- * 	let ifThenElse = require('1-liners/ifThenElse');
+ * 	const ifThenElse = require('1-liners/ifThenElse');
  *
- * 	let eq = (a, b) => a === b;
- * 	let add = (a, b) => a + b;
- * 	let sub = (a, b) => a - b;
+ * 	const eq = (a, b) => a === b;
+ * 	const add = (a, b) => a + b;
+ * 	const sub = (a, b) => a - b;
  *
- * 	let addIfEq = ifThenElse(eq, add, sub);
+ * 	const addIfEq = ifThenElse(eq, add, sub);
  *
  * 	addIfEq(1, 1); // => 2
  * 	addIfEq(2, 1); // => 1
