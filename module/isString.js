@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isString = require('1-liners/isString');
+ * 	const isString = require('1-liners/isString');
  *
  * 	isString('');               // => true
  * 	isString('anything');       // => true

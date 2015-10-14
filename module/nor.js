@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var nor = require('1-liners/nor');
+ * 	const nor = require('1-liners/nor');
  * 
  * 	nor(0, 0); // => true
  * 	nor(1, 0); // => false

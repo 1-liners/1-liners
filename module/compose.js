@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var compose = require('1-liners/compose');
+ * 	const compose = require('1-liners/compose');
  * 
  * 	compose(f, g)(1, 2) === f(g(1, 2));
  * 

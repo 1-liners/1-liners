@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var reduce = require('1-liners/reduce');
+ * 	const reduce = require('1-liners/reduce');
  * 
  * 	reduce(sum, [1, 2, 3]); // => 6
  * 

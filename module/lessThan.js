@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var lessThan = require('1-liners/lessThan');
+ * 	const lessThan = require('1-liners/lessThan');
  *
  * 	lessThan(1, 2); // => true
  * 	lessThan(1, 1); // => false

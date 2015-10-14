@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var implode = require('1-liners/implode');
+ * 	const implode = require('1-liners/implode');
  * 
  * 	const f = (a, b) => a + b;
  * 

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var join = require('1-liners/join');
+ * 	const join = require('1-liners/join');
  * 
  * 	join('-', [1, 'liners']); // => '1-liners'
  * 

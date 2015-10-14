@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var between = require('1-liners/between');
+ * 	const between = require('1-liners/between');
  *
  * 	between(1, 10, 2.5);  // => 2.5
  * 	between(1, 10, -5);   // => 1

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var max = require('1-liners/max');
+ * 	const max = require('1-liners/max');
  * 
  * 	max(3, 6);  // => 6
  * 

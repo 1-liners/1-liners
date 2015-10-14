@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var noop = require('1-liners/noop');
+ * 	const noop = require('1-liners/noop');
  * 
  * 	window.console = {
  * 			log: noop,

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var nand = require('1-liners/nand');
+ * 	const nand = require('1-liners/nand');
  * 
  * 	nand(0, 0); // => true
  * 	nand(1, 1); // => false

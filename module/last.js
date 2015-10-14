@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var last = require('1-liners/last');
+ * 	const last = require('1-liners/last');
  *
  * 	last([1, 2, 3]);  // => 3
  *

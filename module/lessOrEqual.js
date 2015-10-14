@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var lessOrEqual = require('1-liners/lessOrEqual');
+ * 	const lessOrEqual = require('1-liners/lessOrEqual');
  *
  * 	lessOrEqual(1, 2); // => true
  * 	lessOrEqual(1, 1); // => true

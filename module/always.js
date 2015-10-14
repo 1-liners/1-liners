@@ -7,13 +7,13 @@
  *
  * @example
  *
- * 	var always = require('1-liners/always');
+ * 	const always = require('1-liners/always');
  *
- * 	var T = always(true);
+ * 	const T = always(true);
  * 	T(); // => true
  * 	T(); // => true
  *
- * 	var fortyTwo = always(42);
+ * 	const fortyTwo = always(42);
  * 	fortyTwo(); // => 42
  * 	fortyTwo(); // => 42
  *

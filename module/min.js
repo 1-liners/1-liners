@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var min = require('1-liners/min');
+ * 	const min = require('1-liners/min');
  * 
  * 	min(3, 6);  // => 3
  * 

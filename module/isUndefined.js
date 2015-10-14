@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isUndefined = require('1-liners/isUndefined');
+ * 	const isUndefined = require('1-liners/isUndefined');
  *
  * 	isUndefined(undefined);        // => true
  *

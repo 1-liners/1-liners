@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var xor = require('1-liners/xor');
+ * 	const xor = require('1-liners/xor');
  *
  * 	xor(0, 1); // => 1
  * 	xor(1, 1); // => 0

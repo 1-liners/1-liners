@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isUnknown = require('1-liners/isUnknown');
+ * 	const isUnknown = require('1-liners/isUnknown');
  *
  * 	isUnknown(null);             // => true
  * 	isUnknown(undefined);        // => true

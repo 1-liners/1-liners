@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isFunction = require('1-liners/isFunction');
+ * 	const isFunction = require('1-liners/isFunction');
  *
  * 	isFunction(function() {});        // => true
  * 	isFunction(function named() {});  // => true

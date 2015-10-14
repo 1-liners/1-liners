@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var toLowerCase = require('1-liners/toLowerCase');
+ * 	const toLowerCase = require('1-liners/toLowerCase');
  * 
  * 	toLowerCase('HALLO') // => 'hallo'
  * 

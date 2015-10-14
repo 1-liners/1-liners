@@ -9,7 +9,7 @@
  *
  * 	const keys = require('1-liners/keys');
  *
- *  keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
- *  keys([1, 2, 3]); // => [0, 1, 2]
+ * 	keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
+ * 	keys([1, 2, 3]); // => [0, 1, 2]
  */
 export default (obj) => Object.keys(obj);

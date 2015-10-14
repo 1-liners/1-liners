@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isNull = require('1-liners/isNull');
+ * 	const isNull = require('1-liners/isNull');
  *
  * 	isNull(null);             // => true
  *

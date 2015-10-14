@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var pipe = require('1-liners/pipe');
+ * 	const pipe = require('1-liners/pipe');
  * 
  * 	pipe(f, g)(1, 2) === g(f(1, 2));
  * 

@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var plus = require('1-liners/plus');
+ * 	const plus = require('1-liners/plus');
  *
  * 	plus(2, 8);      // => 10
  * 	plus('a', 'b');  // => 'ab'

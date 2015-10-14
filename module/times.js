@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var times = require('1-liners/times');
+ * 	const times = require('1-liners/times');
  * 
  * 	times(3, 2); // => 6
  * 

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var bitOr = require('1-liners/bitOr');
+ * 	const bitOr = require('1-liners/bitOr');
  * 
  * 	bitOr(0, 1); // => 1
  * 	bitOr(1, 1); // => 1

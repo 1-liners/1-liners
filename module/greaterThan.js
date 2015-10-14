@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var greaterThan = require('1-liners/greaterThan');
+ * 	const greaterThan = require('1-liners/greaterThan');
  *
  * 	greaterThan(2, 1); // => true
  * 	greaterThan(2, 2); // => false

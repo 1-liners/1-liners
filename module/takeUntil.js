@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var takeUntil = require('1-liners/takeUntil');
+ * 	const takeUntil = require('1-liners/takeUntil');
  * 
  * 	takeUntil(i => i % 2 === 1, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
  * 

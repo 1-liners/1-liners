@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var and = require('1-liners/and');
+ * 	const and = require('1-liners/and');
  * 
  * 	and(true, true); // => true
  * 	and(false, true); // => false

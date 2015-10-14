@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var bitAnd = require('1-liners/bitAnd');
+ * 	const bitAnd = require('1-liners/bitAnd');
  * 
  * 	bitAnd(1, 2); // => 0
  * 	bitAnd(2, 2); // => 2

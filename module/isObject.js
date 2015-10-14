@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isObject = require('1-liners/isObject');
+ * 	const isObject = require('1-liners/isObject');
  *
  * 	isObject({});               // => true
  * 	isObject([]);               // => true

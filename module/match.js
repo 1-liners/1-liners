@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var match = require('1-liners/match');
+ * 	const match = require('1-liners/match');
  *
  * 	match(/\d+/g, 'Items: 3,2'); // => ["3", "2"]
  *

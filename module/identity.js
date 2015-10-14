@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var identity = require('1-liners/identity');
+ * 	const identity = require('1-liners/identity');
  *
  * 	identity(true); // => true
  * 	identity(1); // => 1

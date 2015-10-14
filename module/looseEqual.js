@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var looseEqual = require('1-liners/looseEqual');
+ * 	const looseEqual = require('1-liners/looseEqual');
  * 
  * 	looseEqual(true, true); // => true
  * 	looseEqual(false, true); // => false

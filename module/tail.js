@@ -7,9 +7,9 @@
  *
  * @example
  *
- *  var tail = require('1-liners/tail');
+ * 	const tail = require('1-liners/tail');
  *
- *  tail([1, 2, 3]); // => [2, 3]
+ * 	tail([1, 2, 3]); // => [2, 3]
  *
  */
 export default ([,...tail]) => tail;

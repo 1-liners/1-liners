@@ -11,7 +11,7 @@
  * 	const drop = require('1-liners/drop');
  *
  * 	const array = [1, 2, 3, 4, 5];
- *  const string = 'Hello World';
+ * 	const string = 'Hello World';
  *
  * 	drop(2, array);  // => [3, 4, 5]
  * 	drop(6, string); // => 'World'

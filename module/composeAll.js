@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var composeAll = require('1-liners/composeAll');
+ * 	const composeAll = require('1-liners/composeAll');
  * 
  * 	composeAll([f, g, h])(1, 2) === f(g(h(1, 2)));
  * 

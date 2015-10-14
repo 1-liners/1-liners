@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var minus = require('1-liners/minus');
+ * 	const minus = require('1-liners/minus');
  * 
  * 	minus(3, 2); // => 1
  * 

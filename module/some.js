@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var some = require('1-liners/some');
+ * 	const some = require('1-liners/some');
  * 
  * 	some(elem => elem > 16, [16,17,18]); // => true
  * 

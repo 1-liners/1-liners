@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var greaterOrEqual = require('1-liners/greaterOrEqual');
+ * 	const greaterOrEqual = require('1-liners/greaterOrEqual');
  *
  * 	greaterOrEqual(2, 1); // => true
  * 	greaterOrEqual(2, 2); // => true

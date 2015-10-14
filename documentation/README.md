@@ -124,13 +124,13 @@
 Creates a function that always returns a given value
 
 ```js
-var always = require('1-liners/always');
+const always = require('1-liners/always');
 
-var T = always(true);
+const T = always(true);
 T(); // => true
 T(); // => true
 
-var fortyTwo = always(42);
+const fortyTwo = always(42);
 fortyTwo(); // => 42
 fortyTwo(); // => 42
 ```
@@ -147,7 +147,7 @@ fortyTwo(); // => 42
 Same as `a && b`.
 
 ```js
-var and = require('1-liners/and');
+const and = require('1-liners/and');
 
 and(true, true); // => true
 and(false, true); // => false
@@ -183,7 +183,7 @@ average([]);               // => NaN
 Return `number` if it’s greater than `min` and lower than `max`. Else return `min` or `max` respectively.
 
 ```js
-var between = require('1-liners/between');
+const between = require('1-liners/between');
 
 between(1, 10, 2.5);  // => 2.5
 between(1, 10, -5);   // => 1
@@ -202,7 +202,7 @@ between(1, 10, 25);   // => 10
 Binds a context to a function. Same as [`fun.bind(thisArg[, arg1[, arg2[, ...]]])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 
 ```js
-var bind = require('1-liners/bind');
+const bind = require('1-liners/bind');
 
 setTimeout(bind(console, ['Hello'], console.log), 2000); // => 'Hello' (after 2s)
 ```
@@ -219,7 +219,7 @@ setTimeout(bind(console, ['Hello'], console.log), 2000); // => 'Hello' (after 2s
 Same as `a & b`.
 
 ```js
-var bitAnd = require('1-liners/bitAnd');
+const bitAnd = require('1-liners/bitAnd');
 
 bitAnd(1, 2); // => 0
 bitAnd(2, 2); // => 2
@@ -237,7 +237,7 @@ bitAnd(2, 2); // => 2
 Same as `a | b`.
 
 ```js
-var bitOr = require('1-liners/bitOr');
+const bitOr = require('1-liners/bitOr');
 
 bitOr(0, 1); // => 1
 bitOr(1, 1); // => 1
@@ -275,7 +275,7 @@ array;           // => [1, 2, 3]
 Same as `a / b`
 
 ```js
-var by = require('1-liners/by');
+const by = require('1-liners/by');
 
 by(6, 2); // => 3
 ```
@@ -292,7 +292,7 @@ by(6, 2); // => 3
 Same as `'STR'.charCodeAt(0)`.
 
 ```js
-var charCodeAt = require('1-liners/charCodeAt');
+const charCodeAt = require('1-liners/charCodeAt');
 
 charCodeAt(0, 'super') // => 115
 ```
@@ -309,7 +309,7 @@ charCodeAt(0, 'super') // => 115
 Same as `'STR'.codePointAt(0)`.
 
 ```js
-var codePointAt = require('1-liners/codePointAt');
+const codePointAt = require('1-liners/codePointAt');
 
 codePointAt(0, 'super') // => 115
 ```
@@ -326,7 +326,7 @@ codePointAt(0, 'super') // => 115
 Compose a new function from two given functions.
 
 ```js
-var compose = require('1-liners/compose');
+const compose = require('1-liners/compose');
 
 compose(f, g)(1, 2) === f(g(1, 2));
 ```
@@ -343,7 +343,7 @@ compose(f, g)(1, 2) === f(g(1, 2));
 Compose a new function with a given array of functions.
 
 ```js
-var composeAll = require('1-liners/composeAll');
+const composeAll = require('1-liners/composeAll');
 
 composeAll([f, g, h])(1, 2) === f(g(h(1, 2)));
 ```
@@ -379,9 +379,9 @@ concat('c', ['a', 'b']);         // => ['a', 'b', 'c']
 Converge two functions into one.
 
 ```js
- var converge = require('1-liners/converge');
+const converge = require('1-liners/converge');
 
- converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
+converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
 ```
 
 <div align="right"><sup>
@@ -396,29 +396,29 @@ Converge two functions into one.
 Curry a function – split its list of parameters into 2 lists.
 
 ```js
- import curry from '1-liners/curry';
- import reduce from '1-liners/reduce';
- import compose from '1-liners/compose';
+import curry from '1-liners/curry';
+import reduce from '1-liners/reduce';
+import compose from '1-liners/compose';
 
- // You can use reduce and compose to create curry3,4 and so on.
- const curry3 = compose(curry, curry);
- const curry4 = reduce(compose, [curry, curry, curry]);
+// You can use reduce and compose to create curry3,4 and so on.
+const curry3 = compose(curry, curry);
+const curry4 = reduce(compose, [curry, curry, curry]);
 
- const f = (a, b, c, d) => a * b * c * d;
- const fβ = curry(f);  // ~= curry2
- const fγ = curry3(f); // ~= curry3
- const fδ = curry4(f); // ~= curry4
+const f = (a, b, c, d) => a * b * c * d;
+const fβ = curry(f);  // ~= curry2
+const fγ = curry3(f); // ~= curry3
+const fδ = curry4(f); // ~= curry4
 
- f(1, 2, 3, 4)  === 24
+f(1, 2, 3, 4)  === 24
 
- fβ(1)(2, 3, 4) === 24
- fβ(1, 2)(3, 4) === 24
- fβ(1, 2, 3)(4) === 24
+fβ(1)(2, 3, 4) === 24
+fβ(1, 2)(3, 4) === 24
+fβ(1, 2, 3)(4) === 24
 
- fγ(1)(2)(3, 4) === 24
- fγ(1)(2, 3)(4) === 24
+fγ(1)(2)(3, 4) === 24
+fγ(1)(2, 3)(4) === 24
 
- fδ(1)(2)(3)(4) === 24
+fδ(1)(2)(3)(4) === 24
 ```
 
 <div align="right"><sup>
@@ -456,7 +456,7 @@ gλ(2, 3, 4)(1);  // => 3
 Same as `a - 1`
 
 ```js
-var dec = require('1-liners/dec');
+const dec = require('1-liners/dec');
 
 dec(1); // => 0
 ```
@@ -477,7 +477,7 @@ Use this in place of String's `.substr(startIndex)` and `.substring(startIndex)`
 const drop = require('1-liners/drop');
 
 const array = [1, 2, 3, 4, 5];
- const string = 'Hello World';
+const string = 'Hello World';
 
 drop(2, array);  // => [3, 4, 5]
 drop(6, string); // => 'World'
@@ -531,7 +531,7 @@ endsWithAt(2, 'stoeffel', 'nope');  // => false
 Same as `a === b`.
 
 ```js
-var equal = require('1-liners/equal');
+const equal = require('1-liners/equal');
 
 equal(true, true); // => true
 equal(false, true); // => false
@@ -550,7 +550,7 @@ equal(1, true); // => false
 Same as `[1,2,3].every(GreaterThan16)`.
 
 ```js
-var every = require('1-liners/every');
+const every = require('1-liners/every');
 
 every(elem => elem > 16, [16,17,18]); // => false
 ```
@@ -587,7 +587,7 @@ exec(haystack, /needle/);   // => null
 The opposite of [implode](#implode).
 
 ```js
-var explode = require('1-liners/explode');
+const explode = require('1-liners/explode');
 
 const sum = (numbers) => numbers.reduce((a, b) => a + b);
 
@@ -625,7 +625,7 @@ extend({ name: 'stoeffel' }, object);  // => { id: 1, name: 'stoeffel' }
 Same as `[1, 2, 3].filter(isOdd)`.
 
 ```js
-var filter = require('1-liners/filter');
+const filter = require('1-liners/filter');
 
 filter(isOdd, [1, 2, 3]); // => [1, 3]
 ```
@@ -642,7 +642,7 @@ filter(isOdd, [1, 2, 3]); // => [1, 3]
 Map a function over a collection and flatten the result by one-level.
 
 ```js
-var flatMap = require('1-liners/flatMap');
+const flatMap = require('1-liners/flatMap');
 
 flatMap((x) => [x, x], [1, 2, 3]); // => [1, 1, 2, 2, 3, 3]
 ```
@@ -659,9 +659,9 @@ flatMap((x) => [x, x], [1, 2, 3]); // => [1, 1, 2, 2, 3, 3]
 Flip a function’s arguments.
 
 ```js
-var flip = require('1-liners/flip');
+const flip = require('1-liners/flip');
 
-var f = (a, b) => a / b;
+const f = (a, b) => a / b;
 
 flip(f)(2, 6);        // => 3
 flip(flip(f))(6, 2);  // => 3
@@ -679,7 +679,7 @@ flip(flip(f))(6, 2);  // => 3
 Same as [`array.reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/reduce).
 
 ```js
-var fold = require('1-liners/fold');
+const fold = require('1-liners/fold');
 
 fold(sum, 8, [1, 2, 3]); // => 2
 ```
@@ -696,7 +696,7 @@ fold(sum, 8, [1, 2, 3]); // => 2
 Same as [`array.reduceRight`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/reduceRight).
 
 ```js
-var foldRight = require('1-liners/foldRight');
+const foldRight = require('1-liners/foldRight');
 
 foldRight(sub, 1, [1, 2, 3]); // => -5
 ```
@@ -713,7 +713,7 @@ foldRight(sub, 1, [1, 2, 3]); // => -5
 Same as `[1, 2, 3].forEach(Math.sqrt)`.
 
 ```js
-var forEach = require('1-liners/forEach');
+const forEach = require('1-liners/forEach');
 
 forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item: 25"
 ```
@@ -730,7 +730,7 @@ forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item
 Same as `a >= b`.
 
 ```js
-var greaterOrEqual = require('1-liners/greaterOrEqual');
+const greaterOrEqual = require('1-liners/greaterOrEqual');
 
 greaterOrEqual(2, 1); // => true
 greaterOrEqual(2, 2); // => true
@@ -749,7 +749,7 @@ greaterOrEqual(1, 2); // => false
 Same as `a > b`.
 
 ```js
-var greaterThan = require('1-liners/greaterThan');
+const greaterThan = require('1-liners/greaterThan');
 
 greaterThan(2, 1); // => true
 greaterThan(2, 2); // => false
@@ -786,7 +786,7 @@ hasOwnProperty('c', {a: 1, b: 2});  // => false
 Returns the first item of an array.
 
 ```js
-var head = require('1-liners/head');
+const head = require('1-liners/head');
 
 head([1, 2, 3]); // => 1
 ```
@@ -803,7 +803,7 @@ head([1, 2, 3]); // => 1
 Returns the value you pass to the function
 
 ```js
-var identity = require('1-liners/identity');
+const identity = require('1-liners/identity');
 
 identity(true); // => true
 identity(1); // => 1
@@ -824,13 +824,13 @@ Creates a function which calls `then` if the `predicate` is true
 and returns `undefined` if the `predicate` is false.
 
 ```js
-let ifThen = require('1-liners/ifThen');
+const ifThen = require('1-liners/ifThen');
 
-let eq = (a, b) => a === b;
-let add = (a, b) => a + b;
-let sub = (a, b) => a - b;
+const eq = (a, b) => a === b;
+const add = (a, b) => a + b;
+const sub = (a, b) => a - b;
 
-let words = ifThen((str) => typeof str === 'string', (str) => str.split(' '));
+const words = ifThen((str) => typeof str === 'string', (str) => str.split(' '));
 
 words('Hello ES2015'); // => ['Hello', 'ES2015']
 ```
@@ -848,13 +848,13 @@ Creates a function which calls `then` if the `predicate` is true
 and `otherwise` if the `predicate` is false.
 
 ```js
-let ifThenElse = require('1-liners/ifThenElse');
+const ifThenElse = require('1-liners/ifThenElse');
 
-let eq = (a, b) => a === b;
-let add = (a, b) => a + b;
-let sub = (a, b) => a - b;
+const eq = (a, b) => a === b;
+const add = (a, b) => a + b;
+const sub = (a, b) => a - b;
 
-let addIfEq = ifThenElse(eq, add, sub);
+const addIfEq = ifThenElse(eq, add, sub);
 
 addIfEq(1, 1); // => 2
 addIfEq(2, 1); // => 1
@@ -872,7 +872,7 @@ addIfEq(2, 1); // => 1
 Collapse a list of arguments into an array of arguments.
 
 ```js
-var implode = require('1-liners/implode');
+const implode = require('1-liners/implode');
 
 const f = (a, b) => a + b;
 
@@ -895,7 +895,7 @@ const f = (a, b) => a + b;
 Same as `a + 1`
 
 ```js
-var inc = require('1-liners/inc');
+const inc = require('1-liners/inc');
 
 inc(1); // => 2
 ```
@@ -912,7 +912,7 @@ inc(1); // => 2
 Same as `'str'.indexOf('t')`.
 
 ```js
-var indexOf = require('1-liners/indexOf');
+const indexOf = require('1-liners/indexOf');
 
 indexOf('a', 'hallo') // => 1
 ```
@@ -929,7 +929,7 @@ indexOf('a', 'hallo') // => 1
 Check if the `number` lies between `min` and `max`, inclusive.
 
 ```js
-var isBetween = require('1-liners/isBetween');
+const isBetween = require('1-liners/isBetween');
 
 isBetween(1, 10, 2.5);  // => true
 isBetween(1, 10, -5);   // => false
@@ -948,7 +948,7 @@ isBetween(1, 10, 25);   // => false
 Same as `typeof value === 'boolean'`.
 
 ```js
-var isBoolean = require('1-liners/isBoolean');
+const isBoolean = require('1-liners/isBoolean');
 
 isBoolean(false);            // => true
 isBoolean(true);             // => true
@@ -969,15 +969,15 @@ isBoolean(/anything else/);  // => false
 Same as `x === false`.
 
 ```js
- var isFalse = require('1-liners/isFalse');
+const isFalse = require('1-liners/isFalse');
 
- isFalse(false);  // => true
+isFalse(false);  // => true
 
- isFalse('yes');  // => false
- isFalse(true);   // => false
- isFalse([]);     // => false
- isFalse('');     // => false
- isFalse(0);      // => false
+isFalse('yes');  // => false
+isFalse(true);   // => false
+isFalse([]);     // => false
+isFalse('');     // => false
+isFalse(0);      // => false
 ```
 
 <div align="right"><sup>
@@ -992,15 +992,15 @@ Same as `x === false`.
 Same as `!`.
 
 ```js
- var isFalsy = require('1-liners/isFalsy');
+const isFalsy = require('1-liners/isFalsy');
 
- isFalsy('yes');  // => false
- isFalsy(true);   // => false
- isFalsy([]);     // => false
+isFalsy('yes');  // => false
+isFalsy(true);   // => false
+isFalsy([]);     // => false
 
- isFalsy('');     // => true
- isFalsy(0);      // => true
- isFalsy(false);  // => true
+isFalsy('');     // => true
+isFalsy(0);      // => true
+isFalsy(false);  // => true
 ```
 
 <div align="right"><sup>
@@ -1015,7 +1015,7 @@ Same as `!`.
 Same as `typeof value === 'function'`.
 
 ```js
-var isFunction = require('1-liners/isFunction');
+const isFunction = require('1-liners/isFunction');
 
 isFunction(function() {});        // => true
 isFunction(function named() {});  // => true
@@ -1035,7 +1035,7 @@ isFunction('any other value');    // => false
 Same as `=== null`.
 
 ```js
-var isNull = require('1-liners/isNull');
+const isNull = require('1-liners/isNull');
 
 isNull(null);             // => true
 
@@ -1056,7 +1056,7 @@ isNull('anything else');  // => false
 Same as `typeof value === 'number'`. Use [`Number.isFinite`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite) instead if you want to filter out `NaN` and `Infinity`.
 
 ```js
-var isNumber = require('1-liners/isNumber');
+const isNumber = require('1-liners/isNumber');
 
 isNumber(1);                // => true
 isNumber(3.14);             // => true
@@ -1079,7 +1079,7 @@ isNumber(/anything else/);  // => false
 Same as `value !== null && typeof value === 'object'`.
 
 ```js
-var isObject = require('1-liners/isObject');
+const isObject = require('1-liners/isObject');
 
 isObject({});               // => true
 isObject([]);               // => true
@@ -1103,7 +1103,7 @@ Checks if an object inherits directly from `null` or `Object.prototype` – like
 Heads up! This function is [not supported on IE 10 and below](https://babeljs.io/docs/usage/caveats/).
 
 ```js
-var isPlainObject = require('1-liners/isPlainObject');
+const isPlainObject = require('1-liners/isPlainObject');
 
 isPlainObject({});                   // => true
 isPlainObject(Object.create(null));  // => true
@@ -1125,7 +1125,7 @@ isPlainObject(/anything else/);      // => false
 Same as `typeof value === 'string'`.
 
 ```js
-var isString = require('1-liners/isString');
+const isString = require('1-liners/isString');
 
 isString('');               // => true
 isString('anything');       // => true
@@ -1145,7 +1145,7 @@ isString(/anything else/);  // => false
 Same as `x === true`.
 
 ```js
-var isTrue = require('1-liners/isTrue');
+const isTrue = require('1-liners/isTrue');
 
 isTrue(true);   // => true
 
@@ -1168,7 +1168,7 @@ isTrue(false);  // => false
 Same as `!!`.
 
 ```js
-var isTruthy = require('1-liners/isTruthy');
+const isTruthy = require('1-liners/isTruthy');
 
 isTruthy('yes');  // => true
 isTruthy(true);   // => true
@@ -1191,7 +1191,7 @@ isTruthy(false);  // => false
 Same as `typeof value === TYPE`.
 
 ```js
-var isTypeOf = require('1-liners/isTypeOf');
+const isTypeOf = require('1-liners/isTypeOf');
 
 isTypeOf('boolean', false);            // => true
 isTypeOf('boolean', true);             // => true
@@ -1212,7 +1212,7 @@ isTypeOf('boolean', /anything else/);  // => false
 Returns `true` if a value or reference is `undefined`.
 
 ```js
-var isUndefined = require('1-liners/isUndefined');
+const isUndefined = require('1-liners/isUndefined');
 
 isUndefined(undefined);        // => true
 
@@ -1234,7 +1234,7 @@ isUndefined('anything else');  // => false
 Same as `== null`.
 
 ```js
-var isUnknown = require('1-liners/isUnknown');
+const isUnknown = require('1-liners/isUnknown');
 
 isUnknown(null);             // => true
 isUnknown(undefined);        // => true
@@ -1257,7 +1257,7 @@ isUnknown(/anything else/);  // => false
 Same as `[1, 'liners'].join('-')`
 
 ```js
-var join = require('1-liners/join');
+const join = require('1-liners/join');
 
 join('-', [1, 'liners']); // => '1-liners'
 ```
@@ -1276,8 +1276,8 @@ Same as [`Object.keys(obj)`](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 ```js
 const keys = require('1-liners/keys');
 
- keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
- keys([1, 2, 3]); // => [0, 1, 2]
+keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
+keys([1, 2, 3]); // => [0, 1, 2]
 ```
 
 <div align="right"><sup>
@@ -1292,7 +1292,7 @@ const keys = require('1-liners/keys');
 Returns the last item of `array`.
 
 ```js
-var last = require('1-liners/last');
+const last = require('1-liners/last');
 
 last([1, 2, 3]);  // => 3
 ```
@@ -1309,7 +1309,7 @@ last([1, 2, 3]);  // => 3
 Same as `'wow'.lastIndexOf('w')`.
 
 ```js
-var lastIndexOf = require('1-liners/lastIndexOf');
+const lastIndexOf = require('1-liners/lastIndexOf');
 
 lastIndexOf('f', 'waffle') // => 3
 ```
@@ -1326,9 +1326,9 @@ lastIndexOf('f', 'waffle') // => 3
 Returns the length of an array.
 
 ```js
- var length = require('1-liners/length');
+const length = require('1-liners/length');
 
- length([0, 1, 2]); // => 3
+length([0, 1, 2]); // => 3
 ```
 
 <div align="right"><sup>
@@ -1343,7 +1343,7 @@ Returns the length of an array.
 Same as `a <= b`.
 
 ```js
-var lessOrEqual = require('1-liners/lessOrEqual');
+const lessOrEqual = require('1-liners/lessOrEqual');
 
 lessOrEqual(1, 2); // => true
 lessOrEqual(1, 1); // => true
@@ -1362,7 +1362,7 @@ lessOrEqual(2, 1); // => false
 Same as `a < b`.
 
 ```js
-var lessThan = require('1-liners/lessThan');
+const lessThan = require('1-liners/lessThan');
 
 lessThan(1, 2); // => true
 lessThan(1, 1); // => false
@@ -1381,7 +1381,7 @@ lessThan(2, 1); // => false
 Same as `a == b`.
 
 ```js
-var looseEqual = require('1-liners/looseEqual');
+const looseEqual = require('1-liners/looseEqual');
 
 looseEqual(true, true); // => true
 looseEqual(false, true); // => false
@@ -1400,7 +1400,7 @@ looseEqual(1, true); // => true
 Same as `[1, 2, 3].map(Math.sqrt)`.
 
 ```js
-var map = require('1-liners/map');
+const map = require('1-liners/map');
 
 map(Math.sqrt, [9, 25]); // => [3, 5]
 ```
@@ -1417,7 +1417,7 @@ map(Math.sqrt, [9, 25]); // => [3, 5]
 Same as `haystack.match(needle)`.
 
 ```js
-var match = require('1-liners/match');
+const match = require('1-liners/match');
 
 match(/\d+/g, 'Items: 3,2'); // => ["3", "2"]
 ```
@@ -1434,7 +1434,7 @@ match(/\d+/g, 'Items: 3,2'); // => ["3", "2"]
 Same as `Math.max` – but with a stable number of arguments.
 
 ```js
-var max = require('1-liners/max');
+const max = require('1-liners/max');
 
 max(3, 6);  // => 6
 
@@ -1476,7 +1476,7 @@ method('add', object)(5);  // => 6
 Same as `Math.min` – but with a stable number of arguments.
 
 ```js
-var min = require('1-liners/min');
+const min = require('1-liners/min');
 
 min(3, 6);  // => 3
 
@@ -1496,7 +1496,7 @@ min(3, 6);  // => 3
 Same as `a - b`
 
 ```js
-var minus = require('1-liners/minus');
+const minus = require('1-liners/minus');
 
 minus(3, 2); // => 1
 ```
@@ -1513,7 +1513,7 @@ minus(3, 2); // => 1
 Same as `!(a && b)`.
 
 ```js
-var nand = require('1-liners/nand');
+const nand = require('1-liners/nand');
 
 nand(0, 0); // => true
 nand(1, 1); // => false
@@ -1531,7 +1531,7 @@ nand(1, 1); // => false
 Same as `function(){}`.
 
 ```js
-var noop = require('1-liners/noop');
+const noop = require('1-liners/noop');
 
 window.console = {
 		log: noop,
@@ -1553,7 +1553,7 @@ window.console = {
 Same as `!(a || b)`.
 
 ```js
-var nor = require('1-liners/nor');
+const nor = require('1-liners/nor');
 
 nor(0, 0); // => true
 nor(1, 0); // => false
@@ -1571,7 +1571,7 @@ nor(1, 0); // => false
 Same as `!a`.
 
 ```js
-var not = require('1-liners/not');
+const not = require('1-liners/not');
 
 not(true); // => false
 not(false); // => true
@@ -1589,7 +1589,7 @@ not(false); // => true
 Returns the nth item of an array.
 
 ```js
-var nth = require('1-liners/nth');
+const nth = require('1-liners/nth');
 
 nth(1, [1, 2, 3]); // => 2
 ```
@@ -1625,7 +1625,7 @@ omit(['foo', 'baz'], object);  // => {bar: 2}
 Same as `a || b`.
 
 ```js
-var or = require('1-liners/or');
+const or = require('1-liners/or');
 
 or(true, true); // => true
 or(false, true); // => true
@@ -1663,7 +1663,7 @@ pick(['foo', 'baz'], object);  // => {foo: 1, baz: 3}
 Pipe arguments through functions.
 
 ```js
-var pipe = require('1-liners/pipe');
+const pipe = require('1-liners/pipe');
 
 pipe(f, g)(1, 2) === g(f(1, 2));
 ```
@@ -1680,7 +1680,7 @@ pipe(f, g)(1, 2) === g(f(1, 2));
 Pipe arguments through an array of functions.
 
 ```js
-var pipeAll = require('1-liners/pipeAll');
+const pipeAll = require('1-liners/pipeAll');
 
 pipeAll([f, g, h])(1, 2) === h(g(f(1, 2)));
 ```
@@ -1697,7 +1697,7 @@ pipeAll([f, g, h])(1, 2) === h(g(f(1, 2)));
 Same as `a + b`.
 
 ```js
-var plus = require('1-liners/plus');
+const plus = require('1-liners/plus');
 
 plus(2, 8);      // => 10
 plus('a', 'b');  // => 'ab'
@@ -1752,9 +1752,9 @@ property('foo', object);  // => 1
 Same as [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) but immutable.
 
 ```js
- var push = require('1-liners/push');
+const push = require('1-liners/push');
 
- push(4, [1, 2, 3]); // => [1, 2, 3, 4]
+push(4, [1, 2, 3]); // => [1, 2, 3, 4]
 ```
 
 <div align="right"><sup>
@@ -1788,7 +1788,7 @@ put('name', 'stoeffel', object);  // => { id: 1, name: 'stoeffel' }
 Same as `[1, 2, 3].reduce(sum)`.
 
 ```js
-var reduce = require('1-liners/reduce');
+const reduce = require('1-liners/reduce');
 
 reduce(sum, [1, 2, 3]); // => 6
 ```
@@ -1805,7 +1805,7 @@ reduce(sum, [1, 2, 3]); // => 6
 Same as `[1, 2, 3].reduceRight(sub)`.
 
 ```js
-var reduceRight = require('1-liners/reduceRight');
+const reduceRight = require('1-liners/reduceRight');
 
 reduceRight(sub, [1, 2, 3]); // => -4
 ```
@@ -1822,7 +1822,7 @@ reduceRight(sub, [1, 2, 3]); // => -4
 Same as `haystack.replace(needle, replace)`.
 
 ```js
-var replace = require('1-liners/replace');
+const replace = require('1-liners/replace');
 
 replace(/\d+/g, sub => `"${sub}"`, 'Items: 3,2'); // => Items: "3","2"
 replace(':', '=', 'Items: 3,2'); // => Items= 3,2
@@ -1865,7 +1865,7 @@ target.reference === source.reference  // => true
 Shave ensures that a function is called with n arguments.
 
 ```js
-var shave = require('1-liners/shave');
+const shave = require('1-liners/shave');
 
 map(parseInt, [0, 1.1, 2.2]); // => [0, NaN, NaN]
 map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]
@@ -1908,7 +1908,7 @@ Same as `'1-liners'.slice(2,4)` or `[1,2,3,4].slice(1,3)`
 Use in place of `'1-liners'.substring(2,6)`
 
 ```js
-var slice = require('1-liners/slice');
+const slice = require('1-liners/slice');
 
 slice(2, 6, '1-liners'); // => 'line'
 slice(1, 3, [1,2,3,4]); // => [2,3]
@@ -1926,7 +1926,7 @@ slice(1, 3, [1,2,3,4]); // => [2,3]
 Same as `[1,2,3].some(GreaterThan16)`
 
 ```js
-var some = require('1-liners/some');
+const some = require('1-liners/some');
 
 some(elem => elem > 16, [16,17,18]); // => true
 ```
@@ -1943,7 +1943,7 @@ some(elem => elem > 16, [16,17,18]); // => true
 Same as `'1-liners'.split('-')`
 
 ```js
-var split = require('1-liners/split');
+const split = require('1-liners/split');
 
 split('-', '1-liners'); // => [1, 'liners']
 ```
@@ -2014,9 +2014,9 @@ sum([]);               // => 0
 Returns the tail of an array
 
 ```js
- var tail = require('1-liners/tail');
+const tail = require('1-liners/tail');
 
- tail([1, 2, 3]); // => [2, 3]
+tail([1, 2, 3]); // => [2, 3]
 ```
 
 <div align="right"><sup>
@@ -2031,7 +2031,7 @@ Returns the tail of an array
 Take n items of an array. Same as `arr.slice(0, n)`.
 
 ```js
-var take = require('1-liners/take');
+const take = require('1-liners/take');
 
 take(2, [1, 2, 3]); // => [1, 2]
 ```
@@ -2048,7 +2048,7 @@ take(2, [1, 2, 3]); // => [1, 2]
 Take items of an array until they fulfill a predicate.
 
 ```js
-var takeUntil = require('1-liners/takeUntil');
+const takeUntil = require('1-liners/takeUntil');
 
 takeUntil(i => i % 2 === 1, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
@@ -2065,7 +2065,7 @@ takeUntil(i => i % 2 === 1, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 Take items of an array while they fulfill a predicate.
 
 ```js
-var takeWhile = require('1-liners/takeWhile');
+const takeWhile = require('1-liners/takeWhile');
 
 takeWhile(i => i % 2 === 0, [2, 4, 6, 8, 7, 8, 8]); // => [2, 4, 6, 8]
 ```
@@ -2101,7 +2101,7 @@ test(haystack, /needle/i);  // => true
 Same as `a * b`
 
 ```js
-var times = require('1-liners/times');
+const times = require('1-liners/times');
 
 times(3, 2); // => 6
 ```
@@ -2118,7 +2118,7 @@ times(3, 2); // => 6
 Same as `'STR'.toLowerCase()`.
 
 ```js
-var toLowerCase = require('1-liners/toLowerCase');
+const toLowerCase = require('1-liners/toLowerCase');
 
 toLowerCase('HALLO') // => 'hallo'
 ```
@@ -2135,7 +2135,7 @@ toLowerCase('HALLO') // => 'hallo'
 Same as `'str'.toUpperCase()`.
 
 ```js
-var toUpperCase = require('1-liners/toUpperCase');
+const toUpperCase = require('1-liners/toUpperCase');
 
 toUpperCase('hallo') // => 'HALLO'
 ```
@@ -2152,15 +2152,15 @@ toUpperCase('hallo') // => 'HALLO'
 Uncurry a function – collapse 2 lists of parameters into one.
 
 ```js
- import uncurry from '1-liners/uncurry';
+import uncurry from '1-liners/uncurry';
 
- const f = (a) => (b) => a + b;
- const fβ = uncurry(f);
- fβ(1, 2);  // => 3
+const f = (a) => (b) => a + b;
+const fβ = uncurry(f);
+fβ(1, 2);  // => 3
 
- const g = (a) => (b, c) => a + b + c
- const gβ = uncurry(g);
- gβ(1, 2, 3);  // => 6
+const g = (a) => (b, c) => a + b + c
+const gβ = uncurry(g);
+gβ(1, 2, 3);  // => 6
 ```
 
 <div align="right"><sup>
@@ -2175,15 +2175,15 @@ Uncurry a function – collapse 2 lists of parameters into one.
 Uncurry a function – collapse 3 lists of parameters into one.
 
 ```js
- import uncurry3 from '1-liners/uncurry3';
+import uncurry3 from '1-liners/uncurry3';
 
- const f = (a) => (b) => (c) => a + b + c;
- const fβ = uncurry3(f);
- fβ(1, 2, 3);  // => 6
+const f = (a) => (b) => (c) => a + b + c;
+const fβ = uncurry3(f);
+fβ(1, 2, 3);  // => 6
 
- const g = (a) => (b) => (c, d) => a + b + c + d;
- const gβ = uncurry3(g);
- gβ(1, 2, 3, 4);  // => 10
+const g = (a) => (b) => (c, d) => a + b + c + d;
+const gβ = uncurry3(g);
+gβ(1, 2, 3, 4);  // => 10
 ```
 
 <div align="right"><sup>
@@ -2201,8 +2201,8 @@ Same as `Object.keys(obj).map(i => obj[i])`.
 ```js
 const values = require('1-liners/values');
 
- values({ 100: 'a', 2: 'b', 7: 'c' }); // => ['a', 'b', 'c']
- values(['a', 'b', 'c']); // => ['a', 'b', 'c']
+values({ 100: 'a', 2: 'b', 7: 'c' }); // => ['a', 'b', 'c']
+values(['a', 'b', 'c']); // => ['a', 'b', 'c']
 ```
 
 <div align="right"><sup>
@@ -2217,7 +2217,7 @@ const values = require('1-liners/values');
 Same as `(x && !y) || (!x && y)`
 
 ```js
-var xor = require('1-liners/xor');
+const xor = require('1-liners/xor');
 
 xor(0, 1); // => 1
 xor(1, 1); // => 0

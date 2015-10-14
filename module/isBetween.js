@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isBetween = require('1-liners/isBetween');
+ * 	const isBetween = require('1-liners/isBetween');
  *
  * 	isBetween(1, 10, 2.5);  // => true
  * 	isBetween(1, 10, -5);   // => false
