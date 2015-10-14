@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var pipeAll = require('1-liners/pipeAll');
+ * 	const pipeAll = require('1-liners/pipeAll');
  * 
  * 	pipeAll([f, g, h])(1, 2) === h(g(f(1, 2)));
  * 

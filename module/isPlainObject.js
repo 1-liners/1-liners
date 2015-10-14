@@ -9,7 +9,7 @@
  *
  * @example
  *
- * 	var isPlainObject = require('1-liners/isPlainObject');
+ * 	const isPlainObject = require('1-liners/isPlainObject');
  *
  * 	isPlainObject({});                   // => true
  * 	isPlainObject(Object.create(null));  // => true

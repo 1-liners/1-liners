@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var split = require('1-liners/split');
+ * 	const split = require('1-liners/split');
  * 
  * 	split('-', '1-liners'); // => [1, 'liners']
  * 

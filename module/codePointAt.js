@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var codePointAt = require('1-liners/codePointAt');
+ * 	const codePointAt = require('1-liners/codePointAt');
  * 
  * 	codePointAt(0, 'super') // => 115
  * 

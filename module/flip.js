@@ -7,9 +7,9 @@
  * 
  * @example
  * 
- * 	var flip = require('1-liners/flip');
+ * 	const flip = require('1-liners/flip');
  * 
- * 	var f = (a, b) => a / b;
+ * 	const f = (a, b) => a / b;
  * 
  * 	flip(f)(2, 6);        // => 3
  * 	flip(flip(f))(6, 2);  // => 3

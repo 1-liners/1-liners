@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var indexOf = require('1-liners/indexOf');
+ * 	const indexOf = require('1-liners/indexOf');
  * 
  * 	indexOf('a', 'hallo') // => 1
  * 

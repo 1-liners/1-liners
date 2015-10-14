@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var by = require('1-liners/by');
+ * 	const by = require('1-liners/by');
  * 
  * 	by(6, 2); // => 3
  * 

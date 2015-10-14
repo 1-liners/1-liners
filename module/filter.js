@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var filter = require('1-liners/filter');
+ * 	const filter = require('1-liners/filter');
  * 
  * 	filter(isOdd, [1, 2, 3]); // => [1, 3]
  * 

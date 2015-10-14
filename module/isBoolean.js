@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isBoolean = require('1-liners/isBoolean');
+ * 	const isBoolean = require('1-liners/isBoolean');
  *
  * 	isBoolean(false);            // => true
  * 	isBoolean(true);             // => true

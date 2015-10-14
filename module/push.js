@@ -7,7 +7,7 @@
  *
  * @example
  *
- *  var push = require('1-liners/push');
+ *  const push = require('1-liners/push');
  *
  *  push(4, [1, 2, 3]); // => [1, 2, 3, 4]
  *

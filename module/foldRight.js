@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var foldRight = require('1-liners/foldRight');
+ * 	const foldRight = require('1-liners/foldRight');
  *
  * 	foldRight(sub, 1, [1, 2, 3]); // => -5
  *

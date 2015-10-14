@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var explode = require('1-liners/explode');
+ * 	const explode = require('1-liners/explode');
  * 
  * 	const sum = (numbers) => numbers.reduce((a, b) => a + b);
  * 

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var reduceRight = require('1-liners/reduceRight');
+ * 	const reduceRight = require('1-liners/reduceRight');
  * 
  * 	reduceRight(sub, [1, 2, 3]); // => -4
  * 

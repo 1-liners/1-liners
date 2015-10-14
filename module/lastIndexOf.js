@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var lastIndexOf = require('1-liners/lastIndexOf');
+ * 	const lastIndexOf = require('1-liners/lastIndexOf');
  * 
  * 	lastIndexOf('f', 'waffle') // => 3
  * 

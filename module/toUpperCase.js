@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var toUpperCase = require('1-liners/toUpperCase');
+ * 	const toUpperCase = require('1-liners/toUpperCase');
  * 
  * 	toUpperCase('hallo') // => 'HALLO'
  * 

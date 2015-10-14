@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var shave = require('1-liners/shave');
+ * 	const shave = require('1-liners/shave');
  * 
  * 	map(parseInt, [0, 1.1, 2.2]); // => [0, NaN, NaN]
  * 	map(shave(1, parseInt), [0, 1.1, 2.2]); // => [0, 1, 2]

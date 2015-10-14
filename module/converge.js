@@ -7,7 +7,7 @@
  *
  * @example
  *
- *  var converge = require('1-liners/converge');
+ *  const converge = require('1-liners/converge');
  *
  *  converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
  *

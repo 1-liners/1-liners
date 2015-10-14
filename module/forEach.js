@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var forEach = require('1-liners/forEach');
+ * 	const forEach = require('1-liners/forEach');
  *
  * 	forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item: 25"
  *

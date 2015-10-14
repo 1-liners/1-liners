@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var charCodeAt = require('1-liners/charCodeAt');
+ * 	const charCodeAt = require('1-liners/charCodeAt');
  * 
  * 	charCodeAt(0, 'super') // => 115
  * 

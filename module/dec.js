@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var dec = require('1-liners/dec');
+ * 	const dec = require('1-liners/dec');
  * 
  * 	dec(1); // => 0
  * 

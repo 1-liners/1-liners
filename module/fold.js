@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var fold = require('1-liners/fold');
+ * 	const fold = require('1-liners/fold');
  *
  * 	fold(sum, 8, [1, 2, 3]); // => 2
  *

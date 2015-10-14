@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var take = require('1-liners/take');
+ * 	const take = require('1-liners/take');
  * 
  * 	take(2, [1, 2, 3]); // => [1, 2]
  * 

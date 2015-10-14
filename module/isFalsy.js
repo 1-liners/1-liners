@@ -7,7 +7,7 @@
  *
  * @example
  *
- *  var isFalsy = require('1-liners/isFalsy');
+ *  const isFalsy = require('1-liners/isFalsy');
  *
  *  isFalsy('yes');  // => false
  *  isFalsy(true);   // => false

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var nth = require('1-liners/nth');
+ * 	const nth = require('1-liners/nth');
  * 
  * 	nth(1, [1, 2, 3]); // => 2
  * 

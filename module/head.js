@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var head = require('1-liners/head');
+ * 	const head = require('1-liners/head');
  *
  * 	head([1, 2, 3]); // => 1
  *

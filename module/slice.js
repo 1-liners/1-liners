@@ -8,7 +8,7 @@
  * 
  * @example
  * 
- * 	var slice = require('1-liners/slice');
+ * 	const slice = require('1-liners/slice');
  * 
  * 	slice(2, 6, '1-liners'); // => 'line'
  * 	slice(1, 3, [1,2,3,4]); // => [2,3]

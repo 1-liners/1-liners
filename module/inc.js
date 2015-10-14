@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var inc = require('1-liners/inc');
+ * 	const inc = require('1-liners/inc');
  * 
  * 	inc(1); // => 2
  * 

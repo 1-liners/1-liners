@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var flatMap = require('1-liners/flatMap');
+ * 	const flatMap = require('1-liners/flatMap');
  * 
  * 	flatMap((x) => [x, x], [1, 2, 3]); // => [1, 1, 2, 2, 3, 3]
  * 

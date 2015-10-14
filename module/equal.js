@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var equal = require('1-liners/equal');
+ * 	const equal = require('1-liners/equal');
  * 
  * 	equal(true, true); // => true
  * 	equal(false, true); // => false

@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isTypeOf = require('1-liners/isTypeOf');
+ * 	const isTypeOf = require('1-liners/isTypeOf');
  *
  * 	isTypeOf('boolean', false);            // => true
  * 	isTypeOf('boolean', true);             // => true

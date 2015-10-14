@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isNumber = require('1-liners/isNumber');
+ * 	const isNumber = require('1-liners/isNumber');
  *
  * 	isNumber(1);                // => true
  * 	isNumber(3.14);             // => true

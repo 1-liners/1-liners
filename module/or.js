@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var or = require('1-liners/or');
+ * 	const or = require('1-liners/or');
  * 
  * 	or(true, true); // => true
  * 	or(false, true); // => true

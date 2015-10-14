@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var isTrue = require('1-liners/isTrue');
+ * 	const isTrue = require('1-liners/isTrue');
  *
  * 	isTrue(true);   // => true
  *

@@ -7,7 +7,7 @@
  * 
  * @example
  * 
- * 	var every = require('1-liners/every');
+ * 	const every = require('1-liners/every');
  * 
  * 	every(elem => elem > 16, [16,17,18]); // => false
  * 

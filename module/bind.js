@@ -7,7 +7,7 @@
  *
  * @example
  *
- * 	var bind = require('1-liners/bind');
+ * 	const bind = require('1-liners/bind');
  *
  * 	setTimeout(bind(console, ['Hello'], console.log), 2000); // => 'Hello' (after 2s)
  *
