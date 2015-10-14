@@ -379,9 +379,9 @@ concat('c', ['a', 'b']);         // => ['a', 'b', 'c']
 Converge two functions into one.
 
 ```js
- const converge = require('1-liners/converge');
+const converge = require('1-liners/converge');
 
- converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
+converge(f, g, h)(1, 2) === f(g(1, 2), h(1, 2));
 ```
 
 <div align="right"><sup>
@@ -396,29 +396,29 @@ Converge two functions into one.
 Curry a function – split its list of parameters into 2 lists.
 
 ```js
- import curry from '1-liners/curry';
- import reduce from '1-liners/reduce';
- import compose from '1-liners/compose';
+import curry from '1-liners/curry';
+import reduce from '1-liners/reduce';
+import compose from '1-liners/compose';
 
- // You can use reduce and compose to create curry3,4 and so on.
- const curry3 = compose(curry, curry);
- const curry4 = reduce(compose, [curry, curry, curry]);
+// You can use reduce and compose to create curry3,4 and so on.
+const curry3 = compose(curry, curry);
+const curry4 = reduce(compose, [curry, curry, curry]);
 
- const f = (a, b, c, d) => a * b * c * d;
- const fβ = curry(f);  // ~= curry2
- const fγ = curry3(f); // ~= curry3
- const fδ = curry4(f); // ~= curry4
+const f = (a, b, c, d) => a * b * c * d;
+const fβ = curry(f);  // ~= curry2
+const fγ = curry3(f); // ~= curry3
+const fδ = curry4(f); // ~= curry4
 
- f(1, 2, 3, 4)  === 24
+f(1, 2, 3, 4)  === 24
 
- fβ(1)(2, 3, 4) === 24
- fβ(1, 2)(3, 4) === 24
- fβ(1, 2, 3)(4) === 24
+fβ(1)(2, 3, 4) === 24
+fβ(1, 2)(3, 4) === 24
+fβ(1, 2, 3)(4) === 24
 
- fγ(1)(2)(3, 4) === 24
- fγ(1)(2, 3)(4) === 24
+fγ(1)(2)(3, 4) === 24
+fγ(1)(2, 3)(4) === 24
 
- fδ(1)(2)(3)(4) === 24
+fδ(1)(2)(3)(4) === 24
 ```
 
 <div align="right"><sup>
@@ -477,7 +477,7 @@ Use this in place of String's `.substr(startIndex)` and `.substring(startIndex)`
 const drop = require('1-liners/drop');
 
 const array = [1, 2, 3, 4, 5];
- const string = 'Hello World';
+const string = 'Hello World';
 
 drop(2, array);  // => [3, 4, 5]
 drop(6, string); // => 'World'
@@ -969,15 +969,15 @@ isBoolean(/anything else/);  // => false
 Same as `x === false`.
 
 ```js
- const isFalse = require('1-liners/isFalse');
+const isFalse = require('1-liners/isFalse');
 
- isFalse(false);  // => true
+isFalse(false);  // => true
 
- isFalse('yes');  // => false
- isFalse(true);   // => false
- isFalse([]);     // => false
- isFalse('');     // => false
- isFalse(0);      // => false
+isFalse('yes');  // => false
+isFalse(true);   // => false
+isFalse([]);     // => false
+isFalse('');     // => false
+isFalse(0);      // => false
 ```
 
 <div align="right"><sup>
@@ -992,15 +992,15 @@ Same as `x === false`.
 Same as `!`.
 
 ```js
- const isFalsy = require('1-liners/isFalsy');
+const isFalsy = require('1-liners/isFalsy');
 
- isFalsy('yes');  // => false
- isFalsy(true);   // => false
- isFalsy([]);     // => false
+isFalsy('yes');  // => false
+isFalsy(true);   // => false
+isFalsy([]);     // => false
 
- isFalsy('');     // => true
- isFalsy(0);      // => true
- isFalsy(false);  // => true
+isFalsy('');     // => true
+isFalsy(0);      // => true
+isFalsy(false);  // => true
 ```
 
 <div align="right"><sup>
@@ -1276,8 +1276,8 @@ Same as [`Object.keys(obj)`](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 ```js
 const keys = require('1-liners/keys');
 
- keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
- keys([1, 2, 3]); // => [0, 1, 2]
+keys({ 100: 'a', 2: 'b', 7: 'c' }); // => ['2', '7', '100']
+keys([1, 2, 3]); // => [0, 1, 2]
 ```
 
 <div align="right"><sup>
@@ -1326,9 +1326,9 @@ lastIndexOf('f', 'waffle') // => 3
 Returns the length of an array.
 
 ```js
- const length = require('1-liners/length');
+const length = require('1-liners/length');
 
- length([0, 1, 2]); // => 3
+length([0, 1, 2]); // => 3
 ```
 
 <div align="right"><sup>
@@ -1752,9 +1752,9 @@ property('foo', object);  // => 1
 Same as [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) but immutable.
 
 ```js
- const push = require('1-liners/push');
+const push = require('1-liners/push');
 
- push(4, [1, 2, 3]); // => [1, 2, 3, 4]
+push(4, [1, 2, 3]); // => [1, 2, 3, 4]
 ```
 
 <div align="right"><sup>
@@ -2014,9 +2014,9 @@ sum([]);               // => 0
 Returns the tail of an array
 
 ```js
- const tail = require('1-liners/tail');
+const tail = require('1-liners/tail');
 
- tail([1, 2, 3]); // => [2, 3]
+tail([1, 2, 3]); // => [2, 3]
 ```
 
 <div align="right"><sup>
@@ -2152,15 +2152,15 @@ toUpperCase('hallo') // => 'HALLO'
 Uncurry a function – collapse 2 lists of parameters into one.
 
 ```js
- import uncurry from '1-liners/uncurry';
+import uncurry from '1-liners/uncurry';
 
- const f = (a) => (b) => a + b;
- const fβ = uncurry(f);
- fβ(1, 2);  // => 3
+const f = (a) => (b) => a + b;
+const fβ = uncurry(f);
+fβ(1, 2);  // => 3
 
- const g = (a) => (b, c) => a + b + c
- const gβ = uncurry(g);
- gβ(1, 2, 3);  // => 6
+const g = (a) => (b, c) => a + b + c
+const gβ = uncurry(g);
+gβ(1, 2, 3);  // => 6
 ```
 
 <div align="right"><sup>
@@ -2175,15 +2175,15 @@ Uncurry a function – collapse 2 lists of parameters into one.
 Uncurry a function – collapse 3 lists of parameters into one.
 
 ```js
- import uncurry3 from '1-liners/uncurry3';
+import uncurry3 from '1-liners/uncurry3';
 
- const f = (a) => (b) => (c) => a + b + c;
- const fβ = uncurry3(f);
- fβ(1, 2, 3);  // => 6
+const f = (a) => (b) => (c) => a + b + c;
+const fβ = uncurry3(f);
+fβ(1, 2, 3);  // => 6
 
- const g = (a) => (b) => (c, d) => a + b + c + d;
- const gβ = uncurry3(g);
- gβ(1, 2, 3, 4);  // => 10
+const g = (a) => (b) => (c, d) => a + b + c + d;
+const gβ = uncurry3(g);
+gβ(1, 2, 3, 4);  // => 10
 ```
 
 <div align="right"><sup>
@@ -2201,8 +2201,8 @@ Same as `Object.keys(obj).map(i => obj[i])`.
 ```js
 const values = require('1-liners/values');
 
- values({ 100: 'a', 2: 'b', 7: 'c' }); // => ['a', 'b', 'c']
- values(['a', 'b', 'c']); // => ['a', 'b', 'c']
+values({ 100: 'a', 2: 'b', 7: 'c' }); // => ['a', 'b', 'c']
+values(['a', 'b', 'c']); // => ['a', 'b', 'c']
 ```
 
 <div align="right"><sup>

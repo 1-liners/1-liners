@@ -57,7 +57,7 @@ function renderTpl(comments) {
 	const comment = head(comments);
 	const tags = property('tags', comment);
 	const code = property('code', comment)
-		.replace(/export default/g, '')
+    .replace(/export default/g, '')
 		.replace(/&/g, '&amp;')
 		.replace(/</g, '&lt;')
 		.replace(/>/g, '&gt;')
