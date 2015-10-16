@@ -7,6 +7,7 @@
 
 - [always](#always)
 - [and](#and)
+- [assign](#assign)
 - [average](#average)
 - [between](#between)
 - [bind](#bind)
@@ -30,7 +31,6 @@
 - [every](#every)
 - [exec](#exec)
 - [explode](#explode)
-- [extend](#extend)
 - [filter](#filter)
 - [flatMap](#flatmap)
 - [flip](#flip)
@@ -157,6 +157,25 @@ and(false, true); // => false
 	<a href="../tests/and.js">Spec</a>
 	•
 	<a href="../module/and.js">Source</a>: <code> (x, y) =&gt; x &amp;&amp; y;</code>
+</sup></div>
+
+
+### assign
+
+Returns a new object and assigns `assign` to `object`.
+
+```js
+const assign = require('1-liners/assign');
+
+const yedi = { id: 1, age: 100 };
+
+assign({ name: 'Yoda', age: 900 }, yedi);  // => { id: 1, name: 'Yoda', 900 }
+```
+
+<div align="right"><sup>
+	<a href="../tests/assign.js">Spec</a>
+	•
+	<a href="../module/assign.js">Source</a>: <code> (assign, object) =&gt; ({ ...object, ...assign });</code>
 </sup></div>
 
 
@@ -598,25 +617,6 @@ explode(sum)(1, 2, 3, 4);  // => 10
 	<a href="../tests/explode.js">Spec</a>
 	•
 	<a href="../module/explode.js">Source</a>: <code> (func) =&gt; (...args) =&gt; func(args);</code>
-</sup></div>
-
-
-### extend
-
-Returns a copy of `object`, extended by `extension`.
-
-```js
-const extend = require('1-liners/extend');
-
-const object = {id: 1};
-
-extend({ name: 'stoeffel' }, object);  // => { id: 1, name: 'stoeffel' }
-```
-
-<div align="right"><sup>
-	<a href="../tests/extend.js">Spec</a>
-	•
-	<a href="../module/extend.js">Source</a>: <code> (extension, object) =&gt; Object.assign({}, object, extension);</code>
 </sup></div>
 
 
