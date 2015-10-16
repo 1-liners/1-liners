@@ -161,13 +161,17 @@ Checkout the [documentation](./documentation)
 
 ## Maintainers
 
-|  [![stoeffel](https://avatars.githubusercontent.com/u/1217681?v=3&s=80)](https://github.com/stoeffel) | [![hemanth](https://avatars.githubusercontent.com/u/18315?v=3&s=80)](https://github.com/hemanth) | [![tomekwi](https://avatars.githubusercontent.com/u/4624660?v=3&s=80)](https://github.com/tomekwi)  |
+|  [![stoeffel](https://avatars.githubusercontent.com/u/1217681?v=3&s=80)](https://github.com/stoeffel) | [![tomekwi](https://avatars.githubusercontent.com/u/4624660?v=3&s=80)](https://github.com/tomekwi) | [![hemanth](https://avatars.githubusercontent.com/u/18315?v=3&s=80)](https://github.com/hemanth)  |
 | :--:|:--:|:--: |
-|  [stoeffel](https://github.com/stoeffel) | [hemanth](https://github.com/hemanth) | [tomekwi](https://github.com/tomekwi)  |
+|  [stoeffel](https://github.com/stoeffel) | [tomekwi](https://github.com/tomekwi) | [hemanth](https://github.com/hemanth)  |
+
+|  [![davidchase](https://avatars.githubusercontent.com/u/490291?v=3&s=80)](https://github.com/davidchase) | [![tristaaan](https://avatars.githubusercontent.com/u/5470619?v=3&s=80)](https://github.com/tristaaan)  |
+| :--:|:--: |
+|  [davidchase](https://github.com/davidchase) | [tristaaan](https://github.com/tristaaan)  |
 
 created with [gh-contributors-table](https://github.com/stoeffel/gh-contributors-table)
 
 
 ## License
 
-MIT © [stoeffel](http://schtoeffel.ch) [tomekwi](http://github.com/tomekwi) [hemanth](http://www.h3manth.com/)
+MIT © [stoeffel](http://schtoeffel.ch) [tomekwi](http://github.com/tomekwi) [hemanth](http://www.h3manth.com/) [davidchase](http://github.com/davidchase) [tristaaan](http://github.com/tristaaan)
