@@ -15,4 +15,4 @@
  *
  *
  */
-export default (props:Array, object) => Object.keys(object).reduce((res, k) => Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});
+export default (props, obj) => props.reduce((newObj, val) => (({ [val]: dropped, ...rest }) => rest)(newObj), obj);
