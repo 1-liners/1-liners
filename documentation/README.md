@@ -1616,7 +1616,7 @@ omit(['foo', 'baz'], object);  // => {bar: 2}
 <div align="right"><sup>
 	<a href="../tests/omit.js">Spec</a>
 	•
-	<a href="../module/omit.js">Source</a>: <code> (props:Array, object) =&gt; Object.keys(object).reduce((res, k) =&gt; Object.assign(res, props.includes(k) ? null : {[k]: object[k]}), {});</code>
+	<a href="../module/omit.js">Source</a>: <code> (props, obj) =&gt; props.reduce((newObj, val) =&gt; (({ [val]: dropped, ...rest }) =&gt; rest)(newObj), obj);</code>
 </sup></div>
 
 
