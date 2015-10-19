@@ -1,5 +1,6 @@
 import always from './always';
 import and from './and';
+import assign from './assign';
 import average from './average';
 import between from './between';
 import bind from './bind';
@@ -23,7 +24,6 @@ import equal from './equal';
 import every from './every';
 import exec from './exec';
 import explode from './explode';
-import extend from './extend';
 import filter from './filter';
 import flatMap from './flatMap';
 import flip from './flip';
@@ -112,6 +112,7 @@ import xor from './xor';
 export {
   always,
   and,
+  assign,
   average,
   between,
   bind,
@@ -135,7 +136,6 @@ export {
   every,
   exec,
   explode,
-  extend,
   filter,
   flatMap,
   flip,
