@@ -1,5 +1,5 @@
 import { deepEqual } from 'assert';
-import { unfold } from '../unfold';
+import  unfold  from '../unfold';
 
 const fn = n => n < 20 ?  [n, n + 1] : false;
 test('#unfold', () => {

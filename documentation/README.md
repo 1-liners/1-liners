@@ -2201,8 +2201,8 @@ Builds a list from a seed value.
 ```js
 const unfold = require('1-liners/unfold');
 
-const fn = n => n < 10 ?  [n, n + 1] : false;
-unfold(fn, 10); // => [1,2,3,4,5,6,7,8,9]
+const fn = n => n < 20 ?  [n, n + 1] : false;
+unfold(fn, 10); // => [10,11,12,13,14,15,16,17,18,19]
 
 // range in terms of unfold
 const range = (from, to) => unfold((seed) => seed < to ? [seed, seed + 1] : false, from);
@@ -2216,7 +2216,7 @@ unnest([[1, 2], [3, 4], [5, 6]]); // => [1,2,3,4,5,6]
 <div align="right"><sup>
 	<a href="../tests/unfold.js">Spec</a>
 	•
-	<a href="../module/unfold.js">Source</a>: <code>export const unfold = (fn, seed, acc = []) =&gt; fn(seed) ? unfold(fn, fn(seed)[1], acc.concat.apply(acc, [fn(seed)[0]])) : acc;</code>
+	<a href="../module/unfold.js">Source</a>: <code> function unfold (fn, seed, acc = []) { return fn(seed) ? unfold(fn, fn(seed)[1], acc.concat.apply(acc, [fn(seed)[0]])) : acc }</code>
 </sup></div>
 
 
