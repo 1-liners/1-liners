@@ -106,6 +106,7 @@ import toLowerCase from './toLowerCase';
 import toUpperCase from './toUpperCase';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
+import unfold from './unfold';
 import values from './values';
 import xor from './xor';
 
@@ -218,6 +219,7 @@ export {
   toUpperCase,
   uncurry,
   uncurry3,
+  unfold,
   values,
   xor
 };
