@@ -80,6 +80,7 @@
 - [nand](#nand)
 - [noop](#noop)
 - [nor](#nor)
+- [normalize](#normalize)
 - [not](#not)
 - [nth](#nth)
 - [omit](#omit)
@@ -1583,6 +1584,23 @@ nor(1, 0); // => false
 	<a href="../tests/nor.js">Spec</a>
 	•
 	<a href="../module/nor.js">Source</a>: <code> (x, y) =&gt; !(x || y);</code>
+</sup></div>
+
+
+### normalize
+
+Same as `'STR'.normalize()`.
+
+```js
+const normalize = require('1-liners/normalize');
+
+normalize('NFD', '\u1E9B\u0323') // => ẛ̣
+```
+
+<div align="right"><sup>
+	<a href="../tests/normalize.js">Spec</a>
+	•
+	<a href="../module/normalize.js">Source</a>: <code> (form, str) =&gt; str.normalize(form);</code>
 </sup></div>
 
 

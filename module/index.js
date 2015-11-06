@@ -73,6 +73,7 @@ import minus from './minus';
 import nand from './nand';
 import noop from './noop';
 import nor from './nor';
+import normalize from './normalize';
 import not from './not';
 import nth from './nth';
 import omit from './omit';
@@ -188,6 +189,7 @@ export {
   nand,
   noop,
   nor,
+  normalize,
   not,
   nth,
   omit,
