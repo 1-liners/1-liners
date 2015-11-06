@@ -90,6 +90,7 @@ import reduce from './reduce';
 import reduceRight from './reduceRight';
 import repeat from './repeat';
 import replace from './replace';
+import search from './search';
 import shallowClone from './shallowClone';
 import shave from './shave';
 import signum from './signum';
@@ -207,6 +208,7 @@ export {
   reduceRight,
   repeat,
   replace,
+  search,
   shallowClone,
   shave,
   signum,

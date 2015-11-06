@@ -97,6 +97,7 @@
 - [reduceRight](#reduceright)
 - [repeat](#repeat)
 - [replace](#replace)
+- [search](#search)
 - [shallowClone](#shallowclone)
 - [shave](#shave)
 - [signum](#signum)
@@ -1888,6 +1889,23 @@ replace(':', '=', 'Items: 3,2'); // => Items= 3,2
 	<a href="../tests/replace.js">Spec</a>
 	•
 	<a href="../module/replace.js">Source</a>: <code> (needle, replace, haystack) =&gt; haystack.replace(needle, replace);</code>
+</sup></div>
+
+
+### search
+
+Same as `'STR'.search(regexp)`.
+
+```js
+const search = require('1-liners/search');
+
+search(/s/, 'super') // => 0
+```
+
+<div align="right"><sup>
+	<a href="../tests/search.js">Spec</a>
+	•
+	<a href="../module/search.js">Source</a>: <code> (regexp, str) =&gt; str.search(regexp);</code>
 </sup></div>
 
 
