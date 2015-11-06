@@ -40,6 +40,7 @@ import ifThen from './ifThen';
 import ifThenElse from './ifThenElse';
 import implode from './implode';
 import inc from './inc';
+import includes from './includes';
 import indexOf from './indexOf';
 import isBetween from './isBetween';
 import isBoolean from './isBoolean';
@@ -63,6 +64,7 @@ import lastIndexOf from './lastIndexOf';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
 import lessThan from './lessThan';
+import localeCompare from './localeCompare';
 import looseEqual from './looseEqual';
 import map from './map';
 import match from './match';
@@ -73,6 +75,7 @@ import minus from './minus';
 import nand from './nand';
 import noop from './noop';
 import nor from './nor';
+import normalize from './normalize';
 import not from './not';
 import nth from './nth';
 import omit from './omit';
@@ -87,7 +90,9 @@ import push from './push';
 import put from './put';
 import reduce from './reduce';
 import reduceRight from './reduceRight';
+import repeat from './repeat';
 import replace from './replace';
+import search from './search';
 import shallowClone from './shallowClone';
 import shave from './shave';
 import signum from './signum';
@@ -105,6 +110,7 @@ import test from './test';
 import times from './times';
 import toLowerCase from './toLowerCase';
 import toUpperCase from './toUpperCase';
+import trim from './trim';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
 import unfold from './unfold';
@@ -154,6 +160,7 @@ export {
   ifThenElse,
   implode,
   inc,
+  includes,
   indexOf,
   isBetween,
   isBoolean,
@@ -177,6 +184,7 @@ export {
   length,
   lessOrEqual,
   lessThan,
+  localeCompare,
   looseEqual,
   map,
   match,
@@ -187,6 +195,7 @@ export {
   nand,
   noop,
   nor,
+  normalize,
   not,
   nth,
   omit,
@@ -201,7 +210,9 @@ export {
   put,
   reduce,
   reduceRight,
+  repeat,
   replace,
+  search,
   shallowClone,
   shave,
   signum,
@@ -219,6 +230,7 @@ export {
   times,
   toLowerCase,
   toUpperCase,
+  trim,
   uncurry,
   uncurry3,
   unfold,

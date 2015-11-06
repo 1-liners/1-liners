@@ -47,6 +47,7 @@
 - [ifThenElse](#ifthenelse)
 - [implode](#implode)
 - [inc](#inc)
+- [includes](#includes)
 - [indexOf](#indexof)
 - [isBetween](#isbetween)
 - [isBoolean](#isboolean)
@@ -70,6 +71,7 @@
 - [length](#length)
 - [lessOrEqual](#lessorequal)
 - [lessThan](#lessthan)
+- [localeCompare](#localecompare)
 - [looseEqual](#looseequal)
 - [map](#map)
 - [match](#match)
@@ -80,6 +82,7 @@
 - [nand](#nand)
 - [noop](#noop)
 - [nor](#nor)
+- [normalize](#normalize)
 - [not](#not)
 - [nth](#nth)
 - [omit](#omit)
@@ -94,7 +97,9 @@
 - [put](#put)
 - [reduce](#reduce)
 - [reduceRight](#reduceright)
+- [repeat](#repeat)
 - [replace](#replace)
+- [search](#search)
 - [shallowClone](#shallowclone)
 - [shave](#shave)
 - [signum](#signum)
@@ -112,6 +117,7 @@
 - [times](#times)
 - [toLowerCase](#tolowercase)
 - [toUpperCase](#touppercase)
+- [trim](#trim)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
 - [unfold](#unfold)
@@ -926,6 +932,23 @@ inc(1); // => 2
 </sup></div>
 
 
+### includes
+
+Same as `'Blue Whale'.includes('blue')`.
+
+```js
+const includes = require('1-liners/includes');
+
+includes('blue', 'Blue Whale') // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/includes.js">Spec</a>
+	•
+	<a href="../module/includes.js">Source</a>: <code> (searchString, str) =&gt; str.includes(searchString);</code>
+</sup></div>
+
+
 ### indexOf
 
 Same as `'str'.indexOf('t')`.
@@ -1395,6 +1418,23 @@ lessThan(2, 1); // => false
 </sup></div>
 
 
+### localeCompare
+
+Same as `'A'.localeCompare('B')`.
+
+```js
+const localeCompare = require('1-liners/localeCompare');
+
+localeCompare('B', 'A') // => -1
+```
+
+<div align="right"><sup>
+	<a href="../tests/localeCompare.js">Spec</a>
+	•
+	<a href="../module/localeCompare.js">Source</a>: <code> (compareString, str) =&gt; str.localeCompare(compareString);</code>
+</sup></div>
+
+
 ### looseEqual
 
 Same as `a == b`.
@@ -1582,6 +1622,23 @@ nor(1, 0); // => false
 	<a href="../tests/nor.js">Spec</a>
 	•
 	<a href="../module/nor.js">Source</a>: <code> (x, y) =&gt; !(x || y);</code>
+</sup></div>
+
+
+### normalize
+
+Same as `'STR'.normalize()`.
+
+```js
+const normalize = require('1-liners/normalize');
+
+normalize('NFD', '\u1E9B\u0323') // => ẛ̣
+```
+
+<div align="right"><sup>
+	<a href="../tests/normalize.js">Spec</a>
+	•
+	<a href="../module/normalize.js">Source</a>: <code> (form, str) =&gt; str.normalize(form);</code>
 </sup></div>
 
 
@@ -1836,6 +1893,23 @@ reduceRight(sub, [1, 2, 3]); // => -4
 </sup></div>
 
 
+### repeat
+
+Same as `'STR'.repeat(1)`.
+
+```js
+const repeat = require('1-liners/repeat');
+
+repeat(1, 'super') // => super
+```
+
+<div align="right"><sup>
+	<a href="../tests/repeat.js">Spec</a>
+	•
+	<a href="../module/repeat.js">Source</a>: <code> (times, str) =&gt; str.repeat(times);</code>
+</sup></div>
+
+
 ### replace
 
 Same as `haystack.replace(needle, replace)`.
@@ -1851,6 +1925,23 @@ replace(':', '=', 'Items: 3,2'); // => Items= 3,2
 	<a href="../tests/replace.js">Spec</a>
 	•
 	<a href="../module/replace.js">Source</a>: <code> (needle, replace, haystack) =&gt; haystack.replace(needle, replace);</code>
+</sup></div>
+
+
+### search
+
+Same as `'STR'.search(regexp)`.
+
+```js
+const search = require('1-liners/search');
+
+search(/s/, 'super') // => 0
+```
+
+<div align="right"><sup>
+	<a href="../tests/search.js">Spec</a>
+	•
+	<a href="../module/search.js">Source</a>: <code> (regexp, str) =&gt; str.search(regexp);</code>
 </sup></div>
 
 
@@ -2163,6 +2254,23 @@ toUpperCase('hallo') // => 'HALLO'
 	<a href="../tests/toUpperCase.js">Spec</a>
 	•
 	<a href="../module/toUpperCase.js">Source</a>: <code> (str) =&gt; str.toUpperCase();</code>
+</sup></div>
+
+
+### trim
+
+Same as `'STR'.trim()`.
+
+```js
+const trim = require('1-liners/trim');
+
+trim('  super  ') // => super
+```
+
+<div align="right"><sup>
+	<a href="../tests/trim.js">Spec</a>
+	•
+	<a href="../module/trim.js">Source</a>: <code> (str) =&gt; str.trim();</code>
 </sup></div>
 
 
