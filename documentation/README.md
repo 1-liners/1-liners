@@ -94,6 +94,7 @@
 - [put](#put)
 - [reduce](#reduce)
 - [reduceRight](#reduceright)
+- [repeat](#repeat)
 - [replace](#replace)
 - [shallowClone](#shallowclone)
 - [shave](#shave)
@@ -1833,6 +1834,23 @@ reduceRight(sub, [1, 2, 3]); // => -4
 	<a href="../tests/reduceRight.js">Spec</a>
 	•
 	<a href="../module/reduceRight.js">Source</a>: <code> (reduce, arr) =&gt; arr.reduceRight(reduce);</code>
+</sup></div>
+
+
+### repeat
+
+Same as `'STR'.repeat(1)`.
+
+```js
+const repeat = require('1-liners/repeat');
+
+repeat(1, 'super') // => super
+```
+
+<div align="right"><sup>
+	<a href="../tests/repeat.js">Spec</a>
+	•
+	<a href="../module/repeat.js">Source</a>: <code> (times, str) =&gt; str.repeat(times);</code>
 </sup></div>
 
 

@@ -87,6 +87,7 @@ import push from './push';
 import put from './put';
 import reduce from './reduce';
 import reduceRight from './reduceRight';
+import repeat from './repeat';
 import replace from './replace';
 import shallowClone from './shallowClone';
 import shave from './shave';
@@ -201,6 +202,7 @@ export {
   put,
   reduce,
   reduceRight,
+  repeat,
   replace,
   shallowClone,
   shave,
