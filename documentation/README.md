@@ -114,6 +114,7 @@
 - [times](#times)
 - [toLowerCase](#tolowercase)
 - [toUpperCase](#touppercase)
+- [trim](#trim)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
 - [unfold](#unfold)
@@ -2199,6 +2200,23 @@ toUpperCase('hallo') // => 'HALLO'
 	<a href="../tests/toUpperCase.js">Spec</a>
 	•
 	<a href="../module/toUpperCase.js">Source</a>: <code> (str) =&gt; str.toUpperCase();</code>
+</sup></div>
+
+
+### trim
+
+Same as `'STR'.trim()`.
+
+```js
+const trim = require('1-liners/trim');
+
+trim('  super  ') // => super
+```
+
+<div align="right"><sup>
+	<a href="../tests/trim.js">Spec</a>
+	•
+	<a href="../module/trim.js">Source</a>: <code> (str) =&gt; str.trim();</code>
 </sup></div>
 
 

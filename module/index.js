@@ -107,6 +107,7 @@ import test from './test';
 import times from './times';
 import toLowerCase from './toLowerCase';
 import toUpperCase from './toUpperCase';
+import trim from './trim';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
 import unfold from './unfold';
@@ -223,6 +224,7 @@ export {
   times,
   toLowerCase,
   toUpperCase,
+  trim,
   uncurry,
   uncurry3,
   unfold,
