@@ -70,6 +70,7 @@
 - [length](#length)
 - [lessOrEqual](#lessorequal)
 - [lessThan](#lessthan)
+- [localeCompare](#localecompare)
 - [looseEqual](#looseequal)
 - [map](#map)
 - [match](#match)
@@ -1396,6 +1397,23 @@ lessThan(2, 1); // => false
 	<a href="../tests/lessThan.js">Spec</a>
 	•
 	<a href="../module/lessThan.js">Source</a>: <code> (x, y) =&gt; x &lt; y;</code>
+</sup></div>
+
+
+### localeCompare
+
+Same as `'A'.localeCompare('B')`.
+
+```js
+const localeCompare = require('1-liners/localeCompare');
+
+localeCompare('B', 'A') // => -1
+```
+
+<div align="right"><sup>
+	<a href="../tests/localeCompare.js">Spec</a>
+	•
+	<a href="../module/localeCompare.js">Source</a>: <code> (compareString, str) =&gt; str.localCompare(compareString);</code>
 </sup></div>
 
 

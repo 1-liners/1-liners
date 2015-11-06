@@ -63,6 +63,7 @@ import lastIndexOf from './lastIndexOf';
 import length from './length';
 import lessOrEqual from './lessOrEqual';
 import lessThan from './lessThan';
+import localeCompare from './localeCompare';
 import looseEqual from './looseEqual';
 import map from './map';
 import match from './match';
@@ -181,6 +182,7 @@ export {
   length,
   lessOrEqual,
   lessThan,
+  localeCompare,
   looseEqual,
   map,
   match,
