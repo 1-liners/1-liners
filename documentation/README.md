@@ -47,6 +47,7 @@
 - [ifThenElse](#ifthenelse)
 - [implode](#implode)
 - [inc](#inc)
+- [includes](#includes)
 - [indexOf](#indexof)
 - [isBetween](#isbetween)
 - [isBoolean](#isboolean)
@@ -931,6 +932,23 @@ inc(1); // => 2
 </sup></div>
 
 
+### includes
+
+Same as `'Blue Whale'.includes('blue')`.
+
+```js
+const includes = require('1-liners/includes');
+
+includes('blue', 'Blue Whale') // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/includes.js">Spec</a>
+	•
+	<a href="../module/includes.js">Source</a>: <code> (searchString, str) =&gt; str.includes(searchString);</code>
+</sup></div>
+
+
 ### indexOf
 
 Same as `'str'.indexOf('t')`.
@@ -1413,7 +1431,7 @@ localeCompare('B', 'A') // => -1
 <div align="right"><sup>
 	<a href="../tests/localeCompare.js">Spec</a>
 	•
-	<a href="../module/localeCompare.js">Source</a>: <code> (compareString, str) =&gt; str.localCompare(compareString);</code>
+	<a href="../module/localeCompare.js">Source</a>: <code> (compareString, str) =&gt; str.localeCompare(compareString);</code>
 </sup></div>
 
 

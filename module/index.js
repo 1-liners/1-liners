@@ -40,6 +40,7 @@ import ifThen from './ifThen';
 import ifThenElse from './ifThenElse';
 import implode from './implode';
 import inc from './inc';
+import includes from './includes';
 import indexOf from './indexOf';
 import isBetween from './isBetween';
 import isBoolean from './isBoolean';
@@ -159,6 +160,7 @@ export {
   ifThenElse,
   implode,
   inc,
+  includes,
   indexOf,
   isBetween,
   isBoolean,

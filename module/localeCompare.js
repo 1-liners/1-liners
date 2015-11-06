@@ -12,4 +12,4 @@
  * 	localeCompare('B', 'A') // => -1
  *
  */
-export default (compareString, str) => str.localCompare(compareString);
+export default (compareString, str) => str.localeCompare(compareString);
