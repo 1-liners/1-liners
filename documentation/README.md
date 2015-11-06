@@ -15,6 +15,7 @@
 - [bitOr](#bitor)
 - [butLast](#butlast)
 - [by](#by)
+- [charAt](#charat)
 - [charCodeAt](#charcodeat)
 - [codePointAt](#codepointat)
 - [compose](#compose)
@@ -304,6 +305,23 @@ by(6, 2); // => 3
 	<a href="../tests/by.js">Spec</a>
 	•
 	<a href="../module/by.js">Source</a>: <code> (a, b) =&gt; a / b;</code>
+</sup></div>
+
+
+### charAt
+
+Same as `'STR'.charAt(0)`.
+
+```js
+const charAt = require('1-liners/charAt');
+
+charAt(0, 'super') // => s
+```
+
+<div align="right"><sup>
+	<a href="../tests/charAt.js">Spec</a>
+	•
+	<a href="../module/charAt.js">Source</a>: <code> (index, str) =&gt; str.charAt(index);</code>
 </sup></div>
 
 
