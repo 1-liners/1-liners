@@ -177,7 +177,7 @@ const assign = require('1-liners/assign');
 
 const yedi = { id: 1, age: 100 };
 
-assign({ name: 'Yoda', age: 900 }, yedi);  // => { id: 1, name: 'Yoda', 900 }
+assign({ name: 'Yoda', age: 900 }, yedi);  // => { id: 1, age: 900, name: 'Yoda' }
 ```
 
 <div align="right"><sup>
