@@ -12,4 +12,4 @@
  * 	pipeAll([f, g, h])(1, 2) === h(g(f(1, 2)));
  * 
  */
-export default (fns) => fns.reverse().reduce( (f, g) => (...args) => f(g(...args)) );
+export default (fns) => fns.reduceRight( (f, g) => (...args) => f(g(...args)) );
