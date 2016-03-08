@@ -1764,7 +1764,7 @@ pipeAll([f, g, h])(1, 2) === h(g(f(1, 2)));
 <div align="right"><sup>
 	<a href="../tests/pipeAll.js">Spec</a>
 	•
-	<a href="../module/pipeAll.js">Source</a>: <code> (fns) =&gt; fns.reverse().reduce( (f, g) =&gt; (...args) =&gt; f(g(...args)) );</code>
+	<a href="../module/pipeAll.js">Source</a>: <code> (fns) =&gt; fns.reduceRight( (f, g) =&gt; (...args) =&gt; f(g(...args)) );</code>
 </sup></div>
 
 
