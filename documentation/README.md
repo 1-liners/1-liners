@@ -15,6 +15,7 @@
 - [bitOr](#bitor)
 - [butLast](#butlast)
 - [by](#by)
+- [castArray](#castarray)
 - [charAt](#charat)
 - [charCodeAt](#charcodeat)
 - [codePointAt](#codepointat)
@@ -177,7 +178,7 @@ const assign = require('1-liners/assign');
 
 const yedi = { id: 1, age: 100 };
 
-assign({ name: 'Yoda', age: 900 }, yedi);  // => { id: 1, age: 900, name: 'Yoda' }
+assign({ name: 'Yoda', age: 900 }, yedi);  // => { id: 1, name: 'Yoda', 900 }
 ```
 
 <div align="right"><sup>
@@ -311,6 +312,25 @@ by(6, 2); // => 3
 	<a href="../tests/by.js">Spec</a>
 	•
 	<a href="../module/by.js">Source</a>: <code> (a, b) =&gt; a / b;</code>
+</sup></div>
+
+
+### castArray
+
+If the provided `value` is an array returns a copy of it otherwise returns an array containing the original `value`.
+
+```js
+const castArray = require('1-liners/castArray');
+
+castArray([1, 2, 3]);  // => [1, 2, 3]
+castArray(1);  				 // => [1]
+castArray(null);  	   // => [null]
+```
+
+<div align="right"><sup>
+	<a href="../tests/castArray.js">Spec</a>
+	•
+	<a href="../module/castArray.js">Source</a>: <code> (value) =&gt; Array.isArray(value) ? value.slice(0) : [value];</code>
 </sup></div>
 
 
