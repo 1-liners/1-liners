@@ -12,4 +12,4 @@
  * 	reduce(sum, [1, 2, 3]); // => 6
  * 
  */
-export default (reduce, arr) => arr.reduce(reduce);
+export default (func, arr) => arr.reduce(func);
