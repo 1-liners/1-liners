@@ -59,6 +59,7 @@
 - [isNumber](#isnumber)
 - [isObject](#isobject)
 - [isPlainObject](#isplainobject)
+- [isPrototypeOf](#isprototypeof)
 - [isString](#isstring)
 - [isTrue](#istrue)
 - [isTruthy](#istruthy)
@@ -871,13 +872,10 @@ and returns `undefined` if the `predicate` is false.
 ```js
 const ifThen = require('1-liners/ifThen');
 
-const eq = (a, b) => a === b;
-const add = (a, b) => a + b;
-const sub = (a, b) => a - b;
-
 const words = ifThen((str) => typeof str === 'string', (str) => str.split(' '));
 
 words('Hello ES2015'); // => ['Hello', 'ES2015']
+    words(['Hello', 'ES2015']); // => undefined
 ```
 
 <div align="right"><sup>
@@ -1179,6 +1177,30 @@ isPlainObject(/anything else/);      // => false
 	<a href="../tests/isPlainObject.js">Spec</a>
 	•
 	<a href="../module/isPlainObject.js">Source</a>: <code> (value) =&gt; (value &amp;&amp; typeof value === 'object' &amp;&amp; (value.__proto__ == null || value.__proto__ === Object.prototype));</code>
+</sup></div>
+
+
+### isPrototypeOf
+
+Check if an object's prototype exists in another object's prototype chain
+
+```js
+function Foo(){};
+function Bar(){};
+
+Bar.prototype = new Foo();
+
+const foo = new Foo();
+const bar = new Bar();
+
+Foo.prototype.isPrototypeOf(bar); // => true
+Bar.prototype.isPrototypeOf(foo); // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/isPrototypeOf.js">Spec</a>
+	•
+	<a href="../module/isPrototypeOf.js">Source</a>: <code> (prototypeObj, obj) =&gt; prototypeObj.prototype.isPrototypeOf(obj)</code>
 </sup></div>
 
 
