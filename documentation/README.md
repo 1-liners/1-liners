@@ -94,6 +94,7 @@
 - [plus](#plus)
 - [product](#product)
 - [property](#property)
+- [propertyIsEnumerable](#propertyisenumerable)
 - [push](#push)
 - [put](#put)
 - [reduce](#reduce)
@@ -1837,6 +1838,25 @@ property('foo', object);  // => 1
 	<a href="../tests/property.js">Spec</a>
 	•
 	<a href="../module/property.js">Source</a>: <code> (property, object) =&gt; object[property];</code>
+</sup></div>
+
+
+### propertyIsEnumerable
+
+Returns a Boolean indicating whether the specified property is enumerable.
+
+```js
+const FOO = {
+ 'bar' : 'bar'
+}
+FOO.propertyIsEnumerable('bar') // => true
+FOO.propertyIsEnumerable('length') // => false
+```
+
+<div align="right"><sup>
+	<a href="../tests/propertyIsEnumerable.js">Spec</a>
+	•
+	<a href="../module/propertyIsEnumerable.js">Source</a>: <code> (obj, property) =&gt; obj.propertyIsEnumerable(property)</code>
 </sup></div>
 
 

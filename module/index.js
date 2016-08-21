@@ -87,6 +87,7 @@ import pipeAll from './pipeAll';
 import plus from './plus';
 import product from './product';
 import property from './property';
+import propertyIsEnumerable from './propertyIsEnumerable';
 import push from './push';
 import put from './put';
 import reduce from './reduce';
@@ -208,6 +209,7 @@ export {
   plus,
   product,
   property,
+  propertyIsEnumerable,
   push,
   put,
   reduce,
