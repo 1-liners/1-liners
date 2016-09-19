@@ -16,4 +16,4 @@
  *     words(['Hello', 'ES2015']); // => undefined
  *
  */
-export default (perdicate, then) => (...args) => perdicate(...args) ? then(...args) : undefined;
+export default (predicate, then) => (...args) => predicate(...args) ? then(...args) : undefined;

@@ -871,19 +871,16 @@ and returns `undefined` if the `predicate` is false.
 ```js
 const ifThen = require('1-liners/ifThen');
 
-const eq = (a, b) => a === b;
-const add = (a, b) => a + b;
-const sub = (a, b) => a - b;
-
 const words = ifThen((str) => typeof str === 'string', (str) => str.split(' '));
 
 words('Hello ES2015'); // => ['Hello', 'ES2015']
+    words(['Hello', 'ES2015']); // => undefined
 ```
 
 <div align="right"><sup>
 	<a href="../tests/ifThen.js">Spec</a>
 	•
-	<a href="../module/ifThen.js">Source</a>: <code> (perdicate, then) =&gt; (...args) =&gt; perdicate(...args) ? then(...args) : undefined;</code>
+	<a href="../module/ifThen.js">Source</a>: <code> (predicate, then) =&gt; (...args) =&gt; predicate(...args) ? then(...args) : undefined;</code>
 </sup></div>
 
 
