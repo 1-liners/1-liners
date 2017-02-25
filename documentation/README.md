@@ -29,6 +29,7 @@
 - [drop](#drop)
 - [endsWith](#endswith)
 - [endsWithAt](#endswithat)
+- [entries](#entries)
 - [equal](#equal)
 - [every](#every)
 - [exec](#exec)
@@ -588,6 +589,27 @@ endsWithAt(2, 'stoeffel', 'nope');  // => false
 	<a href="../tests/endsWithAt.js">Spec</a>
 	•
 	<a href="../module/endsWithAt.js">Source</a>: <code> (position, searchString, str) =&gt; str.endsWith(searchString, position);</code>
+</sup></div>
+
+
+### entries
+
+Returns an array of a given object's own enumerable property [key, value] pairs
+Same as `Object.keys(obj).map(key => [key, obj[key]])`.
+
+```js
+const entries = require('1-liners/entries');
+
+entries({ foo: 'bar', baz: 42 }); // => [ ['foo', 'bar'], ['baz', 42] ]
+entries(['foo', 'bar', 'baz']); // => [ [0, 'foo'], [1, 'bar'], [2, 'baz'] ]
+entries({ foo: 'bar', [Symbol('baz')]: 42 }); // => [ ['foo', 'bar'] ]
+entries('foo'); // => [ ['0', 'f'], ['1', 'o'], ['2', 'o'] ]
+```
+
+<div align="right"><sup>
+	<a href="../tests/entries.js">Spec</a>
+	•
+	<a href="../module/entries.js">Source</a>: <code> (obj) =&gt; Object.keys(obj).map(key =&gt; [key, obj[key]]);</code>
 </sup></div>
 
 
@@ -1909,7 +1931,7 @@ reduce(sum, [1, 2, 3]); // => 6
 <div align="right"><sup>
 	<a href="../tests/reduce.js">Spec</a>
 	•
-	<a href="../module/reduce.js">Source</a>: <code> (reduce, arr) =&gt; arr.reduce(reduce);</code>
+	<a href="../module/reduce.js">Source</a>: <code> (func, arr) =&gt; arr.reduce(func);</code>
 </sup></div>
 
 

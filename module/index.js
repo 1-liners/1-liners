@@ -22,6 +22,7 @@ import dec from './dec';
 import drop from './drop';
 import endsWith from './endsWith';
 import endsWithAt from './endsWithAt';
+import entries from './entries';
 import equal from './equal';
 import every from './every';
 import exec from './exec';
@@ -144,6 +145,7 @@ export {
   drop,
   endsWith,
   endsWithAt,
+  entries,
   equal,
   every,
   exec,
