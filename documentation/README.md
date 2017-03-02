@@ -119,6 +119,7 @@
 - [test](#test)
 - [times](#times)
 - [toLowerCase](#tolowercase)
+- [toType](#totype)
 - [toUpperCase](#touppercase)
 - [trim](#trim)
 - [uncurry](#uncurry)
@@ -2296,6 +2297,33 @@ toLowerCase('HALLO') // => 'hallo'
 	<a href="../tests/toLowerCase.js">Spec</a>
 	•
 	<a href="../module/toLowerCase.js">Source</a>: <code> (str) =&gt; str.toLowerCase();</code>
+</sup></div>
+
+
+### toType
+
+typeOf is a function that return the true type of a variable.
+
+```js
+import toType from '1-liners/toType';
+
+ toType({a: 4}); //"object"
+ toType([1, 2, 3]); //"array"
+ (function() {console.log(toType(arguments))})(); //arguments
+ toType(new ReferenceError); //"error"
+ toType(new Date); //"date"
+ toType(/a-z/); //"regexp"
+ toType(Math); //"math"
+ toType(JSON); //"json"
+ toType(new Number(4)); //"number"
+ toType(new String("abc")); //"string"
+ toType(new Boolean(true)); //"boolean"
+```
+
+<div align="right"><sup>
+	<a href="../tests/toType.js">Spec</a>
+	•
+	<a href="../module/toType.js">Source</a>: <code> (obj) =&gt; ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();</code>
 </sup></div>
 
 
