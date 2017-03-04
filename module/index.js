@@ -112,6 +112,7 @@ import takeWhile from './takeWhile';
 import test from './test';
 import times from './times';
 import toLowerCase from './toLowerCase';
+import toType from './toType';
 import toUpperCase from './toUpperCase';
 import trim from './trim';
 import uncurry from './uncurry';
@@ -235,6 +236,7 @@ export {
   test,
   times,
   toLowerCase,
+  toType,
   toUpperCase,
   trim,
   uncurry,
