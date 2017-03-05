@@ -28,6 +28,7 @@ import every from './every';
 import exec from './exec';
 import explode from './explode';
 import filter from './filter';
+import findKey from './findKey';
 import flatMap from './flatMap';
 import flip from './flip';
 import fold from './fold';
@@ -151,6 +152,7 @@ export {
   exec,
   explode,
   filter,
+  findKey,
   flatMap,
   flip,
   fold,
