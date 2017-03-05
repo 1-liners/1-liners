@@ -35,6 +35,7 @@
 - [exec](#exec)
 - [explode](#explode)
 - [filter](#filter)
+- [findKey](#findkey)
 - [flatMap](#flatmap)
 - [flip](#flip)
 - [fold](#fold)
@@ -703,6 +704,25 @@ filter(isOdd, [1, 2, 3]); // => [1, 3]
 	<a href="../tests/filter.js">Spec</a>
 	•
 	<a href="../module/filter.js">Source</a>: <code> (filter, arr) =&gt; arr.filter(filter);</code>
+</sup></div>
+
+
+### findKey
+
+A pure function to find key from object, matching a predicate
+similar to https://lodash.com/docs/4.17.4#findKey or Array.findIndex()
+
+```js
+const findKey = require('1-liners/findKey');
+
+const data = { a: 1, b: 2, c: 3 };
+findKey((x) => x > 2, data); // => 'c'
+```
+
+<div align="right"><sup>
+	<a href="../tests/findKey.js">Spec</a>
+	•
+	<a href="../module/findKey.js">Source</a>: <code> (fn, obj) =&gt; Object.keys(obj).find(k =&gt; fn(obj[k]));</code>
 </sup></div>
 
 
