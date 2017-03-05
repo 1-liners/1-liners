@@ -22,11 +22,13 @@ import dec from './dec';
 import drop from './drop';
 import endsWith from './endsWith';
 import endsWithAt from './endsWithAt';
+import entries from './entries';
 import equal from './equal';
 import every from './every';
 import exec from './exec';
 import explode from './explode';
 import filter from './filter';
+import findKey from './findKey';
 import flatMap from './flatMap';
 import flip from './flip';
 import fold from './fold';
@@ -88,6 +90,7 @@ import pipeAll from './pipeAll';
 import plus from './plus';
 import product from './product';
 import property from './property';
+import propertyIsEnumerable from './propertyIsEnumerable';
 import push from './push';
 import put from './put';
 import reduce from './reduce';
@@ -111,6 +114,7 @@ import takeWhile from './takeWhile';
 import test from './test';
 import times from './times';
 import toLowerCase from './toLowerCase';
+import toType from './toType';
 import toUpperCase from './toUpperCase';
 import trim from './trim';
 import uncurry from './uncurry';
@@ -144,11 +148,13 @@ export {
   drop,
   endsWith,
   endsWithAt,
+  entries,
   equal,
   every,
   exec,
   explode,
   filter,
+  findKey,
   flatMap,
   flip,
   fold,
@@ -210,6 +216,7 @@ export {
   plus,
   product,
   property,
+  propertyIsEnumerable,
   push,
   put,
   reduce,
@@ -233,6 +240,7 @@ export {
   test,
   times,
   toLowerCase,
+  toType,
   toUpperCase,
   trim,
   uncurry,
