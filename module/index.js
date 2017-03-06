@@ -54,6 +54,7 @@ import isNull from './isNull';
 import isNumber from './isNumber';
 import isObject from './isObject';
 import isPlainObject from './isPlainObject';
+import isPrototypeOf from './isPrototypeOf';
 import isString from './isString';
 import isTrue from './isTrue';
 import isTruthy from './isTruthy';
@@ -179,6 +180,7 @@ export {
   isNumber,
   isObject,
   isPlainObject,
+  isPrototypeOf,
   isString,
   isTrue,
   isTruthy,
