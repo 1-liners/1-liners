@@ -91,6 +91,7 @@
 - [nth](#nth)
 - [omit](#omit)
 - [or](#or)
+- [partial](#partial)
 - [pick](#pick)
 - [pipe](#pipe)
 - [pipeAll](#pipeall)
@@ -1799,6 +1800,27 @@ or(false, false); // => false
 	<a href="../tests/or.js">Spec</a>
 	•
 	<a href="../module/or.js">Source</a>: <code> (a, b) =&gt; a || b;</code>
+</sup></div>
+
+
+### partial
+
+Partially apply a function.
+
+```js
+const partial = require('1-liners/partial');
+
+const add = (a, b, c) => a + b + c;
+
+ const fivePlus = (add, 2, 3);
+
+ fivePlus(4) === 9
+```
+
+<div align="right"><sup>
+	<a href="../tests/partial.js">Spec</a>
+	•
+	<a href="../module/partial.js">Source</a>: <code> (f, ...args) =&gt; (...moreArgs) =&gt; f(...args, ...moreArgs);</code>
 </sup></div>
 
 

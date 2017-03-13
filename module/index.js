@@ -84,6 +84,7 @@ import not from './not';
 import nth from './nth';
 import omit from './omit';
 import or from './or';
+import partial from './partial';
 import pick from './pick';
 import pipe from './pipe';
 import pipeAll from './pipeAll';
@@ -211,6 +212,7 @@ export {
   nth,
   omit,
   or,
+  partial,
   pick,
   pipe,
   pipeAll,
