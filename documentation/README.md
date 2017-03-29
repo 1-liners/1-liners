@@ -99,6 +99,7 @@
 - [propertyIsEnumerable](#propertyisenumerable)
 - [push](#push)
 - [put](#put)
+- [range](#range)
 - [reduce](#reduce)
 - [reduceRight](#reduceright)
 - [repeat](#repeat)
@@ -1935,6 +1936,24 @@ put('name', 'stoeffel', object);  // => { id: 1, name: 'stoeffel' }
 	<a href="../tests/put.js">Spec</a>
 	•
 	<a href="../module/put.js">Source</a>: <code> (key, val, obj) =&gt; Object.assign({}, obj, {[key]: val});</code>
+</sup></div>
+
+
+### range
+
+A pure function to generate a range of numbers
+from start(including) to end(excluding)
+
+```js
+const range = require('1-liners/range');
+
+range(1, 5); // => [1, 2, 3, 4, 5]
+```
+
+<div align="right"><sup>
+	<a href="../tests/range.js">Spec</a>
+	•
+	<a href="../module/range.js">Source</a>: <code> (start, end) =&gt; Array.from({length: (end - start)}, (v, k) =&gt; k + start);</code>
 </sup></div>
 
 
