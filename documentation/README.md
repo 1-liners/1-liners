@@ -41,6 +41,7 @@
 - [fold](#fold)
 - [foldRight](#foldright)
 - [forEach](#foreach)
+- [get](#get)
 - [greaterOrEqual](#greaterorequal)
 - [greaterThan](#greaterthan)
 - [hasOwnProperty](#hasownproperty)
@@ -814,6 +815,24 @@ forEach(i => console.log('Item: ' + i), [9, 25]); // => logs "Item: 9" and "Item
 	<a href="../tests/forEach.js">Spec</a>
 	•
 	<a href="../module/forEach.js">Source</a>: <code> (forEach, arr) =&gt; arr.forEach(forEach);</code>
+</sup></div>
+
+
+### get
+
+Gets the value at path of object.
+
+```js
+const get = require('1-liners/get');
+
+ let obj = { a: { b: 42 } };
+ get('a.b', obj); // => 42
+```
+
+<div align="right"><sup>
+	<a href="../tests/get.js">Spec</a>
+	•
+	<a href="../module/get.js">Source</a>: <code> (path, obj) =&gt; path.split('.').reduce((acc, current) =&gt; acc &amp;&amp; acc[current], obj);</code>
 </sup></div>
 
 
