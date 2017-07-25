@@ -34,6 +34,7 @@ import flip from './flip';
 import fold from './fold';
 import foldRight from './foldRight';
 import forEach from './forEach';
+import get from './get';
 import greaterOrEqual from './greaterOrEqual';
 import greaterThan from './greaterThan';
 import hasOwnProperty from './hasOwnProperty';
@@ -162,6 +163,7 @@ export {
   fold,
   foldRight,
   forEach,
+  get,
   greaterOrEqual,
   greaterThan,
   hasOwnProperty,
