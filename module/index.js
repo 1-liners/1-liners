@@ -123,6 +123,8 @@ import trim from './trim';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
 import unfold from './unfold';
+import uniq from './uniq';
+import uniqBy from './uniqBy';
 import values from './values';
 import xor from './xor';
 
@@ -252,6 +254,8 @@ export {
   uncurry,
   uncurry3,
   unfold,
+  uniq,
+  uniqBy,
   values,
   xor
 };

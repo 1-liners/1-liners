@@ -130,6 +130,8 @@
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
 - [unfold](#unfold)
+- [uniq](#uniq)
+- [uniqBy](#uniqby)
 - [values](#values)
 - [xor](#xor)
 
@@ -2535,6 +2537,41 @@ unnest([[1, 2], [3, 4], [5, 6]]); // => [1,2,3,4,5,6]
 	<a href="../tests/unfold.js">Spec</a>
 	•
 	<a href="../module/unfold.js">Source</a>: <code> function unfold (fn, seed, acc = []) { return fn(seed) ? unfold(fn, fn(seed)[1], acc.concat.apply(acc, [fn(seed)[0]])) : acc }</code>
+</sup></div>
+
+
+### uniq
+
+Creates a duplicate-free version of an array.
+
+```js
+const uniq = require('1-liners/uniq');
+
+uniq([1, 2, 2]); // => [1, 2]
+```
+
+<div align="right"><sup>
+	<a href="../tests/uniq.js">Spec</a>
+	•
+	<a href="../module/uniq.js">Source</a>: <code> (array) =&gt; array.filter((value, index, self) =&gt; index === self.findIndex(other =&gt; other === value));</code>
+</sup></div>
+
+
+### uniqBy
+
+Remove duplicates from an array of objects by invoking `iteratee` for each object.
+
+```js
+const get = require('1-liners/uniqBy');
+
+let array = [{ id: 1 }, { id: 2 }, { id: 1 }];
+uniqBy(array, o => o.id); // => [{ id: 1 }, { id: 2 }]
+```
+
+<div align="right"><sup>
+	<a href="../tests/uniqBy.js">Spec</a>
+	•
+	<a href="../module/uniqBy.js">Source</a>: <code> (array, iteratee) =&gt; array.filter((value, index, self) =&gt; index === self.findIndex(other =&gt; iteratee(other) === iteratee(value)));</code>
 </sup></div>
 
 
