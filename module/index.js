@@ -83,6 +83,7 @@ import normalize from './normalize';
 import not from './not';
 import nth from './nth';
 import omit from './omit';
+import once from './once';
 import or from './or';
 import partial from './partial';
 import pick from './pick';
@@ -211,6 +212,7 @@ export {
   not,
   nth,
   omit,
+  once,
   or,
   partial,
   pick,

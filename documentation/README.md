@@ -90,6 +90,7 @@
 - [not](#not)
 - [nth](#nth)
 - [omit](#omit)
+- [once](#once)
 - [or](#or)
 - [partial](#partial)
 - [pick](#pick)
@@ -1781,6 +1782,25 @@ omit(['foo', 'baz'], object);  // => {bar: 2}
 	<a href="../tests/omit.js">Spec</a>
 	•
 	<a href="../module/omit.js">Source</a>: <code> (props, obj) =&gt; props.reduce((newObj, val) =&gt; (({ [val]: dropped, ...rest }) =&gt; rest)(newObj), obj);</code>
+</sup></div>
+
+
+### once
+
+Creates a function that is restricted to invoking func once.
+
+```js
+const once = require('1-liners/once');
+let count = 0;
+let countOnce = _.once(() => ++count);
+countOnce(); // => 1, (count = 1)
+countOnce(); // => 1, (count = 1)
+```
+
+<div align="right"><sup>
+	<a href="../tests/once.js">Spec</a>
+	•
+	<a href="../module/once.js">Source</a>: <code> (fn) =&gt; (c =&gt; () =&gt; c ? (c = !c, fn = fn()) : fn).bind(null, 1)();</code>
 </sup></div>
 
 
