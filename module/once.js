@@ -14,4 +14,4 @@
  * countOnce(); // => 1, (count = 1)
  *
  */
-export default (fn) => (c => () => c ? (c = !c, fn = fn()) : fn).bind(null, 1)();
+export default (fn) => ((first = true) => () => first ? (first = !first, fn = fn()) : fn)();

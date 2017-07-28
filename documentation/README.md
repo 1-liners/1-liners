@@ -1800,7 +1800,7 @@ countOnce(); // => 1, (count = 1)
 <div align="right"><sup>
 	<a href="../tests/once.js">Spec</a>
 	•
-	<a href="../module/once.js">Source</a>: <code> (fn) =&gt; (c =&gt; () =&gt; c ? (c = !c, fn = fn()) : fn).bind(null, 1)();</code>
+	<a href="../module/once.js">Source</a>: <code> (fn) =&gt; ((first = true) =&gt; () =&gt; first ? (first = !first, fn = fn()) : fn)();</code>
 </sup></div>
 
 
