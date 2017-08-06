@@ -21,4 +21,4 @@
  * unnest([[1, 2], [3, 4], [5, 6]]); // => [1,2,3,4,5,6]
  *
  */
-export default function unfold (fn, seed, acc = []) { return fn(seed) ? unfold(fn, fn(seed)[1], acc.concat.apply(acc, [fn(seed)[0]])) : acc }
+export default function unfold (fn, seed, acc = [], next = fn(seed)) { return next ? unfold(fn, next[1], acc.concat.apply(acc, [next[0]])) : acc }

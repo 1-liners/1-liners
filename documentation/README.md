@@ -2534,7 +2534,7 @@ unnest([[1, 2], [3, 4], [5, 6]]); // => [1,2,3,4,5,6]
 <div align="right"><sup>
 	<a href="../tests/unfold.js">Spec</a>
 	•
-	<a href="../module/unfold.js">Source</a>: <code> function unfold (fn, seed, acc = []) { return fn(seed) ? unfold(fn, fn(seed)[1], acc.concat.apply(acc, [fn(seed)[0]])) : acc }</code>
+	<a href="../module/unfold.js">Source</a>: <code> function unfold (fn, seed, acc = [], next = fn(seed)) { return next ? unfold(fn, next[1], acc.concat.apply(acc, [next[0]])) : acc }</code>
 </sup></div>
 
 
