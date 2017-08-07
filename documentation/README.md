@@ -1787,12 +1787,12 @@ omit(['foo', 'baz'], object);  // => {bar: 2}
 
 ### once
 
-Creates a function that is restricted to invoking func once.
+Creates a function that is restricted to invoking passed function once.
 
 ```js
 const once = require('1-liners/once');
 let count = 0;
-let countOnce = _.once(() => ++count);
+let countOnce = once(() => ++count);
 countOnce(); // => 1, (count = 1)
 countOnce(); // => 1, (count = 1)
 ```
