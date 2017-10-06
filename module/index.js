@@ -63,6 +63,7 @@ import isTypeOf from './isTypeOf';
 import isUndefined from './isUndefined';
 import isUnknown from './isUnknown';
 import join from './join';
+import keyBy from './keyBy';
 import keys from './keys';
 import last from './last';
 import lastIndexOf from './lastIndexOf';
@@ -197,6 +198,7 @@ export {
   isUndefined,
   isUnknown,
   join,
+  keyBy,
   keys,
   last,
   lastIndexOf,

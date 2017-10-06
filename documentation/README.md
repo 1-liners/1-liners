@@ -70,6 +70,7 @@
 - [isUndefined](#isundefined)
 - [isUnknown](#isunknown)
 - [join](#join)
+- [keyBy](#keyby)
 - [keys](#keys)
 - [last](#last)
 - [lastIndexOf](#lastindexof)
@@ -1420,6 +1421,23 @@ join('-', [1, 'liners']); // => '1-liners'
 	<a href="../tests/join.js">Spec</a>
 	•
 	<a href="../module/join.js">Source</a>: <code> (superglue, arr) =&gt; arr.join(superglue);</code>
+</sup></div>
+
+
+### keyBy
+
+Creates an object composed of keys generated from the results of running each element of `collection` thru `iteratee`.
+
+```js
+const keyBy = require('1-liners/keyBy');
+const array = [{id: 1, name: 'One'}, {id: 2, name: 'Two'}];
+const dict = keyBy(array, o => o.id); // => {1: {id: 1, name: 'One'}, 2: {id: 2, name: 'Two'} }
+```
+
+<div align="right"><sup>
+	<a href="../tests/keyBy.js">Spec</a>
+	•
+	<a href="../module/keyBy.js">Source</a>: <code> (array, iteratee) =&gt; array.reduce((result, item) =&gt; (result[iteratee(item)] = item, result), {});</code>
 </sup></div>
 
 
