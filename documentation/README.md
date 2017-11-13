@@ -128,6 +128,7 @@
 - [toType](#totype)
 - [toUpperCase](#touppercase)
 - [trim](#trim)
+- [truncate](#truncate)
 - [uncurry](#uncurry)
 - [uncurry3](#uncurry3)
 - [unfold](#unfold)
@@ -2485,6 +2486,24 @@ trim('  super  ') // => super
 	<a href="../tests/trim.js">Spec</a>
 	•
 	<a href="../module/trim.js">Source</a>: <code> (str) =&gt; str.trim();</code>
+</sup></div>
+
+
+### truncate
+
+Truncate string when longer than maxLength and add the Unicode Character horizontal ellipsis keeping the total within maxLength.
+
+```js
+const truncate = require('1-liners/truncate');
+
+truncate('super', 5) // => super
+truncate('super', 4) // => sup…
+```
+
+<div align="right"><sup>
+	<a href="../tests/truncate.js">Spec</a>
+	•
+	<a href="../module/truncate.js">Source</a>: <code> (str, maxLength) =&gt; str.length &gt; maxLength ? `${str.substr(0, maxLength - 1)}…` : str</code>
 </sup></div>
 
 
