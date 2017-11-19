@@ -121,6 +121,7 @@ import toLowerCase from './toLowerCase';
 import toType from './toType';
 import toUpperCase from './toUpperCase';
 import trim from './trim';
+import truncate from './truncate';
 import uncurry from './uncurry';
 import uncurry3 from './uncurry3';
 import unfold from './unfold';
@@ -253,6 +254,7 @@ export {
   toType,
   toUpperCase,
   trim,
+  truncate,
   uncurry,
   uncurry3,
   unfold,
