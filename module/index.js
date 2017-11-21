@@ -87,6 +87,7 @@ import omit from './omit';
 import once from './once';
 import or from './or';
 import partial from './partial';
+import partition from './partition';
 import pick from './pick';
 import pipe from './pipe';
 import pipeAll from './pipeAll';
@@ -220,6 +221,7 @@ export {
   once,
   or,
   partial,
+  partition,
   pick,
   pipe,
   pipeAll,

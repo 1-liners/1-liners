@@ -94,6 +94,7 @@
 - [once](#once)
 - [or](#or)
 - [partial](#partial)
+- [partition](#partition)
 - [pick](#pick)
 - [pipe](#pipe)
 - [pipeAll](#pipeall)
@@ -1863,6 +1864,24 @@ const add = (a, b, c) => a + b + c;
 	<a href="../tests/partial.js">Spec</a>
 	•
 	<a href="../module/partial.js">Source</a>: <code> (f, ...args) =&gt; (...moreArgs) =&gt; f(...args, ...moreArgs);</code>
+</sup></div>
+
+
+### partition
+
+Creates an array of elements split into two groups, the first of which contains elements `predicate` returns truthy for,
+the second of which contains elements `predicate` returns falsey for. The predicate is invoked with one argument: `(value)`.
+
+```js
+const partition = require('1-liners/partition');
+
+const [even, odd] = partition([1, 2, 3, 4], n => n % 2 === 0); // => even: [2, 4], odd: [1, 3]
+```
+
+<div align="right"><sup>
+	<a href="../tests/partition.js">Spec</a>
+	•
+	<a href="../module/partition.js">Source</a>: <code> (array, predicate) =&gt; array.reduce((result, item) =&gt; (result[Number(!predicate(item))].push(item), result), [[], []]);</code>
 </sup></div>
 
 
