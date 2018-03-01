@@ -19,6 +19,8 @@
 - [charAt](#charat)
 - [charCodeAt](#charcodeat)
 - [codePointAt](#codepointat)
+- [compact](#compact)
+- [compactObject](#compactobject)
 - [compose](#compose)
 - [composeAll](#composeall)
 - [concat](#concat)
@@ -396,6 +398,40 @@ codePointAt(0, 'super') // => 115
 	<a href="../tests/codePointAt.js">Spec</a>
 	•
 	<a href="../module/codePointAt.js">Source</a>: <code> (index, str) =&gt; str.codePointAt(index);</code>
+</sup></div>
+
+
+### compact
+
+A pure function to make a list compact and remove falsey values
+
+```js
+const compact = require('1-liners/compact');
+
+compact([1, 2, false, 45]); // => [1, 2, 45]
+```
+
+<div align="right"><sup>
+	<a href="../tests/compact.js">Spec</a>
+	•
+	<a href="../module/compact.js">Source</a>: <code> arr =&gt; arr.filter(a =&gt; !!a);</code>
+</sup></div>
+
+
+### compactObject
+
+A pure function to make a object compact and remove falsey values
+
+```js
+const compactObject = require('1-liners/compactObject');
+
+compactObject({value: 'ebvk', fgs: undefined,}); // => {value: 'ebvk'}
+```
+
+<div align="right"><sup>
+	<a href="../tests/compactObject.js">Spec</a>
+	•
+	<a href="../module/compactObject.js">Source</a>: <code> (obj) =&gt; Object.keys(obj).reduce((acc, a) =&gt; Object.assign(acc, !!obj[a] ? {[a]: obj[a]} : {}), {});</code>
 </sup></div>
 
 
