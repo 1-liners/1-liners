@@ -12,6 +12,8 @@ import castArray from './castArray';
 import charAt from './charAt';
 import charCodeAt from './charCodeAt';
 import codePointAt from './codePointAt';
+import compact from './compact';
+import compactObject from './compactObject';
 import compose from './compose';
 import composeAll from './composeAll';
 import concat from './concat';
@@ -147,6 +149,8 @@ export {
   charAt,
   charCodeAt,
   codePointAt,
+  compact,
+  compactObject,
   compose,
   composeAll,
   concat,
