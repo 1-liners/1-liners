@@ -152,7 +152,7 @@ var map = require('1-liners').map;
 import map from '1-liners/module/map';
 
 // Sometimes practical:
-import { map, filter } from '1-liners/module/index';
+import { map, filter } from '1-liners/module';
 ```
 
 ## API
