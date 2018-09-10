@@ -1,273 +1,135 @@
-import always from './always';
-import and from './and';
-import assign from './assign';
-import average from './average';
-import between from './between';
-import bind from './bind';
-import bitAnd from './bitAnd';
-import bitOr from './bitOr';
-import butLast from './butLast';
-import by from './by';
-import castArray from './castArray';
-import charAt from './charAt';
-import charCodeAt from './charCodeAt';
-import codePointAt from './codePointAt';
-import compact from './compact';
-import compactObject from './compactObject';
-import compose from './compose';
-import composeAll from './composeAll';
-import concat from './concat';
-import converge from './converge';
-import curry from './curry';
-import curryRight from './curryRight';
-import dec from './dec';
-import drop from './drop';
-import endsWith from './endsWith';
-import endsWithAt from './endsWithAt';
-import entries from './entries';
-import equal from './equal';
-import every from './every';
-import exec from './exec';
-import explode from './explode';
-import filter from './filter';
-import findKey from './findKey';
-import flatMap from './flatMap';
-import flip from './flip';
-import fold from './fold';
-import foldRight from './foldRight';
-import forEach from './forEach';
-import get from './get';
-import greaterOrEqual from './greaterOrEqual';
-import greaterThan from './greaterThan';
-import hasOwnProperty from './hasOwnProperty';
-import head from './head';
-import identity from './identity';
-import ifThen from './ifThen';
-import ifThenElse from './ifThenElse';
-import implode from './implode';
-import inc from './inc';
-import includes from './includes';
-import indexOf from './indexOf';
-import isBetween from './isBetween';
-import isBoolean from './isBoolean';
-import isFalse from './isFalse';
-import isFalsy from './isFalsy';
-import isFunction from './isFunction';
-import isNull from './isNull';
-import isNumber from './isNumber';
-import isObject from './isObject';
-import isPlainObject from './isPlainObject';
-import isPrototypeOf from './isPrototypeOf';
-import isString from './isString';
-import isTrue from './isTrue';
-import isTruthy from './isTruthy';
-import isTypeOf from './isTypeOf';
-import isUndefined from './isUndefined';
-import isUnknown from './isUnknown';
-import join from './join';
-import keyBy from './keyBy';
-import keys from './keys';
-import last from './last';
-import lastIndexOf from './lastIndexOf';
-import length from './length';
-import lessOrEqual from './lessOrEqual';
-import lessThan from './lessThan';
-import localeCompare from './localeCompare';
-import looseEqual from './looseEqual';
-import map from './map';
-import match from './match';
-import max from './max';
-import method from './method';
-import min from './min';
-import minus from './minus';
-import nand from './nand';
-import noop from './noop';
-import nor from './nor';
-import normalize from './normalize';
-import not from './not';
-import nth from './nth';
-import omit from './omit';
-import once from './once';
-import or from './or';
-import partial from './partial';
-import partition from './partition';
-import pick from './pick';
-import pipe from './pipe';
-import pipeAll from './pipeAll';
-import plus from './plus';
-import product from './product';
-import property from './property';
-import propertyIsEnumerable from './propertyIsEnumerable';
-import push from './push';
-import put from './put';
-import range from './range';
-import reduce from './reduce';
-import reduceRight from './reduceRight';
-import repeat from './repeat';
-import replace from './replace';
-import search from './search';
-import shallowClone from './shallowClone';
-import shave from './shave';
-import signum from './signum';
-import slice from './slice';
-import some from './some';
-import split from './split';
-import startsWith from './startsWith';
-import startsWithAt from './startsWithAt';
-import sum from './sum';
-import tail from './tail';
-import take from './take';
-import takeUntil from './takeUntil';
-import takeWhile from './takeWhile';
-import test from './test';
-import times from './times';
-import toLowerCase from './toLowerCase';
-import toType from './toType';
-import toUpperCase from './toUpperCase';
-import trim from './trim';
-import truncate from './truncate';
-import uncurry from './uncurry';
-import uncurry3 from './uncurry3';
-import unfold from './unfold';
-import uniq from './uniq';
-import uniqBy from './uniqBy';
-import values from './values';
-import xor from './xor';
-
-export {
-  always,
-  and,
-  assign,
-  average,
-  between,
-  bind,
-  bitAnd,
-  bitOr,
-  butLast,
-  by,
-  castArray,
-  charAt,
-  charCodeAt,
-  codePointAt,
-  compact,
-  compactObject,
-  compose,
-  composeAll,
-  concat,
-  converge,
-  curry,
-  curryRight,
-  dec,
-  drop,
-  endsWith,
-  endsWithAt,
-  entries,
-  equal,
-  every,
-  exec,
-  explode,
-  filter,
-  findKey,
-  flatMap,
-  flip,
-  fold,
-  foldRight,
-  forEach,
-  get,
-  greaterOrEqual,
-  greaterThan,
-  hasOwnProperty,
-  head,
-  identity,
-  ifThen,
-  ifThenElse,
-  implode,
-  inc,
-  includes,
-  indexOf,
-  isBetween,
-  isBoolean,
-  isFalse,
-  isFalsy,
-  isFunction,
-  isNull,
-  isNumber,
-  isObject,
-  isPlainObject,
-  isPrototypeOf,
-  isString,
-  isTrue,
-  isTruthy,
-  isTypeOf,
-  isUndefined,
-  isUnknown,
-  join,
-  keyBy,
-  keys,
-  last,
-  lastIndexOf,
-  length,
-  lessOrEqual,
-  lessThan,
-  localeCompare,
-  looseEqual,
-  map,
-  match,
-  max,
-  method,
-  min,
-  minus,
-  nand,
-  noop,
-  nor,
-  normalize,
-  not,
-  nth,
-  omit,
-  once,
-  or,
-  partial,
-  partition,
-  pick,
-  pipe,
-  pipeAll,
-  plus,
-  product,
-  property,
-  propertyIsEnumerable,
-  push,
-  put,
-  range,
-  reduce,
-  reduceRight,
-  repeat,
-  replace,
-  search,
-  shallowClone,
-  shave,
-  signum,
-  slice,
-  some,
-  split,
-  startsWith,
-  startsWithAt,
-  sum,
-  tail,
-  take,
-  takeUntil,
-  takeWhile,
-  test,
-  times,
-  toLowerCase,
-  toType,
-  toUpperCase,
-  trim,
-  truncate,
-  uncurry,
-  uncurry3,
-  unfold,
-  uniq,
-  uniqBy,
-  values,
-  xor
-};
+export { default as always } from './always';
+export { default as and } from './and';
+export { default as assign } from './assign';
+export { default as average } from './average';
+export { default as between } from './between';
+export { default as bind } from './bind';
+export { default as bitAnd } from './bitAnd';
+export { default as bitOr } from './bitOr';
+export { default as butLast } from './butLast';
+export { default as by } from './by';
+export { default as castArray } from './castArray';
+export { default as charAt } from './charAt';
+export { default as charCodeAt } from './charCodeAt';
+export { default as codePointAt } from './codePointAt';
+export { default as compact } from './compact';
+export { default as compactObject } from './compactObject';
+export { default as compose } from './compose';
+export { default as composeAll } from './composeAll';
+export { default as concat } from './concat';
+export { default as converge } from './converge';
+export { default as curry } from './curry';
+export { default as curryRight } from './curryRight';
+export { default as dec } from './dec';
+export { default as drop } from './drop';
+export { default as endsWith } from './endsWith';
+export { default as endsWithAt } from './endsWithAt';
+export { default as entries } from './entries';
+export { default as equal } from './equal';
+export { default as every } from './every';
+export { default as exec } from './exec';
+export { default as explode } from './explode';
+export { default as filter } from './filter';
+export { default as findKey } from './findKey';
+export { default as flatMap } from './flatMap';
+export { default as flip } from './flip';
+export { default as fold } from './fold';
+export { default as foldRight } from './foldRight';
+export { default as forEach } from './forEach';
+export { default as get } from './get';
+export { default as greaterOrEqual } from './greaterOrEqual';
+export { default as greaterThan } from './greaterThan';
+export { default as hasOwnProperty } from './hasOwnProperty';
+export { default as head } from './head';
+export { default as identity } from './identity';
+export { default as ifThen } from './ifThen';
+export { default as ifThenElse } from './ifThenElse';
+export { default as implode } from './implode';
+export { default as inc } from './inc';
+export { default as includes } from './includes';
+export { default as indexOf } from './indexOf';
+export { default as isBetween } from './isBetween';
+export { default as isBoolean } from './isBoolean';
+export { default as isFalse } from './isFalse';
+export { default as isFalsy } from './isFalsy';
+export { default as isFunction } from './isFunction';
+export { default as isNull } from './isNull';
+export { default as isNumber } from './isNumber';
+export { default as isObject } from './isObject';
+export { default as isPlainObject } from './isPlainObject';
+export { default as isPrototypeOf } from './isPrototypeOf';
+export { default as isString } from './isString';
+export { default as isTrue } from './isTrue';
+export { default as isTruthy } from './isTruthy';
+export { default as isTypeOf } from './isTypeOf';
+export { default as isUndefined } from './isUndefined';
+export { default as isUnknown } from './isUnknown';
+export { default as join } from './join';
+export { default as keyBy } from './keyBy';
+export { default as keys } from './keys';
+export { default as last } from './last';
+export { default as lastIndexOf } from './lastIndexOf';
+export { default as length } from './length';
+export { default as lessOrEqual } from './lessOrEqual';
+export { default as lessThan } from './lessThan';
+export { default as localeCompare } from './localeCompare';
+export { default as looseEqual } from './looseEqual';
+export { default as map } from './map';
+export { default as match } from './match';
+export { default as max } from './max';
+export { default as method } from './method';
+export { default as min } from './min';
+export { default as minus } from './minus';
+export { default as nand } from './nand';
+export { default as noop } from './noop';
+export { default as nor } from './nor';
+export { default as normalize } from './normalize';
+export { default as not } from './not';
+export { default as nth } from './nth';
+export { default as omit } from './omit';
+export { default as once } from './once';
+export { default as or } from './or';
+export { default as partial } from './partial';
+export { default as partition } from './partition';
+export { default as pick } from './pick';
+export { default as pipe } from './pipe';
+export { default as pipeAll } from './pipeAll';
+export { default as plus } from './plus';
+export { default as product } from './product';
+export { default as property } from './property';
+export { default as propertyIsEnumerable } from './propertyIsEnumerable';
+export { default as push } from './push';
+export { default as put } from './put';
+export { default as range } from './range';
+export { default as reduce } from './reduce';
+export { default as reduceRight } from './reduceRight';
+export { default as repeat } from './repeat';
+export { default as replace } from './replace';
+export { default as search } from './search';
+export { default as shallowClone } from './shallowClone';
+export { default as shave } from './shave';
+export { default as signum } from './signum';
+export { default as slice } from './slice';
+export { default as some } from './some';
+export { default as split } from './split';
+export { default as startsWith } from './startsWith';
+export { default as startsWithAt } from './startsWithAt';
+export { default as sum } from './sum';
+export { default as tail } from './tail';
+export { default as take } from './take';
+export { default as takeUntil } from './takeUntil';
+export { default as takeWhile } from './takeWhile';
+export { default as test } from './test';
+export { default as times } from './times';
+export { default as toLowerCase } from './toLowerCase';
+export { default as toType } from './toType';
+export { default as toUpperCase } from './toUpperCase';
+export { default as trim } from './trim';
+export { default as truncate } from './truncate';
+export { default as uncurry } from './uncurry';
+export { default as uncurry3 } from './uncurry3';
+export { default as unfold } from './unfold';
+export { default as uniq } from './uniq';
+export { default as uniqBy } from './uniqBy';
+export { default as values } from './values';
+export { default as xor } from './xor';
