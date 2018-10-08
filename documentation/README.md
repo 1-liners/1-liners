@@ -1909,7 +1909,7 @@ const partial = require('1-liners/partial');
 
 const add = (a, b, c) => a + b + c;
 
- const fivePlus = (add, 2, 3);
+ const fivePlus = partial(add, 2, 3);
 
  fivePlus(4) === 9
 ```
