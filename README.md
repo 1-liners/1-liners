@@ -16,7 +16,7 @@
 	<br/>
 	<img
 		alt="1-liners"
-		src="https://cdn.rawgit.com/1-liners/Logos/master/logo.png"
+		src="https://cdn.combinatronics.com/1-liners/Logos/master/logo.png"
 		width="382px"
 		height="125px"
 	/>
@@ -37,7 +37,7 @@ We’re proud to present *1-liners* – a dead simple functional utility belt. *
 	<br/>
 	<br/>
 	<img
-		src="https://cdn.rawgit.com/1-liners/Logos/master/swissknife.gif"
+		src="https://cdn.combinatronics.com/1-liners/Logos/master/swissknife.gif"
 		width="400px"
 		height="300px"
 	/>
@@ -65,7 +65,7 @@ We always follow them. You have our word.
 	<br/>
 	<img
 		alt="1-liners"
-		src="https://cdn.rawgit.com/1-liners/Logos/04c6949/megaphone.svg"
+		src="https://cdn.combinatronics.com/1-liners/Logos/04c6949/megaphone.svg"
 		width="120px"
 		height="120px"
 	/>
