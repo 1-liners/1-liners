@@ -133,3 +133,4 @@ export { default as uniq } from './uniq';
 export { default as uniqBy } from './uniqBy';
 export { default as values } from './values';
 export { default as xor } from './xor';
+export { default as zip } from './zip';
