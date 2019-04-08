@@ -12,4 +12,4 @@
  *
  */
 
-export default arr => arr.filter(a => a === 0 || !!a);
+export default arr => arr.filter(Boolean);
