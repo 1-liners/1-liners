@@ -415,7 +415,7 @@ compact([1, 2, false, 45]); // => [1, 2, 45]
 <div align="right"><sup>
 	<a href="../tests/compact.js">Spec</a>
 	•
-	<a href="../module/compact.js">Source</a>: <code> arr =&gt; arr.filter(a =&gt; !!a);</code>
+	<a href="../module/compact.js">Source</a>: <code> arr =&gt; arr.filter(a =&gt; a === 0 || !!a);</code>
 </sup></div>
 
 
@@ -1910,7 +1910,7 @@ const partial = require('1-liners/partial');
 
 const add = (a, b, c) => a + b + c;
 
- const fivePlus = partial(add, 2, 3);
+ const fivePlus = (add, 2, 3);
 
  fivePlus(4) === 9
 ```
