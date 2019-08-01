@@ -13,4 +13,4 @@
  * 	hasOwnProperty('c', {a: 1, b: 2});  // => false
  *
  */
-export default (prop, obj) => obj.hasOwnProperty(prop);
+export default (prop, obj) => Object.prototype.hasOwnProperty.call(obj, prop);
