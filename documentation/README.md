@@ -931,7 +931,7 @@ hasOwnProperty('c', {a: 1, b: 2});  // => false
 <div align="right"><sup>
 	<a href="../tests/hasOwnProperty.js">Spec</a>
 	•
-	<a href="../module/hasOwnProperty.js">Source</a>: <code> (prop, obj) =&gt; obj.hasOwnProperty(prop);</code>
+	<a href="../module/hasOwnProperty.js">Source</a>: <code> (prop, obj) =&gt; Object.prototype.hasOwnProperty.call(obj, prop);</code>
 </sup></div>
 
 
