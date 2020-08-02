@@ -2111,7 +2111,7 @@ from start(including) to end(excluding)
 ```js
 const range = require('1-liners/range');
 
-range(1, 5); // => [1, 2, 3, 4, 5]
+range(1, 5); // => [1, 2, 3, 4]
 ```
 
 <div align="right"><sup>
